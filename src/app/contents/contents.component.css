@@ -1,0 +1,36 @@
+.form-field-wrapper {
+  display: grid;
+}
+
+mat-form-field {
+  min-width: 410px;
+  max-width: 50%;
+  color: #7D1AD4;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+/* mat-icon {
+  color: #7D1AD4;
+} */
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+mat-header-cell {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+mat-cell {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}

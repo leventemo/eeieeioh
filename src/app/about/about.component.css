@@ -1,0 +1,60 @@
+.page-wrapper {
+  min-width: 400px;
+  max-width: 50%;
+  margin: 3rem auto 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 2px solid #454746;
+}
+
+.icon {
+  color: #7D1AD4;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+p,
+dl {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.description-list-item-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+dt {
+  margin: 0 5px 0 0;
+  font-weight: 400;
+}
+
+dd {
+  margin: 0;
+}

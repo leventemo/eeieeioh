@@ -1,0 +1,76 @@
+footer {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #454746;
+  background-color: #F5F5F5;
+  padding: 0 0.5rem 2rem 0.5rem;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0 0 0;
+  border-bottom: 2px solid #454746;
+}
+
+a {
+  color: #7D1AD4;
+  letter-spacing: 0.1rem;
+}
+
+span,
+a {
+  font-size: .9rem;
+  line-height: 1.8rem;
+}
+
+.columns-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.column-item {
+  padding: 10px;
+}
+
+.branding>a>img {
+  width: 3rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*   border: 2px solid blueviolet;
+ */
+}
+
+@media only screen and (max-width: 1090px) {
+
+  .columns-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+  }
+
+  footer {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+  .columns-container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px 10px;
+  }
+
+  footer {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+}

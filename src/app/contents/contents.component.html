@@ -1,0 +1,38 @@
+<div class="form-field-wrapper">
+  <mat-form-field>
+    <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
+    <mat-icon matSuffix class="icon-inline">search</mat-icon>
+  </mat-form-field>
+</div>
+
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="title">
+    <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="skill+language">
+    <mat-header-cell *matHeaderCellDef>Skill+Language</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.skill}}: {{element.language}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="level">
+    <mat-header-cell *matHeaderCellDef>Level</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.level}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="activity">
+    <mat-header-cell *matHeaderCellDef>Activity</mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <a routerLink="/check-in">{{element.activity}}</a>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="done">
+    <mat-header-cell *matHeaderCellDef>Done</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.done}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

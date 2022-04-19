@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>Hotel Check-in</mat-card-title>
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+    <dl>
+      <dt>First name, surname: </dt>
+      <dd>{{ firstName }} {{ surName }}</dd>
+      <dt>Street address: </dt>
+      <dd>{{ streetAddress }}</dd>
+      <dt>City: </dt>
+      <dd>{{ city }}</dd>
+      <dt>Country: </dt>
+      <dd>{{ country }}</dd>
+      <dt>Email: </dt>
+      <dd>{{ email }}</dd>
+      <dt>Phone: </dt>
+      <dd>{{ phone }}</dd>
+    </dl>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions align="end">
+    <button color="primary" mat-button (click)="reload()">Next</button>
+  </mat-card-actions>
+</mat-card>
