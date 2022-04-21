@@ -13,7 +13,7 @@ export interface Contents {
 
 const ELEMENT_DATA: Contents[] = [
   { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'the alphabet, numbers', slug: 'check-in', activity: 'Hotel Check-in', done: true },
-  { level: 'B1', title: 'ES', skill: 'SP', language: 'picture talk', slug: 'check-in', activity: 'study', done: true },
+  { level: 'B1', title: 'Ask me anything', skill: 'SP', language: 'qn forms', slug: 'check-in', activity: 'cards', done: true },
   { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'gapfill', done: false },
   { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'study', done: true },
   { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'study', done: true },

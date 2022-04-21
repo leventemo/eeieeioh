@@ -48,6 +48,8 @@ Contact page
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
 
+- [ ] routing params: <https://angular.io/guide/router>
+
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 
 Hotel Check-in
@@ -57,8 +59,15 @@ Hotel Check-in
 - [x] include it contents page
 - [x] write out component template
 - [x] write out component class
+- [ ] take out "Country"
+- [ ] rewrite vertival alignment of card elements with flexbox a lá card component?
 
-
+Cards component
+- [x] first btn "Start"
+- []  last btn "Finish" or "Again"
+- [ ] progbar
+- [ ] info modal
+- [ ] card prompts in an array so multiple lines can be rendered in template
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
