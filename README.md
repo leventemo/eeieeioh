@@ -75,6 +75,12 @@ Duel component
 - [ ] write out template
 - [ ] write out class
 
+Not Found Component
+- [x] create component
+- [x] set up routing
+- [ ] find Pablita animated illustration
+
+Contents Component
 - [ ] set up routing with params
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
