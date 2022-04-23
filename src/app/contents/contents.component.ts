@@ -8,20 +8,13 @@ export interface Contents {
   language: string;
   slug: string;
   activity: string;
-  done: boolean;
+  /*   done: boolean; */
 }
 
 const ELEMENT_DATA: Contents[] = [
-  { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'the alphabet, numbers', slug: 'check-in', activity: 'Hotel Check-in', done: true },
-  { level: 'B1', title: 'Ask me anything', skill: 'SP', language: 'qn forms', slug: 'check-in', activity: 'cards', done: true },
-  { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'gapfill', done: false },
-  { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'study', done: true },
-  { level: 'B2', title: 'ES', skill: 'WR', language: 'spelling', slug: 'check-in', activity: 'study', done: true },
-  { level: 'B1', title: 'PIO B2 U1', skill: 'WD form', language: 'adjectives', slug: 'check-in', activity: '5Lives', done: true },
-  { level: 'B1', title: 'PIO B2 U1 review', skill: 'VOC', language: 'misc', slug: 'check-in', activity: 'Jeopardy', done: true },
-  { level: 'B1', title: 'PIO B2 U1 review', skill: 'GR', language: 'quantifiers', slug: 'check-in', activity: 'Shoebox', done: false },
-  { level: 'C1', title: 'PIO B2 U3 review', skill: 'VOC', language: 'body idioms', slug: 'check-in', activity: 'Shoebox', done: true },
-  { level: 'C2', title: 'PIO B2 U2 review', skill: 'GR', language: 'hypothetical meaning', slug: 'check-in', activity: 'Shoebox', done: true }
+  { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'the alphabet, numbers', slug: 'check-in', activity: 'Hotel Check-in' },
+  { level: 'B1', title: 'Ask me anything', skill: 'SP', language: 'qn forms', slug: 'cards', activity: 'Cards' },
+  { level: 'A2', title: 'Spellcheck', skill: 'WR', language: 'spelling', slug: 'duel', activity: 'Duel' },
 ];
 
 @Component({

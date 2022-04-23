@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-title>{{ title }}</mat-card-title>
+  <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+    <div class="counters-wrapper">
+      <div class="counter">
+        <p>A</p>
+        <p>{{ counterA }}</p>
+      </div>
+      <div class="counter activeCounter">
+        <p>B</p>
+        <p>{{ counterB }}</p>
+      </div>
+    </div>
+    <div class="options-wrapper">
+      <button class="option">{{ currentCard[0] }}</button>
+      <button class="option">{{ currentCard[1] }}</button>
+    </div>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions align="end">
+    <span>{{ currentCardNumber }}/{{ cardsTotal }}</span>
+    <button color="primary" mat-button (click)="next()">{{ btnValue }}</button>
+  </mat-card-actions>
+</mat-card>

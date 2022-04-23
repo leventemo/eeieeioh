@@ -1,6 +1,6 @@
 mat-card {
-  min-width: 350px;
-  max-width: 33%;
+  min-width: 385px;
+  max-width: 30%;
   height: 80vh;
   margin: auto;
 }
@@ -27,4 +27,18 @@ mat-card-actions {
   display: flex;
   justify-content: space-around;
   color: #7D1AD4;
+}
+
+card-header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 2px solid red;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }

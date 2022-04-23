@@ -1,7 +1,7 @@
 mat-card {
   font-family: 'Ubuntu Condensed', sans-serif;
-  min-width: 390px;
-  max-width: 33%;
+  min-width: 385px;
+  max-width: 30%;
   height: 80vh;
   margin: auto;
 }

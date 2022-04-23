@@ -69,6 +69,12 @@ Cards component
 - [ ] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
 
+Duel component
+- [x] create component
+- [x] routing
+- [ ] write out template
+- [ ] write out class
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
 ## Development server

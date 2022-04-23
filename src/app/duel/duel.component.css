@@ -1,0 +1,111 @@
+mat-card {
+  min-width: 385px;
+  max-width: 30%;
+  height: 80vh;
+  margin: auto;
+}
+
+mat-card-title,
+span,
+button {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  line-height: 1.5;
+}
+
+mat-card-content {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr;
+  /*   display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  height: 85%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.counters-wrapper,
+.options-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin: 3px;
+}
+
+.options-wrapper {
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  /* make btn invisible*/
+  background: #FFFFFF;
+  border: 2px solid #F5F5F5;
+  margin: 3px;
+  background: #F9F5FD;
+}
+
+.activeCounter {
+  color: #7D1AD4;
+  animation: pulse 4s cubic-bezier(.36, .07, .19, .97) both infinite;
+  border: 2px solid
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+  color: #7D1AD4;
+}
+
+card-header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 2px solid red;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+@keyframes pulse {
+
+  91%,
+  95% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  92%,
+  98% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  93%,
+  99%,
+  97% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  94%,
+  96% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

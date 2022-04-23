@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
+import { DuelComponent } from './duel/duel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CheckInComponent } from './check-in/check-in.component';
     HomeComponent,
     CardsComponent,
     ContactComponent,
-    CheckInComponent
+    CheckInComponent,
+    DuelComponent
   ],
   imports: [
     BrowserModule,
