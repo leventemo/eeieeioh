@@ -48,9 +48,8 @@ Contact page
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
 
-- [ ] routing params: <https://angular.io/guide/router>
-
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
+- [ ] rename Duel Component to Duels?
 
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>
@@ -59,13 +58,14 @@ Hotel Check-in
 - [x] include it contents page
 - [x] write out component template
 - [x] write out component class
-- [ ] take out "Country"
-- [ ] rewrite vertival alignment of card elements with flexbox a lá card component?
+- [ ] rewrite vertical alignment of card elements with flexbox a lá card component?
+- [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
 Cards component
 - [x] first btn "Start"
+- [x] load data from json in assets folder
 - []  last btn "Finish" or "Again"
-- [ ] progbar
+- [ ] progbar?
 - [ ] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
 
@@ -75,28 +75,12 @@ Duel component
 - [ ] write out template
 - [ ] write out class
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+- [ ] set up routing with params
+<https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
+<https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
+<https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
+- [ ] routing params: <https://angular.io/guide/router>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+pass data between components:
+<https://www.youtube.com/watch?v=I317BhehZKM> Fireship

@@ -13,7 +13,6 @@ export class CheckInComponent implements OnInit {
 
   streetAddress: string = faker.address.streetAddress();
   city: string = faker.address.city();
-  country: string = faker.address.country();
 
   email: string = faker.internet.email(this.firstName, this.surName);
   phone: string = faker.phone.phoneNumber('501-###-###');

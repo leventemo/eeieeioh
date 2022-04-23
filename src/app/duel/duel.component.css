@@ -54,16 +54,23 @@ mat-card-content {
   align-items: center;
   font-size: 1.4rem;
   /* make btn invisible*/
-  background: #FFFFFF;
+  background: #F5F5F5;
   border: 2px solid #F5F5F5;
   margin: 3px;
-  background: #F9F5FD;
 }
 
 .activeCounter {
   color: #7D1AD4;
-  animation: pulse 4s cubic-bezier(.36, .07, .19, .97) both infinite;
-  border: 2px solid
+  border: 2px solid #7D1AD4;
+  background-color: #F5F5F5;
+}
+
+#btn-A {
+  animation: shakeA 3s cubic-bezier(.36, .07, .19, .97) both infinite;
+}
+
+#btn-B {
+  animation: shakeB 3s cubic-bezier(.36, .07, .19, .97) both infinite;
 }
 
 mat-card-actions {
@@ -86,7 +93,7 @@ card-header-wrapper {
   left: 5px;
 }
 
-@keyframes pulse {
+@keyframes shakeA {
 
   91%,
   95% {
@@ -106,6 +113,30 @@ card-header-wrapper {
 
   94%,
   96% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes shakeB {
+
+  41%,
+  45% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  42%,
+  48% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  43%,
+  49%,
+  47% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  44%,
+  46% {
     transform: translate3d(2px, 0, 0);
   }
 }

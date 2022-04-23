@@ -4,18 +4,18 @@
   <mat-divider inset></mat-divider>
   <mat-card-content>
     <div class="counters-wrapper">
-      <div class="counter">
+      <div class="counter activeCounter">
         <p>A</p>
         <p>{{ counterA }}</p>
       </div>
-      <div class="counter activeCounter">
+      <div class="counter">
         <p>B</p>
         <p>{{ counterB }}</p>
       </div>
     </div>
     <div class="options-wrapper">
-      <button class="option">{{ currentCard[0] }}</button>
-      <button class="option">{{ currentCard[1] }}</button>
+      <button class="option" id="btn-A" (click)="onClick()">{{ currentCard[0] }}</button>
+      <button class="option" id="btn-B" (click)="onClick()">{{ currentCard[1] }}</button>
     </div>
   </mat-card-content>
   <mat-divider inset></mat-divider>

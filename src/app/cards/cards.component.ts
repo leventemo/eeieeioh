@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Utils } from '../utils';
+import cardContent from '../../assets/activities/cards.json';
 
-const data =
+/* const data =
 {
   id: 1,
   title: 'Have you ever ...?',
@@ -20,7 +21,7 @@ const data =
     'Have you ever talked with a famous person?',
     'Have you ever spent a whole night without sleep?',
   ]
-}
+} */
 
 
 @Component({
@@ -31,13 +32,15 @@ const data =
 
 export class CardsComponent implements OnInit {
 
-  title = data.title;
-  instructions = data.instructions;
+  data = cardContent;
+
+  title = this.data.title;
+  instructions = this.data.instructions;
   btnValue = 'Start';
-  pack = data.cards;
+  pack = this.data.cards;
   currentCard = '';
   done = 0;
-  cardsTotal = data.cards.length;
+  cardsTotal = this.data.cards.length;
 
   constructor() { }
 
@@ -47,7 +50,7 @@ export class CardsComponent implements OnInit {
   next() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
-    this.pack = this.pack.filter(card => card !== this.currentCard);
+    this.pack = this.pack.filter((card: string) => card !== this.currentCard);
     this.done++;
     this.btnValue = 'Next';
   }

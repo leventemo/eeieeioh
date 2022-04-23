@@ -33,8 +33,8 @@ export class DuelComponent implements OnInit {
   currentCard = [''];
   currentCardNumber = 0;
   cardsTotal = data.cards.length;
-  counterA = 0;
-  counterB = 0;
+  counterA = 'you win with 10 points';
+  counterB = 'you lose with 0 points';
 
   constructor() { }
 
@@ -48,6 +48,10 @@ export class DuelComponent implements OnInit {
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
     this.btnValue = 'Next';
+  }
+
+  onClick() {
+    alert('You clicked me, hey!');
   }
 
 }

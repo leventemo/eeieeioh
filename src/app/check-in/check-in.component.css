@@ -14,8 +14,9 @@ dl {
   display: grid;
   /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   grid-template-columns: 5fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 5px;
-  column-gap: 5px;
+  grid-row-gap: 30px;
   font-size: 1.2rem;
 }
 
