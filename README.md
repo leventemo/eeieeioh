@@ -47,9 +47,12 @@ Contact page
 - [x] typography in form: set it to custom typogr.
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
+- [ ] sanitazion?
 
+REDO
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
-- [ ] rename Duel Component to Duels?
+- [ ] rename Duel Component to Duels
+- [ ] rename Contents Components to Activities (routing reasons)
 
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>

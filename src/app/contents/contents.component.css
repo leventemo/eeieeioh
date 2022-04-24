@@ -23,6 +23,10 @@ mat-form-field {
   left: 5px;
 }
 
+mat-table {
+  box-shadow: none;
+}
+
 mat-header-cell {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-weight: bold;

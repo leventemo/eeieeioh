@@ -1,28 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Utils } from '../utils';
 import cardContent from '../../assets/activities/cards.json';
-
-/* const data =
-{
-  id: 1,
-  title: 'Have you ever ...?',
-  language: 'Present Perfect for life experiences, Past Simple for telling a story',
-  instructions: 'Work in pairs using one phone between you. Take turns to ask and answer the questions. Don\'t accept a short answer.',
-  cards: [
-    'Have you ever been in a newspaper?',
-    'Have you ever forgotten someone\'s birthday ?',
-    'Have you ever travelled by plane?',
-    'Have you ever won a competition?',
-    'Have you ever found any money in the street?',
-    'Have you ever had a broken bone?',
-    'Have you ever tried a dangerous or extreme sport?',
-    'Have you ever cooked a meal for more than 5 people?',
-    'Have you ever tried to learn to play a musical instrument?',
-    'Have you ever talked with a famous person?',
-    'Have you ever spent a whole night without sleep?',
-  ]
-} */
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards',
@@ -36,13 +15,15 @@ export class CardsComponent implements OnInit {
 
   title = this.data.title;
   instructions = this.data.instructions;
-  btnValue = 'Start';
   pack = this.data.cards;
-  currentCard = '';
-  done = 0;
   cardsTotal = this.data.cards.length;
+  btnValue = 'Start';
+  currentCard = '';
+  currentCardNumber = 0;
 
-  constructor() { }
+  constructor(public router: Router) {
+
+  }
 
   ngOnInit(): void {
   }
@@ -51,7 +32,16 @@ export class CardsComponent implements OnInit {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.pack = this.pack.filter((card: string) => card !== this.currentCard);
-    this.done++;
+    this.currentCardNumber++;
     this.btnValue = 'Next';
+
+    if (this.currentCardNumber - 1 === this.cardsTotal) {
+      this.currentCard = 'Game over';
+      this.btnValue = 'Back to Contents';
+    }
+  }
+
+  redirect() {
+    this.router.navigate(['contents']);
   }
 }
