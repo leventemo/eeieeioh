@@ -38,8 +38,9 @@ mat-card-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 3px;
+  opacity: .5;
 }
 
 .options-wrapper {
@@ -63,15 +64,16 @@ mat-card-content {
   color: #7D1AD4;
   border: 2px solid #7D1AD4;
   background-color: #F5F5F5;
+  opacity: 1;
 }
 
-#btn-A {
+/* #btn-A {
   animation: shakeA 3s cubic-bezier(.36, .07, .19, .97) both infinite;
 }
 
 #btn-B {
   animation: shakeB 3s cubic-bezier(.36, .07, .19, .97) both infinite;
-}
+} */
 
 mat-card-actions {
   display: flex;

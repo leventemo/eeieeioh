@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Utils } from '../utils';
 import cardContent from '../../assets/activities/cards.json';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards',

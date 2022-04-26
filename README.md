@@ -54,6 +54,9 @@ REDO
 - [ ] rename Duel Component to Duels
 - [ ] rename Contents Components to Activities (routing reasons)
 
+Nav Component
+- [ ] active link animated <https://codepen.io/cathydutton/pen/QWWajKX>
+
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>
 - [x] create check-in component
@@ -77,6 +80,8 @@ Duel component
 - [x] routing
 - [ ] write out template
 - [ ] write out class
+- [ ] timer <https://codepen.io/cathydutton/pen/xxpOOw>
+- [ ] deactivate text btns before "Start" is pressed
 
 Not Found Component
 - [x] create component
