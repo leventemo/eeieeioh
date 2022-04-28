@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Utils } from '../utils';
+import { Utils, Timer } from '../utils';
 
 const data = {
   title: 'Spellcheck',
@@ -33,10 +33,10 @@ export class DuelComponent implements OnInit {
   currentCard = [''];
   currentCardNumber = 0;
   cardsTotal = data.cards.length;
-  counterA = 0;
-  counterB = 0;
-  timerA = 0;
-  timerB = 0;
+  counterA: number = 0;
+  counterB: number = 0;
+  timerA: number = 0;
+  timerB: number = 0;
 
   constructor() { }
 
@@ -55,25 +55,21 @@ export class DuelComponent implements OnInit {
     }
   }
 
-  onClick() {
-    const now = Date.now();
-    console.log(now);
+  onClick(event: Event) {
+    // manage timer
+    const start = Date.now();
+    let timer = new Timer(start, this.counterA, this.timerA).startTimer();
+    this.timerA = timer;
 
-    const count = setInterval(() => {
-      const timePassed = Math.round((Date.now() - now));
-      console.log(timePassed)
-      this.timerA = timePassed;
-
-      if (timePassed === 120) {
-        clearInterval(count);
-        return;
-      }
-
-      const minutes = Math.floor(timePassed / 60);
-      const seconds = timePassed % 60;
-
-
-    }, 1000)
+    // check answer
+    const btnclicked = (event.target as HTMLInputElement);
+    console.log(this.currentCard); //this is already shuffled/randomized for display; need to create a variable for randomizedCurrentCard (for display & check)
+    console.log(btnclicked.textContent);
+    if (btnclicked.textContent === this.currentCard[0]) {
+      console.log('correct');
+    } else {
+      console.log('incorrect');
+    }
   }
 }
 

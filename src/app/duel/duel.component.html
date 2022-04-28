@@ -7,17 +7,17 @@
       <div class="counter activeCounter">
         <p>A</p>
         <p>{{ counterA }}</p>
-        <p>{{ timerA | date:'mm:ss' }}</p>
+        <p class="timer">{{ timerA | date:'mm:ss:SSS' }}</p>
       </div>
       <div class="counter">
         <p>B</p>
         <p>{{ counterB }}</p>
-        <p>{{ timerB }}</p>
+        <p class="timer">{{ timerB | date:'mm:ss:SSS' }}</p>
       </div>
     </div>
     <div class="options-wrapper">
-      <button class="option" id="btn-A" (click)="onClick()">{{ currentCard[0] }}</button>
-      <button class="option" id="btn-B" (click)="onClick()">{{ currentCard[1] }}</button>
+      <button class="option" id="btn-A" (click)="onClick($event)">{{ currentCard[0] }}</button>
+      <button class="option" id="btn-B" (click)="onClick($event)">{{ currentCard[1] }}</button>
     </div>
   </mat-card-content>
   <mat-divider inset></mat-divider>

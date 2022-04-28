@@ -95,6 +95,10 @@ card-header-wrapper {
   left: 5px;
 }
 
+.timer {
+  width: 6rem;
+}
+
 @keyframes shakeA {
 
   91%,

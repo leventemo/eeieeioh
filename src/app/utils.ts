@@ -6,3 +6,29 @@ export class Utils {
   };
 
 }
+
+export class Timer {
+  counter: number;
+  timer: number;
+  start: number;
+  /* static startTimer: any; */
+  constructor(start: number, counter: number, timer: number) {
+    this.counter = counter;
+    this.timer = timer;
+    this.start = start;
+  }
+
+  startTimer() {
+    const count = setInterval(() => {
+      const timePassed = Math.round((Date.now() - this.start));
+      console.log(timePassed)
+      this.timer = timePassed;
+
+      if (timePassed >= 5000) {
+        clearInterval(count);
+      }
+    }, 1)
+    return this.timer;
+
+  }
+}
