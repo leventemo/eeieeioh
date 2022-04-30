@@ -8,27 +8,36 @@ export class Utils {
 }
 
 export class Timer {
-  counter: number;
-  timer: number;
-  start: number;
+  constructor() { }
+
+
+  /*   counter: number;
+    timer: number;
+    start: number;
+    interval: number; */
   /* static startTimer: any; */
-  constructor(start: number, counter: number, timer: number) {
+  /* constructor(start: number, counter: number, timer: number) {
     this.counter = counter;
     this.timer = timer;
     this.start = start;
-  }
+    this.interval = 0;
+  } */
 
-  startTimer() {
-    const count = setInterval(() => {
+  /* startTimer() {
+    this.interval = setInterval(() => {
       const timePassed = Math.round((Date.now() - this.start));
-      console.log(timePassed)
       this.timer = timePassed;
 
-      if (timePassed >= 5000) {
-        clearInterval(count);
+      if (timePassed >= 1000) {
+        clearInterval(this.interval);
+        console.log(this.timer);
       }
-    }, 1)
+    }, 1) as unknown as number;
     return this.timer;
-
   }
+
+  stopTimer() {
+    clearInterval(this.interval);
+    console.log(this.timer);
+  } */
 }

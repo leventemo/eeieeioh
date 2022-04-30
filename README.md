@@ -50,6 +50,7 @@ Contact page
 - [ ] sanitazion?
 
 REDO
+- [ ] create components folder?
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 - [ ] rename Duel Component to Duels
 - [ ] rename Contents Components to Activities (routing reasons)

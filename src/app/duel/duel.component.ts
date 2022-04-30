@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Utils, Timer } from '../utils';
+import { Utils } from '../utils';
+import { interval } from 'rxjs';
 
 const data = {
   title: 'Spellcheck',
@@ -28,40 +29,46 @@ export class DuelComponent implements OnInit {
 
   title = data.title;
   instructions = data.instructions;
-  btnValue = 'Start';
-  pack = data.cards;
-  currentCard = [''];
-  currentCardNumber = 0;
-  cardsTotal = data.cards.length;
   counterA: number = 0;
   counterB: number = 0;
   timerA: number = 0;
   timerB: number = 0;
+  clickedOnce = false;
+  pack = data.cards;
+  currentCard = [''];
+  currentCardNumber = 0;
+  cardsTotal = data.cards.length;
+  tyotyo = {};
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  next() {
+  start() {
+
+    const secondsCounter = interval(1000);
+    const subscription = secondsCounter.subscribe((n) => {
+      this.timerA = n;
+    });
+
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
-    this.btnValue = 'Next';
     const optionsRando = Utils.getRandom(10, 1);
     if (optionsRando % 2) {
       [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
     }
+    this.clickedOnce = true;
+
   }
 
-  onClick(event: Event) {
-    // manage timer
-    const start = Date.now();
-    let timer = new Timer(start, this.counterA, this.timerA).startTimer();
-    this.timerA = timer;
 
-    // check answer
+  onClick(event: Event) {
+
+    // toggle timers
+
+
     const btnclicked = (event.target as HTMLInputElement);
     console.log(this.currentCard); //this is already shuffled/randomized for display; need to create a variable for randomizedCurrentCard (for display & check)
     console.log(btnclicked.textContent);
