@@ -4,12 +4,12 @@
   <mat-divider inset></mat-divider>
   <mat-card-content>
     <div class="counters-wrapper">
-      <div class="counter activeCounter">
+      <div class="counter" [ngClass]="{ activecounter: currentPlayer === 1 }">
         <p>A</p>
         <p>{{ counterA }}</p>
-        <p class="timer">{{ timerA }}</p>
+        <p class="timer">{{ timerA | date:'SSS' }}</p>
       </div>
-      <div class="counter">
+      <div class="counter" [ngClass]="{ activecounter: currentPlayer === 2 }">
         <p>B</p>
         <p>{{ counterB }}</p>
         <p class="timer">{{ timerB }}</p>

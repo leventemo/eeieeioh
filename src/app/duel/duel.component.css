@@ -60,7 +60,7 @@ mat-card-content {
   margin: 3px;
 }
 
-.activeCounter {
+.activecounter {
   color: #7D1AD4;
   border: 2px solid #7D1AD4;
   background-color: #F5F5F5;
@@ -93,10 +93,6 @@ card-header-wrapper {
   position: relative;
   top: 5px;
   left: 5px;
-}
-
-.timer {
-  width: 6rem;
 }
 
 @keyframes shakeA {

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Utils } from '../utils';
-import { interval } from 'rxjs';
+import { interval, take } from 'rxjs';
 
 const data = {
   title: 'Spellcheck',
@@ -38,18 +38,27 @@ export class DuelComponent implements OnInit {
   currentCard = [''];
   currentCardNumber = 0;
   cardsTotal = data.cards.length;
-  tyotyo = {};
+  currentPlayer = 0;
 
   constructor() { }
 
   ngOnInit(): void { }
 
   start() {
-
-    const secondsCounter = interval(1000);
-    const subscription = secondsCounter.subscribe((n) => {
+    this.currentPlayer = 1;
+    const counter = interval(1);
+    const subscription = counter.pipe(take(1000));
+    subscription.subscribe((n) => {
       this.timerA = n;
+
+      if (n < 999) {
+        console.log(`${n} smaller than 300`);
+      } else {
+        /*     subscription.unsubscribe(); */
+        this.currentPlayer = 2;
+      }
     });
+
 
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
