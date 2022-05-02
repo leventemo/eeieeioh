@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Utils } from '../utils';
 import { interval, take } from 'rxjs';
 
@@ -20,6 +20,12 @@ const data = {
   ]
 }
 
+interface CurrentPlayer {
+  name: string;
+  counter: number;
+  timer: number;
+}
+
 @Component({
   selector: 'app-duel',
   templateUrl: './duel.component.html',
@@ -29,37 +35,59 @@ export class DuelComponent implements OnInit {
 
   title = data.title;
   instructions = data.instructions;
-  counterA: number = 0;
-  counterB: number = 0;
-  timerA: number = 0;
-  timerB: number = 0;
   clickedOnce = false;
   pack = data.cards;
   currentCard = [''];
   currentCardNumber = 0;
   cardsTotal = data.cards.length;
-  currentPlayer = 0;
+
+  playerA: CurrentPlayer = { name: 'playerA', counter: 1, timer: 0 };
+  playerB: CurrentPlayer = { name: 'playerB', counter: 2, timer: 0 };
+  currentPlayer: CurrentPlayer = this.playerA;
 
   constructor() { }
 
   ngOnInit(): void { }
 
   start() {
-    this.currentPlayer = 1;
-    const counter = interval(1);
-    const subscription = counter.pipe(take(1000));
-    subscription.subscribe((n) => {
-      this.timerA = n;
+    if (this.currentPlayer === this.playerA) {
+      const counter = interval(1);
+      const subscription = counter.pipe(take(1000));
+      subscription.subscribe((n) => {
+        this.currentPlayer.timer = n;
+        console.log(`${this.currentPlayer.name}: ${n}`);
+        if (n >= 999) {
+          this.currentPlayer.timer = 0;
+          this.currentPlayer = this.playerB;
+          if (this.pack.length === 0) {
+            return;
+          }
+          this.start();
+        }
+      });
+    } else if (this.currentPlayer === this.playerB) {
+      const counter = interval(1);
+      const subscription = counter.pipe(take(1000));
+      subscription.subscribe((n) => {
+        this.currentPlayer.timer = n;
+        console.log(`${this.currentPlayer.name}: ${n}`);
+        if (n >= 999) {
+          this.currentPlayer.timer = 0;
+          this.currentPlayer = this.playerA;
+          if (this.pack.length === 0) {
+            return;
+          }
+          this.start();
+        }
+      });
+    }
 
-      if (n < 999) {
-        console.log(`${n} smaller than 300`);
-      } else {
-        /*     subscription.unsubscribe(); */
-        this.currentPlayer = 2;
-      }
-    });
+    this.displayCard();
+    this.clickedOnce = true;
 
+  }
 
+  displayCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.pack = this.pack.filter(card => card !== this.currentCard);
@@ -68,10 +96,7 @@ export class DuelComponent implements OnInit {
     if (optionsRando % 2) {
       [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
     }
-    this.clickedOnce = true;
-
   }
-
 
   onClick(event: Event) {
 

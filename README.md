@@ -79,12 +79,14 @@ Cards component
 Duel component
 - [x] create component
 - [x] routing
-- [ ] write out template
+- [x] write out template
 - [ ] write out class
 - [ ] timer <https://codepen.io/cathydutton/pen/xxpOOw>
 - [ ] deactivate text btns before "Start" is pressed
+- [ ] manipulate RXJS subs with setTimeout():
+<https://stackoverflow.com/questions/65193678/rxjs-using-first-with-timer>
+<https://benlesh.medium.com/rxjs-dont-unsubscribe-6753ed4fda87>
 - [ ] extra points for speed:
-
 | Seconds | Points |
 |:-------:|:------:|
 |1        | 10 |
@@ -97,7 +99,6 @@ Duel component
 |8        | 3 |
 |9        | 2 |
 |10       | 1 |
-
 
 Not Found Component
 - [x] create component
