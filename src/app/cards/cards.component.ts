@@ -1,8 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { Utils } from '../utils';
-import cardContent from '../../assets/activities/cards.json';
+import allCardDecksCollection from '../../assets/activities/cardsarray.json';
+
+interface Data {
+  id: number;
+  title: string;
+  language: string;
+  instructions: string;
+  cards: string[];
+}
 
 @Component({
   selector: 'app-cards',
@@ -12,7 +20,13 @@ import cardContent from '../../assets/activities/cards.json';
 
 export class CardsComponent implements OnInit {
 
-  data = cardContent;
+  data: Data = {
+    id: 0,
+    title: '',
+    language: '',
+    instructions: '',
+    cards: []
+  };
 
   title = this.data.title;
   instructions = this.data.instructions;
@@ -22,11 +36,20 @@ export class CardsComponent implements OnInit {
   currentCard = '';
   currentCardNumber = 0;
 
-  constructor(public router: Router) {
-
+  constructor(
+    public router: Router,
+    private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
+    // get the id from the current route
+    const routeParams = this.route.snapshot.paramMap;
+    const cardIdIdFromRoute = Number(routeParams.get('id'));
+    console.log(cardIdIdFromRoute);
+
+    // find the deck for id we got from the route
+    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdIdFromRoute);
+    console.log(this.data);
   }
 
   next() {

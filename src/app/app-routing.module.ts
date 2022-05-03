@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contents', component: ContentsComponent },
-  { path: 'cards', component: CardsComponent },
+  { path: 'cards/:id', component: CardsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
   { path: 'duel', component: DuelComponent },

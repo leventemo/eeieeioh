@@ -61,17 +61,20 @@ Nav Component
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>
 - [x] create check-in component
-- [ ] set up routing for check-in: use id/slug
+- [ ] set up routing: different to the other components!
 - [x] include it contents page
 - [x] write out component template
 - [x] write out component class
+- [ ] fix next btn -> reload
 - [ ] rewrite vertical alignment of card elements with flexbox a lá card component?
 - [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
 Cards component
 - [x] first btn "Start"
 - [x] load data from json in assets folder
-- []  last btn "Finish" or "Again"
+- [x] routing params
+- [ ] refactor so it works with routing params in `ngOnInit()`
+- [x]  last btn "Finish" or "Again"
 - [ ] progbar?
 - [ ] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
@@ -111,7 +114,6 @@ Contents Component
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
 - [ ] routing params: <https://angular.io/guide/router>
-
 
 pass data between components:
 <https://www.youtube.com/watch?v=I317BhehZKM> Fireship

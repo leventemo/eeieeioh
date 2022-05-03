@@ -8,29 +8,29 @@
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="title">
     <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+    <mat-cell *matCellDef="let item"> {{item.title}} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="skill+language">
     <mat-header-cell *matHeaderCellDef>Skill+Language</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.skill}}: {{element.language}} </mat-cell>
+    <mat-cell *matCellDef="let item"> {{item.skill}}: {{item.language}} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="level">
     <mat-header-cell *matHeaderCellDef>Level</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.level}} </mat-cell>
+    <mat-cell *matCellDef="let item"> {{item.level}} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="activity">
     <mat-header-cell *matHeaderCellDef>Activity</mat-header-cell>
-    <mat-cell *matCellDef="let element">
-      <a routerLink="/check-in">{{element.activity}}</a>
+    <mat-cell *matCellDef="let item">
+      <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
     </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="done">
     <mat-header-cell *matHeaderCellDef>Done</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.done}} </mat-cell>
+    <mat-cell *matCellDef="let item"> {{item.done}} </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
