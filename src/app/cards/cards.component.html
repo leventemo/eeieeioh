@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-title>{{ data.title }}</mat-card-title>
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
   <mat-card-content>
@@ -7,10 +7,10 @@
   </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
-    <span>{{ currentCardNumber }}/{{ cardsTotal }}</span>
-    <button *ngIf="currentCardNumber - 1 !== cardsTotal" color="primary" mat-button (click)="next()">{{ btnValue
+    <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
+    <button *ngIf="!isGameOver()" color="primary" mat-button (click)="next()">{{ btnValue
       }}</button>
-    <button *ngIf="currentCardNumber - 1 === cardsTotal" color="primary" mat-button (click)="redirect()">{{
+    <button *ngIf="isGameOver()" color="primary" mat-button (click)="redirect()">{{
       btnValue }}</button>
   </mat-card-actions>
 </mat-card>

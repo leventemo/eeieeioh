@@ -16,11 +16,7 @@
 - [x] create header & footer components
 - [x] make footer icon a link to Home
 - [ ] make header icon a link to Home
-- [ ] generate contents table from data object rather than hard-code in template file?
 - [ ] set up nav: <https://code-maze.com/angular-material-navigation/>
-– [x] create About Component
-– [x] create Home Component
-- [x] create Contents Component
 - [x] lottie: <https://stackoverflow.com/questions/56825421/install-lottie-player-to-angular>
 * <https://lottiefiles.com/>
 - [ ] customize typography: <https://material.angular.io/guide/typography>
@@ -48,6 +44,7 @@ Contact page
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
 - [ ] sanitazion?
+- [ ] automatic scroll to top on click of "Contact" btn (important on mobile screens)
 
 REDO
 - [ ] create components folder?
@@ -73,7 +70,6 @@ Cards component
 - [x] first btn "Start"
 - [x] load data from json in assets folder
 - [x] routing params
-- [ ] refactor so it works with routing params in `ngOnInit()`
 - [x]  last btn "Finish" or "Again"
 - [ ] progbar?
 - [ ] info modal
@@ -109,7 +105,11 @@ Not Found Component
 - [ ] find Pablita animated illustration
 
 Contents Component
-- [ ] set up routing with params
+- [ ] narrow "level" column; wastes space
+set up routing with params
+- [x] cards
+- [ ] check-in
+- [ ] duel
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas

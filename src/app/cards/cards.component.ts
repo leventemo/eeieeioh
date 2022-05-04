@@ -28,13 +28,12 @@ export class CardsComponent implements OnInit {
     cards: []
   };
 
-  title = this.data.title;
-  instructions = this.data.instructions;
-  pack = this.data.cards;
-  cardsTotal = this.data.cards.length;
+  instructions = () => this.data.instructions;
+  pack: string[] = [];
+  cardsTotal = () => this.data.cards.length;
   btnValue = 'Start';
   currentCard = '';
-  currentCardNumber = 0;
+  currentCardCounter = 0;
 
   constructor(
     public router: Router,
@@ -49,20 +48,25 @@ export class CardsComponent implements OnInit {
 
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdIdFromRoute);
-    console.log(this.data);
+
+    this.pack = this.data.cards;
   }
 
   next() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.pack = this.pack.filter((card: string) => card !== this.currentCard);
-    this.currentCardNumber++;
+    this.currentCardCounter++;
     this.btnValue = 'Next';
 
-    if (this.currentCardNumber - 1 === this.cardsTotal) {
+    if (this.isGameOver()) {
       this.currentCard = 'Game over';
       this.btnValue = 'Back to Contents';
     }
+  }
+
+  isGameOver() {
+    return this.pack.length === 0;
   }
 
   redirect() {

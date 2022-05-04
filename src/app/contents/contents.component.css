@@ -30,7 +30,8 @@ mat-table {
 mat-header-cell {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-weight: bold;
-  font-size: .8rem;
+  font-size: .9rem;
+  color: #7D1AD4;
 }
 
 mat-cell {

@@ -14,10 +14,10 @@ export interface Contents {
 
 const ELEMENT_DATA: Contents[] = [
   { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'alphabet, numbers', slug: '/check-in', id: '', activity: 'Hotel Check-in' },
-  { level: 'A2', title: 'AMA', skill: 'SP', language: 'Pres. Perf. – Past Simple', slug: '/cards', id: 1, activity: 'Cards' },
-  { level: 'A2', title: 'AMA', skill: 'SP', language: 'for/since', slug: '/cards', id: 2, activity: 'Cards' },
+  { level: 'A2', title: 'Q&A', skill: 'SP', language: 'Pres. Perf. – Past Simple', slug: '/cards', id: 1, activity: 'Cards' },
+  { level: 'A2', title: 'Q&A', skill: 'SP', language: 'for/since', slug: '/cards', id: 2, activity: 'Cards' },
   { level: 'A2', title: 'Error Correction', skill: 'WR', language: 'spelling', slug: '/duel', id: 1, activity: 'Duel' },
-  { level: 'B2', title: 'Error Correction', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' },
+  { level: 'B2', title: 'Spellcheck', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' },
 ];
 
 @Component({
