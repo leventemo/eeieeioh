@@ -44,7 +44,7 @@ Contact page
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
 - [ ] sanitazion?
-- [ ] automatic scroll to top on click of "Contact" btn (important on mobile screens)
+- [x] automatic scroll to top on click of "Contact" btn (important on mobile screens)
 
 REDO
 - [ ] create components folder?
@@ -78,6 +78,7 @@ Cards component
 Duel component
 - [x] create component
 - [x] routing
+- [ ] routing params
 - [x] write out template
 - [ ] write out class
 - [ ] timer <https://codepen.io/cathydutton/pen/xxpOOw>
