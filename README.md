@@ -2,6 +2,10 @@
 
 ## todos
 
+CARDS
+- [ ] shorten width of `main`?
+- [ ] shorten height of cards (Internet, Opera)
+
 - [x] set up Angular
 - [x] set up Angular Material: custom theme
 - [x] create material module

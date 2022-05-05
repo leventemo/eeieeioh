@@ -48,7 +48,7 @@
     "skill": "SP",
     "title": "When did you last ...?",
     "language": "Past Simple, Past Time Expressions",
-    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer 'When did you last ...?' questions. Don't accept a short answer.",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
     "cards": [
       "travel by car",
       "watch Formula1 on TV",
@@ -73,7 +73,7 @@
     "skill": "SP",
     "title": "When did you last ...?",
     "language": "Past Simple, Past Time Expressions",
-    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer 'When did you last ...?' questions. Don't accept a short answer.",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
     "cards": [
       "do exercise",
       "go swimming",
@@ -99,7 +99,7 @@
     "skill": "SP",
     "title": "What would you do if ...?",
     "language": "2nd Conditional",
-    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer 'When did you last ...?' questions. Don't accept a short answer.",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
     "cards": [
       "(get) an anonymous love letter",
       "your neighbour (play) loud music all night, every night",
@@ -118,6 +118,72 @@
       "(have) the opportunity to time travel once",
       "(have to) choose between winning the lottery or living twice as long",
       "(go) to the hairdesser's and (get) a really bad haircut"
+    ]
+  },
+  {
+    "id": "6",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Exam Questions – B1 (1)",
+    "language": "Conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
+    "cards": [
+      "Do you work or are you a student?",
+      "What do you do/study?",
+      "How do you get to work/school every day?",
+      "What did you do yesterday evening?",
+      "What did you do last weekend?",
+      "Do you think that English will be useful for you in the future? Why?",
+      "Tell us about the people you live with.",
+      "What do you do when you want to relax?",
+      "Do you prefer to relax with friends or alone? Why?",
+      "Is it important to do exercise in your free time? Why? / Why not?",
+      "Is it useful to learn new skills in your free time? Why? / Why not?",
+      "Do you think people spend too much time working or studying these days? Why? / Why not?"
+    ]
+  },
+  {
+    "id": "7",
+    "level": "B2",
+    "skill": "SP",
+    "title": "Exam Questions – B2 (1)",
+    "language": "Conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
+    "cards": [
+      "Where are you from? What do you like about living there?",
+      "How do you like to spend your evenings? What do you do? Why?",
+      "Do you prefer to spend time on your own or with other people? Why?",
+      "Tell us about a film you really like?",
+      "Do you like cooking? What sort of things do you cook?",
+      "Do you normally celebrate speacial occasions with friends or family? Why?",
+      "Tell us about a festival or celebration in your country.",
+      "What did you do on your last birthday?",
+      "Are you going to do anything special this wekend? Where are you going to go? What are you going to do?",
+      "How much TV do you watch in a week? Would you prefer to watch more TV than that or less? Why?",
+      "Tell us about a TV programme you've seen recently.",
+      "Do you use the internet much? Why? / Why not?",
+      "Do you ever listen to the radio? What programmes do you like? Why?"
+    ]
+  },
+  {
+    "id": "8",
+    "level": "C1",
+    "skill": "SP",
+    "title": "Exam Questions – C1 (1)",
+    "language": "Conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Don't accept a short answer.",
+    "cards": [
+      "Where are you from? What do you do there?",
+      "How long have you been studying English?",
+      "What do you enjoy most about learning English?",
+      "What free time activity do you most enjoy? Why?",
+      "What sort of work would you like to do in the future? Why?",
+      "Do you think you spend too much time working or studying? Why? / Why not?",
+      "Do you like using the internet to keep in touch with people?",
+      "Have you celebrated anything recently? How?",
+      "If you could travel to one country in the world, where would you go? Why?",
+      "How important is it to you to spend time with your family? Why? / Why not?",
+      "Who do you think has had the greatest influence on your life? / Why?"
     ]
   }
 ]

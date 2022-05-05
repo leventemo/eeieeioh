@@ -19,8 +19,15 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'A2', title: 'Have you ever ...?', skill: 'SP', language: 'Present Perfect, Past Simple', slug: '/cards', id: 1, activity: 'Cards' },
   { level: 'A2', title: 'How long have you ...?', skill: 'SP', language: 'for/since', slug: '/cards', id: 2, activity: 'Cards' },
   { level: 'B1', title: 'What would you do ...?', skill: 'SP', language: '2nd Conditional', slug: '/cards', id: 5, activity: 'Cards' },
-  { level: 'A2', title: 'Error Correction', skill: 'WR', language: 'spelling', slug: '/duel', id: 1, activity: 'Duel' },
-  { level: 'B2', title: 'Spellcheck', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' },
+  { level: 'B1', title: 'Exam questions B1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 6, activity: 'Cards' },
+  { level: 'B2', title: 'Exam questions B2 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 7, activity: 'Cards' },
+  { level: 'C1', title: 'Exam questions C1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 8, activity: 'Cards' },
+
+
+  /*
+    { level: 'A2', title: 'Error Correction', skill: 'WR', language: 'spelling', slug: '/duel', id: 1, activity: 'Duel' },
+    { level: 'B2', title: 'Spellcheck', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' },
+     */
 ];
 
 @Component({

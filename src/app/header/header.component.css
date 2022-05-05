@@ -4,6 +4,7 @@ mat-toolbar {
   padding: 5px;
   justify-content: space-between;
   top: 0px;
+  margin: 0;
 }
 
 span {
