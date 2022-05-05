@@ -2,7 +2,7 @@ mat-card {
   min-width: 320px;
   max-width: 30%;
   height: 75vh;
-  margin: 5px auto;
+  margin: auto;
 }
 
 mat-card-title,
@@ -32,7 +32,6 @@ mat-card-actions {
 card-header-wrapper {
   display: grid;
   grid-template-columns: 1fr auto;
-  border: 2px solid red;
 }
 
 .icon-inline {
