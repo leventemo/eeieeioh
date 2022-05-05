@@ -13,7 +13,7 @@ export interface Contents {
 }
 
 const ELEMENT_DATA: Contents[] = [
-  { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'alphabet, numbers', slug: '/check-in', id: '', activity: 'Check-in' },
+  /*   { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'alphabet, numbers', slug: '/check-in', id: '', activity: 'Check-in' }, */
   { level: 'A2', title: 'When did you last ...? (1)', skill: 'SP', language: 'Past Simple, Past Time Expressions', slug: '/cards', id: 3, activity: 'Cards' },
   { level: 'A2', title: 'When did you last ...? (2)', skill: 'SP', language: 'Past Simple, Past Time Expressions', slug: '/cards', id: 4, activity: 'Cards' },
   { level: 'A2', title: 'Have you ever ...?', skill: 'SP', language: 'Present Perfect, Past Simple', slug: '/cards', id: 1, activity: 'Cards' },
