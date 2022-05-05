@@ -10,6 +10,6 @@
     <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="!isGameOver()" color="primary" mat-button (click)="next()">{{ btnValue
       }}</button>
-    <button *ngIf="isGameOver()" color="primary" mat-button (click)="redirect()">Contents</button>
+    <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>

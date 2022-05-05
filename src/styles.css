@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  border: 2px solid blueviolet;
 }
 
 main {
