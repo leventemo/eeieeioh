@@ -70,8 +70,6 @@ Cards component
 - [x] first btn "Start"
 - [x] load data from json in assets folder
 - [x] routing params
-- [x]  last btn "Finish" or "Again"
-- [ ] fix counter: gives us "Game over" at eg. 12/12
 - [ ] progbar?
 - [ ] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template

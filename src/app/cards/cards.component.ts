@@ -28,8 +28,8 @@ export class CardsComponent implements OnInit {
     cards: []
   };
 
+  currentPack: string[] = [];
   instructions = () => this.data.instructions;
-  pack: string[] = [];
   cardsTotal = () => this.data.cards.length;
   btnValue = 'Start';
   currentCard = '';
@@ -43,30 +43,24 @@ export class CardsComponent implements OnInit {
   ngOnInit(): void {
     // get the id from the current route
     const routeParams = this.route.snapshot.paramMap;
-    const cardIdIdFromRoute = Number(routeParams.get('id'));
-    console.log(cardIdIdFromRoute);
+    const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdIdFromRoute);
+    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.pack = this.data.cards;
+    this.currentPack = this.data.cards;
   }
 
   next() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
-    this.pack = this.pack.filter((card: string) => card !== this.currentCard);
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
+    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
     this.currentCardCounter++;
     this.btnValue = 'Next';
-
-    if (this.isGameOver()) {
-      this.currentCard = 'Game over';
-      this.btnValue = 'Back to Contents';
-    }
   }
 
   isGameOver() {
-    return this.pack.length === 0;
+    return this.currentPack.length === 0;
   }
 
   redirect() {
