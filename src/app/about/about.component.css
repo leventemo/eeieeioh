@@ -66,3 +66,11 @@ dt {
 dd {
   margin: 0;
 }
+
+lottie-player {
+  min-width: 320px;
+  max-width: 20%;
+  margin: auto;
+  margin-top: 8rem;
+  margin-bottom: -3px;
+}
