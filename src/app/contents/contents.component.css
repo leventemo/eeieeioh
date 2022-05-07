@@ -23,7 +23,7 @@ mat-table {
   box-shadow: none;
   min-width: 320px;
   max-width: 70%;
-  height: 80vh;
+  height: 60vh;
   margin: auto;
 }
 
@@ -63,4 +63,10 @@ mat-cell {
 .mat-cell,
 .mat-header-cell {
   padding: 0 0 0 0;
+}
+
+lottie-player {
+  min-width: 320px;
+  max-width: 20%;
+  margin: auto;
 }
