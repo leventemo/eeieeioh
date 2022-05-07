@@ -9,7 +9,14 @@ interface Data {
   title: string;
   language: string;
   instructions: string;
-  cards: string[];
+  cards: [
+    {
+      sentence: string;
+      keyword: string;
+      targetLanguage: string;
+      answer: string;
+    }
+  ];
 }
 
 @Component({
@@ -24,14 +31,21 @@ export class RewordComponent implements OnInit {
     title: '',
     language: '',
     instructions: '',
-    cards: []
+    cards: [
+      {
+        sentence: '',
+        keyword: '',
+        targetLanguage: '',
+        answer: ''
+      }
+    ]
   };
 
-  currentPack: string[] = [];
+  currentPack: Array<{ sentence: string; keyword: string; targetLanguage: string; answer: string; }> = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
   btnValue = 'Start';
-  currentCard = '';
+  currentCard!: {};
   currentCardCounter = 0;
 
   constructor(
@@ -47,14 +61,16 @@ export class RewordComponent implements OnInit {
     this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+
   }
 
   next() {
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
-    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
+    this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
     this.btnValue = 'Next';
+    console.log(this.currentCard);
   }
 
   isGameOver() {
