@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RewordComponent } from './reword/reword.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
+  { path: 'reword/:id', component: RewordComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
   { path: 'duel', component: DuelComponent },

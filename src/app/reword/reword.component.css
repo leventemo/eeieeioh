@@ -1,0 +1,43 @@
+mat-card {
+  min-width: 320px;
+  max-width: 30%;
+  height: 75vh;
+  margin: auto;
+}
+
+mat-card-title,
+span,
+button {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  line-height: 1.5;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+  color: #7D1AD4;
+}
+
+card-header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}

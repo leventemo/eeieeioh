@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RewordComponent } from './reword/reword.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ContactComponent,
     CheckInComponent,
     DuelComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RewordComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "level": "B2",
+    "skill": "SP",
+    "title": "Colour Idioms",
+    "language": "Colour Idioms",
+    "instructions": "Work in pairs using one phone between you. Take turns to rephrase the sentence using the keyword given.",
+    "cards": [
+      {
+        "sentence": "The job had been offered to her quite unexpectedly.",
+        "targetLanguage": "out of the blue",
+        "keyword": "blue",
+        "answer": "The job had been offered to her out of the blue."
+      },
+      {
+        "sentence": "She let him into the office and gave him one minute before catching him in the act of photocopying the documents.",
+        "keyword": "red",
+        "targetLanguage": "catch sy red-handed",
+        "answer": "She let him into the office and gave him one minute before catching him red-handed."
+      },
+      {
+        "sentence": "All your colleagues must be envious when they see these shoes.",
+        "keyword": "green",
+        "targetLanguage": "turn/be green with envy",
+        "answer": "All your colleagues must be green with envy when they see these shoes."
+      }
+    ]
+  }
+]
