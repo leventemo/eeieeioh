@@ -3,16 +3,25 @@
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
   <mat-card-content>
-    <div>{{ currentCard.sentence }}</div>
-    <div>{{ currentCard.keyword }}</div>
-    <div>{{ currentCard.targetLanguage }}</div>
-    <div>{{ currentCard.answer }}</div>
+    <div class="card-content-half">
+      <div>{{ currentCard.sentence }}</div>
+      <div>{{ currentCard.keyword }}</div>
+    </div>
+    <mat-divider inset></mat-divider>
+    <div class="card-content-half">
+      <div *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
+      <div *ngIf="isAnswerDisplayed">{{ currentCard.answer }}</div>
+    </div>
   </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="!isGameOver()" color="primary" mat-button (click)="next()">{{ btnValue
       }}</button>
+    <button *ngIf="!isClueDisplayed && hasGameStarted()" color="primary" mat-button
+      (click)="displayClue()">Clue</button>
+    <button *ngIf="hasGameStarted() && !isAnswerDisplayed && isClueDisplayed" color="primary" mat-button
+      (click)="displayAnswer()">Answer</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>

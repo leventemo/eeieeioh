@@ -23,6 +23,10 @@ mat-card-content {
   line-height: 3rem;
 }
 
+.card-content-half {
+  height: 50%;
+}
+
 mat-card-actions {
   display: flex;
   justify-content: space-around;

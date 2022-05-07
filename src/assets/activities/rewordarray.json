@@ -9,19 +9,19 @@
     "cards": [
       {
         "sentence": "The job was offered to her quite unexpectedly.",
-        "keyword": "blue",
+        "keyword": "BLUE",
         "targetLanguage": "out of the blue",
         "answer": "The job was offered to her out of the blue."
       },
       {
-        "sentence": "She let him into the office and gave him one minute before catching him in the act of photocopying the documents.",
-        "keyword": "red",
+        "sentence": "She let him into the office and gave him a few minutes before catching him in the act of photocopying the secret documents.",
+        "keyword": "RED",
         "targetLanguage": "catch sy red-handed",
         "answer": "She let him into the office and gave him one minute before catching him red-handed."
       },
       {
-        "sentence": "All your colleagues must be envious when they see these shoes.",
-        "keyword": "green",
+        "sentence": "All your friends will be jealous when they see these shoes.",
+        "keyword": "GREEN",
         "targetLanguage": "turn/be green with envy",
         "answer": "All your colleagues must be green with envy when they see these shoes."
       }
@@ -37,20 +37,68 @@
     "cards": [
       {
         "sentence": "Sentence1",
-        "keyword": "keyword1",
-        "targetLanguage": "target language1",
+        "keyword": "KEYWORD1",
+        "targetLanguage": "give it my best shot",
         "answer": "answer1"
       },
       {
         "sentence": "Sentence2",
-        "keyword": "target language2",
-        "targetLanguage": "keyword2",
+        "keyword": "KEYWORD2",
+        "targetLanguage": "a bit below the belt",
         "answer": "answer2"
       },
       {
         "sentence": "Sentence3",
-        "keyword": "target language3",
-        "targetLanguage": "keyword3",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "No sweat. / Don't sweat it.",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence4",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to be skating on thin ice",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence5",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to get the ball rolling",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence6",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to be barely keeping your head above water",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence7",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to go the full distance",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence8",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to show someone the ropes",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence9",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "the ball is in my/your court now",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence10",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "to jump the gun",
+        "answer": "answer3"
+      },
+      {
+        "sentence": "Sentence11",
+        "keyword": "KEYWORD3",
+        "targetLanguage": "saved by the bell!",
         "answer": "answer3"
       }
     ]

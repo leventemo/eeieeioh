@@ -58,6 +58,8 @@ export class RewordComponent implements OnInit {
     targetLanguage: '',
     answer: ''
   };
+  isClueDisplayed = false;
+  isAnswerDisplayed = false;
   currentCardCounter = 0;
 
   constructor(
@@ -73,16 +75,36 @@ export class RewordComponent implements OnInit {
     this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+    console.log(`isClueDisplayed: ${this.isClueDisplayed}`);
+    console.log(`isAnswerDisplayed: ${this.isClueDisplayed}`);
 
   }
 
   next() {
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
+    this.isClueDisplayed = false;
+    this.isAnswerDisplayed = false;
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
     this.btnValue = 'Next';
+    console.log(`isClueDisplayed: ${this.isClueDisplayed}`);
+    console.log(`isAnswerDisplayed: ${this.isClueDisplayed}`);
 
+  }
+
+  hasGameStarted() {
+    return this.currentCardCounter !== 0;
+  }
+
+  displayClue() {
+    this.isClueDisplayed = true;
+    console.log((this.isClueDisplayed));
+  }
+
+  displayAnswer() {
+    this.isAnswerDisplayed = true;
+    console.log((this.isClueDisplayed));
   }
 
   isGameOver() {
