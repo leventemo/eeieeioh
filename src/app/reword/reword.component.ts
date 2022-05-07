@@ -19,6 +19,13 @@ interface Data {
   ];
 }
 
+interface Card {
+  sentence: string;
+  keyword: string;
+  targetLanguage: string;
+  answer: string;
+}
+
 @Component({
   selector: 'app-reword',
   templateUrl: './reword.component.html',
@@ -41,11 +48,16 @@ export class RewordComponent implements OnInit {
     ]
   };
 
-  currentPack: Array<{ sentence: string; keyword: string; targetLanguage: string; answer: string; }> = [];
+  currentPack: Array<Card> = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
   btnValue = 'Start';
-  currentCard!: {};
+  currentCard: Card = {
+    sentence: '',
+    keyword: '',
+    targetLanguage: '',
+    answer: ''
+  };
   currentCardCounter = 0;
 
   constructor(
@@ -70,7 +82,7 @@ export class RewordComponent implements OnInit {
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
     this.btnValue = 'Next';
-    console.log(this.currentCard);
+
   }
 
   isGameOver() {
