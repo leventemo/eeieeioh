@@ -3,9 +3,6 @@
 ## todos
 
 CARDS
-- [ ] shorten width of `main`?
-- [ ] shorten height of cards (Internet, Opera)
-
 - [x] set up Angular
 - [x] set up Angular Material: custom theme
 - [x] create material module
@@ -19,7 +16,7 @@ CARDS
 - [ ] colour palette: more palettes? – <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
 - [x] create header & footer components
 - [x] make footer icon a link to Home
-- [ ] make header icon a link to Home
+- [x] make header icon a link to Home
 - [ ] set up nav: <https://code-maze.com/angular-material-navigation/>
 - [x] lottie: <https://stackoverflow.com/questions/56825421/install-lottie-player-to-angular>
 * <https://lottiefiles.com/>
@@ -28,6 +25,8 @@ CARDS
 - [ ] try global styles with CSS variables in `styles.css`
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
+
+Header Component
 
 Contact page
 - [x] create component
