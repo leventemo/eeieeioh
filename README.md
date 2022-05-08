@@ -23,6 +23,7 @@
 - [ ] animation on active links in nav
 - [ ] try global styles with CSS variables in `styles.css`
 - [ ] add "Done" Pablita illustration to activities
+- [ ] try serving illustrations locally, rather than from assets links
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
 

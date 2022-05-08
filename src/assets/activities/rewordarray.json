@@ -20,10 +20,58 @@
         "answer": "She let him into the office and gave him one minute before catching him red-handed."
       },
       {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "once in a blue moon",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to have the blues",
+        "answer": ""
+      },
+      {
         "sentence": "All your friends will be jealous when they see these shoes.",
         "keyword": "GREEN",
-        "targetLanguage": "turn/be green with envy",
+        "targetLanguage": "to turn/be green with envy",
         "answer": "All your colleagues must be green with envy when they see these shoes."
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to be in the black",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to pass with flying colours",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to see red",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to be tickled pink",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to give the green light to something",
+        "answer": ""
+      },
+      {
+        "sentence": "",
+        "keyword": "",
+        "targetLanguage": "to be in the red",
+        "answer": ""
       }
     ]
   },
