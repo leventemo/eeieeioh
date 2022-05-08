@@ -2,7 +2,6 @@
 
 ## todos
 
-CARDS
 - [x] set up Angular
 - [x] set up Angular Material: custom theme
 - [x] create material module
@@ -23,6 +22,7 @@ CARDS
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 - [ ] animation on active links in nav
 - [ ] try global styles with CSS variables in `styles.css`
+- [ ] add "Done" Pablita illustration to activities
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
 

@@ -1,10 +1,13 @@
 .img-wrapper {
-  display: grid;
+  min-width: 320px;
+  max-width: 45%;
+  height: 80vh;
+  margin: auto;
+  text-align: center;
 }
 
-img {
-  min-width: 400px;
-  max-width: 53%;
-  height: 80vh;
-  margin: 0 auto;
+h1,
+h2 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 0;
 }
