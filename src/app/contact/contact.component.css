@@ -2,7 +2,7 @@ mat-card {
   display: grid;
   grid-template-columns: 1fr;
   margin: 3rem auto 0 auto;
-  min-width: 350px;
+  min-width: 320px;
   max-width: 33%;
 }
 
