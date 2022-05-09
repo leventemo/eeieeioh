@@ -51,7 +51,6 @@ export class RewordComponent implements OnInit {
   currentPack: Array<Card> = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
-  btnValue = 'Start';
   currentCard: Card = {
     sentence: '',
     keyword: '',
@@ -87,10 +86,6 @@ export class RewordComponent implements OnInit {
     this.isAnswerDisplayed = false;
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
-    this.btnValue = 'Next';
-    console.log(`isClueDisplayed: ${this.isClueDisplayed}`);
-    console.log(`isAnswerDisplayed: ${this.isClueDisplayed}`);
-
   }
 
   hasGameStarted() {

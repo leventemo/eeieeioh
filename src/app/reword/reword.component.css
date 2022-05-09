@@ -27,6 +27,10 @@ mat-card-content {
   height: 50%;
 }
 
+.clue {
+  font-style: italic;
+}
+
 mat-card-actions {
   display: flex;
   justify-content: space-around;

@@ -9,18 +9,18 @@
     </div>
     <mat-divider inset></mat-divider>
     <div class="card-content-half">
-      <div *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
+      <div class="clue" *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
       <div *ngIf="isAnswerDisplayed">{{ currentCard.answer }}</div>
     </div>
   </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!isGameOver()" color="primary" mat-button (click)="next()">{{ btnValue
-      }}</button>
-    <button *ngIf="!isClueDisplayed && hasGameStarted()" color="primary" mat-button
+    <button *ngIf="!isGameOver() && !hasGameStarted()" color="primary" mat-button (click)="next()">Start</button>
+    <button *ngIf="!isGameOver() && isAnswerDisplayed" color="primary" mat-button (click)="next()">Next</button>
+    <button *ngIf="!isClueDisplayed && hasGameStarted() && !isAnswerDisplayed" color="primary" mat-button
       (click)="displayClue()">Clue</button>
-    <button *ngIf="hasGameStarted() && !isAnswerDisplayed && isClueDisplayed" color="primary" mat-button
+    <button *ngIf="hasGameStarted() && !isAnswerDisplayed" color="primary" mat-button
       (click)="displayAnswer()">Answer</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
