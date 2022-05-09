@@ -20,58 +20,58 @@
         "answer": "She let him into the office and gave him one minute before catching him red-handed."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "Frankly, I still can't resist the temptation to have some Nutella very occasionally while making breakfast for the kids.",
+        "keyword": "BLUE",
         "targetLanguage": "once in a blue moon",
-        "answer": ""
+        "answer": "Frankly, I still can't resist the temptation to have some Nutella once in a blue moon while making breakfast for the kids."
       },
       {
-        "sentence": "",
-        "keyword": "",
-        "targetLanguage": "to have the blues",
-        "answer": ""
+        "sentence": "It always makes me sad when October evenings start drawing in earlier and earlier.",
+        "keyword": "BLUES",
+        "targetLanguage": "to get/have the blues",
+        "answer": "I always get the blues when October evenings start drawing in earlier and earlier."
       },
       {
         "sentence": "All your friends will be jealous when they see these shoes.",
         "keyword": "GREEN",
         "targetLanguage": "to turn/be green with envy",
-        "answer": "All your colleagues must be green with envy when they see these shoes."
+        "answer": "All your colleagues will be green with envy when they see these shoes."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "The economy is soaring, we have even paid off our state debts.",
+        "keyword": "BLACK",
         "targetLanguage": "to be in the black",
-        "answer": ""
+        "answer": "The economy is soaring, even the state budget is back in the black."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "She passed the exam with a very high mark.",
+        "keyword": "COLOURS",
         "targetLanguage": "to pass with flying colours",
-        "answer": ""
+        "answer": "She passed the exam with flying colours."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "People who drop litter in the street make me really angry.",
+        "keyword": "RED",
         "targetLanguage": "to see red",
-        "answer": ""
+        "answer": "People who drop litter in the street make me see red."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "As the lads left the studios they signed autographs for fans - who must've been happy-clappy.",
+        "keyword": "PINK",
         "targetLanguage": "to be tickled pink",
-        "answer": ""
+        "answer": "As the lads left the studios they signed autographs for fans - who must've been tickled pink."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "I was allowed to leave Barcelona FC under certain conditions, which have been met.",
+        "keyword": "GREEN",
         "targetLanguage": "to give the green light to something",
-        "answer": ""
+        "answer": "Barcelona FC gave me a green light to leave under certain conditions, which have been met."
       },
       {
-        "sentence": "",
-        "keyword": "",
+        "sentence": "If you owe money to your bank, you get charged 30p for each transaction.",
+        "keyword": "RED",
         "targetLanguage": "to be in the red",
-        "answer": ""
+        "answer": "If you are in the red, you get charged 30p for each transaction."
       }
     ]
   },
