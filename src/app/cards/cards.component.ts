@@ -34,6 +34,8 @@ export class CardsComponent implements OnInit {
   btnValue = 'Start';
   currentCard = '';
   currentCardCounter = 0;
+  isItAllDone = false;
+
 
   constructor(
     public router: Router,
@@ -52,15 +54,16 @@ export class CardsComponent implements OnInit {
   }
 
   next() {
+    if (this.btnValue === 'Done') {
+      this.isItAllDone = true;
+      return;
+    }
+
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
     this.currentCardCounter++;
-    this.btnValue = 'Next';
-  }
-
-  isGameOver() {
-    return this.currentPack.length === 0;
+    this.btnValue = this.currentPack.length === 0 ? 'Done' : 'Next';
   }
 
   redirect() {

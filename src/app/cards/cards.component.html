@@ -3,12 +3,17 @@
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
   <mat-card-content>
-    <div>{{ currentCard }}</div>
+    <div *ngIf="isItAllDone">
+      <lottie-player class="whole-page-img" src="https://assets6.lottiefiles.com/packages/lf20_h6j2obhv.json"
+        background="transparent" speed="1" loop autoplay>
+      </lottie-player>
+    </div>
+    <div *ngIf="!isItAllDone">{{ currentCard }}</div>
   </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!isGameOver()" color="primary" mat-button (click)="next()">{{ btnValue
+    <button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">{{ btnValue
       }}</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
