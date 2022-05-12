@@ -185,5 +185,27 @@
       "How important is it to you to spend time with your family? Why? / Why not?",
       "Who do you think has had the greatest influence on your life? / Why?"
     ]
+  },
+  {
+    "id": "9",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Should have asked mom",
+    "language": "should have done",
+    "instructions": "Work in small groups using one phone between you. Take turns to tell your partners a true or made-up story to elicit the sentence on your cards. Keep adding details until you get the correct answer. The student who comes up with the same sentence first gets a point. Don't accept variations, the sentence needs to be exactly what's on the card.",
+    "cards": [
+      "You should have left earlier.",
+      "You should have worked harder.",
+      "You should have asked her first.",
+      "You should have been more careful.",
+      "You should have taken an umbrella.",
+      "You should have gone to bed earlier.",
+      "You shouldn’t have agreed to it.",
+      "You should have listened to his advice.",
+      "You shouldn’t have eaten so much.",
+      "You shouldn’t have bought it.",
+      "You shouldn’t have said that to her.",
+      "You shouldn’t have gone to that party."
+    ]
   }
 ]
