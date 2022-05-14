@@ -77,7 +77,7 @@ a {
 
   background:
     linear-gradient(to right,
-      rgba(169, 104, 226, 1),
+      rgba(169, 104, 226, .6),
       rgba(125, 26, 212, 1)),
     linear-gradient(to right,
       rgba(125, 26, 212, 1),
@@ -86,7 +86,6 @@ a {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
-
 }
 
 a:link {
