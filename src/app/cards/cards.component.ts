@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { Utils } from '../utils';
 import allCardDecksCollection from '../../assets/activities/cardsarray.json';
@@ -39,7 +41,8 @@ export class CardsComponent implements OnInit {
 
   constructor(
     public router: Router,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -51,6 +54,10 @@ export class CardsComponent implements OnInit {
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+  }
+
+  openDialog() {
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
   }
 
   next() {

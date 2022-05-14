@@ -1,0 +1,9 @@
+.dialog-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+button {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  line-height: 1.5;
+}

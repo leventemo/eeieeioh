@@ -12,6 +12,11 @@ button {
   line-height: 1.5;
 }
 
+mat-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
 mat-card-content {
   display: flex;
   flex-direction: column;

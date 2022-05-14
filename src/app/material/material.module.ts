@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const material = [
   MatButtonModule,
@@ -16,7 +17,8 @@ const material = [
   MatInputModule,
   MatFormFieldModule,
   MatIconModule,
-  MatDividerModule
+  MatDividerModule,
+  MatDialogModule
 ]
 
 @NgModule({

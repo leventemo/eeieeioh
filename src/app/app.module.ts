@@ -17,6 +17,7 @@ import { CheckInComponent } from './check-in/check-in.component';
 import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
+import { DialogInfoComponent } from './dialog-info/dialog-info.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RewordComponent } from './reword/reword.component';
     CheckInComponent,
     DuelComponent,
     NotFoundComponent,
-    RewordComponent
+    RewordComponent,
+    DialogInfoComponent
   ],
   imports: [
     BrowserModule,
