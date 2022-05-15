@@ -65,12 +65,6 @@ mat-cell {
   padding: 0 0 0 0;
 }
 
-lottie-player {
-  min-width: 320px;
-  max-width: 20%;
-  margin: auto;
-}
-
 a {
   color: #7D1AD4;
   font-weight: 400;

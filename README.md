@@ -22,7 +22,8 @@
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 - [ ] animation on active links in nav
 - [ ] try global styles with CSS variables in `styles.css`
-- [ ] add "Done" Pablita illustration to activities
+- [x] add "Done" Pablita illustration to Cards
+- [ ] add "Done" Pablita illustration to Reword
 - [ ] try serving illustrations locally, rather than from assets links
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
@@ -74,8 +75,7 @@ Cards component
 - [x] first btn "Start"
 - [x] load data from json in assets folder
 - [x] routing params
-- [ ] progbar?
-- [ ] info modal
+- [x] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
 
 Duel component
@@ -106,10 +106,10 @@ Duel component
 Not Found Component
 - [x] create component
 - [x] set up routing
-- [ ] find Pablita animated illustration
+- [x] find Pablita animated illustration
 
 Contents Component
-- [ ] narrow "level" column; wastes space
+- [x] narrow "level" column; wastes space
 set up routing with params
 - [x] cards
 - [ ] check-in
@@ -118,6 +118,7 @@ set up routing with params
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
 - [ ] routing params: <https://angular.io/guide/router>
+- [ ] fix bug: butterfly animation cover last item on list on mobiles
 
 pass data between components:
 <https://www.youtube.com/watch?v=I317BhehZKM> Fireship

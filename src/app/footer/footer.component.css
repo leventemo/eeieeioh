@@ -1,8 +1,7 @@
 footer {
   font-family: 'Ubuntu Condensed', sans-serif;
   color: #454746;
-  background-color: #F5F5F5;
-  padding: 0 0.5rem 2rem 0.5rem;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -28,6 +27,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
+  background-color: #F5F5F5;
 }
 
 .column-item {
@@ -45,8 +45,14 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /*   border: 2px solid blueviolet;
- */
+}
+
+lottie-player {
+  min-width: 320px;
+  max-width: 20%;
+  margin: auto;
+  margin-top: 8rem;
+  margin-bottom: -3px;
 }
 
 @media only screen and (max-width: 1090px) {
@@ -56,10 +62,6 @@ a {
     grid-gap: 10px 10px;
   }
 
-  footer {
-    padding: 0 0.5rem 0 0.5rem;
-  }
-
 }
 
 @media only screen and (max-width: 580px) {
@@ -67,10 +69,6 @@ a {
   .columns-container {
     grid-template-columns: 1fr;
     grid-gap: 10px 10px;
-  }
-
-  footer {
-    padding: 0 0.5rem 0 0.5rem;
   }
 
 }
