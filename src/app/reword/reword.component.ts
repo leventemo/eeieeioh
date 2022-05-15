@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { Utils } from '../utils';
 import rewordCollection from '../../assets/activities/rewordarray.json';
@@ -63,7 +65,8 @@ export class RewordComponent implements OnInit {
 
   constructor(
     public router: Router,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    public dialog: MatDialog) {
   }
   ngOnInit(): void {
     // get the id from the current route
@@ -76,7 +79,10 @@ export class RewordComponent implements OnInit {
     this.currentPack = this.data.cards;
     console.log(`isClueDisplayed: ${this.isClueDisplayed}`);
     console.log(`isAnswerDisplayed: ${this.isClueDisplayed}`);
+  }
 
+  openDialog() {
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
   }
 
   next() {

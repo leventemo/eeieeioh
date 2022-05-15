@@ -3,6 +3,20 @@
   margin: auto;
 }
 
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+mat-dialog-content {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
   line-height: 1.5;
