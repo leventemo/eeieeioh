@@ -22,8 +22,6 @@
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 - [ ] animation on active links in nav
 - [ ] try global styles with CSS variables in `styles.css`
-- [x] add "Done" Pablita illustration to Cards
-- [ ] add "Done" Pablita illustration to Reword
 - [ ] try serving illustrations locally, rather than from assets links
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
@@ -77,6 +75,7 @@ Cards component
 - [x] routing params
 - [x] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
+- [x] add "Done" Pablita illustration to Cards
 
 Duel component
 - [x] create component
@@ -103,6 +102,9 @@ Duel component
 |9        | 2 |
 |10       | 1 |
 
+Reword Component
+- [ ] add "Done" Pablita illustration
+
 Not Found Component
 - [x] create component
 - [x] set up routing
@@ -122,3 +124,4 @@ set up routing with params
 
 pass data between components:
 <https://www.youtube.com/watch?v=I317BhehZKM> Fireship
+

@@ -6,26 +6,19 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { Utils } from '../utils';
 import rewordCollection from '../../assets/activities/rewordarray.json';
 
-interface Data {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: [
-    {
-      sentence: string;
-      keyword: string;
-      targetLanguage: string;
-      answer: string;
-    }
-  ];
+interface Card {
+  sentence?: string;
+  keyword?: string;
+  targetLanguage?: string;
+  answer?: string;
 }
 
-interface Card {
-  sentence: string;
-  keyword: string;
-  targetLanguage: string;
-  answer: string;
+interface Data {
+  id?: number;
+  title?: string;
+  language?: string;
+  instructions?: string;
+  cards: Card[];
 }
 
 @Component({
@@ -33,32 +26,15 @@ interface Card {
   templateUrl: './reword.component.html',
   styleUrls: ['./reword.component.css']
 })
+
 export class RewordComponent implements OnInit {
 
-  data: Data = {
-    id: 0,
-    title: '',
-    language: '',
-    instructions: '',
-    cards: [
-      {
-        sentence: '',
-        keyword: '',
-        targetLanguage: '',
-        answer: ''
-      }
-    ]
-  };
+  data: Data = { cards: [] };
 
   currentPack: Array<Card> = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
-  currentCard: Card = {
-    sentence: '',
-    keyword: '',
-    targetLanguage: '',
-    answer: ''
-  };
+  currentCard: Card = {};
   isClueDisplayed = false;
   isAnswerDisplayed = false;
   currentCardCounter = 0;
@@ -77,8 +53,6 @@ export class RewordComponent implements OnInit {
     this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
-    console.log(`isClueDisplayed: ${this.isClueDisplayed}`);
-    console.log(`isAnswerDisplayed: ${this.isClueDisplayed}`);
   }
 
   openDialog() {
@@ -98,14 +72,8 @@ export class RewordComponent implements OnInit {
     return this.currentCardCounter !== 0;
   }
 
-  displayClue() {
-    this.isClueDisplayed = true;
-    console.log((this.isClueDisplayed));
-  }
-
-  displayAnswer() {
-    this.isAnswerDisplayed = true;
-    console.log((this.isClueDisplayed));
+  isNextBtnVisible() {
+    return !this.isGameOver() && (this.isAnswerDisplayed || !this.hasGameStarted())
   }
 
   isGameOver() {
