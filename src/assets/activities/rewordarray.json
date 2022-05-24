@@ -79,6 +79,70 @@
     "id": "2",
     "level": "B2",
     "skill": "SP",
+    "title": "Body Idioms",
+    "language": "Colour Idioms",
+    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. Take turns to rephrase the sentences using the keyword given. In each turn, give your partner 2 points for a correct answer without using the \"Clue\" button or 1 point if they need to click on it.",
+    "cards": [
+      {
+        "sentence": "So why are global leaders pretending not to notice basically all the environmental issues?",
+        "keyword": "EYE",
+        "targetLanguage": "to turn a blind eye to something",
+        "answer": "So why are global leaders turning a blind eye to basically all the environmental issues?"
+      },
+      {
+        "sentence": "He was going to marry her but he got too frightened about it on the day of the wedding. They haven't been in touch since.",
+        "keyword": "FEET",
+        "targetLanguage": "to get cold feet",
+        "answer": "He was going to marry her but he got cold feet on the day of the wedding. They haven't been in touch since."
+      },
+      {
+        "sentence": "The kids have no reason to change their behavior because you are not firm and clear about what they can do.",
+        "keyword": "FOOT",
+        "targetLanguage": "to put your foot down",
+        "answer": "The kids have no reason to change their behavior because you just don't put your foot down."
+      },
+      {
+        "sentence": "I was really nervous as I was looking up my exam results on the website.",
+        "keyword": "MOUTH",
+        "targetLanguage": "my heart was in my mouth",
+        "answer": "My heart was in my mouth as I was looking up my exam results on the website."
+      },
+      {
+        "sentence": "You need to stay calm if you want to remain in control and win this match.",
+        "keyword": "HEAD",
+        "targetLanguage": "keep your head",
+        "answer": "You need to keep your head if you want to remain in control and win this match."
+      },
+      {
+        "sentence": "Apparently, the two of them have never agreed on anything really.",
+        "keyword": "EYE",
+        "targetLanguage": "to see eye to eye with someone",
+        "answer": "Apparently, the two of them have never seen eye to eye on anything really."
+      },
+      {
+        "sentence": "No offence, but you really shouldn't try to interfere in things you just don't understand.",
+        "keyword": "NOSE",
+        "targetLanguage": "to stick/poke your nose into something",
+        "answer": "No offence, but you really shouldn't be sticking your nose into things you just don't understand."
+      },
+      {
+        "sentence": "Thank you for keeping this secret and making this party an absolutely perfect surprise.",
+        "keyword": "TONGUE",
+        "targetLanguage": "to hold your tongue",
+        "answer": "Thank you for holding your tongues and making this party an absolutely perfect surprise."
+      },
+      {
+        "sentence": "We can't do much but we all hope to see a favourable outcome in the end.",
+        "keyword": "FINGERS",
+        "targetLanguage": "to keep your fingers crossed for something",
+        "answer": "We can't do much but we all keep our fingers crossed for a favourable outcome in the end."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "level": "B2",
+    "skill": "SP",
     "title": "Sports Idioms",
     "language": "Sports Idioms",
     "instructions": "Work in pairs using one phone between you. Take turns to rephrase the sentence using the keyword given.",
