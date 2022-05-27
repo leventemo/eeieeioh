@@ -22,9 +22,9 @@
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 - [ ] animation on active links in nav
 - [ ] try global styles with CSS variables in `styles.css`
-- [ ] try serving illustrations locally, rather than from assets links
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
+- [x] try serving illustrations locally, rather than from assets links
 
 Header Component
 
@@ -114,6 +114,7 @@ Contents Component
 - [x] narrow "level" column; wastes space
 set up routing with params
 - [x] cards
+- [x] reword
 - [ ] check-in
 - [ ] duel
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
@@ -121,6 +122,7 @@ set up routing with params
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
 - [ ] routing params: <https://angular.io/guide/router>
 - [ ] fix bug: butterfly animation cover last item on list on mobiles
+- [ ] pagination
 
 pass data between components:
 <https://www.youtube.com/watch?v=I317BhehZKM> Fireship

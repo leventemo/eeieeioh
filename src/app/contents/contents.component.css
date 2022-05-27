@@ -23,7 +23,6 @@ mat-table {
   box-shadow: none;
   min-width: 320px;
   max-width: 70%;
-  height: 60vh;
   margin: auto;
 }
 
