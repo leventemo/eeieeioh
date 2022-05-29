@@ -5,7 +5,7 @@
     "skill": "SP",
     "title": "Colour Idioms",
     "language": "Colour Idioms",
-    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. Take turns to rephrase the sentences using the keyword given. In each turn, give your partner 2 points for a correct answer without using the \"Clue\" button or 1 point if they need to click on it.",
+    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. Take turns to rephrase the sentences using the keyword given. In each turn, give your partner 2 points for a correct answer without using the \"Clue\" button or 1 point if they need to click on it. The counter buttons are only active when the answer is displayed.",
     "cards": [
       {
         "sentence": "The job was offered to her quite unexpectedly.",
@@ -72,6 +72,12 @@
         "keyword": "RED",
         "targetLanguage": "to be in the red",
         "answer": "If you are in the red, you get charged 30p for each transaction."
+      },
+      {
+        "sentence": "She hasn't worked a day in her life. She was born into a rich family.",
+        "keyword": "SILVER",
+        "targetLanguage": "to be born with a silver spoon in his/her mouth",
+        "answer": "She hasn't worked a day in her life. She was born with a silver spoon in her mouth."
       }
     ]
   },
@@ -81,7 +87,7 @@
     "skill": "SP",
     "title": "Body Idioms",
     "language": "Colour Idioms",
-    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. Take turns to rephrase the sentences using the keyword given. In each turn, give your partner 2 points for a correct answer without using the \"Clue\" button or 1 point if they need to click on it.",
+    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. Take turns to rephrase the sentences using the keyword given. In each turn, give your partner 2 points for a correct answer without using the \"Clue\" button or 1 point if they need to click on it. The counter buttons are only active when the answer is displayed.",
     "cards": [
       {
         "sentence": "So why are global leaders pretending not to notice basically all the environmental issues?",
@@ -136,6 +142,12 @@
         "keyword": "FINGERS",
         "targetLanguage": "to keep your fingers crossed for something",
         "answer": "We can't do much but we all keep our fingers crossed for a favourable outcome in the end."
+      },
+      {
+        "sentence": "If you could help me here, I would appreciate that very much.",
+        "keyword": "HAND",
+        "targetLanguage": "to give somebody a hand",
+        "answer": "If you could give me a hand here, I would appreciate that very much."
       }
     ]
   },

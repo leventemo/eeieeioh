@@ -5,18 +5,26 @@
   </mat-card-title>
 
   <mat-divider inset></mat-divider>
+
   <mat-card-content>
-    <div class="card-content-half">
-      <div>{{ currentCard.sentence }}</div>
-      <div>{{ currentCard.keyword }}</div>
+    <div class="card-content-big">
+      <div class="text">{{ currentCard.sentence }}</div>
+      <div class="text">{{ currentCard.keyword }}</div>
     </div>
     <mat-divider inset></mat-divider>
-    <div class="card-content-half">
+    <div class="card-content-big">
       <div class="clue" *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
       <div *ngIf="isAnswerDisplayed">{{ currentCard.answer }}</div>
     </div>
+
+    <div class="card-content-small">
+      <button class="counter" [value]="0" (click)="increment($event)" [disabled]="!isAnswerDisplayed">0</button>
+      <button class="counter" [value]="0" (click)="increment($event)" [disabled]="!isAnswerDisplayed">0</button>
+    </div>
   </mat-card-content>
+
   <mat-divider inset></mat-divider>
+
   <mat-card-actions align="end">
     <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="isNextBtnVisible()" color="primary" mat-button (click)="next()">

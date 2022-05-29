@@ -24,12 +24,45 @@ mat-card-content {
   height: 85%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  margin-bottom: 0;
 }
 
-.card-content-half {
-  height: 50%;
+.text,
+.clue {
+  margin-bottom: .8rem;
+}
+
+.card-content-big {
+  height: 39%;
+}
+
+.card-content-small {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  color: #CE0095;
+  width: 3rem;
+  margin: auto;
+  font-size: 2rem;
+  background-color: #FFFFFF;
+  border: none;
+  animation: blinker 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.counter:disabled {
+  color: #808080;
+  border: none;
+  animation: none;
 }
 
 .clue {

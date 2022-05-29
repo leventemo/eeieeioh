@@ -38,6 +38,7 @@ export class RewordComponent implements OnInit {
   isClueDisplayed = false;
   isAnswerDisplayed = false;
   currentCardCounter = 0;
+  currentPlayer = 'A';
 
   constructor(
     public router: Router,
@@ -66,6 +67,20 @@ export class RewordComponent implements OnInit {
     this.isAnswerDisplayed = false;
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
+  }
+
+  increment(event: Event) {
+    const target = event.target as HTMLInputElement;
+
+    console.log(this.data.cards.length);
+
+    if (Number(target.value) === this.data.cards.length * 2) {
+      return;
+    }
+
+    target.value = (Number(target.value) + 1).toString();
+    target.textContent = target.value;
+
   }
 
   hasGameStarted() {

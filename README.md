@@ -103,6 +103,8 @@ Duel component
 |10       | 1 |
 
 Reword Component
+- [ ] refactor counter with active & disabled classes
+- [ ] make only one counter active at a time (use currentPLayer variable)
 - [ ] add "Done" Pablita illustration
 
 Not Found Component
