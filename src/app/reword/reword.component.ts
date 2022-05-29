@@ -74,7 +74,7 @@ export class RewordComponent implements OnInit {
 
     console.log(this.data.cards.length);
 
-    if (Number(target.value) === this.data.cards.length * 2) {
+    if (Number(target.value) === this.data.cards.length) {
       return;
     }
 
