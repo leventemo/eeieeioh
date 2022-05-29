@@ -18,6 +18,7 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'A2', title: 'When did you last ...? (2)', skill: 'SP', language: 'Past Simple, Past Time Expressions', slug: '/cards', id: 4, activity: 'Cards' },
   { level: 'A2', title: 'Have you ever ...?', skill: 'SP', language: 'Present Perfect, Past Simple', slug: '/cards', id: 1, activity: 'Cards' },
   { level: 'A2', title: 'How long have you ...?', skill: 'SP', language: 'for/since', slug: '/cards', id: 2, activity: 'Cards' },
+  { level: 'A2', title: 'Tim\'s a very good example', skill: 'SP', language: 'personality adjectives', slug: '/cards', id: 12, activity: 'Cards' },
   { level: 'B1', title: 'What would you do ...?', skill: 'SP', language: '2nd Conditional', slug: '/cards', id: 5, activity: 'Cards' },
   { level: 'B1', title: 'Exam questions B1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 6, activity: 'Cards' },
   { level: 'B1', title: 'Should have asked mom', skill: 'SP', language: 'should have done', slug: '/cards', id: 9, activity: 'Cards' },

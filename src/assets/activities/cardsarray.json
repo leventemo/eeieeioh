@@ -251,5 +251,35 @@
       "It's OK to cheat in exams – everybody does it.",
       "Students should be allowed more time to revise before exams."
     ]
+  },
+  {
+    "id": "12",
+    "level": "A2",
+    "skill": "SP",
+    "title": "Tim's a very good example",
+    "language": "personality adjectives",
+    "instructions": "Work in pairs using one phone between you. Think about your friends and family members and give examples for each personality type giving details.",
+    "cards": [
+      "bossy",
+      "outgoing",
+      "easy-going",
+      "selfish",
+      "confident",
+      "quick-tempered",
+      "trustworthy",
+      "stubborn",
+      "forgetful",
+      "optimistic",
+      "pessimistic",
+      "cheerful",
+      "neat",
+      "helpful",
+      "active",
+      "messy",
+      "noisy",
+      "unpleasant",
+      "moody",
+      "annoying"
+    ]
   }
 ]
