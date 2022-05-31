@@ -288,11 +288,11 @@
     "skill": "SP",
     "title": "Yes-No Game",
     "language": "fillers, hesitating",
-    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. However, you are not allowed to use the words 'yes' or 'no' and you're not allowed to give a clear positive or negative answer. You need to speak like (some) politians do.",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. Use another phone to time your partner's responses. It's important that you are not allowed to use the words 'yes' or 'no' and you're not allowed to give a clear positive or negative answer. You need to speak like (some) politians do.",
     "cards": [
       "Are you enjoying this class?",
       "Are you going to have dinner today?",
-      "Did you ever like Justin Bieber?",
+      "Did you, at any point in your life, like Justin Bieber?",
       "Do you smoke?",
       "Do you think UFOs exist?",
       "Do you like today's weather?",
@@ -302,12 +302,14 @@
       "Have you ever seen a Spiderman movie?",
       "Have you ever fallen in love at first sight?",
       "Is your hair black?",
-      "Do you think you will survive this course?",
       "Do you think Real Madrid is the best football team in the world?",
       "Are you going out tonight?",
       "Can you play the musical instrument called the triangle?",
       "Are you French?",
-      "Are kangaroos humans?"
+      "Are kangaroos humans?",
+      "Have you ever seen an elephant on a cherry tree?",
+      "Are you vegetarian?",
+      "Did you clean your shoes yesterday?"
     ]
   }
 ]

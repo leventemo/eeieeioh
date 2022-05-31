@@ -77,6 +77,12 @@ Cards component
 - [ ] card prompts in an array so multiple lines can be rendered in template
 - [x] add "Done" Pablita illustration to Cards
 
+Timed_Cards Component
+* for
+  + Yes-No Game
+  + Just a minute
+- [ ] create component
+
 Duel component
 - [x] create component
 - [x] routing
