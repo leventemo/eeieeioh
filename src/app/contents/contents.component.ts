@@ -27,6 +27,7 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'B2', title: 'Body Idioms', skill: 'SP', language: 'idioms', slug: '/reword', id: 2, activity: 'Reword' },
   { level: 'B2', title: 'Colour Idioms', skill: 'SP', language: 'idioms', slug: '/reword', id: 1, activity: 'Reword' },
   { level: 'B2', title: 'Exam questions B2 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 7, activity: 'Cards' },
+  { level: 'B2', title: 'Yes-No Game', skill: 'SP', language: 'fillers, hesitating', slug: '/cards', id: 13, activity: 'Cards' },
   { level: 'C1', title: 'Exam questions C1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 8, activity: 'Cards' },
 
 
