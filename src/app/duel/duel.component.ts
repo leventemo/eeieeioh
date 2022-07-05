@@ -20,7 +20,7 @@ const data = {
   ]
 }
 
-interface CurrentPlayer {
+interface Player {
   name: string;
   counter: number;
   timer: number;
@@ -35,82 +35,82 @@ export class DuelComponent implements OnInit {
 
   title = data.title;
   instructions = data.instructions;
-  clickedOnce = false;
   pack = data.cards;
   currentCard = [''];
+  clickedOnce = false;
   currentCardNumber = 0;
   cardsTotal = data.cards.length;
+  timeAllowed = 4;
 
-  playerA: CurrentPlayer = { name: 'playerA', counter: 1, timer: 0 };
-  playerB: CurrentPlayer = { name: 'playerB', counter: 2, timer: 0 };
-  currentPlayer: CurrentPlayer = this.playerA;
+  playerA: Player = { name: 'playerA', counter: 1, timer: 0 };
+  playerB: Player = { name: 'playerB', counter: 2, timer: 0 };
+  currentPlayer: Player = this.playerA;
+  currentCorrectCard = '';
 
   constructor() { }
 
   ngOnInit(): void { }
 
   start() {
-    if (this.currentPlayer === this.playerA) {
-      const counter = interval(1);
-      const subscription = counter.pipe(take(1000));
-      subscription.subscribe((n) => {
-        this.currentPlayer.timer = n;
-        console.log(`${this.currentPlayer.name}: ${n}`);
-        if (n >= 999) {
-          this.currentPlayer.timer = 0;
-          this.currentPlayer = this.playerB;
-          if (this.pack.length === 0) {
-            return;
-          }
-          this.start();
-        }
-      });
-    } else if (this.currentPlayer === this.playerB) {
-      const counter = interval(1);
-      const subscription = counter.pipe(take(1000));
-      subscription.subscribe((n) => {
-        this.currentPlayer.timer = n;
-        console.log(`${this.currentPlayer.name}: ${n}`);
-        if (n >= 999) {
-          this.currentPlayer.timer = 0;
-          this.currentPlayer = this.playerA;
-          if (this.pack.length === 0) {
-            return;
-          }
-          this.start();
-        }
-      });
-    }
+    const observable = interval(1000);
+
+    observable.subscribe((value) => {
+      this.currentPlayer.timer = value;
+      console.log(`${this.currentPlayer.name}: ${this.currentPlayer.timer}`);
+
+      if (value >= this.timeAllowed) {
+        this.switchPlayers();
+      }
+    })
+  };
+
+  switchPlayers() {
+
+    // toggle players
+    this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
 
     this.displayCard();
-    this.clickedOnce = true;
-
+    console.log('new question is coming here not elsewhere');
   }
 
   displayCard() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
-    this.pack = this.pack.filter(card => card !== this.currentCard);
-    this.currentCardNumber++;
-    const optionsRando = Utils.getRandom(10, 1);
-    if (optionsRando % 2) {
-      [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
-    }
+    this.selectCurrentCard();
+    this.currentCorrectCard = this.currentCard[0];
+    this.randomizeCardsDisplay();
   }
 
-  onClick(event: Event) {
-
-    // toggle timers
-
-
-    const btnclicked = (event.target as HTMLInputElement);
+  onClick(val: string) {
     console.log(this.currentCard); //this is already shuffled/randomized for display; need to create a variable for randomizedCurrentCard (for display & check)
-    console.log(btnclicked.textContent);
-    if (btnclicked.textContent === this.currentCard[0]) {
+    console.log(val);
+    if (val === this.currentCard[0]) {
       console.log('correct');
     } else {
       console.log('incorrect');
     }
+    this.calcScore();
+    this.switchPlayers();
+  };
+
+  selectCurrentCard() {
+    const rando = Utils.getRandom(this.pack.length - 1);
+    this.currentCard = this.pack[rando];
+    this.pack = this.pack.filter(card => card !== this.currentCard);
+    this.currentCardNumber++;
+  };
+
+  randomizeCardsDisplay() {
+    const optionsRando = Utils.getRandom(10, 1);
+    if (optionsRando % 2) {
+      this.swapCards();
+    }
+  };
+
+  swapCards() {
+    [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
+  };
+
+  calcScore() {
+
   }
 }
 

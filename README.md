@@ -1,7 +1,7 @@
 # Proto
 
 ## todos
-
+- [ ] : Angular Universal?
 - [x] set up Angular
 - [x] set up Angular Material: custom theme
 - [x] create material module
@@ -25,6 +25,12 @@
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
 - [x] try serving illustrations locally, rather than from assets links
+* [ ] Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular-project-here-is-what-you-need-to-do-71ba08587b1d>
+- [ ] CSS resets
+- [ ] polifills
+- [ ] noscript
+- [ ] testing
+
 
 Header Component
 
@@ -48,6 +54,7 @@ Contact page
 - [ ] lazy loading?
 - [ ] sanitazion?
 - [x] automatic scroll to top on click of "Contact" btn (important on mobile screens)
+- [ ] how to email with vercel+gmail <https://drew.tech/posts/how-to-send-email-with-vercel-domain-through-gsuite>
 
 REDO
 - [ ] create components folder?
@@ -77,6 +84,9 @@ Cards component
 - [ ] card prompts in an array so multiple lines can be rendered in template
 - [x] add "Done" Pablita illustration to Cards
 
+Pelmalism Component
+* see notes in eeieeioh/Pelmalism.md
+
 Timed_Cards Component
 * for
   + Yes-No Game
@@ -89,7 +99,6 @@ Duel component
 - [ ] routing params
 - [x] write out template
 - [ ] write out class
-- [ ] timer <https://codepen.io/cathydutton/pen/xxpOOw>
 - [ ] deactivate text btns before "Start" is pressed
 - [ ] manipulate RXJS subs with setTimeout():
 <https://stackoverflow.com/questions/65193678/rxjs-using-first-with-timer>
