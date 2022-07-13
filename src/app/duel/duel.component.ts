@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Utils } from '../utils';
-import { interval, take } from 'rxjs';
+import { interval } from 'rxjs';
 
 const data = {
   title: 'Spellcheck',
@@ -22,7 +22,7 @@ const data = {
 
 interface Player {
   name: string;
-  counter: number;
+  score: number;
   timer: number;
 }
 
@@ -42,8 +42,8 @@ export class DuelComponent implements OnInit {
   cardsTotal = data.cards.length;
   timeAllowed = 4;
 
-  playerA: Player = { name: 'playerA', counter: 1, timer: 0 };
-  playerB: Player = { name: 'playerB', counter: 2, timer: 0 };
+  playerA: Player = { name: 'playerA', score: 0, timer: 0 };
+  playerB: Player = { name: 'playerB', score: 0, timer: 0 };
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
 
@@ -51,49 +51,53 @@ export class DuelComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  start() {
+  startTimer() {
+    this.startRound();
+
     const observable = interval(1000);
 
-    observable.subscribe((value) => {
-      this.currentPlayer.timer = value;
-      console.log(`${this.currentPlayer.name}: ${this.currentPlayer.timer}`);
-
-      if (value >= this.timeAllowed) {
-        this.switchPlayers();
+    observable.subscribe(() => {
+      ++this.currentPlayer.timer;
+      if (this.currentPlayer.timer >= this.timeAllowed) {
+        this.endRound();
+        this.startRound();
       }
     })
   };
 
-  switchPlayers() {
+  onClick(val: string) {
+    this.endRound(val);
+    this.startRound();
+  };
 
-    // toggle players
-    this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
+  startRound() {
+    if (this.pack.length === 0) {
+      return;
+    }
 
     this.displayCard();
-    console.log('new question is coming here not elsewhere');
+  }
+
+  endRound(val: string | null = null) {
+    this.calcScore(val);
+    this.switchPlayers();
+    this.currentPlayer.timer = 0;
+  }
+
+  switchPlayers() {
+    this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
+    console.log(`${this.currentPlayer.name}`);
   }
 
   displayCard() {
     this.selectCurrentCard();
-    this.currentCorrectCard = this.currentCard[0];
     this.randomizeCardsDisplay();
   }
-
-  onClick(val: string) {
-    console.log(this.currentCard); //this is already shuffled/randomized for display; need to create a variable for randomizedCurrentCard (for display & check)
-    console.log(val);
-    if (val === this.currentCard[0]) {
-      console.log('correct');
-    } else {
-      console.log('incorrect');
-    }
-    this.calcScore();
-    this.switchPlayers();
-  };
 
   selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
+    this.currentCorrectCard = this.currentCard[0];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
@@ -109,8 +113,15 @@ export class DuelComponent implements OnInit {
     [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
   };
 
-  calcScore() {
+  calcScore(val: string | null = null) {
+    console.log(val);
 
+    if (val === this.currentCorrectCard) {
+      console.log(this.currentCorrectCard);
+    } else {
+      console.log('incorrect');
+    }
   }
+
 }
 

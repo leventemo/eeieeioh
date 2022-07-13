@@ -6,12 +6,12 @@
     <div class="counters-wrapper">
       <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
         <p>A</p>
-        <p>{{ playerA.counter }}</p>
+        <p>{{ playerA.score }}</p>
         <p class="timer">{{ playerA.timer }}</p>
       </div>
       <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerB }">
         <p>B</p>
-        <p>{{ playerB.counter }}</p>
+        <p>{{ playerB.score }}</p>
         <p class="timer">{{ playerB.timer }}</p>
       </div>
     </div>
@@ -23,6 +23,6 @@
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardNumber }}/{{ cardsTotal }}</span>
-    <button color="primary" mat-button (click)="start()" [disabled]="clickedOnce">Start</button>
+    <button color="primary" mat-button (click)="startTimer()" [disabled]="clickedOnce">Start</button>
   </mat-card-actions>
 </mat-card>
