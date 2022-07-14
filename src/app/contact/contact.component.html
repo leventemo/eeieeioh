@@ -3,7 +3,7 @@
     <h1>Contact us</h1>
     <mat-icon class="icon">drafts</mat-icon>
   </div>
-  <form (ngSubmit)="submitForm(); contactForm.resetForm()" #contactForm="ngForm">
+  <form (ngSubmit)="contactForm.resetForm()" #contactForm="ngForm" action="https://submit-form.com/lGuqXu79">
     <mat-form-field appearance="outline">
       <mat-label>Name</mat-label>
       <input type="text" name="name" matInput placeholder="John Doe" required [(ngModel)]="name" #nameInput="ngModel">
@@ -19,12 +19,18 @@
     </mat-form-field>
 
     <mat-form-field appearance="outline">
+      <mat-label>Subject</mat-label>
+      <input type="text" name="subject" matInput placeholder="Hello" required [(ngModel)]="subject"
+        #subjectInput="ngModel">
+      <mat-error *ngIf="subjectInput.invalid && subjectInput.touched">A subject is required.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
       <mat-label>Message</mat-label>
       <textarea type="text" name="message" matInput placeholder="Hey, I just want to ..." required [(ngModel)]="message"
         #textareaInput="ngModel"></textarea>
       <mat-error *ngIf="textareaInput.invalid && textareaInput.touched">Your message is required</mat-error>
     </mat-form-field>
-    <button mat-flat-button color="primary" [disabled]="contactForm.invalid">Send!</button>
+    <button type="submit" mat-flat-button color="primary" [disabled]="contactForm.invalid">Send!</button>
   </form>
-
 </mat-card>

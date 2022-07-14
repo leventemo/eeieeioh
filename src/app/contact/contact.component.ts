@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent implements OnInit {
   name: string = '';
   email: string = '';
+  subject: string = '';
   message: string = '';
 
   constructor() { }
@@ -16,9 +17,9 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitForm() {
-    const msg = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}.`
-    alert(msg);
-  }
+  /*   submitForm() {
+      const msg = `My name is ${this.name}. My email is ${this.email}. I want to write about ${this.subject}. My message is ${this.message}.`
+      alert(msg);
+    } */
 
 }

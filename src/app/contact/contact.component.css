@@ -28,7 +28,7 @@ h1,
 h2,
 mat-form-field {
   font-family: 'Ubuntu Condensed', sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 mat-error {
