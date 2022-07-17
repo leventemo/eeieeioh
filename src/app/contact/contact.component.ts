@@ -12,14 +12,21 @@ export class ContactComponent implements OnInit {
   subject: string = '';
   message: string = '';
 
+  formId = 'lGuqXu79';
+  formSparkURL = `https://submit-form.com/${this.formId}`;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  /*   submitForm() {
-      const msg = `My name is ${this.name}. My email is ${this.email}. I want to write about ${this.subject}. My message is ${this.message}.`
-      alert(msg);
-    } */
+  onSubmit() {
+    console.log(ngModel);
+  }
+
 
 }
+function ngModel(ngModel: any) {
+  throw new Error('Function not implemented.');
+}
+

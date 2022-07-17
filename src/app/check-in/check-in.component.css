@@ -1,9 +1,22 @@
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
 mat-card {
   font-family: 'Ubuntu Condensed', sans-serif;
-  min-width: 385px;
-  max-width: 30%;
-  height: 80vh;
-  margin: auto;
+  flex-grow: 1;
+  max-width: 27rem;
+  height: 85vh;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
 }
 
 mat-card-content {
@@ -17,7 +30,7 @@ dl {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 dd {
@@ -33,4 +46,18 @@ dd:not(:first-of-type) {
 dt:nth-of-type(1),
 dd:nth-of-type(1) {
   margin-top: 2rem;
+}
+
+mat-card-actions {
+  display: flex;
+  height: 7%;
+  align-items: center;
+  justify-content: space-around;
+  color: #7D1AD4;
+}
+
+/* for modal info-icon */
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
 }
