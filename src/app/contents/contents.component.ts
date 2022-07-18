@@ -30,11 +30,9 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'B2', title: 'Yes-No Game', skill: 'SP', language: 'fillers, hesitating', slug: '/cards', id: 13, activity: 'Cards' },
   { level: 'C1', title: 'Exam questions C1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 8, activity: 'Cards' },
 
+  /*   { level: 'A2', title: 'Error Correction', skill: 'WR', language: 'spelling', slug: '/duel', id: 1, activity: 'Duel' },
+    { level: 'B2', title: 'Spellcheck', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' }, */
 
-  /*
-    { level: 'A2', title: 'Error Correction', skill: 'WR', language: 'spelling', slug: '/duel', id: 1, activity: 'Duel' },
-    { level: 'B2', title: 'Spellcheck', skill: 'WR', language: 'WD Form', slug: '/duel', id: 2, activity: 'Duel' },
-     */
 ];
 
 @Component({

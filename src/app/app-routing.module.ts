@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'reword/:id', component: RewordComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
-  { path: 'duel', component: DuelComponent },
+  { path: 'duel/:id', component: DuelComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

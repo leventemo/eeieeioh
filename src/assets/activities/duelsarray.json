@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "level": "A2",
+    "skill": "WR",
+    "title": "Spellcheck",
+    "language": "spelling",
+    "instructions": "Take turns to click on the correct word. You have 5 seconds to do so. If you don't click until your time is up, your question will be given to your partner.",
+    "cards": [
+      [
+        "beginning",
+        "begining"
+      ],
+      [
+        "beginning",
+        "beggining"
+      ],
+      [
+        "useless",
+        "useles"
+      ],
+      [
+        "useful",
+        "usefull"
+      ],
+      [
+        "decision",
+        "dicision"
+      ],
+      [
+        "decision",
+        "descision"
+      ],
+      [
+        "successful",
+        "succesful"
+      ],
+      [
+        "harmful",
+        "harmfull"
+      ],
+      [
+        "destination",
+        "destinion"
+      ],
+      [
+        "worthless",
+        "wortless"
+      ]
+    ]
+  },
+  {
+    "id": "2",
+    "level": "B2",
+    "skill": "WR",
+    "title": "Spellcheck",
+    "language": "spelling",
+    "instructions": "Take turns to click on the correct word. You have 5 seconds to do so. If you don't click until your time is up, your question will be given to your partner.",
+    "cards": [
+      [
+        "AAA",
+        "AAk"
+      ],
+      [
+        "BBB",
+        "BBhj"
+      ],
+      [
+        "CCC",
+        "CCa"
+      ],
+      [
+        "DDD",
+        "DDa"
+      ],
+      [
+        "EEE",
+        "EEq"
+      ],
+      [
+        "FFF",
+        "FFa"
+      ],
+      [
+        "GGG",
+        "GGñ"
+      ],
+      [
+        "HHH",
+        "HH1"
+      ],
+      [
+        "III",
+        "IIl"
+      ],
+      [
+        "JJJ",
+        "JJg"
+      ]
+    ]
+  }
+]

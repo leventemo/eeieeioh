@@ -129,7 +129,7 @@ Not Found Component
 
 Contents Component
 - [x] narrow "level" column; wastes space
-set up routing with params
+- [ ] set up routing with params <https://angular.io/guide/router>
 - [x] cards
 - [x] reword
 - [ ] check-in
@@ -137,7 +137,6 @@ set up routing with params
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
-- [ ] routing params: <https://angular.io/guide/router>
 - [ ] fix bug: butterfly animation cover last item on list on mobiles
 - [ ] pagination
 

@@ -1,5 +1,8 @@
 <mat-card>
-  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-title>
+    {{ data.title }}
+    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+  </mat-card-title>
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
   <mat-card-content>

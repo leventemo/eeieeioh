@@ -1,23 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+
 import { Utils } from '../utils';
 import { interval } from 'rxjs';
+import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
 
-const data = {
-  title: 'Spellcheck',
-  language: 'spelling',
-  instructions: 'Click on the correct word.',
-  cards: [
-    ['beginning', 'begining'],
-    ['beginning', 'beggining'],
-    ['useless', 'useles'],
-    ['useful', 'usefull'],
-    ['decision', 'dicision'],
-    ['decision', 'descision'],
-    ['successful', 'succesful'],
-    ['harmful', 'harmfull'],
-    ['destination', 'destinion'],
-    ['worthless', 'wortless'],
-  ]
+interface Data {
+  id: number;
+  title: string;
+  language: string;
+  instructions: string;
+  cards: string[][]; // OK?
 }
 
 interface Player {
@@ -33,13 +28,26 @@ interface Player {
 })
 export class DuelComponent implements OnInit {
 
-  title = data.title;
-  instructions = data.instructions;
-  pack = data.cards;
+  data: Data = {
+    id: 0,
+    title: '',
+    language: '',
+    instructions: '',
+    cards: [[]], // OK?
+  };
+
+  // from CARDS
+  currentPack: string[][] = [];
+  isItAllDone = false;
+
+  // DUELS
+  title = this.data.title;
+  instructions = this.data.instructions;
+  pack = this.data.cards;
   currentCard = [''];
   clickedOnce = false;
   currentCardNumber = 0;
-  cardsTotal = data.cards.length;
+  cardsTotal = this.data.cards.length;
   timeAllowed = 4;
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
@@ -47,9 +55,26 @@ export class DuelComponent implements OnInit {
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
 
-  constructor() { }
+  constructor(
+    public router: Router,
+    private route: ActivatedRoute,
+    public dialog: MatDialog) {
+  }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    // get the id from the current route
+    const routeParams = this.route.snapshot.paramMap;
+    const cardIdFromRoute = Number(routeParams.get('id'));
+
+    // find the deck for id we got from the route
+    this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+
+    this.currentPack = this.data.cards;
+  }
+
+  openDialog() {
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+  }
 
   startTimer() {
     this.startRound();
@@ -97,6 +122,7 @@ export class DuelComponent implements OnInit {
   selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
+    console.log(this.currentCard); // empty array
     this.currentCorrectCard = this.currentCard[0];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
