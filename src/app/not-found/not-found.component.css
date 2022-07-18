@@ -1,9 +1,17 @@
-.img-wrapper {
-  min-width: 320px;
-  max-width: 45%;
-  height: 80vh;
-  margin: auto;
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.not-found-card {
+  flex-grow: 1;
+  max-width: 27rem;
+  height: 85vh;
   text-align: center;
+  box-shadow: none;
 }
 
 h1,

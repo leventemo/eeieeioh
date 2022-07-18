@@ -1,6 +1,14 @@
-lottie-player {
-  min-width: 320px;
-  max-width: 53%;
-  height: 80vh;
-  margin: auto;
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.home-card {
+  flex-grow: 1;
+  max-width: 27rem;
+  height: 85vh;
+  box-shadow: none;
 }
