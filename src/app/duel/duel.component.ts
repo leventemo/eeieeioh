@@ -37,18 +37,17 @@ export class DuelComponent implements OnInit {
   };
 
   // from CARDS
-  currentPack: string[][] = [];
   isItAllDone = false;
 
   // DUELS
   title = this.data.title;
   instructions = this.data.instructions;
-  pack = this.data.cards;
+  pack: string[][] = []; // OK?
   currentCard = [''];
   clickedOnce = false;
   currentCardNumber = 0;
   cardsTotal = this.data.cards.length;
-  timeAllowed = 4;
+  timeAllowed = 500;
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
@@ -69,7 +68,8 @@ export class DuelComponent implements OnInit {
     // find the deck for id we got from the route
     this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.pack = this.data.cards;
+
   }
 
   openDialog() {
@@ -79,7 +79,7 @@ export class DuelComponent implements OnInit {
   startTimer() {
     this.startRound();
 
-    const observable = interval(1000);
+    const observable = interval(10);
 
     observable.subscribe(() => {
       ++this.currentPlayer.timer;
@@ -122,7 +122,6 @@ export class DuelComponent implements OnInit {
   selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
-    console.log(this.currentCard); // empty array
     this.currentCorrectCard = this.currentCard[0];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
@@ -140,10 +139,9 @@ export class DuelComponent implements OnInit {
   };
 
   calcScore(val: string | null = null) {
-    console.log(val);
 
     if (val === this.currentCorrectCard) {
-      console.log(this.currentCorrectCard);
+      this.currentPlayer.score = this.currentPlayer.score + 500 + (500 - this.currentPlayer.timer);
     } else {
       console.log('incorrect');
     }

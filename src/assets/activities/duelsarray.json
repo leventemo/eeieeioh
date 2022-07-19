@@ -3,99 +3,429 @@
     "id": "1",
     "level": "A2",
     "skill": "WR",
-    "title": "Spellcheck",
-    "language": "spelling",
-    "instructions": "Take turns to click on the correct word. You have 5 seconds to do so. If you don't click until your time is up, your question will be given to your partner.",
+    "title": "ERR: Email to a friend",
+    "language": "misc",
+    "instructions": "Work in pairs and use a shared phone. Take turns to click on the correct word. You have 5 seconds to do so. If you don't click while your scoreboard is active, your question will be given to your partner. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers.",
     "cards": [
       [
-        "beginning",
-        "begining"
+        "we make a party",
+        "we have a party"
       ],
       [
-        "beginning",
-        "beggining"
+        "I slept 12 hours",
+        "I sleeped 12 hours"
       ],
       [
-        "useless",
-        "useles"
+        "on the beach",
+        "in the beach"
       ],
       [
-        "useful",
-        "usefull"
+        "on 23rd May",
+        "on 23th May"
       ],
       [
-        "decision",
-        "dicision"
+        "we arrived home late",
+        "we arrived to home late"
       ],
       [
-        "decision",
-        "descision"
+        "on 23rd May",
+        "at 23rd May"
       ],
       [
-        "successful",
-        "succesful"
+        "on Monday",
+        "at Monday"
       ],
       [
-        "harmful",
-        "harmfull"
+        "this weekend",
+        "in this weekend"
       ],
       [
-        "destination",
-        "destinion"
+        "On this day the weather was sunny.",
+        "In this day the weather was sunny."
       ],
       [
-        "worthless",
-        "wortless"
+        "I studied History.",
+        "I learned History."
+      ],
+      [
+        "My weekend was very good.",
+        "Me weekend was very good."
+      ],
+      [
+        "we went home",
+        "we went to home"
+      ],
+      [
+        "I went to the gym",
+        "I was go to the gym"
+      ],
+      [
+        "everything is OK",
+        "everything it's OK"
+      ],
+      [
+        "I went partying",
+        "I went party"
+      ],
+      [
+        "with my friends",
+        "with my friend's"
+      ],
+      [
+        "I watched a film.",
+        "I watched film."
+      ],
+      [
+        "It rained.",
+        "It's rained."
+      ],
+      [
+        "In the afternoon",
+        "In afternoon"
+      ],
+      [
+        "that was cool",
+        "that's was cool"
+      ],
+      [
+        "go shopping",
+        "go to shopping"
+      ],
+      [
+        "we went to buy some food",
+        "we were go and buy some food"
+      ],
+      [
+        "she lives with her family",
+        "her live with her family"
+      ],
+      [
+        "I hope you can come to his birthday.",
+        "I hope you can come his birthday."
+      ],
+      [
+        "I was enjoying it so much!",
+        "I was enjoy it so much!"
+      ],
+      [
+        "with my uncle",
+        "with my uncele"
+      ],
+      [
+        "He is making dinner.",
+        "He is makeing dinner."
       ]
     ]
   },
   {
     "id": "2",
-    "level": "B2",
+    "level": "B1",
     "skill": "WR",
-    "title": "Spellcheck",
-    "language": "spelling",
-    "instructions": "Take turns to click on the correct word. You have 5 seconds to do so. If you don't click until your time is up, your question will be given to your partner.",
+    "title": "ERR: Somebody I know",
+    "language": "VOC, GR, spelling",
+    "instructions": "Work in pairs and use a shared phone. Take turns to click on the correct word. You have 5 seconds to do so. If you don't click while your scoreboard is active, your question will be given to your partner. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers.",
     "cards": [
       [
-        "AAA",
-        "AAk"
+        "from time to time I go with her",
+        "time to time I go with her"
       ],
       [
-        "BBB",
-        "BBhj"
+        "we still get in touch sometimes",
+        "we still get contact sometimes"
       ],
       [
-        "CCC",
-        "CCa"
+        "he has hurt her physically",
+        "he has hurted her physically"
       ],
       [
-        "DDD",
-        "DDa"
+        "there are a lot of things",
+        "there are lot of things"
       ],
       [
-        "EEE",
-        "EEq"
+        "despite that fact that",
+        "despit that fact that"
       ],
       [
-        "FFF",
-        "FFa"
+        "I always want to see her smile",
+        "I want to see her smile always"
       ],
       [
-        "GGG",
-        "GGñ"
+        "the luckiest person in the world",
+        "the most luckiest person in the world"
       ],
       [
-        "HHH",
-        "HH1"
+        "one of my favourite books",
+        "one of my favourite book"
       ],
       [
-        "III",
-        "IIl"
+        "he has flaws",
+        "he has flawes"
       ],
       [
-        "JJJ",
-        "JJg"
+        "we didn't talk too much",
+        "we didn't talked too much"
+      ],
+      [
+        "He has been my friend since 4th grade.",
+        "He is my friend since 4th grade."
+      ],
+      [
+        "3-4 times in total",
+        "3-4 times total"
+      ],
+      [
+        "she is 19 years old",
+        "she is 19 year old"
+      ],
+      [
+        "she always comes up with something",
+        "she always come up with something"
+      ],
+      [
+        "We have known each other since primary school.",
+        "We know each other since primary school."
+      ],
+      [
+        "We are supporting each other in many ways.",
+        "We supporting each other in many ways."
+      ],
+      [
+        "When I'm stressed she tries to cheer me up.",
+        "When I'm stressed she's trying to cheer me up."
+      ],
+      [
+        "actually, we have the same taste in music",
+        "we have actually the same taste in music"
+      ],
+      [
+        "one of my classmates",
+        "one of my classmate"
+      ],
+      [
+        "an open-minded but quick-tempered person",
+        "an open-minded but quik-tempered person"
+      ],
+      [
+        "when she starts shouting with you",
+        "when she starts shouting wit you"
+      ],
+      [
+        "physically and mentally",
+        "physiccally and mentally"
+      ],
+      [
+        "a very powerful computer",
+        "a very powerfull computer"
+      ],
+      [
+        "he looks very beautiful",
+        "he looks very beautifull"
+      ],
+      [
+        "it could deceive you",
+        "it could decive you"
+      ],
+      [
+        "unfortunately we went to different schools",
+        "unfortunetly we went to different schools"
+      ],
+      [
+        "she has a lot of bad habits",
+        "she has a lot of bad habbits"
+      ],
+      [
+        "I'm writing to tell you about ...",
+        "I'm writting to tell you about ..."
+      ],
+      [
+        "Unfortunately, we can't spend much time together.",
+        "Unfortunatly, we can't spend much time together."
+      ],
+      [
+        "from the beginning of this summer",
+        "from the begining of this summer"
+      ],
+      [
+        "we play games together daily",
+        "we play games together dayly"
+      ],
+      [
+        "she's smart, which I think is great",
+        "she's smart, which I think it's great"
+      ],
+      [
+        "she's also pretty active and cheerful",
+        "she's also pretty active and cheerfull"
+      ],
+      [
+        "we met in 3rd grade",
+        "we met in 3th grade"
+      ],
+      [
+        "he's extremely confident",
+        "he's extermly confident"
+      ],
+      [
+        "it's not that noticeable",
+        "it's not that noticible"
+      ],
+      [
+        "I can always count on him",
+        "I can allways count on him"
+      ]
+    ]
+  },
+  {
+    "id": "3",
+    "level": "B2",
+    "skill": "WR",
+    "title": "ERR: My Dream House",
+    "language": "VOC, GR, spelling",
+    "instructions": "Work in pairs and use a shared phone. Take turns to click on the correct word. You have 5 seconds to do so. If you don't click while your scoreboard is active, your question will be given to your partner. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers.",
+    "cards": [
+      [
+        "a view on the sea",
+        "a view to the sea"
+      ],
+      [
+        "a big space for cooking",
+        "a big space to cooking"
+      ],
+      [
+        "a big double bed",
+        "a big two personal bed"
+      ],
+      [
+        "on summer days",
+        "in the summer days"
+      ],
+      [
+        "I dream of settling in a big city",
+        "I dream of settling a big city"
+      ],
+      [
+        "on the outskirts",
+        "in the outskirts"
+      ],
+      [
+        "minimalistic design",
+        "minimalic design"
+      ],
+      [
+        "on the outside of the house",
+        "in the outside of the house"
+      ],
+      [
+        "on the 1st floor",
+        "in the 1st floor"
+      ],
+      [
+        "somewhat of a dark and elegant style",
+        "somewhat a dark and elegant style"
+      ],
+      [
+        "in my garden there is going to be a pool",
+        "in my garden is going to be a pool"
+      ],
+      [
+        "when I am an adult",
+        "when I will be an adult"
+      ],
+      [
+        "I would like brown furniture",
+        "I would like brown furnitures"
+      ],
+      [
+        "with lots of plants",
+        "with a lots of plants"
+      ],
+      [
+        "a whole wall that is made of glass",
+        "a whole wall what is made of glass"
+      ],
+      [
+        "I am planning to have a big kitchen",
+        "I planning to have a big kitchen"
+      ],
+      [
+        "which is going to be made of marble",
+        "wich is going to be made of marble"
+      ],
+      [
+        "decrease my ecological footprint",
+        "decrise my ecological footprint"
+      ],
+      [
+        "equipped with a massage chair",
+        "equipped whit a massage chair"
+      ],
+      [
+        "I definitely would like it to be spacious",
+        "I definitly would like it to be spacious"
+      ],
+      [
+        "a living room which is very light",
+        "a living room witch is very light"
+      ],
+      [
+        "a Mediterranean garden",
+        "a Mediterran garden"
+      ],
+      [
+        "it would have three storeys",
+        "it would have three storys"
+      ],
+      [
+        "in the middle of it all",
+        "in the midel of it all"
+      ],
+      [
+        "a dark and clean design",
+        "a dark and clean designe"
+      ],
+      [
+        "a mirror ceiling",
+        "a mirror cealing"
+      ],
+      [
+        "a sober and peaceful house",
+        "a sober and paceful house"
+      ],
+      [
+        "it's a hard decision",
+        "it's a hard desicion"
+      ],
+      [
+        "it's important to have a town close by",
+        "it's importante to have a town close by"
+      ],
+      [
+        "full of modern things",
+        "full of modern thinks"
+      ],
+      [
+        "for me, it's a good combo",
+        "for me, its a good combo"
+      ],
+      [
+        "I'm an attractive person.",
+        "I'm an atractive person."
+      ],
+      [
+        "a very beautiful garden",
+        "a very beautifull garden"
+      ],
+      [
+        "I definitely would like a tennis court",
+        "I deffinatly would like a tennis court"
+      ],
+      [
+        "luxurious",
+        "luxurius"
+      ],
+      [
+        "a comfortable mattress",
+        "a confortable mattress"
       ]
     ]
   }
