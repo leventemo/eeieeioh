@@ -61,6 +61,7 @@ REDO
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 - [ ] rename Duel Component to Duels
 - [ ] rename Contents Components to Activities (routing reasons)
+- [ ] miliseconds to H:M <https://bobbyhadz.com/blog/javascript-convert-milliseconds-to-hours-and-minutes>
 
 Nav Component
 - [ ] active link animated <https://codepen.io/cathydutton/pen/QWWajKX>

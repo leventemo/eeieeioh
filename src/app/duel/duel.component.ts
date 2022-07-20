@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { Utils } from '../utils';
-import { interval } from 'rxjs';
+import { interval, Subscription } from 'rxjs';
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
 
 interface Data {
@@ -12,7 +12,7 @@ interface Data {
   title: string;
   language: string;
   instructions: string;
-  cards: string[][]; // OK?
+  cards: string[][];
 }
 
 interface Player {
@@ -33,26 +33,24 @@ export class DuelComponent implements OnInit {
     title: '',
     language: '',
     instructions: '',
-    cards: [[]], // OK?
+    cards: [[]],
   };
 
-  // from CARDS
+  hasItStarted = false;
+  gameEnded = false;
   isItAllDone = false;
-
-  // DUELS
-  title = this.data.title;
-  instructions = this.data.instructions;
-  pack: string[][] = []; // OK?
+  pack: string[][] = [];
   currentCard = [''];
-  clickedOnce = false;
   currentCardNumber = 0;
-  cardsTotal = this.data.cards.length;
+  cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
+
+  subscription!: Subscription;
 
   constructor(
     public router: Router,
@@ -76,45 +74,41 @@ export class DuelComponent implements OnInit {
     this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
   }
 
-  startTimer() {
-    this.startRound();
+  start() {
+    this.displayCard();
 
-    const observable = interval(10);
-
-    observable.subscribe(() => {
-      ++this.currentPlayer.timer;
-      if (this.currentPlayer.timer >= this.timeAllowed) {
-        this.endRound();
-        this.startRound();
-      }
+    interval(10).subscribe(() => {
+      this.tiktok();
     })
+
+    this.hasItStarted = true;
   };
+
+  tiktok() {
+    ++this.currentPlayer.timer;
+    if (this.gameEnded) {
+      this.subscription.unsubscribe();
+    }
+    if (this.currentPlayer.timer >= this.timeAllowed) {
+      this.switchPlayers();
+    }
+  }
 
   onClick(val: string) {
-    this.endRound(val);
-    this.startRound();
-  };
-
-  startRound() {
-    if (this.pack.length === 0) {
-      return;
-    }
-
-    this.displayCard();
-  }
-
-  endRound(val: string | null = null) {
     this.calcScore(val);
     this.switchPlayers();
-    this.currentPlayer.timer = 0;
-  }
+    this.displayCard();
+  };
 
   switchPlayers() {
     this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
-    console.log(`${this.currentPlayer.name}`);
+    this.currentPlayer.timer = 0;
   }
 
   displayCard() {
+    if (this.pack.length === 0) {
+      return;
+    }
     this.selectCurrentCard();
     this.randomizeCardsDisplay();
   }
@@ -142,10 +136,11 @@ export class DuelComponent implements OnInit {
 
     if (val === this.currentCorrectCard) {
       this.currentPlayer.score = this.currentPlayer.score + 500 + (500 - this.currentPlayer.timer);
-    } else {
-      console.log('incorrect');
     }
   }
 
+  redirect() {
+    this.router.navigate(['contents']);
+  }
 }
 
