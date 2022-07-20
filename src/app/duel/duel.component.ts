@@ -77,7 +77,8 @@ export class DuelComponent implements OnInit {
   start() {
     this.displayCard();
 
-    interval(10).subscribe(() => {
+    this.subscription = interval(10).subscribe((x) => {
+      console.log(x);
       this.tiktok();
     })
 
@@ -107,6 +108,7 @@ export class DuelComponent implements OnInit {
 
   displayCard() {
     if (this.pack.length === 0) {
+      this.subscription.unsubscribe();
       return;
     }
     this.selectCurrentCard();
@@ -141,6 +143,10 @@ export class DuelComponent implements OnInit {
 
   redirect() {
     this.router.navigate(['contents']);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
 
