@@ -21,34 +21,44 @@ interface Player {
   timer: number;
 }
 
+interface ResultsThisTurn {
+  correctOption: string;
+  incorrectOption: string;
+  clickingPlayer: string;
+  pointsForThis: number;
+}
+
 @Component({
   selector: 'app-duel',
   templateUrl: './duel.component.html',
   styleUrls: ['./duel.component.css']
 })
-export class DuelComponent implements OnInit {
+export class DuelComponent implements OnInit { // do I need "implement OnDestroy" above?
 
-  data: Data = {
-    id: 0,
-    title: '',
-    language: '',
-    instructions: '',
-    cards: [[]],
-  };
-
-  hasItStarted = false;
-  gameEnded = false;
-  isItAllDone = false;
+  data: Data = { id: 0, title: '', language: '', instructions: '', cards: [[]] };
   pack: string[][] = [];
-  currentCard = [''];
-  currentCardNumber = 0;
   cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
 
+  hasItStarted = false; // to hide "Start" btns
+  isItAllDone = false;
+
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
+  currentCard = [''];
+  currentCardNumber = 0;
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
+  currentIncorrectCard = '';
+
+  pointsEarnedThisTurn = 0;
+  result: ResultsThisTurn = {
+    correctOption: '',
+    incorrectOption: '',
+    clickingPlayer: '',
+    pointsForThis: 0,
+  };
+  resultsAll: ResultsThisTurn[] = [];
 
   subscription!: Subscription;
 
@@ -67,7 +77,6 @@ export class DuelComponent implements OnInit {
     this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.pack = this.data.cards;
-
   }
 
   openDialog() {
@@ -75,10 +84,12 @@ export class DuelComponent implements OnInit {
   }
 
   start() {
-    this.displayCard();
+    if (this.pack.length === 0) {
+      // do what?
+    }
 
-    this.subscription = interval(10).subscribe((x) => {
-      console.log(x);
+    this.displayCard();
+    this.subscription = interval(10).subscribe(() => {
       this.tiktok();
     })
 
@@ -87,15 +98,19 @@ export class DuelComponent implements OnInit {
 
   tiktok() {
     ++this.currentPlayer.timer;
-    if (this.gameEnded) {
-      this.subscription.unsubscribe();
-    }
+
     if (this.currentPlayer.timer >= this.timeAllowed) {
       this.switchPlayers();
     }
   }
 
   onClick(val: string) {
+    if (this.pack.length === 0) {
+      this.subscription.unsubscribe();
+
+      // hide duel, show feddback
+      return;
+    }
     this.calcScore(val);
     this.switchPlayers();
     this.displayCard();
@@ -119,6 +134,7 @@ export class DuelComponent implements OnInit {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.currentCorrectCard = this.currentCard[0];
+    this.currentIncorrectCard = this.currentCard[1];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
@@ -137,8 +153,22 @@ export class DuelComponent implements OnInit {
   calcScore(val: string | null = null) {
 
     if (val === this.currentCorrectCard) {
-      this.currentPlayer.score = this.currentPlayer.score + 500 + (500 - this.currentPlayer.timer);
+      this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
+    } else {
+      this.pointsEarnedThisTurn = 0;
     }
+    this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
+
+    let resultObjThisTurn: ResultsThisTurn = {
+      correctOption: this.currentCorrectCard,
+      incorrectOption: this.currentIncorrectCard,
+      clickingPlayer: this.currentPlayer.name,
+      pointsForThis: this.pointsEarnedThisTurn
+    }
+
+    this.resultsAll.push(resultObjThisTurn);
+    console.log(this.resultsAll);
+
   }
 
   redirect() {

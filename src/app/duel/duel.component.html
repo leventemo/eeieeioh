@@ -5,7 +5,7 @@
   </mat-card-title>
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
-  <mat-card-content>
+  <mat-card-content *ngIf="this.pack.length !== 0">
     <div class="counters-wrapper">
       <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
         <p>A</p>
@@ -23,10 +23,16 @@
       <button class="option" id="btn-B" (click)="onClick(currentCard[1])">{{ currentCard[1] }}</button>
     </div>
   </mat-card-content>
+  <mat-card-content *ngIf="this.pack.length === 0">
+    <div *ngFor="let result of resultsAll">
+      <span>{{ result.correctOption }}</span> – <span>{{ result.incorrectOption }}
+      </span><span>{{ result.clickingPlayer }}</span> – <span>{{ result.pointsForThis }}</span>
+    </div>
+  </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
     <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
-    <button *ngIf="hasItStarted" color="primary" mat-button (click)="redirect()">Contents</button>
+    <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>
