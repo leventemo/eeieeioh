@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { MatTableDataSource } from '@angular/material/table';
+
 
 import { Utils } from '../utils';
 import { interval, Subscription } from 'rxjs';
@@ -59,6 +61,7 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
     pointsForThis: 0,
   };
   resultsAll: ResultsThisTurn[] = [];
+  ELEMENT_DATA: ResultsThisTurn[] = this.resultsAll;
 
   subscription!: Subscription;
 
@@ -167,9 +170,12 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
     }
 
     this.resultsAll.push(resultObjThisTurn);
-    console.log(this.resultsAll);
 
   }
+
+  // for feedback table
+  displayedColumns: string[] = ['correct', 'incorrect', 'playerA', 'playerB'];
+  dataSource = new MatTableDataSource(this.ELEMENT_DATA);
 
   redirect() {
     this.router.navigate(['contents']);

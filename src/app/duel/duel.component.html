@@ -1,11 +1,11 @@
-<mat-card>
+<mat-card *ngIf="this.pack.length !== 0">
   <mat-card-title>
     {{ data.title }}
     <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
   </mat-card-title>
   <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
   <mat-divider inset></mat-divider>
-  <mat-card-content *ngIf="this.pack.length !== 0">
+  <mat-card-content>
     <div class="counters-wrapper">
       <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
         <p>A</p>
@@ -23,12 +23,6 @@
       <button class="option" id="btn-B" (click)="onClick(currentCard[1])">{{ currentCard[1] }}</button>
     </div>
   </mat-card-content>
-  <mat-card-content *ngIf="this.pack.length === 0">
-    <div *ngFor="let result of resultsAll">
-      <span>{{ result.correctOption }}</span> – <span>{{ result.incorrectOption }}
-      </span><span>{{ result.clickingPlayer }}</span> – <span>{{ result.pointsForThis }}</span>
-    </div>
-  </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
@@ -36,3 +30,36 @@
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>
+
+<mat-table *ngIf="this.pack.length === 0" [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="correct">
+    <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
+    <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="incorrect">
+    <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
+    <mat-cell *matCellDef="let item">{{item.incorrectOption}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="playerA">
+    <mat-header-cell *matHeaderCellDef>player A</mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="item.clickingPlayer === 'playerA'">
+        {{item.pointsForThis}}
+      </ng-container>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="playerB">
+    <mat-header-cell *matHeaderCellDef>player B</mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="item.clickingPlayer === 'playerB'">
+        {{item.pointsForThis}}
+      </ng-container>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
