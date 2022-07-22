@@ -6,12 +6,21 @@
   align-items: center;
 }
 
-mat-card {
+.container {
   flex-grow: 1;
+  max-width: 27rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+mat-card {
+  height: 85vh;
+  width: 100%;
+  /*   flex-grow: 1;
   max-width: 27rem;
   height: 85vh;
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 2vh; */
 }
 
 mat-card-title,
@@ -150,9 +159,7 @@ mat-card-actions {
 /* feedback table */
 mat-table {
   box-shadow: none;
-  min-width: 320px;
-  max-width: 70%;
-  margin: auto;
+  width: 100%;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
@@ -200,3 +207,5 @@ mat-cell {
 .totalScore {
   color: #7D1AD4;
 }
+
+/* final scores */

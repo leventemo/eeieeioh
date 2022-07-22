@@ -1,93 +1,91 @@
-<mat-card *ngIf="this.pack.length !== 0">
-  <mat-card-title>
-    {{ data.title }}
-    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
-  </mat-card-title>
-  <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
-  <mat-divider inset></mat-divider>
-  <mat-card-content>
-    <div class="counters-wrapper">
-      <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
-        <p>A</p>
-        <p>{{ playerA.score }}</p>
-        <p class="timer">{{ playerA.timer }}</p>
+<div class="container">
+  <mat-card *ngIf="this.pack.length !== 0">
+    <mat-card-title>
+      {{ data.title }}
+      <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+    </mat-card-title>
+    <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
+    <mat-divider inset></mat-divider>
+    <mat-card-content>
+      <div class="counters-wrapper">
+        <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
+          <p>A</p>
+          <p>{{ playerA.score }}</p>
+          <p class="timer">{{ playerA.timer }}</p>
+        </div>
+        <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerB }">
+          <p>B</p>
+          <p>{{ playerB.score }}</p>
+          <p class="timer">{{ playerB.timer }}</p>
+        </div>
       </div>
-      <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerB }">
-        <p>B</p>
-        <p>{{ playerB.score }}</p>
-        <p class="timer">{{ playerB.timer }}</p>
+      <div class="options-wrapper">
+        <button class="option" id="btn-A" (click)="onClick(currentCard[0])" [disabled]="!hasItStarted">{{ currentCard[0]
+          }}</button>
+        <button class="option" id="btn-B" (click)="onClick(currentCard[1])" [disabled]="!hasItStarted">{{ currentCard[1]
+          }}</button>
       </div>
-    </div>
-    <div class="options-wrapper">
-      <button class="option" id="btn-A" (click)="onClick(currentCard[0])" [disabled]="!hasItStarted">{{ currentCard[0]
-        }}</button>
-      <button class="option" id="btn-B" (click)="onClick(currentCard[1])" [disabled]="!hasItStarted">{{ currentCard[1]
-        }}</button>
-    </div>
-  </mat-card-content>
-  <mat-divider inset></mat-divider>
-  <mat-card-actions align="end">
-    <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
-    <button color="primary" mat-button (click)="redirect()">Contents</button>
-  </mat-card-actions>
-</mat-card>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions align="end">
+      <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
+      <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
+      <button color="primary" mat-button (click)="redirect()">Contents</button>
+    </mat-card-actions>
+  </mat-card>
 
-<mat-table *ngIf="this.pack.length === 0" [dataSource]="dataSource" class="mat-elevation-z8">
-  <ng-container matColumnDef="correct">
-    <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
-    <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>
-    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
-  </ng-container>
+  <mat-table *ngIf="this.pack.length === 0" [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="correct">
+      <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>
+      <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="incorrect">
-    <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
-    <mat-cell *matCellDef="let item">&lowast; {{item.incorrectOption}}</mat-cell>
-    <mat-footer-cell *matFooterCellDef></mat-footer-cell>
-  </ng-container>
+    <ng-container matColumnDef="incorrect">
+      <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
+      <mat-cell *matCellDef="let item">&lowast; {{item.incorrectOption}}</mat-cell>
+      <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="playerA">
-    <mat-header-cell *matHeaderCellDef>player A</mat-header-cell>
-    <mat-cell *matCellDef="let item">
-      <ng-container *ngIf="item.clickingPlayer === 'playerA'">
-        {{item.pointsForThis}}
-      </ng-container>
-    </mat-cell>
-    <mat-footer-cell *matFooterCellDef class="totalScore">{{ playerA.score | number }}</mat-footer-cell>
-  </ng-container>
+    <ng-container matColumnDef="playerA">
+      <mat-header-cell *matHeaderCellDef>player A</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        <ng-container *ngIf="item.clickingPlayer === 'playerA'">
+          {{item.pointsForThis}}
+        </ng-container>
+      </mat-cell>
+      <mat-footer-cell *matFooterCellDef class="totalScore">{{ playerA.score | number }}</mat-footer-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="playerB">
-    <mat-header-cell *matHeaderCellDef>player B</mat-header-cell>
-    <mat-cell *matCellDef="let item">
-      <ng-container *ngIf="item.clickingPlayer === 'playerB'">
-        {{item.pointsForThis}}
-      </ng-container>
-    </mat-cell>
-    <mat-footer-cell *matFooterCellDef class="totalScore">{{ playerB.score | number }}</mat-footer-cell>
-  </ng-container>
+    <ng-container matColumnDef="playerB">
+      <mat-header-cell *matHeaderCellDef>player B</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        <ng-container *ngIf="item.clickingPlayer === 'playerB'">
+          {{item.pointsForThis}}
+        </ng-container>
+      </mat-cell>
+      <mat-footer-cell *matFooterCellDef class="totalScore">{{ playerB.score | number }}</mat-footer-cell>
+    </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
-</mat-table>
+    <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
+  </mat-table>
 
-<mat-card *ngIf="this.pack.length === 0">
-  <mat-card-title>
-    {{ data.title }}
-    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
-  </mat-card-title>
-  <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
-  <mat-divider inset></mat-divider>
-  <mat-card-content>
-    <div class="counters-wrapper">
-      <h1>{{winner}}</h1>
-    </div>
-
-  </mat-card-content>
-  <mat-divider inset></mat-divider>
-  <mat-card-actions align="end">
-    <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
-    <button color="primary" mat-button (click)="redirect()">Contents</button>
-  </mat-card-actions>
-</mat-card>
+  <mat-card *ngIf="this.pack.length === 0">
+    <mat-card-content>
+      <div class="counters-wrapper">
+        <h1>{{winner}}</h1>
+      </div>
+      <div>
+        <lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
+          autoplay>
+        </lottie-player>
+      </div>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions align="end">
+      <button color="primary" mat-button (click)="redirect()">Contents</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
