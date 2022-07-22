@@ -52,6 +52,7 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
   currentIncorrectCard = '';
+  winner!: string;
 
   pointsEarnedThisTurn = 0;
   result: ResultsThisTurn = {
@@ -171,11 +172,22 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
 
     this.resultsAll.push(resultObjThisTurn);
 
+    this.chooseWinner();
   }
 
   // for feedback table
   displayedColumns: string[] = ['correct', 'incorrect', 'playerA', 'playerB'];
   dataSource = new MatTableDataSource(this.ELEMENT_DATA);
+
+  chooseWinner() {
+    if (this.playerA.score === this.playerB.score) {
+      this.winner = `It's a draw.`
+    } else if (this.playerA.score > this.playerB.score) {
+      this.winner = `Player A wins.`
+    } else {
+      this.winner = `Player B wins.`
+    }
+  }
 
   redirect() {
     this.router.navigate(['contents']);
@@ -185,4 +197,5 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
     this.subscription.unsubscribe();
   }
 }
+
 

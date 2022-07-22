@@ -1,5 +1,6 @@
 :host {
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -193,10 +194,9 @@ mat-cell {
 .mat-column-playerA,
 .mat-column-playerB {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.asterisk {
+.totalScore {
   color: #7D1AD4;
-  vertical-align: middle;
 }
