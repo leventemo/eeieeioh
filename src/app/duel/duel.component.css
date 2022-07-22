@@ -3,13 +3,14 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
 mat-card {
   flex-grow: 1;
   max-width: 27rem;
   height: 85vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 mat-card-title,
@@ -143,4 +144,59 @@ mat-card-actions {
   46% {
     transform: translate3d(2px, 0, 0);
   }
+}
+
+/* feedback table */
+mat-table {
+  box-shadow: none;
+  min-width: 320px;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+mat-header-cell {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: bold;
+  font-size: .9rem;
+  color: #7D1AD4;
+}
+
+mat-cell {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.mat-column-correct {
+  flex: 0 0 35%;
+}
+
+.mat-column-incorrect {
+  flex: 0 0 35%;
+}
+
+.mat-column-playerA {
+  flex: 0 0 15%;
+}
+
+.mat-column-playerB {
+  flex: 0 0 15%;
+}
+
+.mat-cell,
+.mat-header-cell {
+  padding: 0 .5rem 0 .5rem;
+}
+
+.mat-column-playerA,
+.mat-column-playerB {
+  display: flex;
+  justify-content: center;
+}
+
+.asterisk {
+  color: #7D1AD4;
+  vertical-align: middle;
 }

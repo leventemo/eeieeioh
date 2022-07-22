@@ -34,6 +34,29 @@
 
 Header Component
 
+Footer Component redo:
+  eeieeioh
+  - [ ] about
+  - [ ] abbreviations
+  - [ ] activities
+  - [ ] roadmap
+
+  social
+  - [ ] contact
+  - [ ] twitter
+  - [ ] patreon
+  - [ ] buy me a coffee
+
+  links
+  - [ ] dictionaries
+  - [ ] corpus
+
+  created by
+  - [ ] app development & content by @leventemo
+  - [ ] logo design by József Balogh
+
+  copyright + logo: full-width col
+
 Contact page
 - [x] create component
 - [x] set up routing
@@ -65,6 +88,7 @@ REDO
 
 Nav Component
 - [ ] active link animated <https://codepen.io/cathydutton/pen/QWWajKX>
+- [ ] take off "Home" & "About" ("About" should go to Footer)
 
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>

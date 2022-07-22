@@ -19,8 +19,10 @@
       </div>
     </div>
     <div class="options-wrapper">
-      <button class="option" id="btn-A" (click)="onClick(currentCard[0])">{{ currentCard[0] }}</button>
-      <button class="option" id="btn-B" (click)="onClick(currentCard[1])">{{ currentCard[1] }}</button>
+      <button class="option" id="btn-A" (click)="onClick(currentCard[0])" [disabled]="!hasItStarted">{{ currentCard[0]
+        }}</button>
+      <button class="option" id="btn-B" (click)="onClick(currentCard[1])" [disabled]="!hasItStarted">{{ currentCard[1]
+        }}</button>
     </div>
   </mat-card-content>
   <mat-divider inset></mat-divider>
@@ -39,7 +41,7 @@
 
   <ng-container matColumnDef="incorrect">
     <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
-    <mat-cell *matCellDef="let item">{{item.incorrectOption}}</mat-cell>
+    <mat-cell *matCellDef="let item">&lowast; {{item.incorrectOption}}</mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="playerA">
@@ -60,6 +62,6 @@
     </mat-cell>
   </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>
