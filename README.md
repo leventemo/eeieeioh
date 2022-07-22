@@ -123,24 +123,8 @@ Duel component
 - [x] routing
 - [ ] routing params
 - [x] write out template
-- [ ] write out class
-- [ ] deactivate text btns before "Start" is pressed
-- [ ] manipulate RXJS subs with setTimeout():
-<https://stackoverflow.com/questions/65193678/rxjs-using-first-with-timer>
-<https://benlesh.medium.com/rxjs-dont-unsubscribe-6753ed4fda87>
-- [ ] extra points for speed:
-| Seconds | Points |
-|:-------:|:------:|
-|1        | 10 |
-|2        | 9 |
-|3        | 8 |
-|4        | 7 |
-|5        | 6 |
-|6        | 5 |
-|7        | 4 |
-|8        | 3 |
-|9        | 2 |
-|10       | 1 |
+- [x] write out class
+- [x] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start"
 
 Reword Component
 - [ ] refactor counter with active & disabled classes

@@ -20,7 +20,7 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'A2', title: 'How long have you ...?', skill: 'SP', language: 'for/since', slug: '/cards', id: 2, activity: 'Cards' },
   { level: 'A2', title: 'Tim\'s a very good example', skill: 'SP', language: 'personality adjectives', slug: '/cards', id: 12, activity: 'Cards' },
 
-  /*   { level: 'A2', title: 'ERR: Email to a friend', skill: 'WR', language: 'misc', slug: '/duel', id: 1, activity: 'Duel' }, */
+  /*   { level: 'A2', title: 'ERR: Email to a friend', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/duel', id: 1, activity: 'Duel' }, */
 
   { level: 'B1', title: 'What would you do ...?', skill: 'SP', language: '2nd Conditional', slug: '/cards', id: 5, activity: 'Cards' },
   { level: 'B1', title: 'Exam questions B1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 6, activity: 'Cards' },
