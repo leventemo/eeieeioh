@@ -209,3 +209,26 @@ mat-cell {
 }
 
 /* final scores */
+.the-winner-is {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%;
+}
+
+.winner-text {
+  margin-bottom: 6rem;
+}
+
+.lottie-div {
+  height: 10rem;
+  width: 10rem;
+}
+
+/* .card-actions {
+  display: flex;
+  height: 7%;
+  align-items: center;
+  justify-content: space-around;
+  color: #7D1AD4;
+} */

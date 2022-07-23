@@ -48,7 +48,7 @@
     </ng-container>
 
     <ng-container matColumnDef="playerA">
-      <mat-header-cell *matHeaderCellDef>player A</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef>A</mat-header-cell>
       <mat-cell *matCellDef="let item">
         <ng-container *ngIf="item.clickingPlayer === 'playerA'">
           {{item.pointsForThis}}
@@ -58,7 +58,7 @@
     </ng-container>
 
     <ng-container matColumnDef="playerB">
-      <mat-header-cell *matHeaderCellDef>player B</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef>B</mat-header-cell>
       <mat-cell *matCellDef="let item">
         <ng-container *ngIf="item.clickingPlayer === 'playerB'">
           {{item.pointsForThis}}
@@ -73,13 +73,12 @@
   </mat-table>
 
   <mat-card *ngIf="this.pack.length === 0">
-    <mat-card-content>
-      <div class="counters-wrapper">
+    <mat-card-content class="the-winner-is">
+      <div class="winner-text">
         <h1>{{winner}}</h1>
       </div>
-      <div>
-        <lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
-          autoplay>
+      <div class="lottie-div">
+        <lottie-player src="/assets/img/threestars.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
       </div>
     </mat-card-content>
