@@ -72,7 +72,7 @@
     <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
   </mat-table>
 
-  <mat-card *ngIf="this.pack.length === 0">
+  <mat-card *ngIf="this.pack.length === 0" class="scores-card">
     <mat-card-content class="the-winner-is">
       <div class="winner-text">
         <h1>{{winner}}</h1>

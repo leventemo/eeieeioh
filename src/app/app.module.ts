@@ -18,6 +18,7 @@ import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
 import { DialogInfoComponent } from './dialog-info/dialog-info.component';
+import { ExpandablesComponent } from './expandables/expandables.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DialogInfoComponent } from './dialog-info/dialog-info.component';
     DuelComponent,
     NotFoundComponent,
     RewordComponent,
-    DialogInfoComponent
+    DialogInfoComponent,
+    ExpandablesComponent
   ],
   imports: [
     BrowserModule,

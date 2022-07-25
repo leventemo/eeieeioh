@@ -88,9 +88,6 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
   }
 
   start() {
-    if (this.pack.length === 0) {
-      // do what?
-    }
 
     this.displayCard();
     this.subscription = interval(10).subscribe(() => {
@@ -183,9 +180,9 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
     if (this.playerA.score === this.playerB.score) {
       this.winner = `It's a draw.`
     } else if (this.playerA.score > this.playerB.score) {
-      this.winner = `Player A wins.`
+      this.winner = `A wins`
     } else {
-      this.winner = `Player B wins.`
+      this.winner = `B wins`
     }
   }
 

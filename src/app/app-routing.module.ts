@@ -9,6 +9,7 @@ import { CheckInComponent } from './check-in/check-in.component';
 import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
+import { ExpandablesComponent } from './expandables/expandables.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
   { path: 'duel/:id', component: DuelComponent },
+  { path: 'expandables/:id', component: ExpandablesComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

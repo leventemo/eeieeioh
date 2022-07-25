@@ -177,6 +177,10 @@ mat-cell {
   font-size: 1rem;
 }
 
+mat-footer-row {
+  border-bottom: none;
+}
+
 .mat-column-correct {
   flex: 0 0 35%;
 }
@@ -218,6 +222,7 @@ mat-cell {
 
 .winner-text {
   margin-bottom: 6rem;
+  animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
 }
 
 .lottie-div {
@@ -232,3 +237,17 @@ mat-cell {
   justify-content: space-around;
   color: #7D1AD4;
 } */
+
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
