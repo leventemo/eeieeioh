@@ -2,36 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
-import { MatTableDataSource } from '@angular/material/table';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
-
-export interface PeriodicElement {
-  name: string;
-  description: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    name: 'Hydrogen',
-    description: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.`,
-  },
-  {
-    name: 'Helium',
-    description: `Helium is a chemical element with symbol He and atomic number 2. It is a
-        colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas
-        group in the periodic table. Its boiling point is the lowest among all the elements.`,
-  },
-];
 
 interface Data {
   id: number;
   title: string;
   language: string;
-  instructions: string;
+  instructionsForExpandables: string;
   cards: string[][];
+}
+
+interface ExpandablePair {
+  visible: string;
+  expandable: string;
 }
 
 @Component({
@@ -49,15 +34,13 @@ interface Data {
 
 export class ExpandablesComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructions: '', cards: [[]] };
+  data: Data = { id: 0, title: '', language: '', instructionsForExpandables: '', cards: [[]] };
   cards: string[][] = [[]];
-  arrayOfObjects: PeriodicElement[] = [];
+  arrayOfObjects: ExpandablePair[] = [];
 
-  dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['name'];
+  columnsToDisplay = ['visible'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-  expandedElement!: PeriodicElement | null;
-  ELEMENT_DATA: PeriodicElement[] = [];
+  expandedElement!: ExpandablePair | null;
 
   constructor(
     public router: Router,
@@ -76,17 +59,20 @@ export class ExpandablesComponent implements OnInit {
 
     // convert this.cards (array of arrays) into an array of objects
     this.arrayOfObjects = this.cards.map(x => ({
-      name: x[0],
-      description: x[1]
+      visible: x[1],
+      expandable: x[0]
     }));
-
-    this.ELEMENT_DATA = this.arrayOfObjects;
 
   }
 
-  /*   openDialog() {
-      this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
-    } */
+  openDialog() {
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructionsForExpandables } });
+
+  }
+
+  redirect() {
+    this.router.navigate(['contents']);
+  }
 
 }
 

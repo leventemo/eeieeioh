@@ -1,5 +1,51 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 27rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+mat-card,
 table {
   width: 100%;
+}
+
+mat-card-title,
+span,
+button {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+}
+
+.mat-table {
+  box-shadow: none;
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.mat-cell {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 tr.example-detail-row {

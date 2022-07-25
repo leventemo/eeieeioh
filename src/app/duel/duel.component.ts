@@ -13,7 +13,7 @@ interface Data {
   id: number;
   title: string;
   language: string;
-  instructions: string;
+  instructionsForDuels: string;
   cards: string[][];
 }
 
@@ -37,7 +37,7 @@ interface ResultsThisTurn {
 })
 export class DuelComponent implements OnInit { // do I need "implement OnDestroy" above?
 
-  data: Data = { id: 0, title: '', language: '', instructions: '', cards: [[]] };
+  data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
   cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
@@ -84,7 +84,7 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructionsForDuels } });
   }
 
   start() {
