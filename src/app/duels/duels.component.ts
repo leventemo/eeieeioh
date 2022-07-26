@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
-
 import { Utils } from '../utils';
 import { interval, Subscription } from 'rxjs';
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
@@ -35,7 +34,7 @@ interface ResultsThisTurn {
   templateUrl: './duels.component.html',
   styleUrls: ['./duels.component.css']
 })
-export class DuelsComponent implements OnInit { // do I need "implement OnDestroy" above?
+export class DuelsComponent implements OnInit {
 
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
@@ -43,7 +42,6 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
   timeAllowed = 500;
 
   hasItStarted = false; // to hide "Start" btns
-  isItAllDone = false;
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
@@ -62,9 +60,12 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
     pointsForThis: 0,
   };
   resultsAll: ResultsThisTurn[] = [];
-  ELEMENT_DATA: ResultsThisTurn[] = this.resultsAll;
 
   subscription!: Subscription;
+
+  // for feedback table
+  displayedColumns: string[] = ['correct', 'incorrect', 'playerA', 'playerB'];
+  dataSource = new MatTableDataSource(this.resultsAll);
 
   constructor(
     public router: Router,
@@ -88,7 +89,6 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
   }
 
   start() {
-
     this.displayCard();
     this.subscription = interval(10).subscribe(() => {
       this.tiktok();
@@ -109,7 +109,6 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
     if (this.pack.length === 0) {
       this.subscription.unsubscribe();
 
-      // hide duel, show feddback
       return;
     }
     this.calcScore(val);
@@ -152,7 +151,6 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
   };
 
   calcScore(val: string | null = null) {
-
     if (val === this.currentCorrectCard) {
       this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
     } else {
@@ -160,6 +158,11 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
     }
     this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
 
+    this.saveResults();
+    this.chooseWinner();
+  }
+
+  saveResults() {
     let resultObjThisTurn: ResultsThisTurn = {
       correctOption: this.currentCorrectCard,
       incorrectOption: this.currentIncorrectCard,
@@ -168,13 +171,7 @@ export class DuelsComponent implements OnInit { // do I need "implement OnDestro
     }
 
     this.resultsAll.push(resultObjThisTurn);
-
-    this.chooseWinner();
   }
-
-  // for feedback table
-  displayedColumns: string[] = ['correct', 'incorrect', 'playerA', 'playerB'];
-  dataSource = new MatTableDataSource(this.ELEMENT_DATA);
 
   chooseWinner() {
     if (this.playerA.score === this.playerB.score) {
