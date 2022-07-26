@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
+import { Utils } from '../utils';
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
 
 interface Data {
@@ -55,19 +56,21 @@ export class ExpandablesComponent implements OnInit {
 
     // find the deck for id we got from the route
     this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+
     this.cards = this.data.cards;
 
     // convert this.cards (array of arrays) into an array of objects
-    this.arrayOfObjects = this.cards.map(x => ({
-      visible: x[1],
-      expandable: x[0]
-    }));
+    this.arrayOfObjects = Utils
+      .shuffle(this.cards)
+      .map(x => ({
+        visible: x[1],
+        expandable: x[0]
+      }));
 
   }
 
   openDialog() {
     this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructionsForExpandables } });
-
   }
 
   redirect() {

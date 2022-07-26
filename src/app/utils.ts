@@ -5,39 +5,22 @@ export class Utils {
     return Math.min(low + r, high);
   };
 
-}
+  public static shuffle(array: string[][]) {
+    let currentIndex = array.length;
+    let randomIndex: number;
 
-export class Timer {
-  constructor() { }
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
 
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
 
-  /*   counter: number;
-    timer: number;
-    start: number;
-    interval: number; */
-  /* static startTimer: any; */
-  /* constructor(start: number, counter: number, timer: number) {
-    this.counter = counter;
-    this.timer = timer;
-    this.start = start;
-    this.interval = 0;
-  } */
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
 
-  /* startTimer() {
-    this.interval = setInterval(() => {
-      const timePassed = Math.round((Date.now() - this.start));
-      this.timer = timePassed;
-
-      if (timePassed >= 1000) {
-        clearInterval(this.interval);
-        console.log(this.timer);
-      }
-    }, 1) as unknown as number;
-    return this.timer;
+    return array;
   }
 
-  stopTimer() {
-    clearInterval(this.interval);
-    console.log(this.timer);
-  } */
 }
