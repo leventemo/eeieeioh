@@ -31,11 +31,11 @@ interface ResultsThisTurn {
 }
 
 @Component({
-  selector: 'app-duel',
-  templateUrl: './duel.component.html',
-  styleUrls: ['./duel.component.css']
+  selector: 'app-duels',
+  templateUrl: './duels.component.html',
+  styleUrls: ['./duels.component.css']
 })
-export class DuelComponent implements OnInit { // do I need "implement OnDestroy" above?
+export class DuelsComponent implements OnInit { // do I need "implement OnDestroy" above?
 
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
@@ -194,5 +194,4 @@ export class DuelComponent implements OnInit { // do I need "implement OnDestroy
     this.subscription.unsubscribe();
   }
 }
-
 

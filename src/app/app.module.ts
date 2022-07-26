@@ -14,11 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
-import { DuelComponent } from './duel/duel.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
 import { DialogInfoComponent } from './dialog-info/dialog-info.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
+import { DuelsComponent } from './duels/duels.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +31,11 @@ import { ExpandablesComponent } from './expandables/expandables.component';
     CardsComponent,
     ContactComponent,
     CheckInComponent,
-    DuelComponent,
     NotFoundComponent,
     RewordComponent,
     DialogInfoComponent,
-    ExpandablesComponent
+    ExpandablesComponent,
+    DuelsComponent
   ],
   imports: [
     BrowserModule,

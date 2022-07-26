@@ -6,7 +6,7 @@ import { ContentsComponent } from './contents/contents.component';
 import { CardsComponent } from './cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
-import { DuelComponent } from './duel/duel.component';
+import { DuelsComponent } from './duels/duels.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'reword/:id', component: RewordComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
-  { path: 'duel/:id', component: DuelComponent },
+  { path: 'duels/:id', component: DuelsComponent },
   { path: 'expandables/:id', component: ExpandablesComponent },
   { path: '**', component: NotFoundComponent }
 ];
