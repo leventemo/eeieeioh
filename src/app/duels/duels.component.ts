@@ -38,10 +38,13 @@ export class DuelsComponent implements OnInit {
 
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
-  cardsTotal = () => this.data.cards.length;
+  cardsTotal = () => this.data.cards.length; // would work with "-1" but leaves last card out
   timeAllowed = 500;
 
-  hasItStarted = false; // to hide "Start" btns
+  // to hide "Start" btns
+  hasItStarted = false;
+  // to display feedback table & winner
+  areQnsDone = false;
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
@@ -50,7 +53,8 @@ export class DuelsComponent implements OnInit {
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
   currentIncorrectCard = '';
-  winner!: string;
+  winner: string = '';
+  margin: number = 0;
 
   pointsEarnedThisTurn = 0;
   result: ResultsThisTurn = {
@@ -89,6 +93,10 @@ export class DuelsComponent implements OnInit {
   }
 
   start() {
+    if (this.pack.length === 0) {
+      console.log('ERROR: cards have been loaded');
+      return;
+    }
     this.displayNextScreen();
     this.subscription = interval(10).subscribe(() => {
       this.tiktok();
@@ -98,14 +106,6 @@ export class DuelsComponent implements OnInit {
   };
 
   displayNextScreen() {
-    if (this.pack.length === 0) {
-      this.subscription.unsubscribe(); // won't unsubscribe
-      console.log(this.pack.length);
-
-      console.log('NIL'); // won't log!
-      this.chooseWinner(); // this one does work
-    }
-
     this.selectCurrentCard();
     this.randomizeCardsDisplay();
   }
@@ -113,14 +113,19 @@ export class DuelsComponent implements OnInit {
   tiktok() {
     ++this.currentPlayer.timer;
 
-    console.log(this.currentPlayer.timer); // won't stop logging timing when unsubscribed in displayNextScreen()
-
     if (this.currentPlayer.timer >= this.timeAllowed) {
       this.switchPlayers();
     }
   }
 
   onClick(val: string) {
+    if (this.pack.length === 0) {
+      this.subscription.unsubscribe();
+      this.areQnsDone = true;
+      this.calcScore(val);
+      this.chooseWinner();
+      return;
+    }
     this.calcScore(val);
     this.switchPlayers();
     this.displayNextScreen();
@@ -154,12 +159,8 @@ export class DuelsComponent implements OnInit {
   randomizeCardsDisplay() {
     const optionsRando = Utils.getRandom(10, 1);
     if (optionsRando % 2) {
-      this.swapCards();
+      [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
     }
-  };
-
-  swapCards() {
-    [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
   };
 
   saveResults() {
@@ -173,11 +174,11 @@ export class DuelsComponent implements OnInit {
 
   chooseWinner() {
     if (this.playerA.score === this.playerB.score) {
-      this.winner = `It's a draw.`
+      this.winner = `No winner this time. It's a draw.`
     } else if (this.playerA.score > this.playerB.score) {
-      this.winner = `A wins`
+      this.winner = `A wins. Congratulations!`;
     } else {
-      this.winner = `B wins`
+      this.winner = `B wins. Congratulations!`;
     }
   }
 

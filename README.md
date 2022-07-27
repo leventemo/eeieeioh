@@ -44,7 +44,7 @@ Footer Component redo:
 
   social
   - [ ] contact
-  - [ ] twitter
+  - [ ] twitter eeieeioh
   - [ ] patreon
   - [ ] buy me a coffee
 

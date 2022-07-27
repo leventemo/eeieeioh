@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-card *ngIf="this.pack.length !== 0">
+  <mat-card *ngIf="!areQnsDone">
     <mat-card-title>
       {{ data.title }}
       <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
@@ -34,7 +34,7 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-table *ngIf="this.pack.length === 0" [dataSource]="dataSource" class="mat-elevation-z8">
+  <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="correct">
       <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
       <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>
@@ -72,7 +72,7 @@
     <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
   </mat-table>
 
-  <mat-card *ngIf="this.pack.length === 0" class="scores-card">
+  <mat-card *ngIf="areQnsDone" class="scores-card">
     <mat-card-content class="the-winner-is">
       <div class="winner-text">
         <h1>{{winner}}</h1>
