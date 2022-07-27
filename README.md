@@ -39,6 +39,7 @@ Footer Component redo:
   - [ ] about
   - [ ] abbreviations
   - [ ] activities
+  - [ ] log
   - [ ] roadmap
 
   social
@@ -83,7 +84,6 @@ REDO
 - [ ] create components folder?
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 - [ ] rename Contents Components to Activities (routing reasons)
-- [ ] miliseconds to H:M <https://bobbyhadz.com/blog/javascript-convert-milliseconds-to-hours-and-minutes>
 
 Nav Component
 - [ ] active link animated <https://codepen.io/cathydutton/pen/QWWajKX>
@@ -124,6 +124,8 @@ Duel component
 - [x] write out template
 - [x] write out class
 - [x] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start"
+- [ ] custom pipe: centiseconds to s:c format
+- [ ] miliseconds to H:M <https://bobbyhadz.com/blog/javascript-convert-milliseconds-to-hours-and-minutes>
 
 Reword Component
 - [ ] refactor counter with active & disabled classes

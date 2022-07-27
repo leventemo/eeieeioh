@@ -410,6 +410,101 @@
   },
   {
     "id": "4",
+    "level": "B2",
+    "skill": "WR",
+    "title": "ERR: Story",
+    "language": "misc",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. Click on \"Feedback\" at the end of the game to see just that, some feedback on your answers.",
+    "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
+    "cards": [
+      [
+        "I'll count to three",
+        "I'll account for three"
+      ],
+      [
+        "someone said there was an earthquake",
+        "someone told there was an earthquake"
+      ],
+      [
+        "the rock under her feet started moving",
+        "the rock under her feet started to moving"
+      ],
+      [
+        "she knew it was an earthquake",
+        "she knew it is an earthquake"
+      ],
+      [
+        "people in Hungary were not used to earthquakes",
+        "people in Hungary was not used to earthquakes"
+      ],
+      [
+        "the quake was of magnitude 4",
+        "the quake was a magnitude 4"
+      ],
+      [
+        "it ended in about 70 seconds",
+        "it ended about 70 seconds"
+      ],
+      [
+        "Does this little guy belong to you?",
+        "Is this little guy belong to you?"
+      ],
+      [
+        "she realized that she hadn't said goodbye",
+        "she realized that she hasn't said goodbye"
+      ],
+      [
+        "she couldn't thank the mysterious man enough",
+        "she couldn't thank enough to the the mysterious man"
+      ],
+      [
+        "there were no signs of danger",
+        "there were no sign of danger"
+      ],
+      [
+        "she helped those in need",
+        "she helped for those in need"
+      ],
+      [
+        "she felt that something was moving under her feet",
+        "she felt that something is moving under her feet"
+      ],
+      [
+        "she didn't understand what was happening",
+        "she didn't understand what is happening"
+      ],
+      [
+        "she and her coworkers saw what had happened",
+        "she and her coworkors saw what had happened"
+      ],
+      [
+        "he had just got hired",
+        "he had just got hierd"
+      ],
+      [
+        "Suddenly, an earthquake hit.",
+        "Sudenly, an earthquake hit."
+      ],
+      [
+        "she wanted to live so she started running",
+        "she wanted to live so she started runing"
+      ],
+      [
+        "there was an earthquake",
+        "there was an eartquake"
+      ],
+      [
+        "she started panicking",
+        "she started panicing"
+      ],
+      [
+        "nothing serious",
+        "nothing seirious"
+      ]
+    ]
+  },
+  {
+    "id": "5",
     "level": "A2",
     "skill": "WR",
     "title": "ERR: Email to a friend",
@@ -438,5 +533,15 @@
         "we arrived to home late"
       ]
     ]
+  },
+  {
+    "id": "6",
+    "level": "A2",
+    "skill": "WR",
+    "title": "ERR: Email to a friend",
+    "language": "misc",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. Click on \"Feedback\" at the end of the game to see just that, some feedback on your answers.",
+    "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
+    "cards": []
   }
 ]

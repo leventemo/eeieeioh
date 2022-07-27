@@ -38,6 +38,7 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'B2', title: 'Yes-No Game', skill: 'SP', language: 'fillers, hesitating', slug: '/cards', id: 13, activity: 'Cards' },
 
   { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'misc', slug: '/expandables', id: 3, activity: 'Expandables' },
+  { level: 'B2', title: 'ERR: Story', skill: 'WR', language: 'misc', slug: '/expandables', id: 4, activity: 'Expandables' },
   /*   { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'misc', slug: '/duel', id: 3, activity: 'Duel' }, */
 
   { level: 'C1', title: 'Exam questions C1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 8, activity: 'Cards' },
