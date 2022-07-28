@@ -5,12 +5,21 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ConvertTimePipe implements PipeTransform {
 
-  transform(value: number, ...args: unknown[]): unknown {
+  transform(value: number): string {
     if (!value) {
-      return 0;
+      return `00.00`;
     }
-    const secondsAndCentiseconds = (value / 100) % 60;
-    return secondsAndCentiseconds.toString().padStart(2, '0'); // doesn't add padding
+
+    let secondsAndCentiseconds = (value / 100) % 60;
+
+    if (secondsAndCentiseconds === 5) {
+      const output = `0${secondsAndCentiseconds.toString()}.00`;
+      return output;
+    } else {
+      const output = `0${secondsAndCentiseconds.toString()}`;
+      return output;
+    }
+
   }
 
 

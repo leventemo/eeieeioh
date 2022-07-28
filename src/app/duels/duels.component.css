@@ -58,6 +58,18 @@ mat-card-content {
   opacity: .5;
 }
 
+.timer,
+.score {
+  font-family: 'Inconsolata', monospace;
+  width: 5.5rem;
+  /*   width: 4.5rem;
+  text-align: center; */
+}
+
+.score {
+  text-align: center;
+}
+
 .options-wrapper {
   display: grid;
   grid-template-columns: 1;
