@@ -41,7 +41,7 @@ export class DuelsComponent implements OnInit {
   cardsTotal = () => this.data.cards.length; // would work with "-1" but leaves last card out
   timeAllowed = 500;
 
-  // to hide "Start" btns
+  // to hide "Start" & "Contents" btns
   hasItStarted = false;
   // to display feedback table & winner
   areQnsDone = false;
@@ -93,10 +93,6 @@ export class DuelsComponent implements OnInit {
   }
 
   start() {
-    if (this.pack.length === 0) {
-      console.log('ERROR: cards have been loaded');
-      return;
-    }
     this.displayNextScreen();
     this.subscription = interval(10).subscribe(() => {
       this.tiktok();
@@ -183,7 +179,8 @@ export class DuelsComponent implements OnInit {
   }
 
   redirect() {
-    this.router.navigate(['contents']);
+    this.router.navigateByUrl('contents');
+    /* this.router.navigate(['contents']); */
   }
 
   ngOnDestroy() {

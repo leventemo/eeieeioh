@@ -19,6 +19,7 @@ import { RewordComponent } from './reword/reword.component';
 import { DialogInfoComponent } from './dialog-info/dialog-info.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
 import { DuelsComponent } from './duels/duels.component';
+import { ConvertTimePipe } from './convert-time.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DuelsComponent } from './duels/duels.component';
     RewordComponent,
     DialogInfoComponent,
     ExpandablesComponent,
-    DuelsComponent
+    DuelsComponent,
+    ConvertTimePipe
   ],
   imports: [
     BrowserModule,
