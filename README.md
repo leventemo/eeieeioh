@@ -30,17 +30,17 @@
 - [ ] polifills
 - [ ] noscript
 - [ ] testing
-
+- [ ] page transition/router animations: <https://www.youtube.com/watch?v=7JA90VI9fAI>
 
 Header Component
 
 Footer Component redo:
   eeieeioh
-  - [ ] about
-  - [ ] abbreviations
-  - [ ] activities
-  - [ ] log
-  - [ ] roadmap
+  - [ ] about: html done
+  - [ ] abbreviations: html done
+  - [ ] activities: html done
+  - [ ] log: md done
+  - [ ] roadmap: md done
 
   social
   - [ ] contact
@@ -49,12 +49,12 @@ Footer Component redo:
   - [ ] buy me a coffee
 
   links
-  - [ ] dictionaries
-  - [ ] corpus
+  - [ ] dictionaries: html done
+  - [ ] corpus: html done
 
   created by
-  - [ ] app development & content by @leventemo
-  - [ ] logo design by József Balogh
+  - [ ] app development & content by @leventemo: html done
+  - [ ] logo design by József Balogh: html done
 
   copyright + logo: full-width col
 
@@ -112,7 +112,7 @@ Pelmalism Component
 * see notes in eeieeioh/Pelmalism.md
 
 Timed_Cards Component
-* for
+* FOR:
   + Yes-No Game
   + Just a minute
 - [ ] create component
@@ -124,12 +124,23 @@ Duel component
 - [x] write out template
 - [x] write out class
 - [x] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start"
-- [ ] custom pipe: centiseconds to s:c format
-- [ ] miliseconds to H:M <https://bobbyhadz.com/blog/javascript-convert-milliseconds-to-hours-and-minutes>
+- [x] custom pipe: centiseconds to s:c format
+- [ ] intersection observer for final scoreboard animation
+<https://www.bennadel.com/blog/3946-using-intersectionobserver-and-ngswitch-to-defer-template-bindings-in-angular-11-0-5.htm<>
+<https://vimeo.com/494472333>
+<https://blog.logrocket.com/lazy-loading-using-the-intersection-observer-api/>
+- [x] vanilla JS example: <https://www.youtube.com/watch?v=9W7rKLahq2Q>
+- [ ] vanilla JS example: Wes
+- [ ] Angular example, Giancarlo: <https://giancarlobuomprisco.com/angular/intersection-observer-with-angular>
+- [ ] Angular example: <https://dev.to/anirbmuk/angular-lazy-loading-directive-with-intersectionobserver-4m92>
+- [ ] intergrating it into Angular using RxJS: <https://blog.bitsrc.io/angular-maximizing-performance-with-the-intersection-observer-api-23d81312f178>
+- [ ] creating custom directives, Dmytro <https://www.youtube.com/watch?v=07CaGlbMPbw>
+- [ ] creating custom directives: Stephen
 
 Reword Component
 - [ ] refactor counter with active & disabled classes
 - [ ] make only one counter active at a time (use currentPLayer variable)
+- [ ] add `hasClueBeenClicked` flag to restrict scoring: if so, you can only give 1 point of the 2 max
 - [ ] add "Done" Pablita illustration
 
 Not Found Component
