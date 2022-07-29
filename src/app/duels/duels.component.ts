@@ -170,7 +170,7 @@ export class DuelsComponent implements OnInit {
 
   chooseWinner() {
     if (this.playerA.score === this.playerB.score) {
-      this.winner = `No winner this time. It's a draw.`
+      this.winner = `No winner: it's a draw.`
     } else if (this.playerA.score > this.playerB.score) {
       this.winner = `A wins. Congratulations!`;
     } else {

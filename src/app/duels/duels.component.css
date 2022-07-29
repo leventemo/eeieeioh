@@ -224,7 +224,15 @@ mat-footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92%;
+  /*   height: 92%;
+ */
+  padding-bottom: 5rem;
+}
+
+.scores-card {
+  height: 60%;
+  box-shadow: none;
+  margin: 3rem 0 2rem 0;
 }
 
 .winner-text {
@@ -235,6 +243,10 @@ mat-footer-row {
 .lottie-div {
   height: 10rem;
   width: 10rem;
+}
+
+.divider {
+  width: 100%;
 }
 
 /* .card-actions {

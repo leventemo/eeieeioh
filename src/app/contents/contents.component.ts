@@ -21,14 +21,14 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'A2', title: 'Tim\'s a very good example', skill: 'SP', language: 'personality adjectives', slug: '/cards', id: 12, activity: 'Cards' },
 
   { level: 'A2', title: 'ERR: Email to a friend', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/expandables', id: 1, activity: 'Expandables' },
-  /*   { level: 'A2', title: 'ERR: Email to a friend', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/duel', id: 1, activity: 'Duel' }, */
+  { level: 'A2', title: 'ERR: Email to a friend', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/duels', id: 1, activity: 'Duels' },
 
   { level: 'B1', title: 'What would you do ...?', skill: 'SP', language: '2nd Conditional', slug: '/cards', id: 5, activity: 'Cards' },
   { level: 'B1', title: 'Exam questions B1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 6, activity: 'Cards' },
   { level: 'B1', title: 'Should have asked mom', skill: 'SP', language: 'should have done', slug: '/cards', id: 9, activity: 'Cards' },
 
-  { level: 'B1', title: 'ERR: Somebody I know', skill: 'WR', language: 'misc', slug: '/expandables', id: 2, activity: 'Expandables' },
-  /*   { level: 'B1', title: 'ERR: Somebody I know', skill: 'WR', language: 'misc', slug: '/duel', id: 2, activity: 'Duel' }, */
+  { level: 'B1', title: 'ERR: Somebody I know', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/expandables', id: 2, activity: 'Expandables' },
+  { level: 'B1', title: 'ERR: Somebody I know', skill: 'WR', language: 'VOC, GR, SPEL', slug: '/duels', id: 2, activity: 'Duels' },
 
   { level: 'B2', title: 'Education is like football (1)', skill: 'SP', language: 'talking about education', slug: '/cards', id: 10, activity: 'Cards' },
   { level: 'B2', title: 'Education is like football (2)', skill: 'SP', language: 'talking about education', slug: '/cards', id: 11, activity: 'Cards' },
@@ -37,9 +37,10 @@ const ELEMENT_DATA: Contents[] = [
   { level: 'B2', title: 'Exam questions B2 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 7, activity: 'Cards' },
   { level: 'B2', title: 'Yes-No Game', skill: 'SP', language: 'fillers, hesitating', slug: '/cards', id: 13, activity: 'Cards' },
 
-  { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'misc', slug: '/expandables', id: 3, activity: 'Expandables' },
-  { level: 'B2', title: 'ERR: Story', skill: 'WR', language: 'misc', slug: '/expandables', id: 4, activity: 'Expandables' },
-  /*   { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'misc', slug: '/duel', id: 3, activity: 'Duel' }, */
+  { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/expandables', id: 3, activity: 'Expandables' },
+  { level: 'B2', title: 'ERR: My Dream House', skill: 'WR', language: 'VOC, GR, SPEL', slug: '/duels', id: 3, activity: 'Duels' },
+  { level: 'B2', title: 'ERR: Story', skill: 'WR', language: 'GR, VOC, SPEL', slug: '/expandables', id: 4, activity: 'Expandables' },
+  { level: 'B2', title: 'ERR: Story', skill: 'WR', language: 'VOC, GR, SPEL', slug: '/duels', id: 4, activity: 'Duels' },
 
   { level: 'C1', title: 'Exam questions C1 (1)', skill: 'SP', language: 'conversation', slug: '/cards', id: 8, activity: 'Cards' },
 ];
