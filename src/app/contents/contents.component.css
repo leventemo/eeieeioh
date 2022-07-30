@@ -1,14 +1,22 @@
-.form-field-wrapper {
-  display: grid;
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 42rem;
+  margin: 2vh .5rem 2vh .5rem;
+
 }
 
 mat-form-field {
-  min-width: 320px;
-  max-width: 50%;
+  width: 100%;
   color: #7D1AD4;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.1rem;
-  margin: auto;
 }
 
 .icon-inline {
@@ -20,10 +28,10 @@ mat-form-field {
 }
 
 mat-table {
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   box-shadow: none;
-  min-width: 320px;
-  max-width: 70%;
-  margin: auto;
 }
 
 mat-header-cell {
@@ -103,7 +111,9 @@ a:active {
 }
 
 .lottie-cell {
-  height: 1.2rem;
+  height: 1rem;
   margin: 0 .5rem 0 0;
   transform: rotate(0.75turn);
+  /*   margin: 0;
+ */
 }

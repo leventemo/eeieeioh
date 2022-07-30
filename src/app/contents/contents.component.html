@@ -1,45 +1,46 @@
-<div class="form-field-wrapper">
-  <mat-form-field>
-    <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
-    <mat-icon matSuffix class="icon-inline">search</mat-icon>
-  </mat-form-field>
+<div class="container">
+  <div class="form-field-wrapper">
+    <mat-form-field>
+      <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
+      <mat-icon matSuffix class="icon-inline">search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="title-cell">
+        {{item.title}}
+        <div *ngIf="item.new" class="lottie-cell">
+          <lottie-player src="/assets/img/new.json" background="transparent" speed="1" loop autoplay>
+          </lottie-player>
+        </div>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="language">
+      <mat-header-cell *matHeaderCellDef>Language</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.language}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="skill">
+      <mat-header-cell *matHeaderCellDef>Skill</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.skill}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="level">
+      <mat-header-cell *matHeaderCellDef>Level</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.level}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="activity">
+      <mat-header-cell *matHeaderCellDef>Activity</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
 </div>
-
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <ng-container matColumnDef="title">
-    <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
-    <mat-cell *matCellDef="let item" class="title-cell">
-      {{item.title}}
-      <div *ngIf="item.new" class="lottie-cell">
-        <lottie-player class="whole-page-img" src="/assets/img/new.json" background="transparent" speed="1" loop
-          autoplay>
-        </lottie-player>
-      </div>
-    </mat-cell>
-  </ng-container>
-
-  <ng-container matColumnDef="language">
-    <mat-header-cell *matHeaderCellDef>Language</mat-header-cell>
-    <mat-cell *matCellDef="let item">{{item.language}}</mat-cell>
-  </ng-container>
-
-  <ng-container matColumnDef="skill">
-    <mat-header-cell *matHeaderCellDef>Skill</mat-header-cell>
-    <mat-cell *matCellDef="let item">{{item.skill}}</mat-cell>
-  </ng-container>
-
-  <ng-container matColumnDef="level">
-    <mat-header-cell *matHeaderCellDef>Level</mat-header-cell>
-    <mat-cell *matCellDef="let item">{{item.level}}</mat-cell>
-  </ng-container>
-
-  <ng-container matColumnDef="activity">
-    <mat-header-cell *matHeaderCellDef>Activity</mat-header-cell>
-    <mat-cell *matCellDef="let item">
-      <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
-    </mat-cell>
-  </ng-container>
-
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-</mat-table>
