@@ -96,3 +96,15 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+.vala {}
+
+.title-cell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lottie-cell {
+  height: .9rem;
+  margin: 0 .5rem 0 0;
+}

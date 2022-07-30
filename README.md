@@ -25,12 +25,14 @@
 * primary color
 * typography: `<h1`>, `<h2`>, `<a>` etc.
 - [x] try serving illustrations locally, rather than from assets links
-* [ ] Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular-project-here-is-what-you-need-to-do-71ba08587b1d>
+Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular-project-here-is-what-you-need-to-do-71ba08587b1d>
 - [ ] CSS resets
 - [ ] polifills
 - [ ] noscript
 - [ ] testing
 - [ ] page transition/router animations: <https://www.youtube.com/watch?v=7JA90VI9fAI>
+- [ ] check accessibility concerns for lottie files:
+<https://github.com/airbnb/lottie-web/issues/1935>
 
 Header Component
 
