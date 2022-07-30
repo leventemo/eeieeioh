@@ -97,14 +97,13 @@ a:active {
   text-decoration: none;
 }
 
-.vala {}
-
 .title-cell {
   display: flex;
   justify-content: space-between;
 }
 
 .lottie-cell {
-  height: .9rem;
+  height: 1.2rem;
   margin: 0 .5rem 0 0;
+  transform: rotate(0.75turn);
 }

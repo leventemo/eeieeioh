@@ -10,11 +10,11 @@
     <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
     <mat-cell *matCellDef="let item" class="title-cell">
       {{item.title}}
-      <span *ngIf="item.new" class="lottie-cell">
+      <div *ngIf="item.new" class="lottie-cell">
         <lottie-player class="whole-page-img" src="/assets/img/new.json" background="transparent" speed="1" loop
           autoplay>
         </lottie-player>
-      </span>
+      </div>
     </mat-cell>
   </ng-container>
 
