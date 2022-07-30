@@ -105,15 +105,27 @@ a:active {
   text-decoration: none;
 }
 
+/* "it's new!" tag */
 .title-cell {
   display: flex;
   justify-content: space-between;
 }
 
-.lottie-cell {
-  height: 1rem;
-  margin: 0 .5rem 0 0;
+.new-span {
   transform: rotate(0.75turn);
-  /*   margin: 0;
- */
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  color: #D85BFD;
+}
+
+.accentcolor-dark {
+  color: #7D1AD4;
+}
+
+.accentcolor-mid {
+  color: #D85BFD;
+}
+
+.accentcolor-light {
+  color: #DCC9FF;
 }
