@@ -120,13 +120,7 @@ Timed_Cards Component
 - [ ] create component
 
 Duel component
-- [x] create component
-- [x] routing
-- [ ] routing params
-- [x] write out template
-- [x] write out class
-- [x] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start"
-- [x] custom pipe: centiseconds to s:c format
+- [ ] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start" – temporary solution: btn is hidden on load
 - [ ] intersection observer for final scoreboard animation
 <https://www.bennadel.com/blog/3946-using-intersectionobserver-and-ngswitch-to-defer-template-bindings-in-angular-11-0-5.htm<>
 <https://vimeo.com/494472333>
@@ -153,14 +147,10 @@ Not Found Component
 Contents Component
 - [x] narrow "level" column; wastes space
 - [ ] set up routing with params <https://angular.io/guide/router>
-- [x] cards
-- [x] reword
-- [ ] check-in
-- [ ] duel
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
 <https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
 <https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
-- [ ] fix bug: butterfly animation cover last item on list on mobiles
+- [ ] fix bug: butterfly animation cover last item on list on mobiles – try z-index
 - [ ] pagination
 
 pass data between components:

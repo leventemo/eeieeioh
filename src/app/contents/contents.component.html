@@ -10,7 +10,8 @@
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
       <mat-cell *matCellDef="let item" class="title-cell">
-        {{item.title}}<div *ngIf="item.new === 'new!'" class="new-span">
+        {{item.title}}
+        <div *ngIf="checkIfNew(item.dateCreated)" class="new-span">
           <span class="accentcolor-mid">n</span><span class="accentcolor-dark">e</span><span
             class="accentcolor-light">w</span><span class="accentcolor-mid">!</span>
         </div>
