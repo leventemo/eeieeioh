@@ -145,6 +145,7 @@ Not Found Component
 - [x] find Pablita animated illustration
 
 Contents Component
+- [ ] rename `dateCreated` to `datePublished`
 - [x] narrow "level" column; wastes space
 - [ ] set up routing with params <https://angular.io/guide/router>
 <https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
