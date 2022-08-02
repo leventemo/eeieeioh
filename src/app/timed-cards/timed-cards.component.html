@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-title>
+    {{ data.title }}
+    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+  </mat-card-title>
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+
+    <!-- from Duels -->
+    <div class="timer-wrapper">
+      <p class="timer" [ngClass]="{ activetimer: (timer < this.data.timeAllowed) && (timer !== 0)}">
+        {{ timer }}
+      </p>
+    </div>
+
+    <div *ngIf="timeIsUp" class="waiting-for-next-btn">
+      <lottie-player class="whole-page-img" src="/assets/img/cow.json" background="transparent" speed="1" loop autoplay>
+      </lottie-player>
+    </div>
+
+    <div *ngIf="isItAllDone">
+      <lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
+        autoplay>
+      </lottie-player>
+    </div>
+    <div *ngIf="!isItAllDone && !timeIsUp" class="card-display">{{ currentCard }}</div>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions align="end">
+    <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
+    <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
+    <button *ngIf="hasItStarted" color="primary" mat-button (click)="clickNext()">{{ btnValue }}</button>
+    <button color="primary" mat-button (click)="redirect()">Contents</button>
+  </mat-card-actions>
+</mat-card>

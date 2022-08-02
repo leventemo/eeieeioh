@@ -10,6 +10,7 @@ import { DuelsComponent } from './duels/duels.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
+import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'check-in', component: CheckInComponent },
   { path: 'duels/:id', component: DuelsComponent },
   { path: 'expandables/:id', component: ExpandablesComponent },
+  { path: 'timed-cards/:id', component: TimedCardsComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

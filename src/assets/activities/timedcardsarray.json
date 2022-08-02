@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "level": "B2",
+    "skill": "SP",
+    "title": "Yes-No Game",
+    "language": "fillers, hesitating",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. You are not allowed to use the words 'yes' or 'no' and you're not allowed to give a clear positive or negative answer. You need to speak like (some) politicians do.",
+    "timeAllowed": "50",
+    "datePublished": "2022, 05, 31",
+    "cards": [
+      "Are you enjoying this class?",
+      "Are you going to have dinner today?",
+      "Did you, at any point in your life, like Justin Bieber?",
+      "Do you smoke?",
+      "Do you think UFOs exist?",
+      "Do you like today's weather?",
+      "Could you ride a bike when you were five?",
+      "Would you like to win the lottery?",
+      "Is London the capital city of the UK?",
+      "Have you ever seen a Spiderman movie?",
+      "Have you ever fallen in love at first sight?",
+      "Is your hair black?",
+      "Do you think Real Madrid is the best football team in the world?",
+      "Are you going out tonight?",
+      "Can you play the musical instrument called the triangle?",
+      "Are you French?",
+      "Are kangaroos humans?",
+      "Have you ever seen an elephant in a cherry tree?",
+      "Are you vegetarian?",
+      "Did you clean your shoes yesterday?"
+    ]
+  }
+]

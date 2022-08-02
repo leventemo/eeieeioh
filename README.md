@@ -113,11 +113,23 @@ Cards component
 Pelmalism Component
 * see notes in eeieeioh/Pelmalism.md
 
-Timed_Cards Component
+SC Component
+* for StatCounter in each page
+- [ ] should I stay or should I go?
+
+Timed-Cards Component
+- [x] create component
+- [x] copy Card Component
+- [x] set up routing
+- [x] create empty assets/timedcardsarray
+- [x] copy Yes-No Game in assets/timedcardsarray
+- [x] set up rough layout
+- [ ] delete Yes-No Game in assets/timedcardsarray
+
 * FOR:
   + Yes-No Game
   + Just a minute
-- [ ] create component
+  + Talk to Me: convert Exam Qns to Talk to Me
 
 Duel component
 - [ ] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start" – temporary solution: btn is hidden on load

@@ -20,6 +20,8 @@ import { DialogInfoComponent } from './dialog-info/dialog-info.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
 import { DuelsComponent } from './duels/duels.component';
 import { ConvertTimePipe } from './convert-time.pipe';
+import { TimedCardsComponent } from './timed-cards/timed-cards.component';
+import { ScComponent } from './sc/sc.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ConvertTimePipe } from './convert-time.pipe';
     DialogInfoComponent,
     ExpandablesComponent,
     DuelsComponent,
-    ConvertTimePipe
+    ConvertTimePipe,
+    TimedCardsComponent,
+    ScComponent
   ],
   imports: [
     BrowserModule,

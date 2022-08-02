@@ -38,7 +38,7 @@ export class DuelsComponent implements OnInit {
 
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
-  cardsTotal = () => this.data.cards.length; // would work with "-1" but leaves last card out
+  cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
 
   // to hide "Start" & "Contents" btns
@@ -54,7 +54,6 @@ export class DuelsComponent implements OnInit {
   currentCorrectCard = '';
   currentIncorrectCard = '';
   winner: string = '';
-  margin: number = 0;
 
   pointsEarnedThisTurn = 0;
   result: ResultsThisTurn = {
@@ -89,7 +88,10 @@ export class DuelsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructionsForDuels } });
+    this.dialog.open(
+      DialogInfoComponent,
+      { data: { title: this.data.title, instr: this.data.instructionsForDuels } }
+    );
   }
 
   start() {
