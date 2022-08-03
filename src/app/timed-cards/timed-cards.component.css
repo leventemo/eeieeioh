@@ -13,10 +13,16 @@ mat-card {
   margin-bottom: 2vh;
 }
 
-mat-card-title,
-span,
+.activity-type,
+.card-counter,
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 mat-card-title {
@@ -29,6 +35,7 @@ mat-card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 85%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
@@ -44,6 +51,7 @@ mat-card-content {
   width: 100%;
 }
 
+/* do this with a proper colour */
 .timer {
   opacity: .5;
 }
@@ -52,9 +60,7 @@ mat-card-content {
 .activetimer {
   font-family: 'Inconsolata', monospace;
   font-size: 2rem;
-  width: 5.5rem;
-  /*   width: 4.5rem;
-  text-align: center; */
+  width: 5rem;
 }
 
 .activetimer {
@@ -63,8 +69,9 @@ mat-card-content {
 }
 
 .waiting-for-next-btn {
+  align-self: centre;
   height: 80%;
-  width: 50%;
+  width: 55%;
 }
 
 .card-display {

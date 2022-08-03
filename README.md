@@ -76,6 +76,7 @@ Contact page
 - [ ] get rid of duplicate mat-card css in `contact.component.css` & `cards.component.css`
 - [ ] get rid of duplicate h1 css in `contact.component.css` & `about.component.css`
 - [x] typography in form: set it to custom typogr.
+- [ ] redo responsive layout & styling a la Cards, which has changed
 - [ ] snackbar: your message has been sent message
 - [ ] lazy loading?
 - [ ] sanitazion?
@@ -99,7 +100,7 @@ Hotel Check-in
 - [x] write out component template
 - [x] write out component class
 - [ ] fix next btn -> reload
-- [ ] rewrite vertical alignment of card elements with flexbox a lá card component?
+- [ ] redo responsive layout & styling a la Cards, which has changed
 - [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
 Cards component
@@ -120,6 +121,7 @@ Timed-Cards Component
 - [x] create empty assets/timedcardsarray
 - [x] copy Yes-No Game in assets/timedcardsarray
 - [x] set up rough layout
+- [ ] CSS `.timer` use a proper colour instead of `opacity: .5`
 - [ ] delete Yes-No Game in assets/timedcardsarray
 
 * FOR:

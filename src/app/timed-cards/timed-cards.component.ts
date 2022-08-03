@@ -60,6 +60,7 @@ export class TimedCardsComponent implements OnInit {
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+    this.timeIsUp = false;
   }
 
   openDialog() {
@@ -68,16 +69,15 @@ export class TimedCardsComponent implements OnInit {
 
 
   start() {
-    this.displayNextScreen();
-    this.subscription = interval(100).pipe(take(this.data.timeAllowed)).subscribe(() => {
+    this.displayNextCard();
+    this.subscription = interval(1000).pipe(take(this.data.timeAllowed)).subscribe(() => {
       this.tiktok();
     })
 
     this.hasItStarted = true;
-    console.log(Date);
   }
 
-  displayNextScreen() {
+  displayNextCard() {
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
@@ -87,16 +87,18 @@ export class TimedCardsComponent implements OnInit {
 
   tiktok() {
     ++this.timer;
-    console.log(this.timer);
+
     if (this.timer >= this.data.timeAllowed) {
-      this.subscription.unsubscribe();
       this.timeIsUp = true;
+      this.timer = 0;
+
     }
   }
 
   clickNext() {
-    this.timer === 0; // ?
-
+    this.timeIsUp = false;
+    this.displayNextCard();
+    this.start()
   }
 
   redirect() {

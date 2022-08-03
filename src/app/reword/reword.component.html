@@ -1,6 +1,6 @@
 <mat-card>
   <mat-card-title>
-    {{ data.title }}
+    <span class="activity-type">Reword</span><span class="title">{{ data.title }}</span>
     <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
   </mat-card-title>
 
@@ -26,7 +26,7 @@
   <mat-divider inset></mat-divider>
 
   <mat-card-actions align="end">
-    <span>{{ currentCardCounter }}/{{ cardsTotal() }}</span>
+    <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="isNextBtnVisible()" color="primary" mat-button (click)="next()">
       {{ !hasGameStarted() ? 'Start' : 'Next' }}
     </button>

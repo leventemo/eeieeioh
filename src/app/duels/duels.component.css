@@ -18,10 +18,16 @@ mat-card {
   width: 100%;
 }
 
-mat-card-title,
-span,
+.activity-type,
+.card-counter,
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 mat-card-title {
