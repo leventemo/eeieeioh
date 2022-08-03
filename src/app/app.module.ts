@@ -21,7 +21,6 @@ import { ExpandablesComponent } from './expandables/expandables.component';
 import { DuelsComponent } from './duels/duels.component';
 import { ConvertTimePipe } from './convert-time.pipe';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
-import { ScComponent } from './sc/sc.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +39,7 @@ import { ScComponent } from './sc/sc.component';
     ExpandablesComponent,
     DuelsComponent,
     ConvertTimePipe,
-    TimedCardsComponent,
-    ScComponent
+    TimedCardsComponent
   ],
   imports: [
     BrowserModule,

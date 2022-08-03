@@ -53,15 +53,14 @@ const ELEMENT_DATA: Contents[] = [
 })
 export class ContentsComponent implements OnInit {
 
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  displayedColumns: string[] = ['title', 'language', 'skill', 'level', 'activity'];
+
   numberOfDaysUntilNew = 60;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  displayedColumns: string[] = ['title', 'language', 'skill', 'level', 'activity'];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  ngOnInit(): void { }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -72,11 +71,7 @@ export class ContentsComponent implements OnInit {
     const today = Number(new Date());
     const dateCreated = Number(new Date(date));
     const timePassed = (today - dateCreated) / (1000 * 60 * 60 * 24);
-    if (timePassed < this.numberOfDaysUntilNew) {
-      return true;
-    } else {
-      return false;
-    }
+    return timePassed < this.numberOfDaysUntilNew;
   }
 
 }

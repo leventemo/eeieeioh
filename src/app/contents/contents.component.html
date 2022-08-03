@@ -11,10 +11,10 @@
       <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
       <mat-cell *matCellDef="let item" class="title-cell">
         {{item.title}}
-        <div *ngIf="checkIfNew(item.datePublished)" class="new-span">
+        <span *ngIf="checkIfNew(item.datePublished)" class="new-span">
           <span class="accentcolor-mid">n</span><span class="accentcolor-dark">e</span><span
             class="accentcolor-light">w</span><span class="accentcolor-mid">!</span>
-        </div>
+        </span>
       </mat-cell>
     </ng-container>
 

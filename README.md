@@ -1,7 +1,7 @@
 # Proto
 
 ## todos
-- [ ] : Angular Universal?
+Project-level
 - [x] set up Angular
 - [x] set up Angular Material: custom theme
 - [x] create material module
@@ -113,10 +113,6 @@ Cards component
 Pelmalism Component
 * see notes in eeieeioh/Pelmalism.md
 
-SC Component
-* for StatCounter in each page
-- [ ] should I stay or should I go?
-
 Timed-Cards Component
 - [x] create component
 - [x] copy Card Component
@@ -157,15 +153,7 @@ Not Found Component
 - [x] find Pablita animated illustration
 
 Contents Component
-- [ ] rename `dateCreated` to `datePublished`
-- [x] narrow "level" column; wastes space
-- [ ] set up routing with params <https://angular.io/guide/router>
-<https://www.youtube.com/watch?v=Np3ULAMqwNo> Fireship
-<https://www.youtube.com/watch?v=qh5nHv-4aw0> Codevolution
-<https://www.youtube.com/watch?v=DZrWzoW4_4M> Brian Lagunas
+- [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
 - [ ] fix bug: butterfly animation cover last item on list on mobiles – try z-index
 - [ ] pagination
-
-pass data between components:
-<https://www.youtube.com/watch?v=I317BhehZKM> Fireship
 

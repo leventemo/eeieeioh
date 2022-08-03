@@ -95,18 +95,13 @@ export class DuelsComponent implements OnInit {
   }
 
   start() {
-    this.displayNextScreen();
+    this.displayNextCard();
     this.subscription = interval(10).subscribe(() => {
       this.tiktok();
     })
 
     this.hasItStarted = true;
   };
-
-  displayNextScreen() {
-    this.selectCurrentCard();
-    this.randomizeCardsDisplay();
-  }
 
   tiktok() {
     ++this.currentPlayer.timer;
@@ -118,7 +113,7 @@ export class DuelsComponent implements OnInit {
 
   onClick(val: string) {
     if (this.pack.length === 0) {
-      this.subscription.unsubscribe();
+      this.subscription?.unsubscribe();
       this.areQnsDone = true;
       this.calcScore(val);
       this.chooseWinner();
@@ -126,10 +121,15 @@ export class DuelsComponent implements OnInit {
     }
     this.calcScore(val);
     this.switchPlayers();
-    this.displayNextScreen();
+    this.displayNextCard();
   };
 
-  calcScore(val: string | null = null) {
+  private displayNextCard() {
+    this.selectCurrentCard();
+    this.randomizeCardsDisplay();
+  }
+
+  private calcScore(val: string | null = null) {
     if (val === this.currentCorrectCard) {
       this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
     } else {
@@ -140,12 +140,12 @@ export class DuelsComponent implements OnInit {
     this.saveResults();
   }
 
-  switchPlayers() {
+  private switchPlayers() {
     this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
     this.currentPlayer.timer = 0;
   }
 
-  selectCurrentCard() {
+  private selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.currentCorrectCard = this.currentCard[0];
@@ -154,14 +154,13 @@ export class DuelsComponent implements OnInit {
     this.currentCardNumber++;
   };
 
-  randomizeCardsDisplay() {
-    const optionsRando = Utils.getRandom(10, 1);
-    if (optionsRando % 2) {
-      [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]]
+  private randomizeCardsDisplay() {
+    if (Utils.getRandom(0, 1)) {
+      [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]];
     }
   };
 
-  saveResults() {
+  private saveResults() {
     this.resultsAll.push({
       correctOption: this.currentCorrectCard,
       incorrectOption: this.currentIncorrectCard,
@@ -170,7 +169,7 @@ export class DuelsComponent implements OnInit {
     });
   }
 
-  chooseWinner() {
+  private chooseWinner() {
     if (this.playerA.score === this.playerB.score) {
       this.winner = `No winner: it's a draw.`
     } else if (this.playerA.score > this.playerB.score) {
@@ -181,12 +180,11 @@ export class DuelsComponent implements OnInit {
   }
 
   redirect() {
-    this.router.navigateByUrl('contents');
-    /* this.router.navigate(['contents']); */
+    this.router.navigate(['contents']);
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    this.subscription?.unsubscribe();
   }
 }
 

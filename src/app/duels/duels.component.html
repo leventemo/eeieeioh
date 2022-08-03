@@ -30,7 +30,7 @@
     <mat-card-actions align="end">
       <span>{{ currentCardNumber }}/{{ cardsTotal() }}</span>
       <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
-      <button *ngIf="hasItStarted" color="primary" mat-button (click)="redirect()">Contents</button>
+      <button color="primary" mat-button (click)="redirect()">Contents</button>
     </mat-card-actions>
   </mat-card>
 
