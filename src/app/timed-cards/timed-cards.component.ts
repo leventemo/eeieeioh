@@ -16,12 +16,6 @@ interface Data {
   cards: string[];
 }
 
-interface Player {
-  name: string;
-  score: number;
-  timer: number;
-}
-
 @Component({
   selector: 'app-timed-cards',
   templateUrl: './timed-cards.component.html',
@@ -30,19 +24,22 @@ interface Player {
 export class TimedCardsComponent implements OnInit {
 
   data: Data = { id: 0, title: '', language: '', instructions: '', timeAllowed: 0, cards: [] };
-  pack: string[][] = [];
+  pack: string[] = [];
   cardsTotal = () => this.data.cards.length;
-  currentPack: string[] = [];
   instructions = () => this.data.instructions;
   subscription!: Subscription;
-  timeIsUp = false;
   currentCard = '';
   currentCardCounter = 0;
   timer = 0;
+  /*
+  1min = 60 * 1000ms */
 
-  // to handle btns
+  // to hide "Start" btn
   hasItStarted = false;
-  btnValue = 'Next';
+  // "Next" btn
+  btnValue = '';
+  timeIsUp = false;
+  // ???
   isItAllDone = false;
 
   constructor(
@@ -59,7 +56,7 @@ export class TimedCardsComponent implements OnInit {
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.pack = this.data.cards;
     this.timeIsUp = false;
   }
 
@@ -68,9 +65,9 @@ export class TimedCardsComponent implements OnInit {
   }
 
 
-  start() {
+  go() {
     this.displayNextCard();
-    this.subscription = interval(1000).pipe(take(this.data.timeAllowed)).subscribe(() => {
+    this.subscription = interval(1000).pipe(take(this.data.timeAllowed / 1000)).subscribe(() => {
       this.tiktok();
     })
 
@@ -78,27 +75,33 @@ export class TimedCardsComponent implements OnInit {
   }
 
   displayNextCard() {
-    const rando = Utils.getRandom(this.currentPack.length - 1);
-    this.currentCard = this.currentPack[rando];
-    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
+    /*     if (this.pack.length === 0) {
+          this.isItAllDone = true;
+          console.log('all qns done');
+        } */
+    const rando = Utils.getRandom(this.pack.length - 1);
+    this.currentCard = this.pack[rando];
+    this.pack = this.pack.filter((card: string) => card !== this.currentCard);
     this.currentCardCounter++;
-    this.btnValue = this.currentPack.length === 0 ? 'Done' : 'Next';
+    this.btnValue = this.pack.length === 0 ? 'Done' : 'Next';
   }
 
   tiktok() {
-    ++this.timer;
+    this.timer = this.timer + 1000;
 
-    if (this.timer >= this.data.timeAllowed) {
+    if (this.timer >= (this.data.timeAllowed)) {
       this.timeIsUp = true;
       this.timer = 0;
-
     }
   }
 
   clickNext() {
+    if (this.pack.length === 0) {
+      this.isItAllDone = true;
+      console.log('all qns done');
+    }
     this.timeIsUp = false;
-    this.displayNextCard();
-    this.start()
+    this.go()
   }
 
   redirect() {

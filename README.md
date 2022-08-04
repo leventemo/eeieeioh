@@ -82,6 +82,7 @@ Contact page
 - [ ] sanitazion?
 - [x] automatic scroll to top on click of "Contact" btn (important on mobile screens)
 - [ ] how to email with vercel+gmail <https://drew.tech/posts/how-to-send-email-with-vercel-domain-through-gsuite>
+- [ ] check out <httpmailerlite.com>
 
 REDO
 - [ ] create components folder?
