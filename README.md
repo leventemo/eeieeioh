@@ -34,6 +34,12 @@ Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular
 - [ ] check accessibility concerns for lottie files:
 <https://github.com/airbnb/lottie-web/issues/1935>
 
+test favicon on all browsers
+- [ ] Firefox
+- [ ] Firtefox bookmark
+- [ ] Chrome
+- ...
+
 Header Component
 
 Footer Component redo:
@@ -116,19 +122,11 @@ Pelmalism Component
 * see notes in eeieeioh/Pelmalism.md
 
 Timed-Cards Component
-- [x] create component
-- [x] copy Card Component
-- [x] set up routing
-- [x] create empty assets/timedcardsarray
-- [x] copy Yes-No Game in assets/timedcardsarray
-- [x] set up rough layout
-- [ ] CSS `.timer` use a proper colour instead of `opacity: .5`
-- [ ] delete Yes-No Game in assets/timedcardsarray
-
 * FOR:
-  + Yes-No Game
-  + Just a minute
-  + Talk to Me: convert Exam Qns to Talk to Me
+- [x]Yes-No Game
+- [x] Exam Qns
+- [ ] Talking about ...
+- [ ] Just a minute
 
 Duel component
 - [ ] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start" – temporary solution: btn is hidden on load

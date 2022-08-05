@@ -11,15 +11,13 @@
         {{ timer | date:'mm:ss' }}
       </p>
     </div>
-
     <div *ngIf="timeIsUp && !isItAllDone" class="waiting-for-next-btn">
       <lottie-player class="whole-page-img" src="/assets/img/cow.json" background="transparent" speed="1" loop autoplay>
       </lottie-player>
     </div>
-
     <div *ngIf="isItAllDone">
-      <lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
-        autoplay>
+      <lottie-player class="game-over-illustration" src="/assets/img/candies.json" background="transparent" speed="1"
+        loop autoplay>
       </lottie-player>
     </div>
     <div *ngIf="!isItAllDone && !timeIsUp" class="card-display">{{ currentCard }}</div>
@@ -28,7 +26,7 @@
   <mat-card-actions align="end">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="!hasItStarted" color="primary" mat-button (click)="go()">Start</button>
-    <button *ngIf="timeIsUp" color="primary" mat-button (click)="clickNext()">{{ btnValue }}</button>
+    <button *ngIf="timeIsUp && !isItAllDone" color="primary" mat-button (click)="clickNext()">{{ btnValue }}</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>

@@ -49,11 +49,11 @@ mat-card-content {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 30%;
 }
 
-/* do this with a proper colour */
 .timer {
-  opacity: .5;
+  color: #8F8F8F;
 }
 
 .timer,

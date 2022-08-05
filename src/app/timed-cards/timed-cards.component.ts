@@ -67,18 +67,16 @@ export class TimedCardsComponent implements OnInit {
 
   go() {
     this.displayNextCard();
-    this.subscription = interval(1000).pipe(take(this.data.timeAllowed / 1000)).subscribe(() => {
-      this.tiktok();
-    })
+    this.subscription = interval(1000)
+      .pipe(take(this.data.timeAllowed / 1000))
+      .subscribe(() => {
+        this.tiktok();
+      })
 
     this.hasItStarted = true;
   }
 
   displayNextCard() {
-    /*     if (this.pack.length === 0) {
-          this.isItAllDone = true;
-          console.log('all qns done');
-        } */
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.pack = this.pack.filter((card: string) => card !== this.currentCard);
@@ -99,9 +97,10 @@ export class TimedCardsComponent implements OnInit {
     if (this.pack.length === 0) {
       this.isItAllDone = true;
       console.log('all qns done');
+      return;
     }
     this.timeIsUp = false;
-    this.go()
+    this.go();
   }
 
   redirect() {
