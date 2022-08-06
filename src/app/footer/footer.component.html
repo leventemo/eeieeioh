@@ -1,5 +1,6 @@
 <footer>
-  <lottie-player *ngIf="router.url === '/about' || router.url === '/contents' || router.url === '/changelog'"
+  <lottie-player
+    *ngIf="router.url === '/about' || router.url === '/contents' || router.url === '/changelog' || router.url === '/activities'"
     class="whole-page-img" src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
   </lottie-player>
   <div class="columns-container">
@@ -8,6 +9,9 @@
       <h1>eeieeioh</h1>
       <div>
         <a routerLink="/about" class="twitter-anchor">about</a>
+      </div>
+      <div>
+        <a routerLink="/activities" class="twitter-anchor">activities</a>
       </div>
       <div>
         <a routerLink="/changelog" class="twitter-anchor">changelog</a>

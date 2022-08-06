@@ -22,6 +22,7 @@ import { DuelsComponent } from './duels/duels.component';
 import { ConvertTimePipe } from './convert-time.pipe';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ChangelogComponent } from './changelog/changelog.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ChangelogComponent } from './changelog/changelog.component';
     DuelsComponent,
     ConvertTimePipe,
     TimedCardsComponent,
-    ChangelogComponent
+    ChangelogComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,
