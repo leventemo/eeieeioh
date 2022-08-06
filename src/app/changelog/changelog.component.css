@@ -1,0 +1,100 @@
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 42rem;
+  margin: 2vh .5rem 2vh .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+mat-table {
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  box-shadow: none;
+}
+
+mat-header-cell {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: bold;
+  font-size: .9rem;
+  color: #7D1AD4;
+}
+
+mat-cell {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.mat-column-title {
+  flex: 0 0 30%;
+}
+
+.mat-column-language {
+  flex: 0 0 30%;
+}
+
+.mat-column-skill {
+  flex: 0 0 10%;
+}
+
+.mat-column-level {
+  flex: 0 0 10%;
+}
+
+.mat-column-activity {
+  flex: 0 0 20%;
+}
+
+.mat-cell,
+.mat-header-cell {
+  padding: 0 0 0 0;
+}
+
+a {
+  color: #7D1AD4;
+  font-weight: 400;
+
+  background:
+    linear-gradient(to right,
+      rgba(232, 97, 195, 0.8),
+      rgba(125, 26, 212, 1)),
+    linear-gradient(to right,
+      rgba(125, 26, 212, 1),
+      rgba(232, 97, 195, 0.8));
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  background-size: 0 2px, 100% 2px;
+}
+
+a:active {
+  text-decoration: none;
+}

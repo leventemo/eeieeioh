@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 
 import { DateDefinitions } from '@faker-js/faker';
-import contentsFromJSON from '../../assets/activities/contentsarray.json';
+import contentsData from '../../assets/activities/contentsarray.json';
 
 export interface Contents {
   level: string;
@@ -24,16 +24,14 @@ export interface Contents {
 })
 export class ContentsComponent implements OnInit {
   numberOfDaysUntilNew = 60;
-  data: Contents[] = contentsFromJSON;
+  data: Contents[] = contentsData;
 
   dataSource = new MatTableDataSource(this.data);
   displayedColumns: string[] = ['title', 'language', 'skill', 'level', 'activity'];
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.data);
-  }
+  ngOnInit(): void { }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

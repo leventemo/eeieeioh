@@ -1,8 +1,31 @@
 <footer>
-  <lottie-player *ngIf="router.url === '/about' || router.url === '/contents'" class="whole-page-img"
-    src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
+  <lottie-player *ngIf="router.url === '/about' || router.url === '/contents' || router.url === '/changelog'"
+    class="whole-page-img" src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
   </lottie-player>
   <div class="columns-container">
+
+    <div class="column-item">
+      <h1>eeieeioh</h1>
+      <div>
+        <a routerLink="/about" class="twitter-anchor">about</a>
+      </div>
+      <div>
+        <a routerLink="/changelog" class="twitter-anchor">changelog</a>
+      </div>
+      <div>
+        <a href="https://twitter.com/leventemo" class="twitter-anchor">app development & content</a>
+      </div>
+      <div>
+        <a href="https://www.cnegyzet.hu" class="twitter-anchor">logo design</a>
+      </div>
+      <!--       <div>
+            <span>
+              <span>new ideas, mistakes, problems: </span>
+              <a routerLink="/contact">Contact us</a>
+            </span>
+          </div> -->
+    </div>
+
     <div class="column-item">
       <h1>dictionaries</h1>
       <div>
@@ -32,23 +55,6 @@
         <a href="http://monco.frazeo.com/" class="twitter-anchor">Monco</a>
         <span> – Daily frequencies of content words</span>
       </div>
-    </div>
-    <div class="column-item">
-      <div>
-        <h1>eeieeioh</h1>
-        <span>app development & content by </span>
-        <a href="https://twitter.com/leventemo" class="twitter-anchor">@leventemo</a>
-      </div>
-      <div>
-        <span>logo design by </span>
-        <a href="https://www.cnegyzet.hu" class="twitter-anchor">József Balogh</a>
-      </div>
-      <!--       <div>
-        <span>
-          <span>new ideas, mistakes, problems: </span>
-          <a routerLink="/contact">Contact us</a>
-        </span>
-      </div> -->
     </div>
     <div class="column-item">
       <div>

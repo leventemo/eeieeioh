@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { ChangelogComponent } from './changelog/changelog.component';
 import { HomeComponent } from './home/home.component';
 import { ContentsComponent } from './contents/contents.component';
 import { CardsComponent } from './cards/cards.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'changelog', component: ChangelogComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },

@@ -47,10 +47,10 @@ Header Component
 
 Footer Component redo:
   eeieeioh
-  - [ ] about: html done
+  - [x] about: html done
   - [ ] abbreviations: html done
   - [ ] activities: html done
-  - [ ] log: md done
+  - [x] log: md done
   - [ ] roadmap: md done
 
   social
@@ -162,7 +162,6 @@ Contents Component
 - [ ] pagination
 
 Changelog Component
-- [x] create contentsarray.json
-- [x] feed Contents Component from contentsarray.json
-- [ ] set up changelog fed from contentsarray.json
+- [ ] set up sort on init
+
 

@@ -1,0 +1,42 @@
+<div class="container">
+
+  <p>This is a non-technical log of additions. Click on the header titles to sort the columns. For a searchable table,
+    go to "Contents" in the top bar.</p>
+
+  <mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="datePublished">
+      <mat-header-cell mat-sort-header *matHeaderCellDef>Date</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        {{item.datePublished | date: 'yyyy/M/d'}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+      <mat-header-cell mat-sort-header *matHeaderCellDef>Title</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        {{item.title}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="language">
+      <mat-header-cell mat-sort-header *matHeaderCellDef>Language</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.language}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="level">
+      <mat-header-cell mat-sort-header *matHeaderCellDef>Level</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.level}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="activity">
+      <mat-header-cell mat-sort-header *matHeaderCellDef>Activity Type</mat-header-cell>
+      <mat-cell *matCellDef="let item">
+        <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

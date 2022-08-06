@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSortModule } from '@angular/material/sort';
 
 const material = [
   MatButtonModule,
@@ -18,7 +19,8 @@ const material = [
   MatFormFieldModule,
   MatIconModule,
   MatDividerModule,
-  MatDialogModule
+  MatDialogModule,
+  MatSortModule
 ]
 
 @NgModule({
