@@ -1,4 +1,4 @@
-# Proto
+# eeieeioh
 
 ## todos
 Project-level
@@ -34,11 +34,14 @@ Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular
 - [ ] check accessibility concerns for lottie files:
 <https://github.com/airbnb/lottie-web/issues/1935>
 
-test favicon on all browsers
-- [ ] Firefox
-- [ ] Firtefox bookmark
+test favicon on desktop browsers
+- [x] Firefox tab
+- [ ] Firefox bookmark
 - [ ] Chrome
-- ...
+- [x] Opera tab
+- [x] Opera bookmark
+- [ ] Edge tab
+- [ ] Edge bookmark
 
 Header Component
 
@@ -157,4 +160,9 @@ Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
 - [ ] fix bug: butterfly animation cover last item on list on mobiles – try z-index
 - [ ] pagination
+
+Changelog Component
+- [x] create contentsarray.json
+- [x] feed Contents Component from contentsarray.json
+- [ ] set up changelog fed from contentsarray.json
 
