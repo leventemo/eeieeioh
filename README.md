@@ -37,7 +37,8 @@ Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular
 test favicon on desktop browsers
 - [x] Firefox tab
 - [ ] Firefox bookmark
-- [ ] Chrome
+- [x] Chrome tab
+- [x] Chrome bookmark
 - [x] Opera tab
 - [x] Opera bookmark
 - [ ] Edge tab
@@ -47,10 +48,10 @@ Header Component
 
 Footer Component redo:
   eeieeioh
-  - [x] about: html done
+  - [x] about: html + illistration
   - [ ] abbreviations: html done
-  - [ ] activities: html done
-  - [x] log: md done
+  - [x] activities: html + illistration
+  - [x] log: html + illistration
   - [ ] roadmap: md done
 
   social

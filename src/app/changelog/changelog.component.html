@@ -1,9 +1,13 @@
-<div class="container">
+<div class="page-wrapper">
+  <div class="header">
+    <h1>Changelog</h1>
+    <mat-icon class="icon">import_contacts</mat-icon>
+  </div>
+  <h2>What is this?</h2>
+  <p>It's a non-technical log of additions. Click on the header titles to sort the columns. If you need a searchable
+    table, use the <a [routerLink]="'/contents'">Contents page.</a></p>
 
-  <p>This is a non-technical log of additions. Click on the header titles to sort the columns. For a searchable table,
-    go to "Contents" in the top bar.</p>
-
-  <mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+  <mat-table matSort [dataSource]=" dataSource" class="mat-elevation-z8">
 
     <ng-container matColumnDef="datePublished">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Date</mat-header-cell>

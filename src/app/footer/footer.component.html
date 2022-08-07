@@ -1,7 +1,12 @@
 <footer>
-  <lottie-player
-    *ngIf="router.url === '/about' || router.url === '/contents' || router.url === '/changelog' || router.url === '/activities'"
-    class="whole-page-img" src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
+  <lottie-player *ngIf="router.url === '/about' || router.url === '/contents'" class="lottie-flowers"
+    src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
+  </lottie-player>
+  <lottie-player *ngIf="router.url === '/activities'" class="lottie-stars" src="/assets/img/stars.json"
+    background="transparent" speed="1" loop autoplay>
+  </lottie-player>
+  <lottie-player *ngIf="router.url === '/changelog'" class="lottie-cat" src="/assets/img/cat.json"
+    background="transparent" speed="1" loop autoplay>
   </lottie-player>
   <div class="columns-container">
 

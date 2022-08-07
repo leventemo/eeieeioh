@@ -1,24 +1,51 @@
-:host {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.page-wrapper {
+  min-width: 320px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
-.container {
-  flex-grow: 1;
-  max-width: 42rem;
-  margin: 2vh .5rem 2vh .5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 2px solid #454746;
 }
 
-p {
+.icon {
+  color: #7D1AD4;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+p,
+dl,
+ul,
+li {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 mat-table {

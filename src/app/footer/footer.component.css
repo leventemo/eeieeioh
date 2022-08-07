@@ -47,12 +47,27 @@ a {
   flex-direction: column;
 }
 
-lottie-player {
+.lottie-flowers {
   min-width: 320px;
   max-width: 20%;
   margin: auto;
   margin-top: 8rem;
   margin-bottom: -3px;
+}
+
+.lottie-stars {
+  min-width: 320px;
+  max-width: 40%;
+  margin: 5rem auto 5rem auto;
+}
+
+.lottie-cat {
+  width: 300px;
+  /*   min-width: 320px;
+  max-width: 10%; */
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: -166px;
 }
 
 @media only screen and (max-width: 1090px) {
