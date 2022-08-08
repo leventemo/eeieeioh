@@ -24,7 +24,7 @@ export class ChangelogComponent implements OnInit {
 
   data: Contents[] = contentsData;
   dataSource = new MatTableDataSource(this.data);
-  displayedColumns: string[] = ['datePublished', 'title', 'language', 'activity'];
+  displayedColumns: string[] = ['datePublished', 'title', 'language', 'level', 'activity'];
   constructor() { }
 
   @ViewChild(MatSort, { static: false }) sort!: MatSort;

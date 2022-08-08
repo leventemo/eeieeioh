@@ -69,11 +69,11 @@ mat-cell {
 }
 
 .date-published-cell {
-  flex: 0 0 18%;
+  flex: 0 0 15%;
 }
 
 .title-cell {
-  flex: 0 0 30%;
+  flex: 0 0 25%;
 }
 
 .language-cell {
@@ -81,16 +81,16 @@ mat-cell {
 }
 
 .level-cell {
-  flex: 0 0 0%;
+  flex: 0 0 10%;
 }
 
 .mat-column-activity {
-  flex: 0 0 23%;
+  flex: 0 0 25%;
 }
 
 .mat-cell,
 .mat-header-cell {
-  padding: 0 2px 0 2px;
+  padding: 0 3px 0 3px;
 }
 
 a {
