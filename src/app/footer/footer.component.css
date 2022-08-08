@@ -20,7 +20,7 @@ a {
 span,
 a {
   font-size: .9rem;
-  line-height: 1.8rem;
+  line-height: 2.3rem;
 }
 
 .columns-container {
@@ -84,7 +84,7 @@ a {
  */
   height: 200px;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 5rem;
   margin-bottom: -5px;
 }
 

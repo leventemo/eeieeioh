@@ -48,26 +48,24 @@ Header Component
 
 Footer Component redo:
   eeieeioh
-  - [x] about: html + illustration
-  - [ ] abbreviations: html done
-  - [x] activities: html + illustration
-  - [x] log: html + illustration
-  - [x] roadmap: in About Page for now
-  - [ ] roadmap: as its own link on footer
+  - [x] about
+  - [x] abbreviations
+  - [x] activities
+  - [x] log
+  - [x] roadmap
 
   social
   - [ ] contact
   - [ ] twitter eeieeioh
+  - [ ] app development & content by @leventemo
+  - [ ] logo design by József Balogh
   - [ ] patreon
   - [ ] buy me a coffee
 
-  links
+  fave links
   - [ ] dictionaries: html done
   - [ ] corpus: html done
-
-  created by
-  - [ ] app development & content by @leventemo: html done
-  - [ ] logo design by József Balogh: html done
+  - [ ] video
 
   copyright + logo: full-width col
 
