@@ -52,7 +52,8 @@ Footer Component redo:
   - [ ] abbreviations: html done
   - [x] activities: html + illustration
   - [x] log: html + illustration
-  - [ ] roadmap: md done
+  - [x] roadmap: in About Page for now
+  - [ ] roadmap: as its own link on footer
 
   social
   - [ ] contact
