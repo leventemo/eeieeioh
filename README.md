@@ -48,10 +48,10 @@ Header Component
 
 Footer Component redo:
   eeieeioh
-  - [x] about: html + illistration
+  - [x] about: html + illustration
   - [ ] abbreviations: html done
-  - [x] activities: html + illistration
-  - [x] log: html + illistration
+  - [x] activities: html + illustration
+  - [x] log: html + illustration
   - [ ] roadmap: md done
 
   social

@@ -11,31 +11,31 @@
 
     <ng-container matColumnDef="datePublished">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Date</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-cell *matCellDef="let item" class="date-published-cell">
         {{item.datePublished | date: 'yyyy/M/d'}}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="title">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Title</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-cell *matCellDef="let item" class="title-cell">
         {{item.title}}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="language">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Language</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.language}}</mat-cell>
+      <mat-cell *matCellDef="let item" class="language-cell">{{item.language}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="level">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Level</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.level}}</mat-cell>
+      <mat-cell *matCellDef="let item" class="level-cell">{{item.level}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="activity">
       <mat-header-cell mat-sort-header *matHeaderCellDef>Activity Type</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-cell *matCellDef="let item" class="activity-cell">
         <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
       </mat-cell>
     </ng-container>

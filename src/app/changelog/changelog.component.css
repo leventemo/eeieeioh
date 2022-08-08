@@ -68,29 +68,29 @@ mat-cell {
   font-size: 1rem;
 }
 
-.mat-column-title {
+.date-published-cell {
+  flex: 0 0 18%;
+}
+
+.title-cell {
   flex: 0 0 30%;
 }
 
-.mat-column-language {
+.language-cell {
   flex: 0 0 30%;
 }
 
-.mat-column-skill {
-  flex: 0 0 10%;
-}
-
-.mat-column-level {
-  flex: 0 0 10%;
+.level-cell {
+  flex: 0 0 0%;
 }
 
 .mat-column-activity {
-  flex: 0 0 20%;
+  flex: 0 0 23%;
 }
 
 .mat-cell,
 .mat-header-cell {
-  padding: 0 0 0 0;
+  padding: 0 2px 0 2px;
 }
 
 a {
