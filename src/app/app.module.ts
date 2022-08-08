@@ -23,6 +23,7 @@ import { ConvertTimePipe } from './convert-time.pipe';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ChangelogComponent } from './changelog/changelog.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ActivitiesComponent } from './activities/activities.component';
     ConvertTimePipe,
     TimedCardsComponent,
     ChangelogComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    RoadmapComponent
   ],
   imports: [
     BrowserModule,

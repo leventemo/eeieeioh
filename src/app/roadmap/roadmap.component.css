@@ -1,0 +1,97 @@
+.page-wrapper {
+  min-width: 320px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 2px solid #454746;
+}
+
+.icon {
+  color: #7D1AD4;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+.roadmap-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  margin-right: .5rem;
+}
+
+a {
+  color: #7D1AD4;
+  font-weight: 400;
+
+  background:
+    linear-gradient(to right,
+      rgba(232, 97, 195, 0.8),
+      rgba(125, 26, 212, 1)),
+    linear-gradient(to right,
+      rgba(125, 26, 212, 1),
+      rgba(232, 97, 195, 0.8));
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  background-size: 0 2px, 100% 2px;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+p,
+dl,
+ul,
+li {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

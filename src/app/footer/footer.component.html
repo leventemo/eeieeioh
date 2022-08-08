@@ -8,6 +8,9 @@
   <lottie-player *ngIf="router.url === '/changelog'" class="lottie-cat" src="/assets/img/cat.json"
     background="transparent" speed="1" loop autoplay>
   </lottie-player>
+  <lottie-player *ngIf="router.url === '/roadmap'" class="lottie-clouds" src="/assets/img/clouds.json"
+    background="transparent" speed="1" loop autoplay>
+  </lottie-player>
   <div class="columns-container">
 
     <div class="column-item">
@@ -20,6 +23,9 @@
       </div>
       <div>
         <a routerLink="/changelog" class="twitter-anchor">changelog</a>
+      </div>
+      <div>
+        <a routerLink="/roadmap" class="twitter-anchor">roadmap</a>
       </div>
       <div>
         <a href="https://twitter.com/leventemo" class="twitter-anchor">app development & content</a>

@@ -13,6 +13,7 @@ import { RewordComponent } from './reword/reword.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'changelog', component: ChangelogComponent },
   { path: 'activities', component: ActivitiesComponent },
+  { path: 'roadmap', component: RoadmapComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },
