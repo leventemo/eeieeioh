@@ -11,12 +11,20 @@
   <lottie-player *ngIf="router.url === '/roadmap'" class="lottie-clouds" src="/assets/img/clouds.json"
     background="transparent" speed="1" loop autoplay>
   </lottie-player>
+
+  <lottie-player *ngIf="router.url === '/abbreviations'" class="lottie-cactus" src="/assets/img/cactus.json"
+    background="transparent" speed="1" loop autoplay>
+  </lottie-player>
+
   <div class="columns-container">
 
     <div class="column-item">
       <h1>eeieeioh</h1>
       <div>
         <a routerLink="/about" class="twitter-anchor">about</a>
+      </div>
+      <div>
+        <a routerLink="/abbreviations" class="twitter-anchor">abbreviations</a>
       </div>
       <div>
         <a routerLink="/activities" class="twitter-anchor">activities</a>

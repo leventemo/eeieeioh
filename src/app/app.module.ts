@@ -24,6 +24,7 @@ import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ChangelogComponent } from './changelog/changelog.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
     TimedCardsComponent,
     ChangelogComponent,
     ActivitiesComponent,
-    RoadmapComponent
+    RoadmapComponent,
+    AbbreviationsComponent
   ],
   imports: [
     BrowserModule,

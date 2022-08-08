@@ -14,6 +14,7 @@ import { ExpandablesComponent } from './expandables/expandables.component';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'changelog', component: ChangelogComponent },
   { path: 'activities', component: ActivitiesComponent },
   { path: 'roadmap', component: RoadmapComponent },
+  { path: 'abbreviations', component: AbbreviationsComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },
