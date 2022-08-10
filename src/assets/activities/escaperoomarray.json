@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "level": "A1",
+    "skill": "spelling",
+    "title": "Ordinals",
+    "language": "Ordinals",
+    "instructions": "Write the number. You can't move on to the next question until you've typed the asnwer with the correct spelling. As soon as you do that, you are shown the next one and the timer starts immediately.",
+    "datePublished": "2022, 05, 05",
+    "cards": [
+      {
+        "question": "No. 1",
+        "answer": "first"
+      },
+      {
+        "question": "No. 2",
+        "answer": "second"
+      },
+      {
+        "question": "No 3",
+        "answer": "third"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "level": "A22",
+    "skill": "spelling",
+    "title": "Does it depend?",
+    "language": "dependent prepositions",
+    "instructions": "Write a preposition. You can't move on to the next question until you've typed the asnwer with the correct spelling. As soon as you do that, you are shown the next one and the timer starts immediately.",
+    "datePublished": "2022, 05, 05",
+    "cards": [
+      {
+        "question": "listen _____",
+        "answer": "to"
+      },
+      {
+        "question": "good _____",
+        "answer": "at"
+      },
+      {
+        "question": "afraid _____",
+        "answer": "of"
+      }
+    ]
+  }
+]

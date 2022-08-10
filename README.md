@@ -99,8 +99,7 @@ REDO
 - [ ] rename Contents Components to Activities (routing reasons)
 
 Nav Component
-- [ ] active link animated <https://codepen.io/cathydutton/pen/QWWajKX>
-- [ ] take off "Home" & "About" ("About" should go to Footer)
+- [ ] rename to Nav
 
 Hotel Check-in
 - [x] install Faker-js: <https://fakerjs.dev/>
@@ -130,20 +129,10 @@ Timed-Cards Component
 - [x] Exam Qns
 - [ ] Talking about ...
 - [ ] Just a minute
+- [ ] Vocab Race activities, eg. Prep of Movement, etc – see EF
 
 Duel component
-- [ ] "Contents" btn, `redirect()` not working properly BEFORE clicking on "start" – temporary solution: btn is hidden on load
-- [ ] intersection observer for final scoreboard animation
-<https://www.bennadel.com/blog/3946-using-intersectionobserver-and-ngswitch-to-defer-template-bindings-in-angular-11-0-5.htm<>
-<https://vimeo.com/494472333>
-<https://blog.logrocket.com/lazy-loading-using-the-intersection-observer-api/>
-- [x] vanilla JS example: <https://www.youtube.com/watch?v=9W7rKLahq2Q>
-- [ ] vanilla JS example: Wes
-- [ ] Angular example, Giancarlo: <https://giancarlobuomprisco.com/angular/intersection-observer-with-angular>
-- [ ] Angular example: <https://dev.to/anirbmuk/angular-lazy-loading-directive-with-intersectionobserver-4m92>
-- [ ] intergrating it into Angular using RxJS: <https://blog.bitsrc.io/angular-maximizing-performance-with-the-intersection-observer-api-23d81312f178>
-- [ ] creating custom directives, Dmytro <https://www.youtube.com/watch?v=07CaGlbMPbw>
-- [ ] creating custom directives: Stephen
+
 
 Reword Component
 - [ ] refactor counter with active & disabled classes
@@ -163,5 +152,14 @@ Contents Component
 
 Changelog Component
 - [ ] set up sort on init
+
+Escape Room Component
+- [x] set up routing
+- [x] set up dialog
+- [x] set up data
+- [x] set up CSS
+- [ ] clean CSS
+- [ ] set up form & avg time
+- [ ] RxJS
 
 

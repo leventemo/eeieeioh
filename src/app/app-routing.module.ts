@@ -15,6 +15,7 @@ import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
+import { EscapeRoomComponent } from './escape-room/escape-room.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'duels/:id', component: DuelsComponent },
   { path: 'expandables/:id', component: ExpandablesComponent },
   { path: 'timed-cards/:id', component: TimedCardsComponent },
+  { path: 'escape-room/:id', component: EscapeRoomComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

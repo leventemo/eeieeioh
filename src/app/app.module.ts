@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +25,7 @@ import { ChangelogComponent } from './changelog/changelog.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
+import { EscapeRoomComponent } from './escape-room/escape-room.component';
 
 @NgModule({
   declarations: [
@@ -47,14 +48,16 @@ import { AbbreviationsComponent } from './abbreviations/abbreviations.component'
     ChangelogComponent,
     ActivitiesComponent,
     RoadmapComponent,
-    AbbreviationsComponent
+    AbbreviationsComponent,
+    EscapeRoomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

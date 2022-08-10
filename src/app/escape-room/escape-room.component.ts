@@ -3,8 +3,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
-import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/cardsarray.json';
+import { FormGroup, FormControl } from '@angular/forms';
+
+import allCardDecksCollection from '../../assets/activities/escaperoomarray.json';
 
 interface Data {
   id: number;
@@ -15,12 +16,11 @@ interface Data {
 }
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  selector: 'app-escape-room',
+  templateUrl: './escape-room.component.html',
+  styleUrls: ['./escape-room.component.css']
 })
-
-export class CardsComponent implements OnInit {
+export class EscapeRoomComponent implements OnInit {
 
   data: Data = {
     id: 0,
@@ -29,19 +29,27 @@ export class CardsComponent implements OnInit {
     instructions: '',
     cards: []
   };
-
   currentPack: string[] = [];
-  instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
-  btnValue = 'Start';
+  isItAllDone = false;
   currentCard = '';
   currentCardCounter = 0;
-  isItAllDone = false;
+  cardsTotal = () => this.data.cards.length;
+  btnValue = 'Start';
+
+  escapeForm = new FormGroup({
+    question: new FormControl(''),
+    answer: new FormControl('')
+  });
+
 
   constructor(
     public router: Router,
     private route: ActivatedRoute,
     public dialog: MatDialog) {
+  }
+
+  get question(): number {
+    return this.escapeForm.value.a;
   }
 
   ngOnInit(): void {
@@ -60,19 +68,11 @@ export class CardsComponent implements OnInit {
   }
 
   next() {
-    if (this.btnValue === 'Done') {
-      this.isItAllDone = true;
-      return;
-    }
-
-    const rando = Utils.getRandom(this.currentPack.length - 1);
-    this.currentCard = this.currentPack[rando];
-    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
-    this.currentCardCounter++;
-    this.btnValue = this.currentPack.length === 0 ? 'Done' : 'Next';
+    console.log('hey!')
   }
 
   redirect() {
     this.router.navigate(['contents']);
   }
+
 }
