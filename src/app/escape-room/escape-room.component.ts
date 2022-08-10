@@ -3,16 +3,23 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
 
 import allCardDecksCollection from '../../assets/activities/escaperoomarray.json';
+import { Utils } from '../utils';
+import { Validators } from '../validators'
+
+interface Card {
+  question: string;
+  correct: string;
+}
 
 interface Data {
   id: number;
   title: string;
   language: string;
   instructions: string;
-  cards: string[];
+  cards: Card[];
 }
 
 @Component({
@@ -29,18 +36,22 @@ export class EscapeRoomComponent implements OnInit {
     instructions: '',
     cards: []
   };
-  currentPack: string[] = [];
+
+  currentPack: Card[] = [];
+  hasItStarted = false;
+  areQnsDone = false;
   isItAllDone = false;
-  currentCard = '';
+  currentCard: Card = { question: '', correct: '' };
   currentCardCounter = 0;
   cardsTotal = () => this.data.cards.length;
-  btnValue = 'Start';
+
+  /* escapeForm!: FormGroup; */
 
   escapeForm = new FormGroup({
-    question: new FormControl(''),
-    answer: new FormControl('')
+    question: new FormControl(this.currentCard?.question),
+    correct: new FormControl(this.currentCard?.correct),
+    response: new FormControl('')
   });
-
 
   constructor(
     public router: Router,
@@ -48,8 +59,8 @@ export class EscapeRoomComponent implements OnInit {
     public dialog: MatDialog) {
   }
 
-  get question(): number {
-    return this.escapeForm.value.a;
+  get question(): string {
+    return this.escapeForm.value.question;
   }
 
   ngOnInit(): void {
@@ -68,8 +79,27 @@ export class EscapeRoomComponent implements OnInit {
   }
 
   next() {
-    console.log('hey!')
+    this.selectCurrentCard();
+    this.hasItStarted = true;
+
+    this.escapeForm = new FormGroup({
+      question: new FormControl(this.currentCard?.question),
+      correct: new FormControl(this.currentCard?.correct),
+      response: new FormControl('')
+    }, [
+      Validators.stringMatch('response', 'correct')
+    ]);
+
   }
+
+  private selectCurrentCard() {
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
+    /*     this.currentCorrectCard = this.currentCard[0];
+        this.currentIncorrectCard = this.currentCard[1]; */
+    this.currentPack = this.currentPack.filter(card => card !== this.currentCard);
+    this.currentCardCounter++;
+  };
 
   redirect() {
     this.router.navigate(['contents']);

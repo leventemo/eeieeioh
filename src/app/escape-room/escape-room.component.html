@@ -13,16 +13,20 @@
       </lottie-player>
     </div>
 
-    <form *ngIf="!isItAllDone" [formGroup]="escapeForm">
-      {{ question }} =
+    <form *ngIf="!areQnsDone && hasItStarted" [formGroup]="escapeForm">
+      {{ currentCard.question }}
+      <input formControlName="response" />
     </form>
+
+    <div>Form is valid: {{ escapeForm.valid }}</div>
+    <div>Form values: {{ escapeForm.value | json }}</div>
+    <div>Form errors: {{ escapeForm.errors | json }}</div>
 
   </mat-card-content>
   <mat-divider inset></mat-divider>
   <mat-card-actions align="end">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">{{ btnValue
-      }}</button>
+    <button *ngIf="!hasItStarted" color="primary" mat-button (click)="next()">Start</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>
