@@ -94,7 +94,7 @@ export class EscapeRoomComponent implements OnInit {
 
     this.escapeForm.statusChanges.pipe(
       filter(value => value === 'VALID'),
-      delay(200),
+      delay(400),
       scan((acc) => {
         return {
           numberSolved: acc.numberSolved + 1,
@@ -120,7 +120,6 @@ export class EscapeRoomComponent implements OnInit {
   private selectCurrentCard() {
     if (this.currentPack.length === 0) {
       this.areQnsDone = true;
-      console.log('NO MORE QNS');
       return;
     }
     const rando = Utils.getRandom(this.currentPack.length - 1);

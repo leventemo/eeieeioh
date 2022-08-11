@@ -3,45 +3,291 @@
     "id": "1",
     "level": "A1",
     "skill": "spelling",
-    "title": "Ordinals",
-    "language": "Ordinals",
-    "instructions": "Write the number. You need to be as quick and as correct as you can here. Your timer starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. When you do that, you are shown the next one and the timer starts immediately.",
-    "datePublished": "2022, 05, 05",
+    "title": "Numbers 1-20",
+    "language": "VOC: Numbers 1-20",
+    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking.",
+    "datePublished": "2022, 08, 11",
     "cards": [
       {
-        "question": "No. 1",
-        "correct": "first"
+        "question": "1",
+        "correct": "one"
       },
       {
-        "question": "No. 2",
-        "correct": "second"
+        "question": "2",
+        "correct": "two"
       },
       {
-        "question": "No 3",
-        "correct": "third"
+        "question": "3",
+        "correct": "three"
+      },
+      {
+        "question": "4",
+        "correct": "four"
+      },
+      {
+        "question": "5",
+        "correct": "five"
+      },
+      {
+        "question": "6",
+        "correct": "six"
+      },
+      {
+        "question": "7",
+        "correct": "seven"
+      },
+      {
+        "question": "8",
+        "correct": "eight"
+      },
+      {
+        "question": "9",
+        "correct": "nine"
+      },
+      {
+        "question": "10",
+        "correct": "ten"
+      },
+      {
+        "question": "11",
+        "correct": "eleven"
+      },
+      {
+        "question": "12",
+        "correct": "twelve"
+      },
+      {
+        "question": "13",
+        "correct": "thirteen"
+      },
+      {
+        "question": "14",
+        "correct": "fourteen"
+      },
+      {
+        "question": "15",
+        "correct": "fifteen"
+      },
+      {
+        "question": "16",
+        "correct": "sixteen"
+      },
+      {
+        "question": "17",
+        "correct": "seventeen"
+      },
+      {
+        "question": "18",
+        "correct": "eighteen"
+      },
+      {
+        "question": "19",
+        "correct": "nineteen"
+      },
+      {
+        "question": "20",
+        "correct": "twenty"
       }
     ]
   },
   {
     "id": "2",
-    "level": "A22",
+    "level": "A1",
     "skill": "spelling",
-    "title": "Does it depend?",
-    "language": "dependent prepositions",
-    "instructions": "Write a preposition. You need to be as quick and as correct as you can here. Your timer starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. When you do that, you are shown the next one and the timer starts immediately.",
-    "datePublished": "2022, 05, 05",
+    "title": "Numbers 1-100",
+    "language": "VOC: Numbers 1-100",
+    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking.",
+    "datePublished": "2022, 08, 11",
     "cards": [
       {
-        "question": "listen _____",
-        "correct": "to"
+        "question": "8",
+        "correct": "eight"
       },
       {
-        "question": "good _____",
-        "correct": "at"
+        "question": "12",
+        "correct": "twelve"
       },
       {
-        "question": "afraid _____",
-        "correct": "of"
+        "question": "13",
+        "correct": "thirteen"
+      },
+      {
+        "question": "14",
+        "correct": "fourteen"
+      },
+      {
+        "question": "18",
+        "correct": "eighteen"
+      },
+      {
+        "question": "21",
+        "correct": "twenty-one"
+      },
+      {
+        "question": "33",
+        "correct": "thirty-three"
+      },
+      {
+        "question": "40",
+        "correct": "forty"
+      },
+      {
+        "question": "42",
+        "correct": "forty-two"
+      },
+      {
+        "question": "54",
+        "correct": "fifty-four"
+      },
+      {
+        "question": "65",
+        "correct": "sixty-five"
+      },
+      {
+        "question": "76",
+        "correct": "seventy-six"
+      },
+      {
+        "question": "87",
+        "correct": "eighty-seven"
+      },
+      {
+        "question": "99",
+        "correct": "ninety-nine"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "level": "A1",
+    "skill": "spelling",
+    "title": "Ordinals",
+    "language": "Ordinals",
+    "instructions": "Write the ordinals using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking.",
+    "datePublished": "2022, 08, 11",
+    "cards": [
+      {
+        "question": "1st",
+        "correct": "first"
+      },
+      {
+        "question": "2nd",
+        "correct": "second"
+      },
+      {
+        "question": "3rd",
+        "correct": "third"
+      },
+      {
+        "question": "4th",
+        "correct": "fourth"
+      },
+      {
+        "question": "5th",
+        "correct": "fifth"
+      },
+      {
+        "question": "6th",
+        "correct": "sixth"
+      },
+      {
+        "question": "7th",
+        "correct": "seventh"
+      },
+      {
+        "question": "8th",
+        "correct": "eighth"
+      },
+      {
+        "question": "9th",
+        "correct": "ninth"
+      },
+      {
+        "question": "10th",
+        "correct": "tenth"
+      },
+      {
+        "question": "11th",
+        "correct": "eleventh"
+      },
+      {
+        "question": "12th",
+        "correct": "twelfth"
+      },
+      {
+        "question": "13th",
+        "correct": "thirteenth"
+      },
+      {
+        "question": "14th",
+        "correct": "fourteenth"
+      },
+      {
+        "question": "15th",
+        "correct": "fifteenth"
+      },
+      {
+        "question": "20th",
+        "correct": "twentieth"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "level": "A1",
+    "skill": "spelling",
+    "title": "Months",
+    "language": "VOC: Months",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking.",
+    "datePublished": "2022, 08, 11",
+    "cards": [
+      {
+        "question": "January, _____, March",
+        "correct": "February"
+      },
+      {
+        "question": "December, _____ February",
+        "correct": "January"
+      },
+      {
+        "question": "February, _____, April",
+        "correct": "March"
+      },
+      {
+        "question": "March, _____, May",
+        "correct": "April"
+      },
+      {
+        "question": "April, _____, June",
+        "correct": "May"
+      },
+      {
+        "question": "May, _____, July",
+        "correct": "June"
+      },
+      {
+        "question": "June, _____, August",
+        "correct": "July"
+      },
+      {
+        "question": "July, _____, September",
+        "correct": "August"
+      },
+      {
+        "question": "August, _____, October",
+        "correct": "September"
+      },
+      {
+        "question": "September, _____, November",
+        "correct": "October"
+      },
+      {
+        "question": "October, _____, December",
+        "correct": "November"
+      },
+      {
+        "question": "November, _____, January",
+        "correct": "December"
       }
     ]
   }

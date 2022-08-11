@@ -34,7 +34,7 @@ mat-card-title {
 mat-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   height: 85%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
@@ -57,24 +57,61 @@ mat-card-actions {
 
 /* Escape Room */
 
-form {
+.escape-form {
   display: flex;
-  justify-content: center;
-  margin-top: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.question,
+input {
+  font-size: 2.3rem;
 }
 
 input {
+  width: 80%;
   border: none;
-  border-bottom: 2px solid blueviolet;
-  width: 20%;
+  border-bottom: 2px solid #7D1AD4;
   text-align: center;
+  background-color: rgba(245, 245, 245, 1);
 }
 
 input:focus {
   outline: none;
+  background-color: rgba(220, 201, 255, .2);
 }
 
 .stats {
-  text-align: center;
-  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  font-size: 3rem;
+  color: #8F8F8F;
+}
+
+.activestats {
+  color: #7D1AD4;
+}
+
+.correct {
+  color: rgba(125, 26, 212, 1);
+}
+
+.gameover-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+lottie-player {
+  width: 50%;
 }
