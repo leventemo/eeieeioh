@@ -159,7 +159,8 @@ Escape Room Component
 - [x] set up data
 - [x] set up CSS
 - [ ] clean CSS
-- [ ] set up form & avg time
-- [ ] RxJS
+- [x] set up form & avg time
+- [x] RxJS
+- [ ] unsubscribe?
 
 

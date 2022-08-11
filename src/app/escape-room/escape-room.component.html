@@ -12,15 +12,14 @@
         autoplay>
       </lottie-player>
     </div>
+    <div class="stats">
+      {{ secondsPerSolution | number: '1.1-3'}}
+    </div>
 
     <form *ngIf="!areQnsDone && hasItStarted" [formGroup]="escapeForm">
       {{ currentCard.question }}
       <input formControlName="response" />
     </form>
-
-    <div>Form is valid: {{ escapeForm.valid }}</div>
-    <div>Form values: {{ escapeForm.value | json }}</div>
-    <div>Form errors: {{ escapeForm.errors | json }}</div>
 
   </mat-card-content>
   <mat-divider inset></mat-divider>

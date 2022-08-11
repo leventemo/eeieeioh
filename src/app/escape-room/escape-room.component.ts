@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
+import { delay, filter, scan, takeUntil } from 'rxjs/operators';
 
 import allCardDecksCollection from '../../assets/activities/escaperoomarray.json';
 import { Utils } from '../utils';
@@ -44,8 +45,7 @@ export class EscapeRoomComponent implements OnInit {
   currentCard: Card = { question: '', correct: '' };
   currentCardCounter = 0;
   cardsTotal = () => this.data.cards.length;
-
-  /* escapeForm!: FormGroup; */
+  secondsPerSolution = 0;
 
   escapeForm = new FormGroup({
     question: new FormControl(this.currentCard?.question),
@@ -81,6 +81,8 @@ export class EscapeRoomComponent implements OnInit {
   next() {
     this.selectCurrentCard();
     this.hasItStarted = true;
+    const startTime = new Date();
+    let numberSolved = 0;
 
     this.escapeForm = new FormGroup({
       question: new FormControl(this.currentCard?.question),
@@ -90,9 +92,37 @@ export class EscapeRoomComponent implements OnInit {
       Validators.stringMatch('response', 'correct')
     ]);
 
+    this.escapeForm.statusChanges.pipe(
+      filter(value => value === 'VALID'),
+      delay(200),
+      scan((acc) => {
+        return {
+          numberSolved: acc.numberSolved + 1,
+          startTime: acc.startTime
+        }
+      }, { numberSolved: 0, startTime: new Date() })
+    ).subscribe(({ numberSolved, startTime }) => {
+      this.secondsPerSolution = (
+        new Date().getTime() - startTime.getTime()
+      ) / numberSolved / 1000;
+
+      this.selectCurrentCard();
+
+      this.escapeForm.setValue({
+        question: this.currentCard.question,
+        correct: this.currentCard.correct,
+        response: ''
+      })
+
+    });
   }
 
   private selectCurrentCard() {
+    if (this.currentPack.length === 0) {
+      this.areQnsDone = true;
+      console.log('NO MORE QNS');
+      return;
+    }
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     /*     this.currentCorrectCard = this.currentCard[0];

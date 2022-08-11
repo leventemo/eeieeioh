@@ -54,3 +54,27 @@ mat-card-actions {
   color: #7D1AD4;
   font-size: 1.4rem;
 }
+
+/* Escape Room */
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid blueviolet;
+  width: 20%;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.stats {
+  text-align: center;
+  font-size: 24px;
+}
