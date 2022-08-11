@@ -52,7 +52,7 @@ mat-cell {
 }
 
 .mat-column-language {
-  flex: 0 0 30%;
+  flex: 0 0 28%;
 }
 
 .mat-column-skill {
@@ -64,7 +64,7 @@ mat-cell {
 }
 
 .mat-column-activity {
-  flex: 0 0 20%;
+  flex: 0 0 22%;
 }
 
 .mat-cell,
