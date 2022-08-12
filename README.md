@@ -44,6 +44,8 @@ test favicon on desktop browsers
 - [ ] Edge tab
 - [ ] Edge bookmark
 
+- [ ] repleace logo in nav & footer with cropped version of svg & resize-reposition
+
 Header Component
 
 Footer Component redo:
@@ -57,8 +59,8 @@ Footer Component redo:
   social
   - [ ] contact
   - [ ] twitter eeieeioh
-  - [ ] app development & content by @leventemo
-  - [ ] logo design by József Balogh
+  - [x] app development & content by @leventemo
+  - [x] logo design by József Balogh
   - [ ] patreon
   - [ ] buy me a coffee
 
