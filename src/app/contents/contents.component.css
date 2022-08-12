@@ -8,8 +8,7 @@
 .container {
   flex-grow: 1;
   max-width: 42rem;
-  margin: 2vh .5rem 2vh .5rem;
-
+  margin: 0 .5rem 0 .5rem;
 }
 
 mat-form-field {
@@ -29,8 +28,6 @@ mat-form-field {
 
 mat-table {
   width: 100%;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
   box-shadow: none;
 }
 
@@ -128,4 +125,9 @@ a:active {
 
 .accentcolor-light {
   color: #DCC9FF;
+}
+
+mat-paginator-container {
+  flex-wrap: nowrap;
+  border: 2px solid blueviolet;
 }

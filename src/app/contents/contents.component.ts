@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 import { DateDefinitions } from '@faker-js/faker';
 import contentsData from '../../assets/activities/contentsarray.json';
@@ -28,6 +29,12 @@ export class ContentsComponent implements OnInit {
 
   dataSource = new MatTableDataSource(this.data);
   displayedColumns: string[] = ['title', 'language', 'skill', 'level', 'activity'];
+
+  @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
   constructor() { }
 
