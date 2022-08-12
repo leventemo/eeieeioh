@@ -103,7 +103,7 @@ REDO
 Nav Component
 - [ ] rename to Nav
 
-Hotel Check-in
+Hotel Check-in -> turn it into a Roleplay Component with A/B players getting their matching roles
 - [x] install Faker-js: <https://fakerjs.dev/>
 - [x] create check-in component
 - [ ] set up routing: different to the other components!
@@ -149,8 +149,6 @@ Not Found Component
 
 Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
-- [ ] fix bug: butterfly animation cover last item on list on mobiles – try z-index
-- [ ] pagination
 
 Changelog Component
 - [ ] set up sort on init

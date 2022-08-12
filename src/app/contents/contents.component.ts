@@ -24,6 +24,8 @@ export interface Contents {
   styleUrls: ['./contents.component.css']
 })
 export class ContentsComponent implements OnInit {
+  isMothFlying = true;
+
   numberOfDaysUntilNew = 60;
   data: Contents[] = contentsData;
 
@@ -50,6 +52,10 @@ export class ContentsComponent implements OnInit {
     const dateCreated = Number(new Date(date));
     const timePassed = (today - dateCreated) / (1000 * 60 * 60 * 24);
     return timePassed < this.numberOfDaysUntilNew;
+  }
+
+  smashMoth() {
+    this.isMothFlying = false;
   }
 
 }

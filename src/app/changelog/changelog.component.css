@@ -77,11 +77,11 @@ mat-cell {
 }
 
 .language-cell {
-  flex: 0 0 30%;
+  flex: 0 0 26%;
 }
 
 .level-cell {
-  flex: 0 0 10%;
+  flex: 0 0 9%;
 }
 
 .mat-column-activity {
@@ -90,7 +90,7 @@ mat-cell {
 
 .mat-cell,
 .mat-header-cell {
-  padding: 0 3px 0 3px;
+  padding: 0 0 0 0;
 }
 
 a {

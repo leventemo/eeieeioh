@@ -31,6 +31,13 @@ mat-table {
   box-shadow: none;
 }
 
+.lottie-moth {
+  position: absolute;
+  bottom: 80px;
+  width: 16rem;
+  height: 20rem;
+}
+
 mat-header-cell {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-weight: bold;
@@ -45,11 +52,11 @@ mat-cell {
 }
 
 .mat-column-title {
-  flex: 0 0 30%;
+  flex: 0 0 28%;
 }
 
 .mat-column-language {
-  flex: 0 0 28%;
+  flex: 0 0 27%;
 }
 
 .mat-column-skill {
@@ -61,7 +68,7 @@ mat-cell {
 }
 
 .mat-column-activity {
-  flex: 0 0 22%;
+  flex: 0 0 25%;
 }
 
 .mat-cell,
