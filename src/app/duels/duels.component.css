@@ -68,8 +68,6 @@ mat-card-content {
 .score {
   font-family: 'Inconsolata', monospace;
   width: 5.5rem;
-  /*   width: 4.5rem;
-  text-align: center; */
 }
 
 .score {
@@ -221,13 +219,17 @@ mat-footer-row {
   justify-content: flex-start;
 }
 
+.feedback-points {
+  font-family: 'Inconsolata', monospace;
+}
+
 .highlight {
   color: #CE0095;
   font-weight: bold;
-  ;
 }
 
 .totalScore {
+  font-family: 'Inconsolata', monospace;
   color: #7D1AD4;
 }
 

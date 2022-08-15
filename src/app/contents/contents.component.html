@@ -44,7 +44,7 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
-  <mat-paginator [pageSizeOptions]="[10, 20, 50]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[15, 30, 50]" showFirstLastButtons></mat-paginator>
   <lottie-player *ngIf="isMothFlying" (click)="smashMoth()" class="lottie-moth" src="/assets/img/moth.json"
     background="transparent" speed="1" loop autoplay>
   </lottie-player>
