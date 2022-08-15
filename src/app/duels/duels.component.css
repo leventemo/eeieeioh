@@ -221,6 +221,12 @@ mat-footer-row {
   justify-content: flex-start;
 }
 
+.highlight {
+  color: #CE0095;
+  font-weight: bold;
+  ;
+}
+
 .totalScore {
   color: #7D1AD4;
 }

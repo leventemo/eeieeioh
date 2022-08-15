@@ -49,7 +49,7 @@
 
     <ng-container matColumnDef="playerA">
       <mat-header-cell *matHeaderCellDef>A</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-cell *matCellDef="let item" [ngClass]="{ highlight: item.pointsForThis === 0}">
         <ng-container *ngIf="item.clickingPlayer === 'playerA'">
           {{item.pointsForThis}}
         </ng-container>
@@ -59,7 +59,7 @@
 
     <ng-container matColumnDef="playerB">
       <mat-header-cell *matHeaderCellDef>B</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-cell *matCellDef="let item" [ngClass]="{ highlight: item.pointsForThis === 0}">
         <ng-container *ngIf="item.clickingPlayer === 'playerB'">
           {{item.pointsForThis}}
         </ng-container>
