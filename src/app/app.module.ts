@@ -26,6 +26,7 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { EscapeRoomComponent } from './escape-room/escape-room.component';
     ActivitiesComponent,
     RoadmapComponent,
     AbbreviationsComponent,
-    EscapeRoomComponent
+    EscapeRoomComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
