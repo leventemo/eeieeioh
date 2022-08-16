@@ -10,5 +10,11 @@
   flex-grow: 1;
   max-width: 27rem;
   height: 85vh;
+  margin-top: 4rem;
+  text-align: center;
   box-shadow: none;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
 }

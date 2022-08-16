@@ -34,7 +34,7 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8">
+  <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8 feedback">
     <ng-container matColumnDef="correct">
       <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
       <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>

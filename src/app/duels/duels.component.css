@@ -168,7 +168,7 @@ mat-card-actions {
 }
 
 /* feedback table */
-mat-table {
+.feedback {
   box-shadow: none;
   width: 100%;
   margin-top: 2vh;
@@ -177,15 +177,15 @@ mat-table {
 
 mat-header-cell {
   font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1rem;
   font-weight: bold;
-  font-size: .9rem;
   color: #7D1AD4;
 }
 
 mat-cell {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
   font-size: 1rem;
+  font-weight: 300;
 }
 
 mat-footer-row {
@@ -230,7 +230,9 @@ mat-footer-row {
 
 .totalScore {
   font-family: 'Inconsolata', monospace;
+  font-weight: bold;
   color: #7D1AD4;
+  font-size: 1rem;
 }
 
 /* final scores */
