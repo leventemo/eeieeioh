@@ -52,8 +52,8 @@ Footer Component redo:
   eeieeioh
   - [x] about
   - [x] abbreviations
-  - [x] activities
-  - [x] log
+  - [x] guide to activities
+  - [x] changelog
   - [x] roadmap
 
   social

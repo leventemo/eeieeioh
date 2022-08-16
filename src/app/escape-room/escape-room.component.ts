@@ -82,7 +82,6 @@ export class EscapeRoomComponent implements OnInit {
     this.selectCurrentCard();
     this.hasItStarted = true;
     const startTime = new Date();
-    let numberSolved = 0;
 
     this.escapeForm = new FormGroup({
       question: new FormControl(this.currentCard?.question),
@@ -94,17 +93,16 @@ export class EscapeRoomComponent implements OnInit {
 
     this.escapeForm.statusChanges.pipe(
       filter(value => value === 'VALID'),
-      delay(400),
       scan((acc) => {
         return {
           numberSolved: acc.numberSolved + 1,
-          startTime: acc.startTime
+          startTime: acc.startTime,
+          endTime: Number(new Date().getTime() - startTime.getTime())
         }
-      }, { numberSolved: 0, startTime: new Date() })
-    ).subscribe(({ numberSolved, startTime }) => {
-      this.secondsPerSolution = (
-        new Date().getTime() - startTime.getTime()
-      ) / numberSolved / 1000;
+      }, { numberSolved: 0, startTime: startTime, endTime: 0 }),
+      delay(400),
+    ).subscribe(({ numberSolved, endTime }) => {
+      this.secondsPerSolution = Number(endTime) / numberSolved / 1000;
 
       this.selectCurrentCard();
 
@@ -124,8 +122,6 @@ export class EscapeRoomComponent implements OnInit {
     }
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
-    /*     this.currentCorrectCard = this.currentCard[0];
-        this.currentIncorrectCard = this.currentCard[1]; */
     this.currentPack = this.currentPack.filter(card => card !== this.currentCard);
     this.currentCardCounter++;
   };
