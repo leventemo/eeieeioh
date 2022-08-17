@@ -1,0 +1,293 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 27rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+mat-card {
+  height: 85vh;
+  width: 100%;
+}
+
+.activity-type,
+.card-counter,
+button {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.counters-wrapper,
+.prompts-wrapper,
+.options-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 3px;
+  opacity: .5;
+}
+
+.timer,
+.score {
+  font-family: 'Inconsolata', monospace;
+  width: 5.5rem;
+}
+
+.score {
+  text-align: center;
+}
+
+.prompts-wrapper {
+  border: 2px solid blueviolet;
+}
+
+.options-wrapper {
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  /* make btn invisible*/
+  background: #F5F5F5;
+  border: 2px solid #F5F5F5;
+  margin: 3px;
+}
+
+.activecounter {
+  color: #7D1AD4;
+  border: 2px solid #7D1AD4;
+  background-color: #F5F5F5;
+  opacity: 1;
+}
+
+#btn-A {
+  animation: shakeA 3s cubic-bezier(.36, .07, .19, .97) both infinite;
+}
+
+#btn-B {
+  animation: shakeB 3s cubic-bezier(.36, .07, .19, .97) both infinite;
+}
+
+mat-card-actions {
+  display: flex;
+  height: 7%;
+  align-items: center;
+  justify-content: space-around;
+  color: #7D1AD4;
+}
+
+.icon-inline {
+  color: #7D1AD4;
+  font-size: 1.4rem;
+}
+
+@keyframes shakeA {
+
+  91%,
+  95% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  92%,
+  98% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  93%,
+  99%,
+  97% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  94%,
+  96% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes shakeB {
+
+  41%,
+  45% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  42%,
+  48% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  43%,
+  49%,
+  47% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  44%,
+  46% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+/* feedback table */
+.feedback {
+  box-shadow: none;
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+mat-header-cell {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7D1AD4;
+}
+
+mat-cell {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+mat-footer-row {
+  border-bottom: none;
+}
+
+.mat-column-correct {
+  flex: 0 0 35%;
+}
+
+.mat-column-incorrect {
+  flex: 0 0 35%;
+}
+
+.mat-column-playerA {
+  flex: 0 0 15%;
+}
+
+.mat-column-playerB {
+  flex: 0 0 15%;
+}
+
+.mat-cell,
+.mat-header-cell {
+  padding: 0 .5rem 0 .5rem;
+}
+
+.mat-column-playerA,
+.mat-column-playerB {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feedback-points {
+  font-family: 'Inconsolata', monospace;
+}
+
+.highlight {
+  color: #CE0095;
+  font-weight: bold;
+}
+
+.totalScore {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  color: #7D1AD4;
+  font-size: 1rem;
+}
+
+/* final scores */
+.the-winner-is {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   height: 92%;
+ */
+  padding-bottom: 5rem;
+}
+
+.scores-card {
+  height: 60%;
+  box-shadow: none;
+  margin: 3rem 0 2rem 0;
+}
+
+.winner-text {
+  margin-bottom: 6rem;
+  animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
+}
+
+.lottie-div {
+  height: 10rem;
+  width: 10rem;
+}
+
+.divider {
+  width: 100%;
+}
+
+/* .card-actions {
+  display: flex;
+  height: 7%;
+  align-items: center;
+  justify-content: space-around;
+  color: #7D1AD4;
+} */
+
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

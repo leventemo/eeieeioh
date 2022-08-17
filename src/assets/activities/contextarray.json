@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1",
+    "level": "A2",
+    "skill": "WR",
+    "title": "Duel-type datastructure",
+    "language": "VOC: Sports",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 07, 25",
+    "cards": [
+      [
+        "we have a party",
+        "we make a party"
+      ],
+      [
+        "I slept 12 hours",
+        "I sleeped 12 hours"
+      ]
+    ]
+  },
+  {
+    "id": "2",
+    "level": "A2",
+    "skill": "WR",
+    "title": "Vocabulary: Sports",
+    "language": "Vocabulary: Sports",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 07, 25",
+    "cards": [
+      {
+        "prompts": [
+          "ball",
+          "score",
+          "referee"
+        ],
+        "options": [
+          "stadium",
+          "pool"
+        ]
+      },
+      {
+        "prompts": [
+          "skate",
+          "puck",
+          "stick"
+        ],
+        "options": [
+          "rink",
+          "tracks"
+        ]
+      },
+      {
+        "prompts": [
+          "hoop",
+          "slam-dunk",
+          "NBA"
+        ],
+        "options": [
+          "court",
+          "course"
+        ]
+      },
+      {
+        "prompts": [
+          "serve",
+          "backhander",
+          "racket"
+        ],
+        "options": [
+          "court",
+          "pitch"
+        ]
+      },
+      {
+        "prompts": [
+          "goggles",
+          "binding",
+          "lift"
+        ],
+        "options": [
+          "piste",
+          "pool"
+        ]
+      },
+      {
+        "prompts": [
+          "club",
+          "hole",
+          "green"
+        ],
+        "options": [
+          "course",
+          "stadium"
+        ]
+      },
+      {
+        "prompts": [
+          "head guard",
+          "glove",
+          "the ropes"
+        ],
+        "options": [
+          "ring",
+          "piste"
+        ]
+      }
+    ]
+  }
+]
