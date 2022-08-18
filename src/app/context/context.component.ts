@@ -13,7 +13,12 @@ interface Data {
   title: string;
   language: string;
   instructionsForDuels: string;
-  cards: string[][];
+  cards: Card[];
+}
+
+interface Card {
+  prompts: string[];
+  options: string[];
 }
 
 interface Player {
@@ -23,6 +28,7 @@ interface Player {
 }
 
 interface ResultsThisTurn {
+  prompts: string[];
   correctOption: string;
   incorrectOption: string;
   clickingPlayer: string;
@@ -36,8 +42,9 @@ interface ResultsThisTurn {
 })
 export class ContextComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
-  pack: string[][] = [];
+  data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
+  pack: Card[] = [];
+  /* card: Card = { prompts: [], options: [] }; */
   cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
 
@@ -48,7 +55,7 @@ export class ContextComponent implements OnInit {
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
-  currentCard = [''];
+  currentCard: Card = { prompts: ['...', '...', '...'], options: ['Click me', 'Or me'] };
   currentCardNumber = 0;
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';
@@ -57,6 +64,7 @@ export class ContextComponent implements OnInit {
 
   pointsEarnedThisTurn = 0;
   result: ResultsThisTurn = {
+    prompts: [],
     correctOption: '',
     incorrectOption: '',
     clickingPlayer: '',
@@ -67,7 +75,7 @@ export class ContextComponent implements OnInit {
   subscription!: Subscription;
 
   // for feedback table
-  displayedColumns: string[] = ['correct', 'incorrect', 'playerA', 'playerB'];
+  displayedColumns: string[] = ['prompts', 'correct', 'incorrect', 'playerA', 'playerB'];
   dataSource = new MatTableDataSource(this.resultsAll);
 
   constructor(
@@ -148,20 +156,21 @@ export class ContextComponent implements OnInit {
   private selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
-    this.currentCorrectCard = this.currentCard[0];
-    this.currentIncorrectCard = this.currentCard[1];
+    this.currentCorrectCard = this.currentCard.options[0];
+    this.currentIncorrectCard = this.currentCard.options[1];
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
 
   private randomizeCardsDisplay() {
-    if (Utils.getRandom(0, 1)) { // high, low: param1 = 1 is enough – test it
-      [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]];
+    if (Utils.getRandom(1, 0)) { // high, low: param1 = 1 is enough – test it
+      [this.currentCard.options[0], this.currentCard.options[1]] = [this.currentCard.options[1], this.currentCard.options[0]];
     }
   };
 
   private saveResults() {
     this.resultsAll.push({
+      prompts: this.currentCard.prompts,
       correctOption: this.currentCorrectCard,
       incorrectOption: this.currentIncorrectCard,
       clickingPlayer: this.currentPlayer.name,

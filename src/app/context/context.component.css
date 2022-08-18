@@ -48,11 +48,13 @@ mat-card-content {
 }
 
 .counters-wrapper,
-.prompts-wrapper,
 .options-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
+}
+
+.counters-wrapper {
+  height: 28%;
 }
 
 .counter {
@@ -68,20 +70,25 @@ mat-card-content {
 .timer,
 .score {
   font-family: 'Inconsolata', monospace;
-  width: 5.5rem;
-}
-
-.score {
-  text-align: center;
+  width: 8.5rem;
 }
 
 .prompts-wrapper {
-  border: 2px solid blueviolet;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 44%;
+}
+
+.prompt {
+  font-size: 1.4rem;
+  margin: 3px;
 }
 
 .options-wrapper {
-  display: grid;
-  grid-template-columns: 1;
+  height: 28%;
 }
 
 .option {
@@ -197,12 +204,16 @@ mat-footer-row {
   border-bottom: none;
 }
 
+.mat-column-prompts {
+  flex: 0 0 30%;
+}
+
 .mat-column-correct {
-  flex: 0 0 35%;
+  flex: 0 0 20%;
 }
 
 .mat-column-incorrect {
-  flex: 0 0 35%;
+  flex: 0 0 20%;
 }
 
 .mat-column-playerA {

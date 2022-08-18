@@ -155,7 +155,7 @@ export class DuelsComponent implements OnInit {
   };
 
   private randomizeCardsDisplay() {
-    if (Utils.getRandom(0, 1)) { // high, low: param1 = 1 is enough – test it
+    if (Utils.getRandom(1, 0)) {
       [this.currentCard[0], this.currentCard[1]] = [this.currentCard[1], this.currentCard[0]];
     }
   };

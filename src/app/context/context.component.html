@@ -17,13 +17,17 @@
           <p class="timer">{{ playerB.timer | convertTime }}</p>
         </div>
       </div>
-      <div class="prompts-wrapper">
 
+      <div class="prompts-wrapper">
+        <p class="prompt" *ngFor="let prompt of currentCard.prompts">{{prompt}}</p>
       </div>
+
       <div class="options-wrapper">
-        <button class="option" id="btn-A" (click)="onClick(currentCard[0])" [disabled]="!hasItStarted">{{ currentCard[0]
+        <button class="option" id="btn-A" (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{
+          currentCard.options[0]
           }}</button>
-        <button class="option" id="btn-B" (click)="onClick(currentCard[1])" [disabled]="!hasItStarted">{{ currentCard[1]
+        <button class="option" id="btn-B" (click)="onClick(currentCard.options[1])" [disabled]="!hasItStarted">{{
+          currentCard.options[1]
           }}</button>
       </div>
     </mat-card-content>
@@ -36,6 +40,16 @@
   </mat-card>
 
   <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8 feedback">
+    <ng-container matColumnDef="prompts">
+      <mat-header-cell *matHeaderCellDef>Clues</mat-header-cell>
+      <mat-cell *matCellDef="let item">{{item.prompts}}
+        <!--         <div *ngFor="let prompt of item.prompts">
+          {{prompt}}<br>
+        </div> -->
+      </mat-cell>
+      <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+    </ng-container>
+
     <ng-container matColumnDef="correct">
       <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
       <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>

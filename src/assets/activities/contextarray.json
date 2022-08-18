@@ -3,19 +3,88 @@
     "id": "1",
     "level": "A2",
     "skill": "WR",
-    "title": "Duel-type datastructure",
-    "language": "VOC: Sports",
+    "title": "TESTING",
+    "language": "TESTING",
     "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "datePublished": "2022, 07, 25",
     "cards": [
-      [
-        "we have a party",
-        "we make a party"
-      ],
-      [
-        "I slept 12 hours",
-        "I sleeped 12 hours"
-      ]
+      {
+        "prompts": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "2A",
+          "2B",
+          "2C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "3A",
+          "3B",
+          "3C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "4A",
+          "4B",
+          "4C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "5A",
+          "5B",
+          "5C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "6A",
+          "6B",
+          "6C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "prompts": [
+          "7A",
+          "7B",
+          "7C"
+        ],
+        "options": [
+          "A",
+          "B"
+        ]
+      }
     ]
   },
   {
