@@ -57,26 +57,39 @@ mat-card-content {
   justify-content: space-between;
 }
 
+/* counter classes */
 .counter {
-  color: #CE0095;
+  color: #808080;
   width: 3rem;
   margin: auto;
   font-size: 2rem;
   background-color: #FFFFFF;
   border: none;
+}
+
+.countercurrentplayer {
+  color: #7D1AD4;
+  background-color: #F5F5F5;
+  border: 2px solid #7D1AD4;
+}
+
+.countercurrentplayeractive {
+  border: 2px solid #CE0095;
+  color: #CE0095;
   animation: blinker 1.3s ease-in-out infinite alternate;
+}
+
+
+.counter:disabled {
+  color: #808080;
+  border: none;
+  animation: none;
 }
 
 @keyframes blinker {
   50% {
     opacity: 0;
   }
-}
-
-.counter:disabled {
-  color: #808080;
-  border: none;
-  animation: none;
 }
 
 .clue {

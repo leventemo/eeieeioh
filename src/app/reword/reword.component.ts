@@ -34,16 +34,24 @@ interface Player {
 
 export class RewordComponent implements OnInit {
 
-  data: Data = { cards: [] };
+  /*COUNTER states:
+  – disabled: grey, no border
+  - disabled currentPlayer: add grey border
+  - active current: red with red border, flashing
+  */
 
-  instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
+  data: Data = { cards: [] };
   currentPack: Card[] = [];
   currentCard: Card = {};
   isClueDisplayed = false;
   isAnswerDisplayed = false;
   currentCardCounter = 0;
-  currentPlayer = 'A';
+  instructions = () => this.data.instructions;
+  cardsTotal = () => this.data.cards.length;
+
+  playerA: Player = { name: 'playerA', score: 0 };
+  playerB: Player = { name: 'playerB', score: 0 };
+  currentPlayer: Player = this.playerA;
 
   constructor(
     public router: Router,
@@ -74,11 +82,11 @@ export class RewordComponent implements OnInit {
     this.currentCardCounter++;
   }
 
-  increment(event: Event) {
+  onCounterClick(event: Event) {
     const target = event.target as HTMLInputElement;
 
     if (Number(target.value) === this.data.cards.length) {
-      // call GameOver fn
+      // display Game Over
       return;
     }
 
@@ -88,12 +96,39 @@ export class RewordComponent implements OnInit {
       target.value = (Number(target.value) + 2).toString();
     }
 
-
     target.textContent = target.value;
-
+    this.switchPlayers();
     this.displayNextCard();
 
   }
+
+  getCounterClassPlayerA(): string[] {
+    const classes = [];
+    if (this.currentPlayer === this.playerA) {
+      classes.push('countercurrentplayer');
+    }
+    if (this.isAnswerDisplayed && this.currentPlayer === this.playerA) {
+      classes.push('countercurrentplayeractive');
+    }
+    return classes;
+  }
+
+  getCounterClassPlayerB(): string[] {
+    const classes = [];
+    if (this.currentPlayer === this.playerB) {
+      classes.push('countercurrentplayer');
+    }
+    if (this.isAnswerDisplayed && this.currentPlayer === this.playerB) {
+      classes.push('countercurrentplayeractive');
+    }
+    return classes;
+  }
+
+  private switchPlayers() {
+    this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
+    console.log(this.currentPlayer);
+  }
+
 
   redirect() {
     this.router.navigate(['contents']);

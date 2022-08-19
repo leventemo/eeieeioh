@@ -18,8 +18,10 @@
     </div>
 
     <div class="card-content-small">
-      <button class="counter" [value]="0" (click)="increment($event)" [disabled]="!isAnswerDisplayed">0</button>
-      <button class="counter" [value]="0" (click)="increment($event)" [disabled]="!isAnswerDisplayed">0</button>
+      <button class="counter" [ngClass]="getCounterClassPlayerA()" [value]="0" (click)="onCounterClick($event)"
+        [disabled]="!isAnswerDisplayed && currentPlayer !== playerA">{{playerA.score}}</button>
+      <button class="counter" [ngClass]="getCounterClassPlayerB()" [value]="0" (click)="onCounterClick($event)"
+        [disabled]="!isAnswerDisplayed && currentPlayer !== playerB">{{playerB.score}}</button>
     </div>
   </mat-card-content>
 
@@ -28,10 +30,11 @@
   <mat-card-actions align="end">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
     <button *ngIf="currentCardCounter === 0" color="primary" mat-button (click)="displayNextCard()">Start</button>
-    <button *ngIf="!isClueDisplayed && this.currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
+    <button *ngIf="!isClueDisplayed && currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
       (click)="isClueDisplayed = true">Clue</button>
-    <button *ngIf="this.currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
+    <button *ngIf="currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
       (click)="isAnswerDisplayed = true">Answer</button>
+    <button *ngIf="isAnswerDisplayed" color="primary" mat-button (click)="displayNextCard()">Next</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>
