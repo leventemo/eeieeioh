@@ -36,19 +36,14 @@ export class RewordComponent implements OnInit {
 
   data: Data = { cards: [] };
 
-  currentPack: Card[] = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
+  currentPack: Card[] = [];
   currentCard: Card = {};
   isClueDisplayed = false;
   isAnswerDisplayed = false;
   currentCardCounter = 0;
   currentPlayer = 'A';
-  showStartBtn = true;
-
-  hasGameStarted() { return this.currentCardCounter !== 0; }
-  /*   isNextBtnVisible() { return !this.isGameOver() && (this.isAnswerDisplayed || !this.hasGameStarted()) } */
-  /* isGameOver() { return this.currentPack.length === 0; } */
 
   constructor(
     public router: Router,
@@ -64,8 +59,6 @@ export class RewordComponent implements OnInit {
     this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
-    console.log(this.currentCardCounter);
-
   }
 
   openDialog() {
@@ -79,7 +72,6 @@ export class RewordComponent implements OnInit {
     this.isAnswerDisplayed = false;
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
-    this.showStartBtn = false;
   }
 
   increment(event: Event) {

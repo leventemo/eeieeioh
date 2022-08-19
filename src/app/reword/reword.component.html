@@ -27,10 +27,10 @@
 
   <mat-card-actions align="end">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="showStartBtn" color="primary" mat-button (click)="displayNextCard()">Start</button>
-    <button *ngIf="!isClueDisplayed && hasGameStarted() && !isAnswerDisplayed" color="primary" mat-button
+    <button *ngIf="currentCardCounter === 0" color="primary" mat-button (click)="displayNextCard()">Start</button>
+    <button *ngIf="!isClueDisplayed && this.currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
       (click)="isClueDisplayed = true">Clue</button>
-    <button *ngIf="hasGameStarted() && !isAnswerDisplayed" color="primary" mat-button
+    <button *ngIf="this.currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
       (click)="isAnswerDisplayed = true">Answer</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
