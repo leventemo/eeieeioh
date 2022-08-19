@@ -133,13 +133,13 @@ Timed-Cards Component
 - [ ] Just a minute
 - [ ] Vocab Race activities, eg. Prep of Movement, etc – see EF
 
-Duel component
+Duels Component
 
 
 Reword Component
 - [ ] refactor counter with active & disabled classes
 - [ ] make only one counter active at a time (use currentPLayer variable)
-- [ ] add `hasClueBeenClicked` flag to restrict scoring: if so, you can only give 1 point of the 2 max
+- [x] add `hasClueBeenClicked` flag to restrict scoring: if so, you can only give 1 point of the 2 max
 - [ ] add "Done" Pablita illustration
 
 Not Found Component
@@ -163,4 +163,6 @@ Escape Room Component
 - [x] RxJS
 - [ ] unsubscribe?
 
+Context Component
+- [ ] feed the prompts array into table cell to get line breaks in feedback
 

@@ -205,15 +205,15 @@ mat-footer-row {
 }
 
 .mat-column-prompts {
-  flex: 0 0 30%;
+  flex: 0 0 34%;
 }
 
 .mat-column-correct {
-  flex: 0 0 20%;
+  flex: 0 0 18%;
 }
 
 .mat-column-incorrect {
-  flex: 0 0 20%;
+  flex: 0 0 18%;
 }
 
 .mat-column-playerA {

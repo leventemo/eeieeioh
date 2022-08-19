@@ -21,6 +21,11 @@ interface Data {
   cards: Card[];
 }
 
+interface Player {
+  name: string;
+  score: number;
+}
+
 @Component({
   selector: 'app-reword',
   templateUrl: './reword.component.html',
@@ -31,7 +36,7 @@ export class RewordComponent implements OnInit {
 
   data: Data = { cards: [] };
 
-  currentPack: Array<Card> = [];
+  currentPack: Card[] = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
   currentCard: Card = {};
@@ -39,6 +44,11 @@ export class RewordComponent implements OnInit {
   isAnswerDisplayed = false;
   currentCardCounter = 0;
   currentPlayer = 'A';
+  showStartBtn = true;
+
+  hasGameStarted() { return this.currentCardCounter !== 0; }
+  /*   isNextBtnVisible() { return !this.isGameOver() && (this.isAnswerDisplayed || !this.hasGameStarted()) } */
+  /* isGameOver() { return this.currentPack.length === 0; } */
 
   constructor(
     public router: Router,
@@ -54,45 +64,43 @@ export class RewordComponent implements OnInit {
     this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+    console.log(this.currentCardCounter);
+
   }
 
   openDialog() {
     this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
   }
 
-  next() {
+  displayNextCard() {
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     this.isClueDisplayed = false;
     this.isAnswerDisplayed = false;
     this.currentPack = this.currentPack.filter((card) => card !== this.currentCard);
     this.currentCardCounter++;
+    this.showStartBtn = false;
   }
 
   increment(event: Event) {
     const target = event.target as HTMLInputElement;
 
-    console.log(this.data.cards.length);
-
     if (Number(target.value) === this.data.cards.length) {
+      // call GameOver fn
       return;
     }
 
-    target.value = (Number(target.value) + 1).toString();
+    if (this.isClueDisplayed) {
+      target.value = (Number(target.value) + 1).toString();
+    } else {
+      target.value = (Number(target.value) + 2).toString();
+    }
+
+
     target.textContent = target.value;
 
-  }
+    this.displayNextCard();
 
-  hasGameStarted() {
-    return this.currentCardCounter !== 0;
-  }
-
-  isNextBtnVisible() {
-    return !this.isGameOver() && (this.isAnswerDisplayed || !this.hasGameStarted())
-  }
-
-  isGameOver() {
-    return this.currentPack.length === 0;
   }
 
   redirect() {
