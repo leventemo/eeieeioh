@@ -34,12 +34,6 @@ interface Player {
 
 export class RewordComponent implements OnInit {
 
-  /*COUNTER states:
-  – disabled: grey, no border
-  - disabled currentPlayer: add grey border
-  - active current: red with red border, flashing
-  */
-
   data: Data = { cards: [] };
   currentPack: Card[] = [];
   currentCard: Card = {};
@@ -51,7 +45,7 @@ export class RewordComponent implements OnInit {
 
   playerA: Player = { name: 'playerA', score: 0 };
   playerB: Player = { name: 'playerB', score: 0 };
-  currentPlayer: Player = this.playerA;
+  currentPlayer: Player = this.playerB;
 
   constructor(
     public router: Router,
@@ -74,6 +68,8 @@ export class RewordComponent implements OnInit {
   }
 
   displayNextCard() {
+    this.switchPlayers();
+
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     this.isClueDisplayed = false;
@@ -97,7 +93,6 @@ export class RewordComponent implements OnInit {
     }
 
     target.textContent = target.value;
-    this.switchPlayers();
     this.displayNextCard();
 
   }
