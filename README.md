@@ -137,8 +137,8 @@ Duels Component
 
 
 Reword Component
-- [ ] refactor counter with active & disabled classes
-- [ ] make only one counter active at a time (use currentPLayer variable)
+- [x] refactor counter with active & disabled classes
+- [x] make only one counter active at a time (use currentPLayer variable)
 - [x] add `hasClueBeenClicked` flag to restrict scoring: if so, you can only give 1 point of the 2 max
 - [ ] add "Done" Pablita illustration
 

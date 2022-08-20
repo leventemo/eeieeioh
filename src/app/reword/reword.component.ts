@@ -39,6 +39,7 @@ export class RewordComponent implements OnInit {
   currentCard: Card = {};
   isClueDisplayed = false;
   isAnswerDisplayed = false;
+  areQnestionsDone = false;
   currentCardCounter = 0;
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
@@ -69,7 +70,6 @@ export class RewordComponent implements OnInit {
 
   displayNextCard() {
     this.switchPlayers();
-
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
     this.isClueDisplayed = false;
@@ -81,10 +81,14 @@ export class RewordComponent implements OnInit {
   onCounterClick(event: Event) {
     const target = event.target as HTMLInputElement;
 
-    if (Number(target.value) === this.data.cards.length) {
-      // display Game Over
-      return;
+    if (this.currentPack.length === 0) {
+      this.areQnestionsDone = true;
     }
+
+    /*     if (Number(target.value) === this.data.cards.length) {
+          // display Game Over
+          return;
+        } */
 
     if (this.isClueDisplayed) {
       target.value = (Number(target.value) + 1).toString();
@@ -121,7 +125,6 @@ export class RewordComponent implements OnInit {
 
   private switchPlayers() {
     this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
-    console.log(this.currentPlayer);
   }
 
 

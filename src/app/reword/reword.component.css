@@ -3,15 +3,23 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 27rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 mat-card {
-  flex-grow: 1;
+  height: 85vh;
+  width: 100%;
+  /*   flex-grow: 1;
   max-width: 27rem;
   height: 85vh;
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 2vh; */
 }
 
 .activity-type,
@@ -100,4 +108,33 @@ mat-card-actions {
 .icon-inline {
   color: #7D1AD4;
   font-size: 1.4rem;
+}
+
+/* final scores */
+.the-winner-is {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   height: 92%;
+ */
+  padding-bottom: 5rem;
+}
+
+.scores-card {
+  height: 85vh;
+  margin: 3rem 0 2rem 0;
+}
+
+.winner-text {
+  margin-bottom: 6rem;
+  animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
+}
+
+.lottie-div {
+  height: 10rem;
+  width: 10rem;
+}
+
+.divider {
+  width: 100%;
 }

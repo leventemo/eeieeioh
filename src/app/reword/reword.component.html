@@ -1,41 +1,59 @@
-<mat-card>
-  <mat-card-title>
-    <span class="activity-type">Reword</span><span class="title">{{ data.title }}</span>
-    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
-  </mat-card-title>
+<div class="container">
+  <mat-card *ngIf="!areQnestionsDone">
+    <mat-card-title>
+      <span class="activity-type">Reword</span><span class="title">{{ data.title }}</span>
+      <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+    </mat-card-title>
 
-  <mat-divider inset></mat-divider>
-
-  <mat-card-content>
-    <div class="card-content-big">
-      <div class="text">{{ currentCard.sentence }}</div>
-      <div class="text">{{ currentCard.keyword }}</div>
-    </div>
     <mat-divider inset></mat-divider>
-    <div class="card-content-big">
-      <div class="clue" *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
-      <div *ngIf="isAnswerDisplayed">{{ currentCard.answer }}</div>
-    </div>
 
-    <div class="card-content-small">
-      <button class="counter" [ngClass]="getCounterClassPlayerA()" [value]="0" (click)="onCounterClick($event)"
-        [disabled]="!isAnswerDisplayed || currentPlayer !== playerA">{{playerA.score}}</button>
-      <button class="counter" [ngClass]="getCounterClassPlayerB()" [value]="0" (click)="onCounterClick($event)"
-        [disabled]="!isAnswerDisplayed || currentPlayer !== playerB">{{playerB.score}}</button>
-    </div>
-  </mat-card-content>
+    <mat-card-content>
+      <div class="card-content-big">
+        <div class="text">{{ currentCard.sentence }}</div>
+        <div class="text">{{ currentCard.keyword }}</div>
+      </div>
+      <mat-divider inset></mat-divider>
+      <div class="card-content-big">
+        <div class="clue" *ngIf="isClueDisplayed">{{ currentCard.targetLanguage }}</div>
+        <div *ngIf="isAnswerDisplayed">{{ currentCard.answer }}</div>
+      </div>
 
-  <mat-divider inset></mat-divider>
+      <div class="card-content-small">
+        <button class="counter" [ngClass]="getCounterClassPlayerA()" [value]="0" (click)="onCounterClick($event)"
+          [disabled]="!isAnswerDisplayed || currentPlayer !== playerA">{{playerA.score}}</button>
+        <button class="counter" [ngClass]="getCounterClassPlayerB()" [value]="0" (click)="onCounterClick($event)"
+          [disabled]="!isAnswerDisplayed || currentPlayer !== playerB">{{playerB.score}}</button>
+      </div>
+    </mat-card-content>
 
-  <mat-card-actions align="end">
-    <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="currentCardCounter === 0" color="primary" mat-button (click)="displayNextCard()">Start</button>
-    <button *ngIf="!isClueDisplayed && currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
-      (click)="isClueDisplayed = true">Clue</button>
-    <button *ngIf="currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
-      (click)="isAnswerDisplayed = true">Answer</button>
-    <button class="countercurrentplayeractive" *ngIf="isAnswerDisplayed" color="primary" mat-button
-      (click)="displayNextCard()">Next</button>
-    <button color="primary" mat-button (click)="redirect()">Contents</button>
-  </mat-card-actions>
-</mat-card>
+    <mat-divider inset></mat-divider>
+
+    <mat-card-actions align="end">
+      <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
+      <button *ngIf="currentCardCounter === 0" color="primary" mat-button (click)="displayNextCard()">Start</button>
+      <button *ngIf="!isClueDisplayed && currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
+        (click)="isClueDisplayed = true">Clue</button>
+      <button *ngIf="currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
+        (click)="isAnswerDisplayed = true">Answer</button>
+      <button class="countercurrentplayeractive" *ngIf="isAnswerDisplayed" color="primary" mat-button
+        (click)="displayNextCard()">Next</button>
+      <button color="primary" mat-button (click)="redirect()">Contents</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card *ngIf="areQnestionsDone" class="scores-card">
+    <mat-card-content class="the-winner-is">
+      <div class="winner-text">
+        <h1>Score Card</h1>
+      </div>
+      <div class="lottie-div">
+        <lottie-player src="/assets/img/threestars.json" background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+      </div>
+    </mat-card-content>
+    <mat-divider class="divider" inset></mat-divider>
+    <mat-card-actions align="end">
+      <button color="primary" mat-button (click)="redirect()">Contents</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
