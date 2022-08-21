@@ -126,7 +126,7 @@ mat-card-actions {
 }
 
 .winner-text {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
 }
 
