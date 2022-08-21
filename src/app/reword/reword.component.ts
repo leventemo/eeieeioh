@@ -47,6 +47,8 @@ export class RewordComponent implements OnInit {
   playerA: Player = { name: 'playerA', score: 0 };
   playerB: Player = { name: 'playerB', score: 0 };
   currentPlayer: Player = this.playerB;
+  pointsEarnedThisTurn = 0;
+  gameResults: string = '';
 
   constructor(
     public router: Router,
@@ -69,6 +71,11 @@ export class RewordComponent implements OnInit {
   }
 
   displayNextCard() {
+    if (this.currentPack.length === 0) {
+      this.areQnestionsDone = true;
+      this.chooseWinner();
+      return;
+    }
     this.switchPlayers();
     const rando = Utils.getRandom(this.currentPack.length - 1);
     this.currentCard = this.currentPack[rando];
@@ -80,23 +87,9 @@ export class RewordComponent implements OnInit {
 
   onCounterClick(event: Event) {
     const target = event.target as HTMLInputElement;
+    const val = target.value;
 
-    if (this.currentPack.length === 0) {
-      this.areQnestionsDone = true;
-    }
-
-    /*     if (Number(target.value) === this.data.cards.length) {
-          // display Game Over
-          return;
-        } */
-
-    if (this.isClueDisplayed) {
-      target.value = (Number(target.value) + 1).toString();
-    } else {
-      target.value = (Number(target.value) + 2).toString();
-    }
-
-    target.textContent = target.value;
+    this.calcScore();
     this.displayNextCard();
 
   }
@@ -127,6 +120,26 @@ export class RewordComponent implements OnInit {
     this.currentPlayer = this.currentPlayer === this.playerA ? this.playerB : this.playerA;
   }
 
+  private calcScore(val: string | null = null) {
+    let value = Number(val);
+
+    if (this.isClueDisplayed) {
+      this.pointsEarnedThisTurn = value + 1;
+    } else {
+      this.pointsEarnedThisTurn = value + 2;
+    }
+    this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
+  }
+
+  private chooseWinner() {
+    if (this.playerA.score === this.playerB.score) {
+      this.gameResults = `No winner: it's a draw.`
+    } else if (this.playerA.score > this.playerB.score) {
+      this.gameResults = `A wins. Congratulations!`;
+    } else {
+      this.gameResults = `B wins. Congratulations!`;
+    }
+  }
 
   redirect() {
     this.router.navigate(['contents']);
