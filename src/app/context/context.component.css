@@ -281,13 +281,9 @@ mat-footer-row {
   width: 100%;
 }
 
-/* .card-actions {
-  display: flex;
-  height: 7%;
-  align-items: center;
-  justify-content: space-around;
-  color: #7D1AD4;
-} */
+.closing-dash {
+  justify-content: end;
+}
 
 @keyframes grow-and-shrink {
   0% {

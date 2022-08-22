@@ -42,7 +42,8 @@
   <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8 feedback">
     <ng-container matColumnDef="prompts">
       <mat-header-cell *matHeaderCellDef>Clues</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.prompts}}
+      <mat-cell *matCellDef="let item">
+        {{item.prompts}}
         <!--         <div *ngFor="let prompt of item.prompts">
           {{prompt}}<br>
         </div> -->
@@ -98,7 +99,7 @@
       </div>
     </mat-card-content>
     <mat-divider class="divider" inset></mat-divider>
-    <mat-card-actions align="end">
+    <mat-card-actions align="end" class="closing-dash">
       <button color="primary" mat-button (click)="redirect()">Contents</button>
     </mat-card-actions>
   </mat-card>

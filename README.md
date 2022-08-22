@@ -115,32 +115,25 @@ Hotel Check-in -> turn it into a Roleplay Component with A/B players getting the
 - [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
 Cards component
-- [x] first btn "Start"
-- [x] load data from json in assets folder
-- [x] routing params
-- [x] info modal
 - [ ] card prompts in an array so multiple lines can be rendered in template
-- [x] add "Done" Pablita illustration to Cards
 
 Pelmalism Component
 * see notes in eeieeioh/Pelmalism.md
 
 Timed-Cards Component
-* FOR:
+- [ ] review
 - [x]Yes-No Game
 - [x] Exam Qns
 - [ ] Talking about ...
 - [ ] Just a minute
 - [ ] Vocab Race activities, eg. Prep of Movement, etc – see EF
+- [ ] What's the right question?: DB > ELTGames.com > elem-pre-int CONV
 
 Duels Component
-
+- [ ] review
 
 Reword Component
-- [x] refactor counter with active & disabled classes
-- [x] make only one counter active at a time (use currentPLayer variable)
-- [x] add `hasClueBeenClicked` flag to restrict scoring: if so, you can only give 1 point of the 2 max
-- [ ] add "Done" Pablita illustration
+- [ ] review
 
 Not Found Component
 - [x] create component
@@ -154,13 +147,7 @@ Changelog Component
 - [ ] set up sort on init
 
 Escape Room Component
-- [x] set up routing
-- [x] set up dialog
-- [x] set up data
-- [x] set up CSS
 - [ ] clean CSS
-- [x] set up form & avg time
-- [x] RxJS
 - [ ] unsubscribe?
 
 Context Component

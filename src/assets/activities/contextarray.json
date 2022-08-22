@@ -132,7 +132,7 @@
       {
         "prompts": [
           "serve",
-          "backhander",
+          "backhand",
           "racket"
         ],
         "options": [
@@ -171,6 +171,17 @@
         "options": [
           "ring",
           "piste"
+        ]
+      },
+      {
+        "prompts": [
+          "towel",
+          "stopwatch",
+          "goggles"
+        ],
+        "options": [
+          "pool",
+          "ring"
         ]
       }
     ]
