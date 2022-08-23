@@ -12,14 +12,14 @@ h1 {
   border-bottom: 2px solid #454746;
 }
 
-a {
+.footer-anchor {
   color: #7D1AD4;
   letter-spacing: 0.1rem;
   text-decoration: none;
 }
 
 span,
-a {
+.footer-anchor {
   font-size: 1rem;
   line-height: 2.3rem;
 }
