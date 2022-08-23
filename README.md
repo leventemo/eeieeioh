@@ -151,5 +151,6 @@ Escape Room Component
 - [ ] unsubscribe?
 
 Context Component
-- [ ] feed the prompts array into table cell to get line breaks in feedback
+- [ ] review
+
 

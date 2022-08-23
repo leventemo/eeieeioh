@@ -43,10 +43,11 @@
     <ng-container matColumnDef="prompts">
       <mat-header-cell *matHeaderCellDef>Clues</mat-header-cell>
       <mat-cell *matCellDef="let item">
-        {{item.prompts}}
-        <!--         <div *ngFor="let prompt of item.prompts">
-          {{prompt}}<br>
-        </div> -->
+        <ul class="prompt-list">
+          <li *ngFor="let prompt of item.prompts">
+            {{prompt}}
+          </li>
+        </ul>
       </mat-cell>
       <mat-footer-cell *matFooterCellDef></mat-footer-cell>
     </ng-container>

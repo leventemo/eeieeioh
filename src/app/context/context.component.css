@@ -229,6 +229,13 @@ mat-footer-row {
   padding: 0 .5rem 0 .5rem;
 }
 
+.prompt-list {
+  list-style-type: none;
+  margin: 0;
+  padding: .2rem 0 .2rem 0;
+  ;
+}
+
 .mat-column-playerA,
 .mat-column-playerB {
   display: flex;
