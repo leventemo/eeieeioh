@@ -134,7 +134,7 @@ export class ContextComponent implements OnInit {
 
   private displayNextCard() {
     this.selectCurrentCard();
-    this.randomizeCardsDisplay();
+    this.randomizeOptionsDisplay();
   }
 
   private calcScore(val: string | null = null) {
@@ -162,7 +162,7 @@ export class ContextComponent implements OnInit {
     this.currentCardNumber++;
   };
 
-  private randomizeCardsDisplay() {
+  private randomizeOptionsDisplay() {
     if (Utils.getRandom(1, 0)) { // high, low: param1 = 1 is enough – test it
       [this.currentCard.options[0], this.currentCard.options[1]] = [this.currentCard.options[1], this.currentCard.options[0]];
     }

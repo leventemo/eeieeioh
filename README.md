@@ -151,6 +151,14 @@ Escape Room Component
 - [ ] unsubscribe?
 
 Context Component
+include "Options" in an array so we can use 3, ... , not just 2 of them – same with Duels
+- [] use this in template, rather than the 2 hardcoded btns
+  ```html
+  <button *ngFor="let option of currentCard.options" class="option" id="btn-A"
+    (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{option}}
+  </button>
+  ```
+- adjust checking & calculation of answers/results
 - [ ] review
 
 
