@@ -55,7 +55,7 @@ export class ContextComponent implements OnInit {
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
-  currentCard: Card = { prompts: ['clue1', 'clue2', 'clue3'], options: ['Option1', 'Option2'] };
+  currentCard: Card = { prompts: ['', ''], options: ['', ''] };
   currentCardNumber = 0;
   currentPlayer: Player = this.playerA;
   currentCorrectCard = '';

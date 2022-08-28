@@ -2,87 +2,200 @@
   {
     "id": "1",
     "level": "A2",
-    "skill": "WR",
-    "title": "TESTING",
-    "language": "TESTING",
-    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
-    "datePublished": "2022, 07, 25",
+    "skill": "",
+    "title": "Prepositions of Movement",
+    "language": "Prepositions of Movement",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 08, 28",
     "cards": [
       {
         "prompts": [
-          "1A",
-          "1B",
-          "1C"
+          "walk _____ the road",
+          "walk _____ the field"
         ],
         "options": [
-          "A",
-          "B"
+          "across",
+          "through"
         ]
       },
       {
         "prompts": [
-          "2A",
-          "2B",
-          "2C"
+          "walk _____ the lake",
+          "dance _____ the fire"
         ],
         "options": [
-          "A",
-          "B"
+          "around / round",
+          "to"
         ]
       },
       {
         "prompts": [
-          "3A",
-          "3B",
-          "3C"
+          "walk _____ the river",
+          "follow the path _____ the beach."
         ],
         "options": [
-          "A",
-          "B"
+          "along",
+          "on"
         ]
       },
       {
         "prompts": [
-          "4A",
-          "4B",
-          "4C"
+          "run _____ the hill",
+          "climb _____ the ladder"
         ],
         "options": [
-          "A",
-          "B"
+          "down",
+          "towards"
         ]
       },
       {
         "prompts": [
-          "5A",
-          "5B",
-          "5C"
+          "run _____ to open the door",
+          "go _____ to have something to eat"
         ],
         "options": [
-          "A",
-          "B"
+          "downstairs",
+          "upstairs"
         ]
       },
       {
         "prompts": [
-          "6A",
-          "6B",
-          "6C"
+          "fly _____ Madrid to London",
+          "take his phone _____ him"
         ],
         "options": [
-          "A",
-          "B"
+          "from",
+          "away"
         ]
       },
       {
         "prompts": [
-          "7A",
-          "7B",
-          "7C"
+          "crash _____ a tree",
+          "come _____ the room"
         ],
         "options": [
-          "A",
-          "B"
+          "into",
+          "in"
+        ]
+      },
+      {
+        "prompts": [
+          "take your hands _____ your pockets",
+          "I'm _____ here, bye!"
+        ],
+        "options": [
+          "out of",
+          "into"
+        ]
+      },
+      {
+        "prompts": [
+          "fly _____ the Alps",
+          "walk _____ the bridge"
+        ],
+        "options": [
+          "over",
+          "on"
+        ]
+      },
+      {
+        "prompts": [
+          "walk _____ someone without saying hello",
+          "drive _____ a tower"
+        ],
+        "options": [
+          "past",
+          "over"
+        ]
+      },
+      {
+        "prompts": [
+          "get in _____ the window",
+          "go _____ the forest"
+        ],
+        "options": [
+          "through",
+          "across"
+        ]
+      },
+      {
+        "prompts": [
+          "give this _____ Tom",
+          "go _____ Bologna"
+        ],
+        "options": [
+          "to",
+          "down"
+        ]
+      },
+      {
+        "prompts": [
+          "push the letter in _____ the door",
+          "sail _____ the Golden Gate Bridge"
+        ],
+        "options": [
+          "under",
+          "past"
+        ]
+      },
+      {
+        "prompts": [
+          "walk slowly _____ the hill",
+          "climb _____ a tree to have some cherries"
+        ],
+        "options": [
+          "up",
+          "around"
+        ]
+      },
+      {
+        "prompts": [
+          "go _____ to see the ocean from the balcony",
+          "run _____ and back down again"
+        ],
+        "options": [
+          "upstairs",
+          "off"
+        ]
+      },
+      {
+        "prompts": [
+          "hear him moving _____ from the door",
+          "run _____ without looking back"
+        ],
+        "options": [
+          "away",
+          "along"
+        ]
+      },
+      {
+        "prompts": [
+          "hear someone coming _____ my room",
+          "Go along that street _____ the centre."
+        ],
+        "options": [
+          "towards",
+          "over"
+        ]
+      },
+      {
+        "prompts": [
+          "get back _____ the motorway",
+          "put those books _____ the top shelf"
+        ],
+        "options": [
+          "onto",
+          "under"
+        ]
+      },
+      {
+        "prompts": [
+          "take your papers _____ the desk",
+          "drive _____ into the night"
+        ],
+        "options": [
+          "off",
+          "downstairs"
         ]
       }
     ]
@@ -93,7 +206,7 @@
     "skill": "WR",
     "title": "Vocabulary: Sports",
     "language": "Vocabulary: Sports",
-    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "datePublished": "2022, 07, 25",
     "cards": [
       {

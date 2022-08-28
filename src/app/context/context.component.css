@@ -78,13 +78,14 @@ mat-card-content {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   height: 44%;
 }
 
 .prompt {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 3px;
+  line-height: 2rem;
 }
 
 .options-wrapper {
@@ -205,23 +206,23 @@ mat-footer-row {
 }
 
 .mat-column-prompts {
-  flex: 0 0 34%;
+  flex: 0 0 38%;
 }
 
 .mat-column-correct {
-  flex: 0 0 18%;
+  flex: 0 0 20%;
 }
 
 .mat-column-incorrect {
-  flex: 0 0 18%;
+  flex: 0 0 20%;
 }
 
 .mat-column-playerA {
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 
 .mat-column-playerB {
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 
 .mat-cell,
@@ -230,7 +231,7 @@ mat-footer-row {
 }
 
 .prompt-list {
-  list-style-type: none;
+  /*   list-style-type: none; */
   margin: 0;
   padding: .2rem 0 .2rem 0;
   ;

@@ -19,7 +19,9 @@
       </div>
 
       <div class="prompts-wrapper">
-        <p class="prompt" *ngFor="let prompt of currentCard.prompts">{{prompt}}</p>
+        <ul>
+          <li class="prompt" *ngFor="let prompt of currentCard.prompts">{{prompt}}</li>
+        </ul>
       </div>
 
       <div class="options-wrapper">
@@ -41,7 +43,7 @@
 
   <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8 feedback">
     <ng-container matColumnDef="prompts">
-      <mat-header-cell *matHeaderCellDef>Clues</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef>Prompts</mat-header-cell>
       <mat-cell *matCellDef="let item">
         <ul class="prompt-list">
           <li *ngFor="let prompt of item.prompts">

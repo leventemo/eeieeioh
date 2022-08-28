@@ -5,7 +5,7 @@
     "skill": "spelling",
     "title": "Numbers 1-20",
     "language": "VOC: Numbers 1-20",
-    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking. See how many people you can beat in your group.",
+    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
     "datePublished": "2022, 08, 11",
     "cards": [
       {
@@ -96,7 +96,7 @@
     "skill": "spelling",
     "title": "Numbers 1-100",
     "language": "VOC: Numbers 1-100",
-    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking. See how many people you can beat in your group.",
+    "instructions": "Write the numbers using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
     "datePublished": "2022, 08, 11",
     "cards": [
       {
@@ -163,7 +163,7 @@
     "skill": "spelling",
     "title": "Ordinals",
     "language": "Ordinals",
-    "instructions": "Write the ordinals using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking. See how many people you can beat in your group.",
+    "instructions": "Write the ordinals using letters. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
     "datePublished": "2022, 08, 11",
     "cards": [
       {
@@ -238,7 +238,7 @@
     "skill": "spelling",
     "title": "Months",
     "language": "VOC: Months",
-    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you can't move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking. See how many people you can beat in your group.",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
     "datePublished": "2022, 08, 11",
     "cards": [
       {
@@ -288,6 +288,93 @@
       {
         "question": "November, _____, January",
         "correct": "December"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "level": "A2",
+    "skill": "",
+    "title": "Prepositions of movement",
+    "language": "Prepositions of movement",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
+    "datePublished": "2022, 08, 28",
+    "cards": [
+      {
+        "question": "I wanted to swim _____ the river but I gave up after 10 minutes.",
+        "correct": "across"
+      },
+      {
+        "question": "We need to drive _____ this lake to get to the swimming pool.",
+        "correct": "around"
+      },
+      {
+        "question": "Walk _____ the road until you find a bridge.",
+        "correct": "along"
+      },
+      {
+        "question": "They came running _____ the stairs.",
+        "correct": "down"
+      },
+      {
+        "question": "She went _____ when she heard the bell ringing.",
+        "correct": "downstairs"
+      },
+      {
+        "question": "Did you walk here _____ home?",
+        "correct": "from"
+      },
+      {
+        "question": "We jumped _____ the water immediately.",
+        "correct": "into"
+      },
+      {
+        "question": "He went _____ the room to make a phone call.",
+        "correct": "out of"
+      },
+      {
+        "question": "Minnie jumped _____ the wall but Mickey didn't.",
+        "correct": "over"
+      },
+      {
+        "question": "Will you be going _____ my house on your way home?",
+        "correct": "past"
+      },
+      {
+        "question": "You just went _____ the traffic lights. And they were red!",
+        "correct": "through"
+      },
+      {
+        "question": "I didn't go _____ school yesterday.",
+        "correct": "to"
+      },
+      {
+        "question": "What do you call a boat that can travel _____ water? – A submarine.",
+        "correct": "under"
+      },
+      {
+        "question": "You never pick your socks _____ off the floor.",
+        "correct": "up"
+      },
+      {
+        "question": "She was in the kitchen but she went _____ to see what was happening in her neighbour's garden.",
+        "correct": "upstairs"
+      },
+      {
+        "question": "Please put your money _____, I’m paying.",
+        "correct": "away"
+      },
+      {
+        "question": "It got darker and darker as they drove _____ the city.",
+        "correct": "toward"
+      },
+      {
+        "question": "The President stepped down from the stairs _____ the red carpet.",
+        "correct": "onto"
+      },
+      {
+        "question": "I fell _____ a cherry tree once when I was a kid.",
+        "correct": "off"
       }
     ]
   }
