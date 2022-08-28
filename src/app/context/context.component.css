@@ -197,7 +197,7 @@ mat-header-cell {
 
 mat-cell {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 300;
 }
 
@@ -210,19 +210,19 @@ mat-footer-row {
 }
 
 .mat-column-correct {
-  flex: 0 0 20%;
+  flex: 0 0 19%;
 }
 
 .mat-column-incorrect {
-  flex: 0 0 20%;
+  flex: 0 0 19%;
 }
 
 .mat-column-playerA {
-  flex: 0 0 13%;
+  flex: 0 0 12%;
 }
 
 .mat-column-playerB {
-  flex: 0 0 13%;
+  flex: 0 0 12%;
 }
 
 .mat-cell,
