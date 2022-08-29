@@ -133,6 +133,7 @@ Duels Component
 - [ ] review
 
 Reword Component
+- [ ] adjust FB card top margin (too high on mobile to see the Contents btn)
 - [ ] review
 
 Not Found Component
