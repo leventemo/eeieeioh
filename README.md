@@ -152,6 +152,8 @@ Escape Room Component
 
 Context Component
 include "Options" in an array so we can use 3, ... , not just 2 of them – same with Duels
+- [ ] colour bullets: <https://www.w3.org/Style/Examples/007/color-bullets.en.html>
+- [ ] try toptal HTML entity for `<>` anchor tags
 - [] use this in template, rather than the 2 hardcoded btns
   ```html
   <button *ngFor="let option of currentCard.options" class="option" id="btn-A"
