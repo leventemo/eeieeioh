@@ -35,7 +35,6 @@ export class BoardGameComponent implements OnInit {
   currentCard = '';
   currentCardCounter = 0;
   isItAllDone = false;
-  cardsTotal = () => this.data.cards.length; // need it?
 
   constructor(
     public router: Router,
@@ -55,8 +54,12 @@ export class BoardGameComponent implements OnInit {
     console.log(this.currentPack);
   }
 
-  openDialog() {
+  openDialogInfo() {
     this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+  }
+
+  openDialogBoardGame() {
+    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[0] } });
   }
 
   next() {

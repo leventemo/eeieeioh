@@ -66,14 +66,10 @@ mat-card-actions {
 }
 
 .square-btn {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 80%;
   padding: 0;
-  /*   max-height: 7rem; */
-  /*   line-height: 7rem;
- */
   border: 2px solid var(--greyBackground);
   font-size: .8rem;
   color: var(--greyBackground);
@@ -81,8 +77,6 @@ mat-card-actions {
 }
 
 .square-btn:hover {
-  background-color: var(--greyBackground);
-  color: white;
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 150ms;
@@ -95,10 +89,21 @@ mat-card-actions {
 }
 
 .markers-wrapper {
-  margin: auto;
-  border: 2px solid blueviolet;
+  display: flex;
+  height: 50%;
+  justify-content: space-evenly;
 }
 
 .marker {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.marker-svg {
   width: 25px;
+}
+
+.marker-lottie {
+  width: 40px;
 }

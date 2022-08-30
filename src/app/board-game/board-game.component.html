@@ -1,83 +1,235 @@
 <mat-card>
-  <mat-card-title>
+	<mat-card-title>
 
-    <span class="activity-type">Board Game</span><span class="title">{{ data.title }}</span>
+		<span class="activity-type">Board Game</span><span class="title">{{ data.title }}</span>
 
-    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
-  </mat-card-title>
-  <mat-divider inset></mat-divider>
-  <mat-card-content>
-    <div *ngIf="isItAllDone">
-      <lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
-        autoplay>
-      </lottie-player>
-    </div>
-    <div *ngIf="!isItAllDone" class="boardgame-grid">
-      <button class="square-btn"><span class="square-number">1</span><span class="markers-wrapper"><img
-            src="/assets/img/player.svg" alt="player icon" class="marker" /></span><span></span></button>
-      <button class="square-btn"><span class="square-number">2</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">3</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">4</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">5</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">6</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">7</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">8</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">9</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">10</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">11</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">12</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">13</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">14</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">15</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">16</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">17</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">18</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">19</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-      <button class="square-btn"><span class="square-number">20</span><span><img src="/assets/img/player.svg"
-            alt="player icon" class="marker" /></span><span><img src="/assets/img/player.svg" alt="player icon"
-            class="marker" /></span></button>
-    </div>
-  </mat-card-content>
-  <mat-divider inset></mat-divider>
-  <mat-card-actions align="end">
-    <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">btn</button>
-    <button color="primary" mat-button (click)="redirect()">Contents</button>
-  </mat-card-actions>
+		<mat-icon class="icon-inline" (click)="openDialogInfo()">info_outline</mat-icon>
+	</mat-card-title>
+	<mat-divider inset></mat-divider>
+	<mat-card-content>
+		<div *ngIf="isItAllDone">
+			<lottie-player class="whole-page-img" src="/assets/img/candies.json" background="transparent" speed="1" loop
+				autoplay>
+			</lottie-player>
+		</div>
+		<div *ngIf="!isItAllDone" class="boardgame-grid">
+			<button class="square-btn" (click)="openDialogBoardGame()">
+				<div class="square-number">1</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive playerA icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-B.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">2</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">3</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerA icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">4</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">5</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-B.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">6</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">7</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerA icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">8</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">9</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive playerA icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-B.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">10</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">11</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerA icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">12</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">13</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive playerA icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-B.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">14</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">15</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerA icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">16</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">17</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive playerA icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-B.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerB icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">18</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerA.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">19</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<lottie-player src="/assets/img/player-active-A.json" background="transparent" speed="1" loop autoplay
+							class="marker-lottie" alt="active playerA icon">
+						</lottie-player>
+					</div>
+				</div>
+			</button>
+			<button class="square-btn">
+				<div class="square-number">20</div>
+				<div class="markers-wrapper">
+					<div class="marker">
+						<img src="/assets/img/playerB.svg" alt="inactive player icon" class="marker-svg" />
+					</div>
+				</div>
+			</button>
+		</div>
+	</mat-card-content>
+	<mat-divider inset></mat-divider>
+	<mat-card-actions align="end">
+		<button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">btn</button>
+		<button color="primary" mat-button (click)="redirect()">Contents</button>
+	</mat-card-actions>
 </mat-card>
