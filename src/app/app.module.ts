@@ -27,6 +27,8 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { ContextComponent } from './context/context.component';
+import { BoardGameComponent } from './board-game/board-game.component';
+import { DialogBoardGameComponent } from './dialog-board-game/dialog-board-game.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { ContextComponent } from './context/context.component';
     AbbreviationsComponent,
     EscapeRoomComponent,
     ContextComponent,
+    BoardGameComponent,
+    DialogBoardGameComponent,
   ],
   imports: [
     BrowserModule,

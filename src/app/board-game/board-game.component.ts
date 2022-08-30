@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogBoardGameComponent } from '../dialog-board-game/dialog-board-game.component';
 
 import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/cardsarray.json';
+import allCardDecksCollection from '../../assets/activities/boardgamearray.json';
 
 interface Data {
   id: number;
@@ -15,12 +16,11 @@ interface Data {
 }
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  selector: 'app-board-game',
+  templateUrl: './board-game.component.html',
+  styleUrls: ['./board-game.component.css']
 })
-
-export class CardsComponent implements OnInit {
+export class BoardGameComponent implements OnInit {
 
   data: Data = {
     id: 0,
@@ -32,16 +32,16 @@ export class CardsComponent implements OnInit {
 
   currentPack: string[] = [];
   instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
-  btnValue = 'Start';
   currentCard = '';
   currentCardCounter = 0;
   isItAllDone = false;
+  cardsTotal = () => this.data.cards.length; // need it?
 
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
     // get the id from the current route
@@ -52,6 +52,7 @@ export class CardsComponent implements OnInit {
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
+    console.log(this.currentPack);
   }
 
   openDialog() {
@@ -59,17 +60,9 @@ export class CardsComponent implements OnInit {
   }
 
   next() {
-    if (this.btnValue === 'Done') {
-      this.isItAllDone = true;
-      return;
-    }
-
-    const rando = Utils.getRandom(this.currentPack.length - 1);
-    this.currentCard = this.currentPack[rando];
-    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
-    this.currentCardCounter++;
-    this.btnValue = this.currentPack.length === 0 ? 'Done' : 'Next';
+    console.log('next');
   }
+
 
   redirect() {
     this.router.navigate(['contents']);

@@ -17,6 +17,7 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { ContextComponent } from './context/context.component';
+import { BoardGameComponent } from './board-game/board-game.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'check-in', component: CheckInComponent },
   { path: 'duels/:id', component: DuelsComponent },
+  { path: 'board-game/:id', component: BoardGameComponent },
   { path: 'expandables/:id', component: ExpandablesComponent },
   { path: 'timed-cards/:id', component: TimedCardsComponent },
   { path: 'escape-room/:id', component: EscapeRoomComponent },
