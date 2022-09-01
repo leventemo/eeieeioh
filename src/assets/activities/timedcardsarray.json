@@ -102,5 +102,48 @@
       "How important is it to you to spend time with your family? Why? / Why not?",
       "Who do you think has had the greatest influence on your life? / Why?"
     ]
+  },
+  {
+    "id": "5",
+    "level": "B1 up",
+    "skill": "SP",
+    "title": "What's the right question?",
+    "language": "Question forms",
+    "instructions": "Work in two teams, use one single phone for the whole activity. The teams \"delegate\" a different person in each turn who has one minute to read the next card and to ask the others in their team until they get the words on the card – or their time is up.",
+    "timeAllowed": "60000",
+    "datePublished": "2022, 09, 01",
+    "cards": [
+      "Thank you very much.",
+      "Yes, I can.",
+      "At home.",
+      "Yes, I would.",
+      "Apples.",
+      "Your grandson.",
+      "Fifty Cents.",
+      "Last year.",
+      "Yes, I have.",
+      "Next year.",
+      "Of course, I don't!",
+      "Yes, they do.",
+      "Yesterday.",
+      "On Sundays.",
+      "Since last week.",
+      "No there isn't.",
+      "Paris.",
+      "Hardly ever.",
+      "Before class.",
+      "Behind you.",
+      "Over there.",
+      "Seven.",
+      "China.",
+      "In the summer.",
+      "In bed.",
+      "Forty-two.",
+      "No, never.",
+      "Yes, I'd love to.",
+      "For ages.",
+      "Cats.",
+      "Fine, thanks."
+    ]
   }
 ]
