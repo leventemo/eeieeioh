@@ -164,4 +164,5 @@ include "Options" in an array so we can use 3, ... , not just 2 of them – same
 - adjust checking & calculation of answers/results
 - [ ] review
 
-
+Board Game Component
+- [ ] position svg in all browsers: <https://stackoverflow.com/questions/41868944/svg-rendering-offset-in-chrome>

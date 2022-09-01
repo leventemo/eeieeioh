@@ -32,6 +32,10 @@ mat-card-title {
 }
 
 mat-card-content {
+  height: 85%;
+  font-family: 'Barlow Condensed', sans-serif;
+  /*
+  DEFAULT EIO CARD_CONTENT RULES: taken over by boardgame-grid class below
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,6 +44,7 @@ mat-card-content {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 3rem;
+  border: 2px solid blueviolet; */
 }
 
 mat-card-actions {
@@ -58,52 +63,58 @@ mat-card-actions {
 .boardgame-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: .5rem;
+  grid-gap: .8rem;
   width: 100%;
   height: 100%;
   padding: .5rem 0 .5rem 0;
   font-family: 'Ubuntu Condensed', sans-serif;
+  /* border: 2px solid blueviolet; */
 }
 
-.square-btn {
+.square {
   display: flex;
   flex-direction: column;
-  height: 80%;
-  padding: 0;
-  border: 2px solid var(--greyBackground);
+  /* height not needed when all 20 squares are there – although useful in case there are 15 only? */
+  height: 20%;
   font-size: .8rem;
-  color: var(--greyBackground);
   /* text-align: center; */
+  background-color: #F5F5F5;
 }
 
-.square-btn:hover {
+/* .square:hover {
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 150ms;
-}
+} */
 
 .square-number {
-  align-self: start;
-  text-align: left;
-  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: .7rem;
+  height: 35%;
+  padding-left: 3px;
+  color: #ADADAD;
 }
 
 .markers-wrapper {
   display: flex;
-  height: 50%;
+  height: 65%;
   justify-content: space-evenly;
 }
 
 .marker {
   display: flex;
-  width: 50%;
+  width: 33%;
+  height: 100%;
   justify-content: center;
+  font-size: 1.3rem;
 }
 
-.marker-svg {
-  width: 25px;
+.markerA {
+  color: #CE0095;
 }
 
-.marker-lottie {
-  width: 40px;
+.markerB {
+  color: #4E068C;
 }
