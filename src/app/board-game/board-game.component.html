@@ -13,45 +13,161 @@
 			</lottie-player>
 		</div>
 		<div *ngIf="!isItAllDone" class="boardgame-grid">
-			<div class="square">
-				<div class="square-number">START</div>
+
+
+			<div class="square square-start-and-finish">
+				<div class="square-number spaced-out">START</div>
 				<div class="markers-wrapper">
-					<div class="marker markerA">A</div>
+					<div class="marker markerA marker-active">A</div>
 					<div class="marker markerB">B</div>
 				</div>
 			</div>
 
-			<div class="square" (click)="openDialogBoardGame()">
+			<ng-container></ng-container>
+
+			<div class="square square-active" (click)="openDialogBoardGame()">
 				<div class="square-number">1</div>
 				<div class="markers-wrapper">
 					<div class="marker markerA">A</div>
-					<div class="marker markerB">B</div>
+					<div class="marker markerB marker-active">B</div>
 				</div>
 			</div>
-			<div class="square">
+
+			<div class="square square-active">
 				<div class="square-number">2</div>
 				<div class="markers-wrapper">
-					<div class="marker markerA">A</div>
-					<div class="marker markerB">B</div>
+					<div class="marker markerB marker-active">B</div>
 				</div>
 			</div>
-			<div class="square">
+
+			<div class="square square-active">
 				<div class="square-number">3</div>
 				<div class="markers-wrapper">
-					<div class="marker markerA">A</div>
-					<div class="marker markerB">B</div>
+					<div class="marker markerA marker-active">A</div>
 				</div>
 			</div>
+
 			<div class="square">
 				<div class="square-number">4</div>
 				<div class="markers-wrapper">
 					<div class="marker markerA">A</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">5</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
 					<div class="marker markerB">B</div>
 				</div>
 			</div>
 
 			<div class="square">
-				<div class="square-number">FINISH</div>
+				<div class="square-number">6</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">7</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">8</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">9</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">10</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">11</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">12</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">13</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">14</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">15</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">16</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">17</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square">
+				<div class="square-number">18</div>
+				<div class="markers-wrapper">
+					<div class="marker markerA">A</div>
+					<div class="marker markerB">B</div>
+				</div>
+			</div>
+
+			<div class="square square-start-and-finish">
+				<div class="square-number spaced-out">FINISH</div>
 				<div class="markers-wrapper">
 					<div class="marker markerA">A</div>
 					<div class="marker markerB">B</div>
@@ -62,7 +178,7 @@
 	</mat-card-content>
 	<mat-divider inset></mat-divider>
 	<mat-card-actions align="end">
-		<button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">btn</button>
+		<button *ngIf="!isItAllDone" color="primary" mat-button (click)="next()">Start</button>
 		<button color="primary" mat-button (click)="redirect()">Contents</button>
 	</mat-card-actions>
 </mat-card>
