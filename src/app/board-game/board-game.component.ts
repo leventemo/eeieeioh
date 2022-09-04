@@ -15,6 +15,11 @@ interface Data {
   cards: string[];
 }
 
+interface Player {
+  position: number;
+  takingOn: number;
+}
+
 @Component({
   selector: 'app-board-game',
   templateUrl: './board-game.component.html',
@@ -33,8 +38,20 @@ export class BoardGameComponent implements OnInit {
   currentPack: string[] = [];
   instructions = () => this.data.instructions;
   currentCard = '';
-  currentCardCounter = 0;
   isItAllDone = false;
+
+  hasGameStarted = false;
+  activeSquare = 0;
+
+  playerA: Player = {
+    position: 0,
+    takingOn: 0
+  };
+  playerB: Player = {
+    position: 0,
+    takingOn: 0
+  };
+  activePlayer: Player = this.playerA;
 
   constructor(
     public router: Router,
@@ -59,11 +76,14 @@ export class BoardGameComponent implements OnInit {
   }
 
   openDialogBoardGame() {
-    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[0] } });
+    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[6] } });
+    console.log(this.data);
   }
 
-  next() {
-    console.log('next');
+  start() {
+    this.playerA.position = 1;
+    this.playerA.takingOn = 1;
+    this.hasGameStarted = true;
   }
 
 
