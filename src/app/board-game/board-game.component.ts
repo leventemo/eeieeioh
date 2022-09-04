@@ -16,6 +16,7 @@ interface Data {
 }
 
 interface Player {
+  name: string;
   position: number;
   takingOn: number;
 }
@@ -44,10 +45,12 @@ export class BoardGameComponent implements OnInit {
   activeSquare = 0;
 
   playerA: Player = {
+    name: 'A',
     position: 0,
     takingOn: 0
   };
   playerB: Player = {
+    name: 'B',
     position: 0,
     takingOn: 0
   };
@@ -76,13 +79,12 @@ export class BoardGameComponent implements OnInit {
   }
 
   openDialogBoardGame() {
-    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards } });
-    console.log(this.activePlayer.position);
+    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards, activePLayer: this.activePlayer } });
   }
 
   start() {
-    this.playerA.position = 1;
-    this.playerA.takingOn = 1;
+    this.activePlayer.position = 1;
+    this.activePlayer.takingOn = 1;
     this.hasGameStarted = true;
   }
 
