@@ -1,0 +1,25 @@
+.dialog-boardgame-wrapper {
+  margin: 0;
+}
+
+.red {
+  background-color: #CE0095;
+}
+
+.violet {
+  background-color: #7D1AD4;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  color: #FFF;
+  height: 3rem;
+}
+
+lottie-player {
+  height: 3.5rem;
+  width: 3.5rem;
+  align-self: center;
+}

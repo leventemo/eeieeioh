@@ -1,5 +1,13 @@
-<div class="dialog-wrapper">
-  <h1 mat-dialog-title>{{ activePlayer }}</h1>
+<div class="dialog-boardgame-wrapper">
+  <div class="title-wrapper" [ngClass]="{'red': activePlayer.name === 'A', 'violet': activePlayer.name === 'B' }">
+    <h1>{{ activePlayer.name }}</h1>
+    <lottie-player *ngIf="activePlayer.name === 'A'" src="/assets/img/activePlayerA.json" background="transparent"
+      speed="1" loop autoplay>
+    </lottie-player>
+    <lottie-player *ngIf="activePlayer.name === 'B'" src="/assets/img/activePlayerB.json" background="transparent"
+      speed="1" loop autoplay>
+    </lottie-player>
+  </div>
   <mat-dialog-content>
     {{ data.question }}
   </mat-dialog-content>

@@ -8,12 +8,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class DialogBoardGameComponent implements OnInit {
 
-  activePlayer = this.data.activePLayer.name;
+  activePlayer = this.data.activePLayer;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
-    console.log(this.data);
+    console.log(this.activePlayer);
   }
 
 }
