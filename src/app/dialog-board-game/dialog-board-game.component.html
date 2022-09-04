@@ -1,6 +1,10 @@
 <div class="dialog-wrapper">
-  <mat-dialog-content>{{ data.question[3] }}</mat-dialog-content>
-  <mat-dialog-actions align="end">
-    <button mat-button color="primary" mat-dialog-close>Close</button>
+  <h1 mat-dialog-title>A</h1>
+  <mat-dialog-content>
+    {{ data.question }}
+  </mat-dialog-content>
+  <mat-dialog-actions align="center">
+    <button mat-button color="primary" mat-dialog-close mat-dialog-close="true">Accept</button>
+    <button mat-button color="primary" mat-dialog-close mat-dialog-close="false">Reject</button>
   </mat-dialog-actions>
 </div>

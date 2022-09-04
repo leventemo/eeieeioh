@@ -15,18 +15,18 @@
 
 		<div *ngIf="!isItAllDone" class="boardgame-grid">
 
-			<div class="square square-start-and-finish">
+			<button class="square square-start-and-finish">
 				<div class="square-number spaced-out">START</div>
 				<div class="markers-wrapper">
 					<div *ngIf="playerA.position === 0" class="marker markerA">A</div>
 					<div *ngIf="playerB.position === 0" class="marker markerB">B</div>
 				</div>
-			</div>
+			</button>
 
 			<ng-container *ngFor="let card of currentPack; let i = index">
-				<div class="square"
+				<button class="square"
 					[ngClass]="{ 'square-active': this.activePlayer.takingOn === (i + 1) && this.activePlayer.takingOn !== 0 }"
-					(click)="openDialogBoardGame()">
+					[disabled]="this.activePlayer.position !== i + 1" (click)="openDialogBoardGame()">
 					<div class="square-number">{{i + 1}}</div>
 					<div class="markers-wrapper">
 						<div *ngIf="playerA.position === i + 1" class="marker markerA"
@@ -34,16 +34,16 @@
 						<div *ngIf="playerB.position === i + 1" class="marker markerB"
 							[ngClass]="{ 'marker-active': this.playerB.position !== 0 }">B</div>
 					</div>
-				</div>
+				</button>
 			</ng-container>
 
-			<div class="square square-start-and-finish">
+			<button class="square square-start-and-finish" (click)="openDialogBoardGame()">
 				<div class="square-number spaced-out">FINISH</div>
 				<div class="markers-wrapper">
 					<div class="marker markerA">A</div>
 					<div class="marker markerB">B</div>
 				</div>
-			</div>
+			</button>
 
 		</div>
 	</mat-card-content>

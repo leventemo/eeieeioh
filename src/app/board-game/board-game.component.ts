@@ -76,8 +76,8 @@ export class BoardGameComponent implements OnInit {
   }
 
   openDialogBoardGame() {
-    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[6] } });
-    console.log(this.data);
+    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards } });
+    console.log(this.activePlayer.position);
   }
 
   start() {

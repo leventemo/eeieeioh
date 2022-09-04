@@ -79,6 +79,7 @@ mat-card-actions {
   /*   height: 12vh; */
   font-size: .8rem;
   background-color: #F5F5F5;
+  border: none;
 }
 
 .square:hover {
@@ -98,13 +99,9 @@ mat-card-actions {
 
 .square-number {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: .7rem;
-  max-height: 2vh;
-  padding-top: 3px;
-  padding-left: 3px;
+  /* max-height: 2vh; */
   color: #ADADAD;
+  /*   border: 2px solid blueviolet; */
 }
 
 .markers-wrapper {
@@ -180,4 +177,8 @@ mat-card-actions {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
+}
+
+.disabled {
+  background-color: #7D1AD4;
 }
