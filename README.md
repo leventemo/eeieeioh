@@ -165,4 +165,5 @@ include "Options" in an array so we can use 3, ... , not just 2 of them – same
 - [ ] review
 
 Board Game Component
-
+- [ ] display qns in squares one by one: use `$event`
+- [ ] get "Accept" & "Reject" btns to work: send info back to BG component
