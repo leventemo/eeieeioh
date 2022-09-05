@@ -54,7 +54,7 @@ export class BoardGameComponent implements OnInit {
     position: 0,
     takingOn: 0
   };
-  activePlayer: Player = this.playerA;
+  activePlayer: Player = this.playerB;
 
   constructor(
     public router: Router,
@@ -71,7 +71,6 @@ export class BoardGameComponent implements OnInit {
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
     this.currentPack = this.data.cards;
-    console.log(this.currentPack);
   }
 
   openDialogInfo() {
