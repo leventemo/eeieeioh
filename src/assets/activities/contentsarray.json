@@ -141,7 +141,7 @@
   },
   {
     "level": "A2 up",
-    "title": "The right question? (1)",
+    "title": "The right question (1)",
     "skill": "SP",
     "language": "question forms",
     "slug": "/timed-cards",
@@ -151,7 +151,7 @@
   },
   {
     "level": "A2 up",
-    "title": "The right question? (2)",
+    "title": "The right question (2)",
     "skill": "SP",
     "language": "question forms",
     "slug": "/timed-cards",
@@ -228,6 +228,16 @@
     "id": "8",
     "activity": "Cards",
     "datePublished": "2022, 05, 22"
+  },
+  {
+    "level": "B2",
+    "title": "Travel",
+    "skill": "",
+    "language": "Vocabulary: Travel",
+    "slug": "/context",
+    "id": "2",
+    "activity": "Context",
+    "datePublished": "2022, 09, 08"
   },
   {
     "level": "B2",

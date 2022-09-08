@@ -202,6 +202,149 @@
   },
   {
     "id": "2",
+    "level": "B2",
+    "skill": "",
+    "title": "Vocabulary: Travel",
+    "language": "Vocabulary: Travel",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the option you feel is related to words or phrases in the prompts. Be as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 09, 08",
+    "cards": [
+      {
+        "prompts": [
+          "an upcoming trip",
+          "a guided tour"
+        ],
+        "options": [
+          "a five-hour journey",
+          "accomodation"
+        ]
+      },
+      {
+        "prompts": [
+          "a youth hostel",
+          "a cottage in the countryside",
+          "a suite at the Ritz"
+        ],
+        "options": [
+          "a seaside resort",
+          "turned out to be"
+        ]
+      },
+      {
+        "prompts": [
+          "depart from ...",
+          "depart for ..."
+        ],
+        "options": [
+          "reach ...",
+          "conduct an experiment"
+        ]
+      },
+      {
+        "prompts": [
+          "arrive at the airport",
+          "arrive in New York"
+        ],
+        "options": [
+          "get to the travel agent's",
+          "uninhabitable"
+        ]
+      },
+      {
+        "prompts": [
+          "a gondola ride",
+          "masks"
+        ],
+        "options": [
+          "charming canals",
+          "a leaflet"
+        ]
+      },
+      {
+        "prompts": [
+          "hotel bookings",
+          "itinerary"
+        ],
+        "options": [
+          "a vacation package",
+          "severity"
+        ]
+      },
+      {
+        "prompts": [
+          "a ski resort",
+          "a luxurious suite"
+        ],
+        "options": [
+          "a youth hostel",
+          "approach"
+        ]
+      },
+      {
+        "prompts": [
+          "gaze at landmarks",
+          "dine out",
+          "immerse yourself in the architecture of Florence"
+        ],
+        "options": [
+          "sightseeing holiday",
+          "beach holiday"
+        ]
+      },
+      {
+        "prompts": [
+          "on an excursion to Durham",
+          "a study trip to Silicon Valley"
+        ],
+        "options": [
+          "expedition the North Pole",
+          "at your own expense"
+        ]
+      },
+      {
+        "prompts": [
+          "imply",
+          "broadens the mind"
+        ],
+        "options": [
+          "infer",
+          "a campsite"
+        ]
+      },
+      {
+        "prompts": [
+          "a bustling city",
+          "cosmopolitan destinations"
+        ],
+        "options": [
+          "rush hour",
+          "a tranquill village"
+        ]
+      },
+      {
+        "prompts": [
+          "a picturesque village",
+          "unspoilt beauty"
+        ],
+        "options": [
+          "scenic views",
+          "industrial cities"
+        ]
+      },
+      {
+        "prompts": [
+          "only time will tell",
+          "on short notice"
+        ],
+        "options": [
+          "in time",
+          "a voyage across the Atlantic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CCC",
     "level": "A2",
     "skill": "WR",
     "title": "Vocabulary: Sports",
