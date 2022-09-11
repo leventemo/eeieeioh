@@ -344,6 +344,53 @@
     ]
   },
   {
+    "id": "88",
+    "level": "Testing",
+    "skill": "Testing",
+    "title": "Testing",
+    "language": "Testing",
+    "instructionsForDuels": "Testing",
+    "datePublished": "2022, 07, 25",
+    "cards": [
+      {
+        "prompts": [
+          "ball",
+          "score",
+          "referee"
+        ],
+        "options": [
+          "Acorrect",
+          "Aincorrect",
+          "Athird"
+        ]
+      },
+      {
+        "prompts": [
+          "skate",
+          "puck",
+          "stick"
+        ],
+        "options": [
+          "Bcorrect",
+          "Bincorrect",
+          "Bthird"
+        ]
+      },
+      {
+        "prompts": [
+          "hoop",
+          "slam-dunk",
+          "NBA"
+        ],
+        "options": [
+          "Ccorrect",
+          "Cincorrect",
+          "Cthird"
+        ]
+      }
+    ]
+  },
+  {
     "id": "CCC",
     "level": "A2",
     "skill": "WR",

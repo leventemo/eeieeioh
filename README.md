@@ -59,6 +59,7 @@ Footer Component redo:
   social
   - [ ] contact
   - [ ] twitter eeieeioh
+  - [ ] discord: <https://discord.com/community?utm_source=discord&utm_medium=discord&utm_campaign=2022-06_co-update&utm_term=log&utm_content=--t%3Aco>
   - [x] app development & content by @leventemo
   - [x] logo design by József Balogh
   - [ ] patreon
