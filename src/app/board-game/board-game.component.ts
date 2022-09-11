@@ -54,7 +54,7 @@ export class BoardGameComponent implements OnInit {
     position: 0,
     takingOn: 0
   };
-  activePlayer: Player = this.playerB;
+  activePlayer: Player = this.playerA;
 
   constructor(
     public router: Router,
@@ -77,8 +77,8 @@ export class BoardGameComponent implements OnInit {
     this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
   }
 
-  openDialogBoardGame() {
-    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards, activePLayer: this.activePlayer } });
+  openDialogBoardGame(index: number) {
+    this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[index], activePLayer: this.activePlayer } });
   }
 
   start() {

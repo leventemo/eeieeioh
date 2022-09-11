@@ -26,7 +26,7 @@
 			<ng-container *ngFor="let card of currentPack; let i = index">
 				<button class="square"
 					[ngClass]="{ 'square-active': this.activePlayer.takingOn === (i + 1) && this.activePlayer.takingOn !== 0 }"
-					[disabled]="this.activePlayer.position !== i + 1" (click)="openDialogBoardGame()">
+					[disabled]="this.activePlayer.position !== i + 1" (click)="openDialogBoardGame(i)">
 					<div class="square-number">{{i + 1}}</div>
 					<div class="markers-wrapper">
 						<div *ngIf="playerA.position === i + 1" class="marker markerA"
@@ -37,7 +37,7 @@
 				</button>
 			</ng-container>
 
-			<button class="square square-start-and-finish" (click)="openDialogBoardGame()">
+			<button class="square square-start-and-finish">
 				<div class="square-number spaced-out">FINISH</div>
 				<div class="markers-wrapper">
 					<div class="marker markerA">A</div>

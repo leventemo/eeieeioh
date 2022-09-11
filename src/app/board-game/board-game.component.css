@@ -75,6 +75,8 @@ mat-card-actions {
 .square {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* height not needed when all 20 squares are there – although useful in case there are 15 only? */
   /*   height: 12vh; */
   font-size: .8rem;
@@ -120,6 +122,7 @@ mat-card-actions {
   justify-content: center;
   align-items: center;
   width: 33%;
+  padding: 5px;
 }
 
 .markerA {
