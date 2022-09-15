@@ -191,22 +191,24 @@
     "level": "A2",
     "skill": "SP",
     "title": "Talking about food",
-    "language": "Vocabulary: Food",
+    "language": "VOC: Food",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
     "timeAllowed": "60000",
     "datePublished": "2022, 09, 15",
     "cards": [
       "Do you like foreign food, eg. Indian, Chinese, Italian and English food? Which do you like best?",
-      "Is you diet healthy or unhealthy? Why?",
+      "Is your diet healthy or unhealthy? Why?",
       "What kind of healthy food do you hate?",
       "What kind of unhealthy food do you like?",
-      "Are you trying to eat less of something at the moment?",
+      "Is there anything you try not to eat or drink too often?",
       "Do you eat fat-free or low-fat food?",
       "What do you usually eat when you eat out?",
       "How often do you eat junk food?",
       "Which do you prefer, fast food or home-cooked food?",
       "What food do you avoid eating to stay healthy?",
-      "How important is food in your life?"
+      "How important is food in your life?",
+      "Are you a vegetarian or vegan? If not, do you think you could ever be one?",
+      "Do you usually have breakfast? What do you normally have?"
     ]
   }
 ]
