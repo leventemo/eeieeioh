@@ -61,6 +61,36 @@
   },
   {
     "level": "A2",
+    "title": "How much/How many ...?",
+    "skill": "SP",
+    "language": "C/U nouns",
+    "slug": "/cards",
+    "id": "10",
+    "activity": "Cards",
+    "datePublished": "2022, 09, 15"
+  },
+  {
+    "level": "A2",
+    "title": "VOC: Food",
+    "skill": "",
+    "language": "VOC: Food",
+    "slug": "/context",
+    "id": "3",
+    "activity": "Context",
+    "datePublished": "2022, 09, 15"
+  },
+  {
+    "level": "A2",
+    "title": "Talking about food",
+    "skill": "SP",
+    "language": "Talking about food",
+    "slug": "/timed-cards",
+    "id": "8",
+    "activity": "Timed Cards",
+    "datePublished": "2022, 09, 15"
+  },
+  {
+    "level": "A2",
     "title": "Have you ever ...?",
     "skill": "SP",
     "language": "Present Perfect, Past Simple",

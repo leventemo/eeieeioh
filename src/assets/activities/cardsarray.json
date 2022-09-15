@@ -224,5 +224,30 @@
       "moody",
       "annoying"
     ]
+  },
+  {
+    "id": "10",
+    "level": "A2",
+    "skill": "SP",
+    "title": "How much / How many ...?",
+    "language": "C / U nouns",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. Answer using \"A lot\", \"A few.\", \"A little.\", \"None\", etc., then give reasons. When you're asking your partner, don't accept a short answer.",
+    "datePublished": "2022, 09, 15",
+    "cards": [
+      "... sugar do you put in your tea or coffee?",
+      "... salt do you put on your bread and butter?",
+      "... fish do you eat a week?",
+      "... water do you drink a day?",
+      "... fried food do you eat a week?",
+      "... fast food do you eat a week?",
+      "... fresh vegetables do you eat a day?",
+      "... chips or crisps do you eat a day?",
+      "... alcohol do you drink a week?",
+      "... cups of coffe do you drink a day?",
+      "... sweets do you eat a day?",
+      "... ketchup do you like on your hamburger?",
+      "... chocolate do you eat a week?",
+      "... fruit do you eat a day?"
+    ]
   }
 ]

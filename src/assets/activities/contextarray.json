@@ -344,6 +344,282 @@
     ]
   },
   {
+    "id": "3",
+    "level": "A2",
+    "skill": "",
+    "title": "VOC: Food",
+    "language": "VOC: Food",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the option you feel is related to words or phrases in the prompts. Be as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 09, 15",
+    "cards": [
+      {
+        "prompts": [
+          "delicious",
+          "fresh",
+          "unhealthy"
+        ],
+        "options": [
+          "salty",
+          "sugar"
+        ]
+      },
+      {
+        "prompts": [
+          "sweet",
+          "spicy",
+          "strong"
+        ],
+        "options": [
+          "tasty",
+          "salad"
+        ]
+      },
+      {
+        "prompts": [
+          "snack",
+          "breakfast",
+          "lunch"
+        ],
+        "options": [
+          "dinner",
+          "honey"
+        ]
+      },
+      {
+        "prompts": [
+          "boil",
+          "fry",
+          "roast"
+        ],
+        "options": [
+          "bake",
+          "order"
+        ]
+      },
+      {
+        "prompts": [
+          "cut",
+          "slice",
+          "taste"
+        ],
+        "options": [
+          "wash",
+          "pasta"
+        ]
+      },
+      {
+        "prompts": [
+          "Can I have the bill, please?",
+          "Are you ready to order?",
+          "Is the service included?"
+        ],
+        "options": [
+          "Anything for dessert?",
+          "Dinner's ready!"
+        ]
+      },
+      {
+        "prompts": [
+          "chef",
+          "waitress",
+          "eating out"
+        ],
+        "options": [
+          "reservation",
+          "a can of Coke"
+        ]
+      },
+      {
+        "prompts": [
+          "a bottle of wine",
+          "a bowl of sugar",
+          "a glass of mineral water"
+        ],
+        "options": [
+          "a can of Coke",
+          "a birthday cake"
+        ]
+      },
+      {
+        "prompts": [
+          "a carton of orange juice",
+          "a slice of meat",
+          "a bag of sweets"
+        ],
+        "options": [
+          "a loaf of bread",
+          "main course"
+        ]
+      },
+      {
+        "prompts": [
+          "café",
+          "pizzeria",
+          "snack bar"
+        ],
+        "options": [
+          "restaurant",
+          "microwave"
+        ]
+      },
+      {
+        "prompts": [
+          "microwave",
+          "fridge",
+          "oven"
+        ],
+        "options": [
+          "cooker",
+          "spoon"
+        ]
+      },
+      {
+        "prompts": [
+          "fork",
+          "knife",
+          "plate"
+        ],
+        "options": [
+          "spoon",
+          "pan"
+        ]
+      },
+      {
+        "prompts": [
+          "main course",
+          "starters / appetisers",
+          "desserts"
+        ],
+        "options": [
+          "salads",
+          "junk food"
+        ]
+      },
+      {
+        "prompts": [
+          "soft drinks",
+          "orange juice",
+          "coffee"
+        ],
+        "options": [
+          "tea",
+          "mushroom soup"
+        ]
+      },
+      {
+        "prompts": [
+          "wine",
+          "beer",
+          "champagne"
+        ],
+        "options": [
+          "whiskey",
+          "milk"
+        ]
+      },
+      {
+        "prompts": [
+          "chocolate",
+          "fast food",
+          "fat"
+        ],
+        "options": [
+          "junk food",
+          "carrots"
+        ]
+      },
+      {
+        "prompts": [
+          "beef",
+          "pork",
+          "chicken",
+          "ham"
+        ],
+        "options": [
+          "turkey",
+          "jam"
+        ]
+      },
+      {
+        "prompts": [
+          "lamb",
+          "ham",
+          "rabbit"
+        ],
+        "options": [
+          "duck",
+          "yoghurt"
+        ]
+      },
+      {
+        "prompts": [
+          "cream",
+          "butter",
+          "yoghurt"
+        ],
+        "options": [
+          "cheese",
+          "sausage"
+        ]
+      },
+      {
+        "prompts": [
+          "cake",
+          "cookies",
+          "bread"
+        ],
+        "options": [
+          "flour",
+          "olives"
+        ]
+      },
+      {
+        "prompts": [
+          "banana",
+          "melon",
+          "strawberry"
+        ],
+        "options": [
+          "lemon",
+          "rice"
+        ]
+      },
+      {
+        "prompts": [
+          "beans",
+          "lettuce",
+          "onion"
+        ],
+        "options": [
+          "broccoli",
+          "pear"
+        ]
+      },
+      {
+        "prompts": [
+          "curry",
+          "salt and pepper",
+          "black pepper"
+        ],
+        "options": [
+          "sugar",
+          "toast"
+        ]
+      },
+      {
+        "prompts": [
+          "fish and chips",
+          "ice cream",
+          "hot dog"
+        ],
+        "options": [
+          "hamburger",
+          "olive oil"
+        ]
+      }
+    ]
+  },
+  {
     "id": "88",
     "level": "Testing",
     "skill": "Testing",
