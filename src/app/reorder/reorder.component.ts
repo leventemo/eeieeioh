@@ -1,0 +1,69 @@
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+
+import { Utils } from '../utils';
+import allCardDecksCollection from '../../assets/activities/reorderarray.json';
+
+import { CdkDragDrop } from '@angular/cdk/drag-drop/drag-events';
+import { moveItemInArray } from '@angular/cdk/drag-drop';
+
+interface Data {
+  id: number;
+  title: string;
+  language: string;
+  instructions: string;
+  cards: string[];
+}
+
+@Component({
+  selector: 'app-reorder',
+  templateUrl: './reorder.component.html',
+  styleUrls: ['./reorder.component.css']
+})
+export class ReorderComponent implements OnInit {
+
+  data: Data = {
+    id: 0,
+    title: '',
+    language: '',
+    instructions: '',
+    cards: []
+  };
+
+  currentPack: string[] = [];
+  currentCard = '';
+
+  constructor(
+    public router: Router,
+    private route: ActivatedRoute,
+    public dialog: MatDialog) { }
+
+  ngOnInit(): void {
+    // get the id from the current route
+    const routeParams = this.route.snapshot.paramMap;
+    const cardIdFromRoute = Number(routeParams.get('id'));
+
+    // find the deck for id we got from the route
+    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+
+    this.currentPack = this.data.cards;
+  }
+
+  openDialog() {
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+  }
+
+  drop(event: CdkDragDrop<any>) {
+    console.log(`previousIndex: ${event.previousIndex}`);
+    console.log(`currentIndex: ${event.currentIndex}`);
+
+    moveItemInArray(this.currentPack, event.previousIndex, event.currentIndex);
+  }
+
+  redirect() {
+    this.router.navigate(['contents']);
+  }
+
+}

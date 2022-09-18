@@ -18,6 +18,7 @@ import { AbbreviationsComponent } from './abbreviations/abbreviations.component'
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { ContextComponent } from './context/context.component';
 import { BoardGameComponent } from './board-game/board-game.component';
+import { ReorderComponent } from './reorder/reorder.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'expandables/:id', component: ExpandablesComponent },
   { path: 'timed-cards/:id', component: TimedCardsComponent },
   { path: 'escape-room/:id', component: EscapeRoomComponent },
+  { path: 'reorder/:id', component: ReorderComponent },
   { path: 'context/:id', component: ContextComponent },
   { path: '**', component: NotFoundComponent }
 ];
