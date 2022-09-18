@@ -48,7 +48,7 @@ export class RankingComponent implements OnInit {
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.currentPack = Utils.shuffleStringsArray(this.data.cards);
   }
 
   openDialog() {
