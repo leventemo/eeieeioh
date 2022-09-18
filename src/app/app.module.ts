@@ -29,7 +29,7 @@ import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { ContextComponent } from './context/context.component';
 import { BoardGameComponent } from './board-game/board-game.component';
 import { DialogBoardGameComponent } from './dialog-board-game/dialog-board-game.component';
-import { ReorderComponent } from './reorder/reorder.component';
+import { RankingComponent } from './ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +57,7 @@ import { ReorderComponent } from './reorder/reorder.component';
     ContextComponent,
     BoardGameComponent,
     DialogBoardGameComponent,
-    ReorderComponent,
+    RankingComponent,
   ],
   imports: [
     BrowserModule,

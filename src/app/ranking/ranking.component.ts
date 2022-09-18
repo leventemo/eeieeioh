@@ -18,11 +18,11 @@ interface Data {
 }
 
 @Component({
-  selector: 'app-reorder',
-  templateUrl: './reorder.component.html',
-  styleUrls: ['./reorder.component.css']
+  selector: 'app-ranking',
+  templateUrl: './ranking.component.html',
+  styleUrls: ['./ranking.component.css']
 })
-export class ReorderComponent implements OnInit {
+export class RankingComponent implements OnInit {
 
   data: Data = {
     id: 0,
