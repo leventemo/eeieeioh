@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/reorderarray.json';
+import allCardDecksCollection from '../../assets/activities/rankingarray.json';
 
 import { CdkDragDrop } from '@angular/cdk/drag-drop/drag-events';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
