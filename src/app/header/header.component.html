@@ -1,4 +1,11 @@
-<mat-toolbar>
+<mat-toolbar *ngIf="router.url === '/home'
+  || router.url === '/contents'
+  || router.url === '/about'
+  || router.url === '/abbreviations'
+  || router.url === '/activities'
+  || router.url === '/changelog'
+  || router.url === '/roadmap'
+  ">
   <div class="branding">
     <a routerLink="/home"><img src="assets/logo.svg" alt="svg icon"></a><span>eeieeioh</span>
   </div>

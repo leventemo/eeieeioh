@@ -46,8 +46,6 @@ test favicon on desktop browsers
 
 - [ ] repleace logo in nav & footer with cropped version of svg & resize-reposition
 
-Header Component
-
 Footer Component redo:
   eeieeioh
   - [x] about
@@ -103,6 +101,9 @@ REDO
 
 Nav Component
 - [ ] rename to Nav
+
+Activities Component
+- [ ] rename to TeachersGuide
 
 Hotel Check-in -> turn it into a Roleplay Component with A/B players getting their matching roles
 - [x] install Faker-js: <https://fakerjs.dev/>
