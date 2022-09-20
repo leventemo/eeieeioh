@@ -49,14 +49,24 @@ mat-card-actions {
   font-size: 1.4rem;
 }
 
+.drag-drop-list {
+  display: flex;
+  justify-content: center;
+}
+
 .list-item {
+  height: 8%;
+  margin-bottom: 15px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   border-radius: 4px;
   padding: .6rem 1rem .6rem 1rem;
   background: #F5F5F5;
-  margin-bottom: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -85,7 +95,8 @@ mat-card-actions {
 
 .drop-placeholder {
   background: #DCC9FF;
-  min-height: 40px;
+  min-height: 8%;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  margin-bottom: 15px;
 }
