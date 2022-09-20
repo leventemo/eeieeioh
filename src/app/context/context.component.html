@@ -25,12 +25,17 @@
       </div>
 
       <div class="options-wrapper">
-        <button class="option" id="btn-A" (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{
+
+        <button *ngFor="let option of currentCard.options" class="option" id="btn-A" (click)="onClick($event)"
+          [disabled]="!hasItStarted">{{option}}
+        </button>
+
+        <!--         <button class="option" id="btn-A" (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{
           currentCard.options[0]
           }}</button>
         <button class="option" id="btn-B" (click)="onClick(currentCard.options[1])" [disabled]="!hasItStarted">{{
           currentCard.options[1]
-          }}</button>
+          }}</button> -->
       </div>
     </mat-card-content>
     <mat-divider inset></mat-divider>

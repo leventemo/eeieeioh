@@ -30,7 +30,7 @@ interface Player {
 interface ResultsThisTurn {
   prompts: string[];
   correctOption: string;
-  incorrectOption: string;
+  incorrectOptions: string[];
   clickingPlayer: string;
   pointsForThis: number;
 }
@@ -44,7 +44,6 @@ export class ContextComponent implements OnInit {
 
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
   pack: Card[] = [];
-  /* card: Card = { prompts: [], options: [] }; */
   cardsTotal = () => this.data.cards.length;
   timeAllowed = 500;
 
@@ -58,15 +57,16 @@ export class ContextComponent implements OnInit {
   currentCard: Card = { prompts: ['', ''], options: ['', ''] };
   currentCardNumber = 0;
   currentPlayer: Player = this.playerA;
-  currentCorrectCard = '';
-  currentIncorrectCard = '';
+  currentCorrectOption = '';
+  currentIncorrectOptions = [''];
   winner: string = '';
+  clickedValue: string | null = '';
 
   pointsEarnedThisTurn = 0;
   result: ResultsThisTurn = {
     prompts: [],
     correctOption: '',
-    incorrectOption: '',
+    incorrectOptions: [''],
     clickingPlayer: '',
     pointsForThis: 0,
   };
@@ -119,15 +119,16 @@ export class ContextComponent implements OnInit {
     }
   }
 
-  onClick(val: string) {
+  onClick(event: Event) {
+    this.clickedValue = (event.target as HTMLInputElement).textContent;
     if (this.pack.length === 0) {
       this.subscription?.unsubscribe();
       this.areQnsDone = true;
-      this.calcScore(val);
+      this.calcScore(this.clickedValue);
       this.chooseWinner();
       return;
     }
-    this.calcScore(val);
+    this.calcScore(this.clickedValue);
     this.switchPlayers();
     this.displayNextCard();
   };
@@ -138,7 +139,8 @@ export class ContextComponent implements OnInit {
   }
 
   private calcScore(val: string | null = null) {
-    if (val === this.currentCorrectCard) {
+    if (val === this.currentCorrectOption) {
+      console.log(`${val} in calcScore`);
       this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
     } else {
       this.pointsEarnedThisTurn = 0;
@@ -156,23 +158,23 @@ export class ContextComponent implements OnInit {
   private selectCurrentCard() {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
-    this.currentCorrectCard = this.currentCard.options[0];
-    this.currentIncorrectCard = this.currentCard.options[1];
+    this.currentCorrectOption = this.currentCard.options[0];
+    this.currentIncorrectOptions = this.currentCard.options;
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
 
   private randomizeOptionsDisplay() {
     if (Utils.getRandom(1, 0)) { // high, low: param1 = 1 is enough – test it
-      [this.currentCard.options[0], this.currentCard.options[1]] = [this.currentCard.options[1], this.currentCard.options[0]];
+      Utils.shuffleStringsArray(this.currentCard.options);
     }
   };
 
   private saveResults() {
     this.resultsAll.push({
       prompts: this.currentCard.prompts,
-      correctOption: this.currentCorrectCard,
-      incorrectOption: this.currentIncorrectCard,
+      correctOption: this.currentCorrectOption,
+      incorrectOptions: this.currentIncorrectOptions,
       clickingPlayer: this.currentPlayer.name,
       pointsForThis: this.pointsEarnedThisTurn
     });
