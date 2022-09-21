@@ -45,7 +45,7 @@ export class ContextComponent implements OnInit {
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
   pack: Card[] = [];
   cardsTotal = () => this.data.cards.length;
-  timeAllowed = 500;
+  timeAllowed = 700;
 
   // to hide "Start" & "Contents" btns
   hasItStarted = false;
@@ -54,7 +54,7 @@ export class ContextComponent implements OnInit {
 
   playerA: Player = { name: 'playerA', score: 0, timer: 0 };
   playerB: Player = { name: 'playerB', score: 0, timer: 0 };
-  currentCard: Card = { prompts: ['', ''], options: ['', ''] };
+  currentCard: Card = { prompts: ['prompt', 'prompt'], options: ['option', 'option', 'option'] };
   currentCardNumber = 0;
   currentPlayer: Player = this.playerA;
   currentCorrectOption = '';
@@ -70,13 +70,13 @@ export class ContextComponent implements OnInit {
     clickingPlayer: '',
     pointsForThis: 0,
   };
-  resultsAll: ResultsThisTurn[] = [];
+  feedback: ResultsThisTurn[] = [];
 
   subscription!: Subscription;
 
   // for feedback table
   displayedColumns: string[] = ['prompts', 'correct', 'incorrect', 'playerA', 'playerB'];
-  dataSource = new MatTableDataSource(this.resultsAll);
+  dataSource = new MatTableDataSource(this.feedback);
 
   constructor(
     public router: Router,
@@ -119,16 +119,16 @@ export class ContextComponent implements OnInit {
     }
   }
 
-  onClick(event: Event) {
-    this.clickedValue = (event.target as HTMLInputElement).textContent;
+  onClick(value: string) {
+    /* (event.target as HTMLInputElement).textContent */
+    this.calcScore(value);
+
     if (this.pack.length === 0) {
       this.subscription?.unsubscribe();
-      this.areQnsDone = true;
-      this.calcScore(this.clickedValue);
       this.chooseWinner();
+      this.areQnsDone = true;
       return;
     }
-    this.calcScore(this.clickedValue);
     this.switchPlayers();
     this.displayNextCard();
   };
@@ -139,13 +139,11 @@ export class ContextComponent implements OnInit {
   }
 
   private calcScore(val: string | null = null) {
-    if (val === this.currentCorrectOption) {
-      console.log(`${val} in calcScore`);
-      this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
-    } else {
-      this.pointsEarnedThisTurn = 0;
-    }
+    const isWin = val === this.currentCorrectOption;
+    this.pointsEarnedThisTurn = isWin ? 700 + (700 - this.currentPlayer.timer) : 0;
     this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
+    console.log(val);
+    console.log(this.currentCorrectOption);
 
     this.saveResults();
   }
@@ -159,7 +157,8 @@ export class ContextComponent implements OnInit {
     const rando = Utils.getRandom(this.pack.length - 1);
     this.currentCard = this.pack[rando];
     this.currentCorrectOption = this.currentCard.options[0];
-    this.currentIncorrectOptions = this.currentCard.options;
+    this.currentIncorrectOptions = this.currentCard.options.slice(1);
+    console.log(this.currentIncorrectOptions);
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
@@ -171,7 +170,7 @@ export class ContextComponent implements OnInit {
   };
 
   private saveResults() {
-    this.resultsAll.push({
+    this.feedback.push({
       prompts: this.currentCard.prompts,
       correctOption: this.currentCorrectOption,
       incorrectOptions: this.currentIncorrectOptions,

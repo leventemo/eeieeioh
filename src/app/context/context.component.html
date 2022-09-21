@@ -25,17 +25,9 @@
       </div>
 
       <div class="options-wrapper">
-
-        <button *ngFor="let option of currentCard.options" class="option" id="btn-A" (click)="onClick($event)"
+        <button *ngFor="let option of currentCard.options" class="option" id="btn-A" (click)="onClick(option)"
           [disabled]="!hasItStarted">{{option}}
         </button>
-
-        <!--         <button class="option" id="btn-A" (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{
-          currentCard.options[0]
-          }}</button>
-        <button class="option" id="btn-B" (click)="onClick(currentCard.options[1])" [disabled]="!hasItStarted">{{
-          currentCard.options[1]
-          }}</button> -->
       </div>
     </mat-card-content>
     <mat-divider inset></mat-divider>
@@ -67,7 +59,13 @@
 
     <ng-container matColumnDef="incorrect">
       <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
-      <mat-cell *matCellDef="let item">&lowast; {{item.incorrectOption}}</mat-cell>
+      <mat-cell *matCellDef="let item">
+        <ul class="incorrect-list">
+          <li *ngFor="let incorrectOpt of item.incorrectOptions">
+            &lowast; {{incorrectOpt}}
+          </li>
+        </ul>
+      </mat-cell>
       <mat-footer-cell *matFooterCellDef></mat-footer-cell>
     </ng-container>
 

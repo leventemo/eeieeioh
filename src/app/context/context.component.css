@@ -47,10 +47,14 @@ mat-card-content {
   line-height: 3rem;
 }
 
-.counters-wrapper,
-.options-wrapper {
+.counters-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.options-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
 .counters-wrapper {
@@ -98,6 +102,7 @@ mat-card-content {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  width: 30%;
   /* make btn invisible*/
   background: #F5F5F5;
   border: 2px solid #F5F5F5;
@@ -231,10 +236,16 @@ mat-footer-row {
 }
 
 .prompt-list {
-  /*   list-style-type: none; */
+  /* list-style-type: none; */
   margin: 0;
-  padding: .2rem 0 .2rem .4rem;
+  padding: .2rem 0 .2rem .5rem;
   ;
+}
+
+.incorrect-list {
+  list-style-type: none;
+  margin: 0;
+  padding: .2rem 0 .2rem 0;
 }
 
 .mat-column-playerA,
