@@ -121,7 +121,7 @@
   },
   {
     "level": "A2",
-    "title": "ERR: Email to a friend",
+    "title": "EC: Email to a friend",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/expandables",
@@ -131,7 +131,7 @@
   },
   {
     "level": "A2",
-    "title": "ERR: Email to a friend",
+    "title": "EC: Email to a friend",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/duels",
@@ -231,7 +231,7 @@
   },
   {
     "level": "B1",
-    "title": "ERR: Somebody I know",
+    "title": "EC: Somebody I know",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/expandables",
@@ -241,7 +241,7 @@
   },
   {
     "level": "B1",
-    "title": "ERR: Somebody I know",
+    "title": "EC: Somebody I know",
     "skill": "WR",
     "language": "VOC, GR, SPE",
     "slug": "/duels",
@@ -331,7 +331,7 @@
   },
   {
     "level": "B2",
-    "title": "ERR: My Dream House",
+    "title": "EC: My Dream House",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/expandables",
@@ -341,7 +341,7 @@
   },
   {
     "level": "B2",
-    "title": "ERR: My Dream House",
+    "title": "EC: My Dream House",
     "skill": "WR",
     "language": "VOC, GR, SPE",
     "slug": "/duels",
@@ -351,23 +351,23 @@
   },
   {
     "level": "B2",
-    "title": "ERR: Story",
+    "title": "EC: Fitness Graph",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/expandables",
     "id": "4",
     "activity": "Expandables",
-    "datePublished": "2022, 07, 27"
+    "datePublished": "2022, 09, 21"
   },
   {
     "level": "B2",
-    "title": "ERR: Story",
+    "title": "EC: Fitness Graph",
     "skill": "WR",
     "language": "VOC, GR, SPE",
     "slug": "/duels",
     "id": "4",
     "activity": "Duels",
-    "datePublished": "2022, 07, 29"
+    "datePublished": "2022, 09, 21"
   },
   {
     "level": "C1",

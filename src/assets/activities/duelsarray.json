@@ -5,7 +5,7 @@
     "skill": "WR",
     "title": "ERR: Email to a friend",
     "language": "GR, VOC, SPEL",
-    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
     "datePublished": "2022, 07, 25",
     "cards": [
@@ -121,7 +121,7 @@
     "skill": "WR",
     "title": "ERR: Somebody I know",
     "language": "VOC, GR, SPEL",
-    "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
     "datePublished": "2022, 07, 25",
     "cards": [
@@ -265,7 +265,7 @@
     "skill": "WR",
     "title": "ERR: My Dream House",
     "language": "VOC, GR, SPEL",
-    "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
     "datePublished": "2022, 07, 25",
     "cards": [
@@ -415,95 +415,79 @@
     "id": "4",
     "level": "B2",
     "skill": "WR",
-    "title": "ERR: Story",
+    "title": "Fitness Graph",
     "language": "VOC, GR, SPEL",
-    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 5 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
-    "datePublished": "2022, 07, 27",
+    "datePublished": "2022, 09, 21",
     "cards": [
       [
-        "I'll count to three",
-        "I'll account for three"
+        "as a result, her grades got worse again",
+        "as a result, her grades are got worse again"
       ],
       [
-        "someone said there was an earthquake",
-        "someone told there was an earthquake"
+        "I don't do sports at weekends",
+        "I don't do sports on weekends"
       ],
       [
-        "the rock under her feet started moving",
-        "the rock under her feet started to moving"
+        "I try to do my best",
+        "I try to be my best"
       ],
       [
-        "she knew it was an earthquake",
-        "she knew it is an earthquake"
+        "on weekdays I always walk",
+        "on weekdays I'm always walking"
       ],
       [
-        "people in Hungary were not used to earthquakes",
-        "people in Hungary was not used to earthquakes"
+        "I just sit at home reading or drawing",
+        "I just sit at home and reading or drawing"
       ],
       [
-        "the quake was of magnitude 4",
-        "the quake was a magnitude 4"
+        "playing the guitar",
+        "playing on guitar"
       ],
       [
-        "it ended in about 70 seconds",
-        "it ended about 70 seconds"
+        "these things really help me through the week",
+        "these things really helps me through the week"
       ],
       [
-        "Does this little guy belong to you?",
-        "Is this little guy belong to you?"
+        "in the middle of the week",
+        "at the middle of the week"
       ],
       [
-        "she realized that she hadn't said goodbye",
-        "she realized that she hasn't said goodbye"
+        "every day except Sunday",
+        "everyday except Sunday"
       ],
       [
-        "she couldn't thank the mysterious man enough",
-        "she couldn't thank enough to the the mysterious man"
+        "not that seriously",
+        "not that seriusly"
       ],
       [
-        "there were no signs of danger",
-        "there were no sign of danger"
+        "I do it really hard",
+        "I do it really hardly"
       ],
       [
-        "she helped those in need",
-        "she helped for those in need"
+        "on Monday I miss her terribly",
+        "on monday I miss her terribly"
       ],
       [
-        "she felt that something was moving under her feet",
-        "she felt that something is moving under her feet"
+        "at the weekend",
+        "on the weekend"
       ],
       [
-        "she didn't understand what was happening",
-        "she didn't understand what is happening"
+        "I play football with my dad's colleagues",
+        "I play football with my dad's colleges"
       ],
       [
-        "she and her coworkers saw what had happened",
-        "she and her coworkors saw what had happened"
+        "on Thursday I started to give up",
+        "on thursday I started to give up"
       ],
       [
-        "he had just got hired",
-        "he had just got hierd"
+        "my performance is improving",
+        "my performance is growing"
       ],
       [
-        "Suddenly, an earthquake hit.",
-        "Sudenly, an earthquake hit."
-      ],
-      [
-        "she wanted to live so she started running",
-        "she wanted to live so she started runing"
-      ],
-      [
-        "there was an earthquake",
-        "there was an eartquake"
-      ],
-      [
-        "she started panicking",
-        "she started panicing"
-      ],
-      [
-        "nothing serious",
-        "nothing seirious"
+        "yesterday I started running actually",
+        "yesterday I started running accually"
       ]
     ]
   }

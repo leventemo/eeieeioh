@@ -45,7 +45,7 @@ export class ContextComponent implements OnInit {
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
   pack: Card[] = [];
   cardsTotal = () => this.data.cards.length;
-  timeAllowed = 700;
+  timeAllowed = 600;
 
   // to hide "Start" & "Contents" btns
   hasItStarted = false;
@@ -140,7 +140,7 @@ export class ContextComponent implements OnInit {
 
   private calcScore(val: string | null = null) {
     const isWin = val === this.currentCorrectOption;
-    this.pointsEarnedThisTurn = isWin ? 700 + (700 - this.currentPlayer.timer) : 0;
+    this.pointsEarnedThisTurn = isWin ? 600 + (600 - this.currentPlayer.timer) : 0;
     this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
     console.log(val);
     console.log(this.currentCorrectOption);

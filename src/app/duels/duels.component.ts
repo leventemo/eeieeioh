@@ -39,7 +39,7 @@ export class DuelsComponent implements OnInit {
   data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
   cardsTotal = () => this.data.cards.length;
-  timeAllowed = 500;
+  timeAllowed = 600;
 
   // to hide "Start" & "Contents" btns
   hasItStarted = false;
@@ -131,7 +131,7 @@ export class DuelsComponent implements OnInit {
 
   private calcScore(val: string | null = null) {
     if (val === this.currentCorrectCard) {
-      this.pointsEarnedThisTurn = 500 + (500 - this.currentPlayer.timer);
+      this.pointsEarnedThisTurn = 600 + (600 - this.currentPlayer.timer);
     } else {
       this.pointsEarnedThisTurn = 0;
     }
