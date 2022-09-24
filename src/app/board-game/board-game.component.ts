@@ -40,6 +40,7 @@ export class BoardGameComponent implements OnInit {
   instructions = () => this.data.instructions;
   currentCard = '';
   isItAllDone = false;
+  winner = '';
 
   dashBtn = 'Start';
   hasGameStarted = false;
@@ -119,7 +120,20 @@ export class BoardGameComponent implements OnInit {
   }
 
   rollDice() {
+    this.isNextBtnDisabled = true;
     this.activePlayer.takingOn = this.activePlayer.position + Utils.getRandom(2, 1);
+    if (this.activePlayer.takingOn > 18) {
+      this.isItAllDone = true;
+      this.chooseWinner();
+    }
+  }
+
+  private chooseWinner() {
+    if (this.playerA.takingOn > this.playerB.takingOn) {
+      this.winner = `A wins. Congratulations!`;
+    } else {
+      this.winner = `B wins. Congratulations!`;
+    }
   }
 
   redirect() {
