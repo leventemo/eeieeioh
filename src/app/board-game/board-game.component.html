@@ -18,21 +18,28 @@
 			<button class="square square-start-and-finish">
 				<div class="square-number spaced-out">START</div>
 				<div class="markers-wrapper">
-					<div *ngIf="playerA.position === 0" class="marker markerA">A</div>
-					<div *ngIf="playerB.position === 0" class="marker markerB">B</div>
+					<div *ngIf="playerA.position === 0 && playerA.takingOn === 0" class="marker markerA">A</div>
+					<div *ngIf="playerB.position === 0 && playerB.takingOn === 0" class="marker markerB">B</div>
 				</div>
 			</button>
 
 			<ng-container *ngFor="let card of currentPack; let i = index">
-				<button class="square"
-					[ngClass]="{ 'square-active': this.activePlayer.takingOn === (i + 1) && this.activePlayer.takingOn !== 0 }"
-					[disabled]="this.activePlayer.position !== i + 1" (click)="openDialogBoardGame(i)">
+				<button class="square" [ngClass]="{ 'square-active': this.activePlayer.takingOn === (i + 1) }"
+					[disabled]="this.activePlayer.takingOn !== i + 1" (click)="openDialogBoardGame(i)">
 					<div class="square-number">{{i + 1}}</div>
 					<div class="markers-wrapper">
-						<div *ngIf="playerA.position === i + 1" class="marker markerA"
-							[ngClass]="{ 'marker-active': this.playerA.position !== 0 }">A</div>
-						<div *ngIf="playerB.position === i + 1" class="marker markerB"
-							[ngClass]="{ 'marker-active': this.playerB.position !== 0 }">B</div>
+						<div *ngIf="playerA.position === i + 1" class="marker markerA">A</div>
+						<div *ngIf="playerA.takingOn === i + 1" class="marker markerA marker-active">A
+						</div>
+
+						<div *ngIf="playerB.position === i + 1" class="marker markerB">B</div>
+						<div *ngIf="playerB.takingOn === i + 1" class="marker markerB marker-active">B
+						</div>
+
+						<!-- <div *ngIf="playerA.position === i + 1 || playerA.takingOn === i + 1" class="marker markerA"
+							[ngClass]="{ 'marker-active': this.playerA.takingOn !== 0 }">A</div>
+						<div *ngIf="playerB.position === i + 1 || playerB.takingOn === i + 1" class="marker markerB"
+							[ngClass]="{ 'marker-active': this.playerB.takingOn !== 0 }">B</div> -->
 					</div>
 				</button>
 			</ng-container>
@@ -40,8 +47,8 @@
 			<button class="square square-start-and-finish">
 				<div class="square-number spaced-out">FINISH</div>
 				<div class="markers-wrapper">
-					<div class="marker markerA">A</div>
-					<div class="marker markerB">B</div>
+					<div *ngIf="playerA.position === 19" class="marker markerA">A</div>
+					<div *ngIf="playerB.position === 19" class="marker markerB">B</div>
 				</div>
 			</button>
 
@@ -50,6 +57,8 @@
 	<mat-divider inset></mat-divider>
 	<mat-card-actions align="end">
 		<button *ngIf="!hasGameStarted" color="primary" mat-button (click)="start()">Start</button>
+		<button *ngIf="hasGameStarted" [disabled]="isNextBtnDisabled" color="primary" mat-button (click)="rollDice()">Roll
+			Dice</button>
 		<button color="primary" mat-button (click)="redirect()">Contents</button>
 	</mat-card-actions>
 </mat-card>

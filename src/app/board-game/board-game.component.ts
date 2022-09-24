@@ -41,8 +41,10 @@ export class BoardGameComponent implements OnInit {
   currentCard = '';
   isItAllDone = false;
 
+  dashBtn = 'Start';
   hasGameStarted = false;
   activeSquare = 0;
+  isNextBtnDisabled = false;
 
   playerA: Player = {
     name: 'A',
@@ -80,19 +82,45 @@ export class BoardGameComponent implements OnInit {
   openDialogBoardGame(index: number) {
     let dialogRef = this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[index], activePLayer: this.activePlayer } });
 
-
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result is: ${result}`);
-      console.log(this.activePlayer);
+      this.isNextBtnDisabled = false;
+      if (result === 'true') {
+        this.calcScore();
+      } else if (this.activePlayer === this.playerA) {
+        this.playerA.takingOn = 0;
+      } else if (this.activePlayer === this.playerB) {
+        this.playerB.takingOn = 0;
+      }
+      this.switchPlayers();
     })
   }
 
   start() {
-    this.activePlayer.position = 1;
-    this.activePlayer.takingOn = 1;
+    this.activePlayer.takingOn = Utils.getRandom(2, 1);
     this.hasGameStarted = true;
+    this.isNextBtnDisabled = true;
+    this.dashBtn = 'Next';
   }
 
+  private calcScore() {
+    if (this.activePlayer === this.playerA) {
+      this.playerA.position = this.activePlayer.takingOn;
+      this.playerA.takingOn = 0;
+    } else if ((this.activePlayer === this.playerB)) {
+      this.playerB.position = this.activePlayer.takingOn;
+      this.playerB.takingOn = 0;
+    }
+  }
+
+  private switchPlayers() {
+    this.activePlayer = this.activePlayer === this.playerA ? this.playerB : this.playerA;
+    this.activePlayer.takingOn = 0;
+    this.activeSquare = 0;
+  }
+
+  rollDice() {
+    this.activePlayer.takingOn = this.activePlayer.position + Utils.getRandom(2, 1);
+  }
 
   redirect() {
     this.router.navigate(['contents']);
