@@ -52,8 +52,8 @@
 	<mat-divider inset></mat-divider>
 	<mat-card-actions align="end">
 		<button *ngIf="!hasGameStarted" color="primary" mat-button (click)="start()">Start</button>
-		<button *ngIf="hasGameStarted" [disabled]="isNextBtnDisabled" color="primary" mat-button (click)="rollDice()">Roll
-			Dice</button>
+		<button *ngIf="hasGameStarted" [disabled]="isNextBtnDisabled" color="primary" mat-button
+			(click)="rollDice()">Next</button>
 		<button color="primary" mat-button (click)="redirect()">Contents</button>
 	</mat-card-actions>
 </mat-card>
