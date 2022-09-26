@@ -204,8 +204,8 @@
     "id": "2",
     "level": "B2",
     "skill": "",
-    "title": "Vocabulary: Travel",
-    "language": "Vocabulary: Travel",
+    "title": "VOC: Travel",
+    "language": "VOC: Travel",
     "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the option you feel is related to words or phrases in the prompts. Be as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
     "datePublished": "2022, 09, 08",
     "cards": [
@@ -339,6 +339,126 @@
         "options": [
           "in time",
           "a voyage across the Atlantic"
+        ]
+      },
+      {
+        "prompts": [
+          "head for",
+          "take off"
+        ],
+        "options": [
+          "set off",
+          "touch down"
+        ]
+      },
+      {
+        "prompts": [
+          "pick me up",
+          "drop me off"
+        ],
+        "options": [
+          "see me off",
+          "stop over"
+        ]
+      },
+      {
+        "prompts": [
+          "check in my luggage",
+          "an isle seat"
+        ],
+        "options": [
+          "departure lounge",
+          "on the right platform"
+        ]
+      },
+      {
+        "prompts": [
+          "a flight attendant",
+          "a pilot"
+        ],
+        "options": [
+          "the captain",
+          "a conductor"
+        ]
+      },
+      {
+        "prompts": [
+          "a single ticket",
+          "a return ticket"
+        ],
+        "options": [
+          "a connecting train",
+          "fasten your seat-belt"
+        ]
+      },
+      {
+        "prompts": [
+          "food trolley",
+          "an in-flight film"
+        ],
+        "options": [
+          "oxygen mask",
+          "timetable"
+        ]
+      },
+      {
+        "prompts": [
+          "underneath your seat",
+          "in the overhead compartment"
+        ],
+        "options": [
+          "hand-luggage",
+          "turbulence"
+        ]
+      },
+      {
+        "prompts": [
+          "folded away",
+          "in an upright position"
+        ],
+        "options": [
+          "tray table",
+          "life jacket"
+        ]
+      },
+      {
+        "prompts": [
+          "make an announcement",
+          "over the loudspeaker"
+        ],
+        "options": [
+          "make it out",
+          "put someone up"
+        ]
+      },
+      {
+        "prompts": [
+          "call off a trip",
+          "put off a cruise"
+        ],
+        "options": [
+          "our flight is delayed",
+          "on board"
+        ]
+      },
+      {
+        "prompts": [
+          "travel at half fare",
+          "travel at full fare"
+        ],
+        "options": [
+          "ticket office",
+          "departure lounge"
+        ]
+      },
+      {
+        "prompts": [
+          "get away",
+          "get around"
+        ],
+        "options": [
+          "get back",
+          "work it out"
         ]
       }
     ]
@@ -615,53 +735,6 @@
         "options": [
           "hamburger",
           "olive oil"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "88",
-    "level": "Testing",
-    "skill": "Testing",
-    "title": "Testing",
-    "language": "Testing",
-    "instructionsForDuels": "Testing",
-    "datePublished": "2022, 07, 25",
-    "cards": [
-      {
-        "prompts": [
-          "ball",
-          "score",
-          "referee"
-        ],
-        "options": [
-          "Acorrect",
-          "Aincorrect",
-          "Athird"
-        ]
-      },
-      {
-        "prompts": [
-          "skate",
-          "puck",
-          "stick"
-        ],
-        "options": [
-          "Bcorrect",
-          "Bincorrect",
-          "Bthird"
-        ]
-      },
-      {
-        "prompts": [
-          "hoop",
-          "slam-dunk",
-          "NBA"
-        ],
-        "options": [
-          "Ccorrect",
-          "Cincorrect",
-          "Cthird"
         ]
       }
     ]
