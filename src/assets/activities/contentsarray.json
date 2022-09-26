@@ -41,7 +41,7 @@
   },
   {
     "level": "A2",
-    "title": "When did you last ...? (1)",
+    "title": "When Did You Last ...? (1)",
     "skill": "SP",
     "language": "Past Simple, Past Time Expressions",
     "slug": "/cards",
@@ -51,7 +51,7 @@
   },
   {
     "level": "A2",
-    "title": "When did you last ...? (2)",
+    "title": "When Did You Last ...? (2)",
     "skill": "SP",
     "language": "Past Simple, Past Time Expressions",
     "slug": "/cards",
@@ -81,7 +81,7 @@
   },
   {
     "level": "A2",
-    "title": "Talking about food",
+    "title": "Talking about Food",
     "skill": "SP",
     "language": "Talking about food",
     "slug": "/timed-cards",
@@ -91,7 +91,7 @@
   },
   {
     "level": "A2",
-    "title": "Have you ever ...?",
+    "title": "Have You Ever ...?",
     "skill": "SP",
     "language": "Present Perfect, Past Simple",
     "slug": "/cards",
@@ -101,7 +101,7 @@
   },
   {
     "level": "A2",
-    "title": "How long have you ...?",
+    "title": "How Long Have You ...?",
     "skill": "SP",
     "language": "for/since",
     "slug": "/cards",
@@ -111,7 +111,7 @@
   },
   {
     "level": "A2",
-    "title": "Tim's a very good example",
+    "title": "Tim's a Very Good Example",
     "skill": "SP",
     "language": "personality adjectives",
     "slug": "/cards",
@@ -121,7 +121,7 @@
   },
   {
     "level": "A2",
-    "title": "EC: Email to a friend",
+    "title": "EC: Email to a Friend",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/expandables",
@@ -131,7 +131,7 @@
   },
   {
     "level": "A2",
-    "title": "EC: Email to a friend",
+    "title": "EC: Email to a Friend",
     "skill": "WR",
     "language": "GR, VOC, SPE",
     "slug": "/duels",
@@ -171,7 +171,7 @@
   },
   {
     "level": "A2 up",
-    "title": "The right question (1)",
+    "title": "The Right Question (1)",
     "skill": "SP",
     "language": "question forms",
     "slug": "/timed-cards",
@@ -181,7 +181,7 @@
   },
   {
     "level": "A2 up",
-    "title": "The right question (2)",
+    "title": "The Right Question (2)",
     "skill": "SP",
     "language": "question forms",
     "slug": "/timed-cards",
@@ -191,7 +191,7 @@
   },
   {
     "level": "B1",
-    "title": "What would you do ...?",
+    "title": "What Would You Do ...?",
     "skill": "SP",
     "language": "2nd conditional",
     "slug": "/cards",
@@ -211,7 +211,7 @@
   },
   {
     "level": "B1",
-    "title": "Considering job offers",
+    "title": "Considering Job Offers",
     "skill": "SP",
     "language": "VOC: Work",
     "slug": "/ranking",
@@ -221,7 +221,17 @@
   },
   {
     "level": "B1",
-    "title": "Exam questions B1 (1)",
+    "title": "Choosing a Hobby",
+    "skill": "SP",
+    "language": "VOC: Hobbies",
+    "slug": "/ranking",
+    "id": "2",
+    "activity": "Ranking",
+    "datePublished": "2022, 09, 26"
+  },
+  {
+    "level": "B1",
+    "title": "Exam Questions B1 (1)",
     "skill": "SP",
     "language": "conversation",
     "slug": "/timed-cards",
@@ -231,7 +241,7 @@
   },
   {
     "level": "B1",
-    "title": "Should have asked mom",
+    "title": "Should Have Asked Mom",
     "skill": "SP",
     "language": "should have done",
     "slug": "/cards",
@@ -261,7 +271,7 @@
   },
   {
     "level": "B2",
-    "title": "Education is like football (1)",
+    "title": "Education Is Like Football (1)",
     "skill": "SP",
     "language": "talking about education",
     "slug": "/cards",
@@ -271,7 +281,7 @@
   },
   {
     "level": "B2",
-    "title": "Education is like football (2)",
+    "title": "Education Is Like Football (2)",
     "skill": "SP",
     "language": "talking about education",
     "slug": "/cards",
@@ -321,7 +331,7 @@
   },
   {
     "level": "B2",
-    "title": "Exam questions B2 (1)",
+    "title": "Exam Questions B2 (1)",
     "skill": "SP",
     "language": "conversation",
     "slug": "/timed-cards",
@@ -381,7 +391,7 @@
   },
   {
     "level": "C1",
-    "title": "Exam questions C1 (1)",
+    "title": "Exam Questions C1 (1)",
     "skill": "SP",
     "language": "conversation",
     "slug": "/timed-cards",
