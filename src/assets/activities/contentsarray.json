@@ -301,6 +301,16 @@
   },
   {
     "level": "B2",
+    "title": "On Condition",
+    "skill": "",
+    "language": "1st conditional, alternatives to if",
+    "slug": "/board-game",
+    "id": "2",
+    "activity": "Board Game",
+    "datePublished": "2022, 10, 01"
+  },
+  {
+    "level": "B2",
     "title": "Body Idioms",
     "skill": "SP",
     "language": "idioms",
