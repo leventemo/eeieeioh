@@ -213,7 +213,7 @@
     "level": "B1",
     "title": "Considering Job Offers",
     "skill": "SP",
-    "language": "VOC: Work",
+    "language": "discuss, negotiate",
     "slug": "/ranking",
     "id": "1",
     "activity": "Ranking",
@@ -223,11 +223,21 @@
     "level": "B1",
     "title": "Choosing a Hobby",
     "skill": "SP",
-    "language": "VOC: Hobbies",
+    "language": "discuss, negotiate",
     "slug": "/ranking",
     "id": "2",
     "activity": "Ranking",
     "datePublished": "2022, 09, 26"
+  },
+  {
+    "level": "B1",
+    "title": "Parting Gift",
+    "skill": "SP",
+    "language": "discuss, negotiate",
+    "slug": "/ranking",
+    "id": "3",
+    "activity": "Ranking",
+    "datePublished": "2022, 10, 02"
   },
   {
     "level": "B1",

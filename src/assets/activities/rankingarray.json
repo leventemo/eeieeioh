@@ -2,9 +2,9 @@
   {
     "id": "1",
     "level": "A2 up",
-    "skill": "SP:",
+    "skill": "SP",
     "title": "Considering job offers",
-    "language": "VOC: Work",
+    "language": "discuss, negotiate",
     "instructions": "You will be working on your own, in pairs and then groups but you will need one phone at all stages of the activity. First, think through your list and drag the items in order of importance when considering a job offer. Then find a partner and discuss your opinions. The two of you have to agree on a new list together. After that find another pair and talk through your choices in order to come up with a new list that everybody in your group agrees with. Finally, share your rankings with the class.",
     "datePublished": "2022, 09, 18",
     "cards": [
@@ -22,8 +22,8 @@
     "level": "B1",
     "skill": "SP:",
     "title": "Choosing a Hobby",
-    "language": "VOC: Hobbies",
-    "instructions": "Work in pairs and use one shared phone. You have decided to take up a new hobby together. Discuss why or why not you would enjoy doing the different kinds of hobbies on the list and arrange them in order of preference. Share your list with another pair or the whole class.",
+    "language": "discuss, negotiate",
+    "instructions": "Work in pairs and use one shared phone. Imagine you have decided to take up a new hobby together. Discuss why or why not you would enjoy doing the different kinds of hobbies on the list and arrange them in order of preference. Share your list with another pair or the whole class.",
     "datePublished": "2022, 09, 26",
     "cards": [
       "playing chess",
@@ -34,6 +34,25 @@
       "learning to play an instrument",
       "painting",
       "baking cakes"
+    ]
+  },
+  {
+    "id": "3",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Parting Gift",
+    "language": "discuss, negotiate",
+    "instructions": "Work in pairs and use one shared phone. Imagine your English teacher is qitting his job and you have decided to buy a gift to him/her. Discuss why or why not the items on the list would be suitable options and arrange them in order of preference. Share your list with another pair or the whole class.",
+    "datePublished": "2022, 10, 02",
+    "cards": [
+      "a second-hand lime green BMW",
+      "a mug with the inscription: \"The best teacher. Ever.\"",
+      "a new pair of Dr Martens boots",
+      "a T-shirt with a photo of all the students in the group",
+      "a 10-day pass to a gym",
+      "a bouquet of flowers",
+      "a box set of all 60 Disney Classics",
+      "a photo biography of Queen Elizabeth II"
     ]
   }
 ]
