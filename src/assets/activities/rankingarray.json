@@ -54,5 +54,23 @@
       "a box set of all 60 Disney Classics",
       "a photo biography of Queen Elizabeth II"
     ]
+  },
+  {
+    "id": "4",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Getting around",
+    "language": "discuss, negotiate",
+    "instructions": "Work in pairs and use one shared phone. Compare the different ways of getting around in your town and decide which two are the best options. Share your list with another pair or the whole class.",
+    "datePublished": "2022, 10, 13",
+    "cards": [
+      "taxi",
+      "car",
+      "bicycle",
+      "electric scooter",
+      "local bus",
+      "walking",
+      "motorbike"
+    ]
   }
 ]
