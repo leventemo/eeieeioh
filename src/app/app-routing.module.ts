@@ -12,7 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './reword/reword.component';
 import { ExpandablesComponent } from './expandables/expandables.component';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
-import { ActivitiesComponent } from './activities/activities.component';
+import { TeachersGuideComponent } from './teachers-guide/teachers-guide.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'changelog', component: ChangelogComponent },
-  { path: 'activities', component: ActivitiesComponent },
+  { path: 'teachers-guide', component: TeachersGuideComponent },
   { path: 'roadmap', component: RoadmapComponent },
   { path: 'abbreviations', component: AbbreviationsComponent },
   { path: 'contents', component: ContentsComponent },

@@ -97,13 +97,9 @@ Contact page
 REDO
 - [ ] create components folder?
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
-- [ ] rename Contents Components to Activities (routing reasons)
 
 Nav Component
 - [ ] rename to Nav
-
-Activities Component
-- [ ] rename to TeachersGuide
 
 Hotel Check-in -> turn it into a Roleplay Component with A/B players getting their matching roles
 - [x] install Faker-js: <https://fakerjs.dev/>
@@ -124,12 +120,12 @@ Pelmalism Component
 
 Timed-Cards Component
 - [ ] review
-- [x]Yes-No Game
+- [x] Yes-No Game
 - [x] Exam Qns
 - [ ] Talking about ...
 - [ ] Just a minute
 - [ ] Vocab Race activities, eg. Prep of Movement, etc – see EF
-- [ ] What's the right question?: DB > ELTGames.com > elem-pre-int CONV
+- [x] What's the right question?: DB > ELTGames.com > elem-pre-int CONV
 
 Duels Component
 - [ ] review
@@ -154,7 +150,6 @@ Escape Room Component
 - [ ] unsubscribe?
 
 Context Component
-include "Options" in an array so we can use 3, ... , not just 2 of them – same with Duels
 - [ ] colour bullets: <https://www.w3.org/Style/Examples/007/color-bullets.en.html>
 - [ ] try toptal HTML entity for `<>` anchor tags
 - [] use this in template, rather than the 2 hardcoded btns
@@ -167,5 +162,5 @@ include "Options" in an array so we can use 3, ... , not just 2 of them – same
 - [ ] review
 
 Board Game Component
-- [ ] display qns in squares one by one: use `$event`
-- [ ] get "Accept" & "Reject" btns to work: send info back to BG component
+
+

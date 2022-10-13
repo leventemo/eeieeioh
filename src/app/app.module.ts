@@ -22,7 +22,7 @@ import { DuelsComponent } from './duels/duels.component';
 import { ConvertTimePipe } from './convert-time.pipe';
 import { TimedCardsComponent } from './timed-cards/timed-cards.component';
 import { ChangelogComponent } from './changelog/changelog.component';
-import { ActivitiesComponent } from './activities/activities.component';
+import { TeachersGuideComponent } from './teachers-guide/teachers-guide.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
@@ -50,7 +50,6 @@ import { RankingComponent } from './ranking/ranking.component';
     ConvertTimePipe,
     TimedCardsComponent,
     ChangelogComponent,
-    ActivitiesComponent,
     RoadmapComponent,
     AbbreviationsComponent,
     EscapeRoomComponent,
@@ -58,6 +57,7 @@ import { RankingComponent } from './ranking/ranking.component';
     BoardGameComponent,
     DialogBoardGameComponent,
     RankingComponent,
+    TeachersGuideComponent,
   ],
   imports: [
     BrowserModule,
