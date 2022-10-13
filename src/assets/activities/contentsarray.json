@@ -241,6 +241,16 @@
   },
   {
     "level": "B1",
+    "title": "Getting around",
+    "skill": "SP",
+    "language": "discuss, negotiate",
+    "slug": "/ranking",
+    "id": "4",
+    "activity": "Ranking",
+    "datePublished": "2022, 10, 13"
+  },
+  {
+    "level": "B1",
     "title": "Exam Questions B1 (1)",
     "skill": "SP",
     "language": "conversation",
