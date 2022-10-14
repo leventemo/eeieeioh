@@ -120,7 +120,6 @@ export class ContextComponent implements OnInit {
   }
 
   onClick(value: string) {
-    /* (event.target as HTMLInputElement).textContent */
     this.calcScore(value);
 
     if (this.pack.length === 0) {
@@ -142,8 +141,6 @@ export class ContextComponent implements OnInit {
     const isWin = val === this.currentCorrectOption;
     this.pointsEarnedThisTurn = isWin ? 600 + (600 - this.currentPlayer.timer) : 0;
     this.currentPlayer.score = this.currentPlayer.score + this.pointsEarnedThisTurn;
-    console.log(val);
-    console.log(this.currentCorrectOption);
 
     this.saveResults();
   }
@@ -158,7 +155,6 @@ export class ContextComponent implements OnInit {
     this.currentCard = this.pack[rando];
     this.currentCorrectOption = this.currentCard.options[0];
     this.currentIncorrectOptions = this.currentCard.options.slice(1);
-    console.log(this.currentIncorrectOptions);
     this.pack = this.pack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
