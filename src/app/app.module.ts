@@ -30,6 +30,7 @@ import { ContextComponent } from './context/context.component';
 import { BoardGameComponent } from './board-game/board-game.component';
 import { DialogBoardGameComponent } from './dialog-board-game/dialog-board-game.component';
 import { RankingComponent } from './ranking/ranking.component';
+import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { RankingComponent } from './ranking/ranking.component';
     DialogBoardGameComponent,
     RankingComponent,
     TeachersGuideComponent,
+    StoryPuzzleComponent,
   ],
   imports: [
     BrowserModule,

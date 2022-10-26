@@ -72,5 +72,23 @@
       "walking",
       "motorbike"
     ]
+  },
+  {
+    "id": "5",
+    "level": "B1",
+    "skill": "SP",
+    "title": "What makes a good friend?",
+    "language": "discuss, negotiate",
+    "instructions": "Work in pairs and use one shared phone. Discuss how the different ideas might be helpful in forming a good relationship with someone and arrange them in order of preference. Share your list with another pair or the whole class.",
+    "datePublished": "2022, 10, 26",
+    "cards": [
+      "we have all the same interests",
+      "we spend a lot of time together",
+      "he/she is a good listener",
+      "he/she keeps my secrets",
+      "he/she is there for me if I need help",
+      "he/she doesn't want to dominate",
+      "we are connected via messaging apps"
+    ]
   }
 ]

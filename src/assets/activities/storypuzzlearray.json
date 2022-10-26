@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1",
+    "level": "A2",
+    "skill": "SP, WR",
+    "title": "Have you ever ...?",
+    "language": "Storytelling",
+    "instructions": "BLABLA",
+    "datePublished": "2022, 05, 05",
+    "cards": [
+      "complaining of blurry vision",
+      "my Guinness Book of World Record moment",
+      "23 is not a record-breaking number",
+      "actually not that uncommon",
+      "even if they’re trapped inside",
+      "a stack of pancakes"
+    ]
+  }
+]
