@@ -490,5 +490,97 @@
         "yesterday I started running accually"
       ]
     ]
+  },
+  {
+    "id": "5",
+    "level": "A2",
+    "skill": "WR",
+    "title": "Cover Letter",
+    "language": "VOC, GR, SPEL",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
+    "datePublished": "2022, 09, 21",
+    "cards": [
+      [
+        "work as a sales assistant",
+        "work as a sales assistance"
+      ],
+      [
+        "at weekends",
+        "on weekends"
+      ],
+      [
+        "I saw your advertisement on Facebook",
+        "I saw your adversiment on Facebook"
+      ],
+      [
+        "I'm fluent in Spanish, French and English",
+        "I'm fluent in Spanish, France and English"
+      ],
+      [
+        "I look forward to hearing from you.",
+        "I will wait for the answer."
+      ],
+      [
+        "how to speak diplomatically",
+        "how to speak diplomaticly"
+      ],
+      [
+        "excellent communication skills",
+        "excelent communication skills"
+      ],
+      [
+        "a pleasant personality",
+        "a pleasent personality"
+      ],
+      [
+        "at this time I'm learning Spanish",
+        "at the time I'm learning Spanish"
+      ],
+      [
+        "I have worked at many clothes shops",
+        "I have been worked at many clothes shops"
+      ],
+      [
+        "I have a rather harsh personality",
+        "I rather have a harsh personality"
+      ],
+      [
+        "Dear Ms Jenkins",
+        "Dear Ms Jessica"
+      ],
+      [
+        "working as an assistant",
+        "working as an assistans"
+      ],
+      [
+        "I can work every day",
+        "I can work everyday"
+      ],
+      [
+        "I can work full time",
+        "I can work on full time"
+      ],
+      [
+        "I work in a shop",
+        "I work a shop"
+      ],
+      [
+        "it is not a problem to me",
+        "it is not problem to me"
+      ],
+      [
+        "make the environment better",
+        "make the enviroment better"
+      ],
+      [
+        "Dear Madam",
+        "Dear Miss"
+      ],
+      [
+        "I look forward to hearing from you.",
+        "I look forward to hear from you."
+      ]
+    ]
   }
 ]
