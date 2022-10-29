@@ -19,6 +19,7 @@ import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { ContextComponent } from './context/context.component';
 import { BoardGameComponent } from './board-game/board-game.component';
 import { RankingComponent } from './ranking/ranking.component';
+import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'escape-room/:id', component: EscapeRoomComponent },
   { path: 'ranking/:id', component: RankingComponent },
   { path: 'context/:id', component: ContextComponent },
+  { path: 'story-puzzle/:id', component: StoryPuzzleComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

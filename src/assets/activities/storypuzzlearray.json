@@ -3,17 +3,44 @@
     "id": "1",
     "level": "A2",
     "skill": "SP, WR",
-    "title": "Have you ever ...?",
+    "title": "Stack o' ...",
     "language": "Storytelling",
     "instructions": "BLABLA",
     "datePublished": "2022, 05, 05",
+    "instructionsOne": "1) Notice some collocations, fixed phrases or idioms in these sentences.",
+    "instructionsTwo": "2) Try to work out the meaning of the phrases in bold type from the context.",
+    "instructionsThree": "3) The phrases are taken from a true story and they are not in order. Can you guess what happened? Drag and drop to reorder them.",
     "cards": [
-      "complaining of blurry vision",
-      "my Guinness Book of World Record moment",
-      "23 is not a record-breaking number",
-      "actually not that uncommon",
-      "even if they’re trapped inside",
-      "a stack of pancakes"
+      {
+        "before": "She has breathing problems, ",
+        "chunk": "she is complaining of blurry vision ",
+        "after": "and loss of balance."
+      },
+      {
+        "before": "",
+        "chunk": "my Guinness Book of World Record moment",
+        "after": ""
+      },
+      {
+        "before": "23 is not ",
+        "chunk": "a record-breaking number",
+        "after": ""
+      },
+      {
+        "before": "Situations like this are actually ",
+        "chunk": "not that uncommon",
+        "after": "."
+      },
+      {
+        "before": "The burglar got ",
+        "chunk": "trapped inside ",
+        "after": "the basement of the house he had broken into."
+      },
+      {
+        "before": "If you want to serve a large ",
+        "chunk": "stack of pancakes",
+        "after": ", wrap the stack in a tea towel to keep them warm."
+      }
     ]
   }
 ]

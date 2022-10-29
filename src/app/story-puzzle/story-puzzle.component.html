@@ -1,1 +1,24 @@
-<p>story-puzzle works!</p>
+<mat-card>
+  <mat-card-title>
+    <span class="activity-type">Story Puzzle</span><span class="title">{{ data.title }}</span>
+    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+  </mat-card-title>
+
+  <mat-divider inset></mat-divider>
+
+  <mat-card-content>
+    <h1>{{data.instructionsOne}}</h1>
+    <ul>
+      <li *ngFor="let item of data.cards">{{ item.before }}{{ item.chunk }}{{ item.after }}</li>
+    </ul>
+  </mat-card-content>
+
+  <mat-divider inset></mat-divider>
+
+  <mat-card-actions align="end">
+    <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
+    <button color="primary" mat-button (click)="next()">{{ btnValue
+      }}</button>
+    <button color="primary" mat-button (click)="redirect()">Contents</button>
+  </mat-card-actions>
+</mat-card>
