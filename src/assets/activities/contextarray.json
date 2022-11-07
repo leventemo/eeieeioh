@@ -837,5 +837,421 @@
         ]
       }
     ]
+  },
+  {
+    "id": "4",
+    "level": "B2, C1",
+    "skill": "",
+    "title": "VOC: Crime",
+    "language": "VOC: Crime",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the option you feel is related to words or phrases in the prompts. Be as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 11, 07",
+    "cards": [
+      {
+        "prompts": [
+          "to steal something",
+          "theft",
+          "a thief"
+        ],
+        "options": [
+          "€20",
+          "A STADIUM"
+        ]
+      },
+      {
+        "prompts": [
+          "to burgle a house / to break into",
+          "burglary",
+          "a burglar"
+        ],
+        "options": [
+          "jewellery",
+          "a bookshelf"
+        ]
+      },
+      {
+        "prompts": [
+          "to rob something",
+          "robbery",
+          "a robber"
+        ],
+        "options": [
+          "the corner shop",
+          "a tree"
+        ]
+      },
+      {
+        "prompts": [
+          "to kidnap someone",
+          "kidnapping",
+          "a kidnapper"
+        ],
+        "options": [
+          "the president's daughter",
+          "a police car"
+        ]
+      },
+      {
+        "prompts": [
+          "to vandalise something",
+          "vandalism",
+          "a vandal"
+        ],
+        "options": [
+          "a bus stop",
+          "the jury"
+        ]
+      },
+      {
+        "prompts": [
+          "to pick someone's pocket",
+          "pickpocketing",
+          "a pickpocket"
+        ],
+        "options": [
+          "a wallet",
+          "capital punishment"
+        ]
+      },
+      {
+        "prompts": [
+          "to hijack something",
+          "hijacking",
+          "a hijacker"
+        ],
+        "options": [
+          "a plane",
+          "a deerstalker hat"
+        ]
+      },
+      {
+        "prompts": [
+          "to hack into somewhere",
+          "hacking",
+          "a hacker"
+        ],
+        "options": [
+          "a database",
+          "a mobile phone case"
+        ]
+      },
+      {
+        "prompts": [
+          "to murder someone",
+          "murder",
+          "a murderer"
+        ],
+        "options": [
+          "two passers-by",
+          "an incident"
+        ]
+      },
+      {
+        "prompts": [
+          "to shoplift",
+          "shoplifting",
+          "a shoplifter"
+        ],
+        "options": [
+          "a roll-on deodorant",
+          "a lift"
+        ]
+      },
+      {
+        "prompts": [
+          "to forge something",
+          "forgery",
+          "a forger"
+        ],
+        "options": [
+          "a passport",
+          "a plastic bag"
+        ]
+      },
+      {
+        "prompts": [
+          "to commit fraud",
+          "fraud",
+          "a fraudster"
+        ],
+        "options": [
+          "insurance claims",
+          "a judge"
+        ]
+      },
+      {
+        "prompts": [
+          "to commit identity fraud",
+          "identity fraud",
+          "an identity fraudster"
+        ],
+        "options": [
+          "bank details",
+          "verdict"
+        ]
+      },
+      {
+        "prompts": [
+          "to set off bombs, etc.",
+          "terrorism",
+          "a terrorist"
+        ],
+        "options": [
+          "the audience of a show",
+          "cash"
+        ]
+      },
+      {
+        "prompts": [
+          "to drink and drive",
+          "drink-driving",
+          "a drink-driver"
+        ],
+        "options": [
+          "a bottle of whiskey",
+          "a mobile phone"
+        ]
+      },
+      {
+        "prompts": [
+          "to blackmail someone",
+          "blackmail",
+          "a blackmailer"
+        ],
+        "options": [
+          "a wealthy businessman",
+          "designer handbags"
+        ]
+      },
+      {
+        "prompts": [
+          "to bribe someone",
+          "bribery"
+        ],
+        "options": [
+          "a police officer",
+          "a work of art"
+        ]
+      },
+      {
+        "prompts": [
+          "to sell drogs",
+          "drog dealing",
+          "a drug dealer"
+        ],
+        "options": [
+          "2 tonnes of packaged drug",
+          "packed meat"
+        ]
+      },
+      {
+        "prompts": [
+          "to mug someone",
+          "mugging",
+          "a mugger"
+        ],
+        "options": [
+          "a tourist",
+          "a Chinese vase"
+        ]
+      },
+      {
+        "prompts": [
+          "to rape someone",
+          "rape",
+          "a rapist"
+        ],
+        "options": [
+          "a woman",
+          "the verdict"
+        ]
+      },
+      {
+        "prompts": [
+          "to smuggle something into somewhere",
+          "smuggling",
+          "a smuggler"
+        ],
+        "options": [
+          "weapons",
+          "community service"
+        ]
+      },
+      {
+        "prompts": [
+          "to sell illegal copies of digital products",
+          "piracy",
+          "a pirate"
+        ],
+        "options": [
+          "the latest blockbuster",
+          "laptop computers"
+        ]
+      },
+      {
+        "prompts": [
+          "to set fire to something",
+          "arson",
+          "arsonist"
+        ],
+        "options": [
+          "a forest",
+          "life imprisonment"
+        ]
+      },
+      {
+        "prompts": [
+          "commit a crime",
+          "steal photocopying paper & other stationery from the office",
+          "steal bicycles to resell them"
+        ],
+        "options": [
+          "thief",
+          "burglar"
+        ]
+      },
+      {
+        "prompts": [
+          "be caught on camera",
+          "be caught in the act"
+        ],
+        "options": [
+          "shoplifter",
+          "trial"
+        ]
+      },
+      {
+        "prompts": [
+          "break car windows & road signs",
+          "be sentenced to 300 hrs of community service",
+          "be ordered to pay a fine of 300 dollars"
+        ],
+        "options": [
+          "vandal",
+          "fraudster"
+        ]
+      },
+      {
+        "prompts": [
+          "investigate the crime",
+          "catch the criminal",
+          "question the suspect"
+        ],
+        "options": [
+          "police",
+          "criminal"
+        ]
+      },
+      {
+        "prompts": [
+          "be arrested for mugging",
+          "be charged with murder",
+          "be accused of committing a crime"
+        ],
+        "options": [
+          "criminal",
+          "police"
+        ]
+      },
+      {
+        "prompts": [
+          "appear in court",
+          "be tried",
+          "plead guilty"
+        ],
+        "options": [
+          "the accused",
+          "a hostage"
+        ]
+      },
+      {
+        "prompts": [
+          "have an alibi",
+          "be found not guilty",
+          "be acquitted & allowed to go free"
+        ],
+        "options": [
+          "suspect",
+          "a witness to the crime"
+        ]
+      },
+      {
+        "prompts": [
+          "give evidence",
+          "report an incident",
+          "give strong evidence against the suspect"
+        ],
+        "options": [
+          "witness",
+          "victim"
+        ]
+      },
+      {
+        "prompts": [
+          "have reached their verdict",
+          "a group of members of the public"
+        ],
+        "options": [
+          "jury",
+          "murder suspects"
+        ]
+      },
+      {
+        "prompts": [
+          "be on probation",
+          "be let off with a warning",
+          "be given two years' probation"
+        ],
+        "options": [
+          "a young offender",
+          "a persistent offender"
+        ]
+      },
+      {
+        "prompts": [
+          "be given a life sentence",
+          "be given the death penalty",
+          "be sentenced to life imprisonment",
+          "be sentenced to death"
+        ],
+        "options": [
+          "murderer",
+          "first-time offender"
+        ]
+      },
+      {
+        "prompts": [
+          "reduce his prison sentence",
+          "\"Silence, or I'll empty the courtroom!\"",
+          "sentenced him to 7 years for fraud and bribery"
+        ],
+        "options": [
+          "judge",
+          "proof"
+        ]
+      },
+      {
+        "prompts": [
+          "be doing/serving time for mugging",
+          "break the law",
+          "be convicted of war crimes"
+        ],
+        "options": [
+          "criminal",
+          "jury"
+        ]
+      },
+      {
+        "prompts": [
+          "bring criminals to justice",
+          "protect the public",
+          "solve/crack a case"
+        ],
+        "options": [
+          "police officer",
+          "an accomplice"
+        ]
+      }
+    ]
   }
 ]
