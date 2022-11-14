@@ -210,5 +210,25 @@
       "Are you a vegetarian or vegan? If not, do you think you could ever be one?",
       "Do you usually have breakfast? What do you normally have?"
     ]
+  },
+  {
+    "id": "9",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Shopping for clothes",
+    "language": "Talking about shopping habits",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2022, 11, 14",
+    "cards": [
+      "Which one do you enjoy more, shopping for food or shopping for clothes? Why? Why not",
+      "Where do you normally buy your clothes? Do you have a favourite place?",
+      "How often do you buy new clothes?",
+      "What is the most important for you when you're shoping: quality, the price or a brand?",
+      "Do you know someone who has too many clothes?",
+      "What is your favourite item of clothing right now?",
+      "Have you ever bought an item of clothing you liked in the shop but you have never worn?",
+      "Do you prefer to buy clothes on your own, with a family member or with a friend?"
+    ]
   }
 ]
