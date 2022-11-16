@@ -5,10 +5,10 @@ export class Validators {
 
     return (form: AbstractControl) => {
 
-      const response = form.value[usersResponse];
-      const correct = form.value[expectedAnswer];
+      const response: string = form.value[usersResponse];
+      const correct: string[] = form.value[expectedAnswer];
 
-      if (response === correct) {
+      if (correct.includes(response)) {
         return null;
       }
       return { checkMatch: true }

@@ -60,7 +60,7 @@ export class StoryPuzzleComponent implements OnInit {
 
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
-    console.log(this.data.instructionsOne);
+    console.log(this.data.cards)
     /* this.currentPack = this.data.cards; */
   }
 

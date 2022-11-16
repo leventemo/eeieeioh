@@ -12,7 +12,7 @@ import { Validators } from '../validators'
 
 interface Card {
   question: string;
-  correct: string;
+  correct: string[];
 }
 
 interface Data {
@@ -42,7 +42,7 @@ export class EscapeRoomComponent implements OnInit {
   hasItStarted = false;
   areQnsDone = false;
   isItAllDone = false;
-  currentCard: Card = { question: '', correct: '' };
+  currentCard: Card = { question: '', correct: [] };
   currentCardCounter = 0;
   cardsTotal = () => this.data.cards.length;
   secondsPerSolution = 0;
