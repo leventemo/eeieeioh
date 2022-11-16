@@ -547,7 +547,7 @@
     "title": "Hypothetical meaning",
     "language": "Unreal Past",
     "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
-    "datePublished": "2022, 08, 28",
+    "datePublished": "2022, 11, 16",
     "cards": [
       {
         "question": "I wish it _____ (not be) so difficult to write an original piece of music these days.",
@@ -625,14 +625,14 @@
         ]
       },
       {
-        "question": "Do you mind if I smoke? – Well, I'd rather you _____ (do) actually.",
+        "question": "Do you mind if I smoke? – Well, I'd rather you _____ (not do) actually.",
         "correct": [
           "didn't",
           "did not"
         ]
       },
       {
-        "question": "I'd rather you _____ (tell) them. It has caused a lot of confusion.",
+        "question": "I'd rather you _____ (not tell) them. It has caused a lot of confusion.",
         "correct": [
           "hadn't told",
           "had not told"
@@ -675,12 +675,6 @@
         "correct": [
           "was",
           "were"
-        ]
-      },
-      {
-        "question": "QQQ",
-        "correct": [
-          "AAA"
         ]
       }
     ]
