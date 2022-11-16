@@ -539,5 +539,150 @@
         ]
       }
     ]
+  },
+  {
+    "id": "6",
+    "level": "B2",
+    "skill": "",
+    "title": "Hypothetical meaning",
+    "language": "Unreal Past",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
+    "datePublished": "2022, 08, 28",
+    "cards": [
+      {
+        "question": "I wish it _____ (not be) so difficult to write an original piece of music these days.",
+        "correct": [
+          "wasn't",
+          "weren't",
+          "was not",
+          "were not"
+        ]
+      },
+      {
+        "question": "I wish I _____ (can) remember where I put the car keys.",
+        "correct": [
+          "could"
+        ]
+      },
+      {
+        "question": "I can't afford to travel. If only I _____ (have) a better-paid job!",
+        "correct": [
+          "had"
+        ]
+      },
+      {
+        "question": "If only I _____ (have) more time to do nothing!",
+        "correct": [
+          "had"
+        ]
+      },
+      {
+        "question": "I'm beginning to wish we _____ (not buy) that indoor exercise bike. It's just collecting dust.",
+        "correct": [
+          "hadn't bought",
+          "had not bought"
+        ]
+      },
+      {
+        "question": "I wish I _____ (start) learning to drive when I was 16.",
+        "correct": [
+          "had started",
+          "'d started"
+        ]
+      },
+      {
+        "question": "If only you _____ (tell) me about the changes earlier!",
+        "correct": [
+          "had told",
+          "'d told"
+        ]
+      },
+      {
+        "question": "If only I _____ (bring) my phone charger!",
+        "correct": [
+          "had brought",
+          "'d brought"
+        ]
+      },
+      {
+        "question": "I wish you _____ (stop) arguing with me. Now!",
+        "correct": [
+          "would stop",
+          "'d stop"
+        ]
+      },
+      {
+        "question": "If only it _____ (stop) raining! I want to go out and meet my buddies.",
+        "correct": [
+          "would stop",
+          "'d stop"
+        ]
+      },
+      {
+        "question": "I'd rather you _____ (go) to get some butter for the cake now.",
+        "correct": [
+          "went"
+        ]
+      },
+      {
+        "question": "Do you mind if I smoke? – Well, I'd rather you _____ (do) actually.",
+        "correct": [
+          "didn't",
+          "did not"
+        ]
+      },
+      {
+        "question": "I'd rather you _____ (tell) them. It has caused a lot of confusion.",
+        "correct": [
+          "hadn't told",
+          "had not told"
+        ]
+      },
+      {
+        "question": "This car is falling apart. I'd rather we _____ (never buy) it.",
+        "correct": [
+          "had never bought",
+          "'d never bought"
+        ]
+      },
+      {
+        "question": "It's about time you _____ (buy) a new phone.",
+        "correct": [
+          "bought"
+        ]
+      },
+      {
+        "question": "It's time you _____ (go) to bed. You've got school tomorrow.",
+        "correct": [
+          "went"
+        ]
+      },
+      {
+        "question": "It's high time you _____ (stop) talking and get down to some work.",
+        "correct": [
+          "stopped"
+        ]
+      },
+      {
+        "question": "The floods were rising and it seemed as if it _____ (be) the end of the world.",
+        "correct": [
+          "was",
+          "were"
+        ]
+      },
+      {
+        "question": "From this angle, the island looks as though it _____ (be) a sleeping giant lying on his back.",
+        "correct": [
+          "was",
+          "were"
+        ]
+      },
+      {
+        "question": "QQQ",
+        "correct": [
+          "AAA"
+        ]
+      }
+    ]
   }
 ]
