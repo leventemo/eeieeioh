@@ -261,11 +261,21 @@
   },
   {
     "level": "B1",
-    "title": "Talking about friendship",
+    "title": "Talking about friendship (1)",
     "skill": "SP",
     "language": "conversation",
     "slug": "/timed-cards",
     "id": "10",
+    "activity": "Timed Cards",
+    "datePublished": "2022, 11, 17"
+  },
+  {
+    "level": "B1",
+    "title": "Talking about friendship (2)",
+    "skill": "SP",
+    "language": "conversation",
+    "slug": "/timed-cards",
+    "id": "11",
     "activity": "Timed Cards",
     "datePublished": "2022, 11, 17"
   },
