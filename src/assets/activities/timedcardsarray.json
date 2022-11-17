@@ -233,5 +233,37 @@
       "Do you like shopping in large supermarkets?",
       "Are you good at finding good deals?"
     ]
+  },
+  {
+    "id": "10",
+    "level": "B1",
+    "skill": "SP",
+    "title": "Talking about friendship",
+    "language": "conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2022, 11, 17",
+    "cards": [
+      "What makes a good friend?",
+      "Do you think you will keep in touch with your friends all your life?",
+      "How many close friends do you have? How many of them can humans have?",
+      "Can you describe one of your closest friends and the qualities you like about him/her?",
+      "Do you have any childhood friends you're still friends with?",
+      "Do you have any long-distance friends? How do you keep in touch? How often do you see each other?",
+      "Do you make friends easily?",
+      "How are your present friendships different compared to what they were like when you were a child?",
+      "How can we maintain a good friendship?",
+      "How do you make new friends?",
+      "Is it common to have friendships across generations? What are the advantages and disadvantages?",
+      "What do you usually do with your friends?",
+      "What is the longest friendship that you have had?",
+      "What makes friends different from family?",
+      "Do you think it is possible to be best friends with someone of the opposite sex?",
+      "Can you give examples of how a friend has influenced your life?",
+      "Why do we need friends? What are friends for?",
+      "What do you do when you have a disagreement with your friend?",
+      "What qualities help you to have good relationships with others?",
+      "To what extent can you be friends with your parents or children?"
+    ]
   }
 ]
