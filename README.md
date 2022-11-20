@@ -143,7 +143,7 @@ Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
 
 Changelog Component
-- [ ] set up sort on init
+- [ ] set up sort on init: <https://bobbyhadz.com/blog/javascript-sort-array-of-objects-by-date-property>
 
 Escape Room Component
 - [ ] clean CSS

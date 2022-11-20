@@ -20,6 +20,7 @@ export interface Contents {
   templateUrl: './changelog.component.html',
   styleUrls: ['./changelog.component.css']
 })
+
 export class ChangelogComponent implements OnInit {
 
   data: Contents[] = contentsData;
