@@ -48,7 +48,6 @@ test favicon on desktop browsers
 
 Footer Component redo:
   eeieeioh
-  - [x] about
   - [x] abbreviations
   - [x] guide to activities
   - [x] changelog
@@ -141,9 +140,7 @@ Not Found Component
 
 Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
-
-Changelog Component
-- [ ] set up sort on init: <https://bobbyhadz.com/blog/javascript-sort-array-of-objects-by-date-property>
+- [ ] reconfig & style pagination so it fits into the table as the last row
 
 Escape Room Component
 - [ ] clean CSS

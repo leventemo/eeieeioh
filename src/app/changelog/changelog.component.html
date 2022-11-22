@@ -4,10 +4,12 @@
     <mat-icon class="icon">playlist_add_check</mat-icon>
   </div>
   <h2>What is this?</h2>
-  <p>It's a non-technical log of additions. Click on the header titles to sort the columns. If you need a searchable
+  <p>It's a non-technical log of additions. The default sorting is based on the "Date" column but you can click on the
+    other headers to change that. If you need a searchable
     table, use the <a [routerLink]="'/contents'">Contents page.</a></p>
 
-  <mat-table matSort [dataSource]=" dataSource" class="mat-elevation-z8">
+  <mat-table matSort matSortDisableClear matSortActive="datePublished" matSortDirection="asc" [dataSource]=" dataSource"
+    class="mat-elevation-z8">
 
     <ng-container matColumnDef="datePublished">
       <mat-header-cell mat-sort-header *matHeaderCellDef class="date-published-cell">Date</mat-header-cell>
