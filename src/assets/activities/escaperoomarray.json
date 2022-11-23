@@ -678,5 +678,136 @@
         ]
       }
     ]
+  },
+  {
+    "id": "7",
+    "level": "B2",
+    "skill": "",
+    "title": "Binomials",
+    "language": "fixed phrases",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
+    "datePublished": "2022, 11, 16",
+    "cards": [
+      {
+        "question": "safe and _____",
+        "correct": [
+          "sound"
+        ]
+      },
+      {
+        "question": "alive and _____",
+        "correct": [
+          "kicking"
+        ]
+      },
+      {
+        "question": "cheap and _____",
+        "correct": [
+          "cheerful"
+        ]
+      },
+      {
+        "question": "up-and-_____",
+        "correct": [
+          "coming"
+        ]
+      },
+      {
+        "question": "chalk and _____",
+        "correct": [
+          "cheese"
+        ]
+      },
+      {
+        "question": "the ins and _____",
+        "correct": [
+          "outs"
+        ]
+      },
+      {
+        "question": "the highs and _____",
+        "correct": [
+          "lows"
+        ]
+      },
+      {
+        "question": "my bread and _____",
+        "correct": [
+          "butter"
+        ]
+      },
+      {
+        "question": "odds and _____",
+        "correct": [
+          "ends"
+        ]
+      },
+      {
+        "question": "cut and _____",
+        "correct": [
+          "dried"
+        ]
+      },
+      {
+        "question": "dos and _____",
+        "correct": [
+          "don'ts"
+        ]
+      },
+      {
+        "question": "pros and _____",
+        "correct": [
+          "cons"
+        ]
+      },
+      {
+        "question": "pins and _____",
+        "correct": [
+          "needles"
+        ]
+      },
+      {
+        "question": "the Stars and _____",
+        "correct": [
+          "Stripes"
+        ]
+      },
+      {
+        "question": "touch-and-_____",
+        "correct": [
+          "go"
+        ]
+      },
+      {
+        "question": "give or _____",
+        "correct": [
+          "take"
+        ]
+      },
+      {
+        "question": "make or _____",
+        "correct": [
+          "break"
+        ]
+      },
+      {
+        "question": "sink or _____",
+        "correct": [
+          "swim"
+        ]
+      },
+      {
+        "question": "now or _____",
+        "correct": [
+          "never"
+        ]
+      },
+      {
+        "question": "(come) rain or _____",
+        "correct": [
+          "shine"
+        ]
+      }
+    ]
   }
 ]
