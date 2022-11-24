@@ -515,7 +515,7 @@
         ]
       },
       {
-        "question": "Please put your money _____, I’m paying.",
+        "question": "Please put your money _____, I'm paying.",
         "correct": [
           "away"
         ]
@@ -553,7 +553,9 @@
         "question": "I wish it _____ (not be) so difficult to write an original piece of music these days.",
         "correct": [
           "wasn't",
+          "wasn’t",
           "weren't",
+          "weren’t",
           "was not",
           "were not"
         ]
@@ -580,6 +582,7 @@
         "question": "I'm beginning to wish we _____ (not buy) that indoor exercise bike. It's just collecting dust.",
         "correct": [
           "hadn't bought",
+          "hadn’t bought",
           "had not bought"
         ]
       },
@@ -587,35 +590,40 @@
         "question": "I wish I _____ (start) learning to drive when I was 16.",
         "correct": [
           "had started",
-          "'d started"
+          "'d started",
+          "’d started"
         ]
       },
       {
         "question": "If only you _____ (tell) me about the changes earlier!",
         "correct": [
           "had told",
-          "'d told"
+          "'d told",
+          "’d told"
         ]
       },
       {
         "question": "If only I _____ (bring) my phone charger!",
         "correct": [
           "had brought",
-          "'d brought"
+          "'d brought",
+          "’d brought"
         ]
       },
       {
         "question": "I wish you _____ (stop) arguing with me. Now!",
         "correct": [
           "would stop",
-          "'d stop"
+          "'d stop",
+          "’d stop"
         ]
       },
       {
         "question": "If only it _____ (stop) raining! I want to go out and meet my buddies.",
         "correct": [
           "would stop",
-          "'d stop"
+          "'d stop",
+          "’d stop"
         ]
       },
       {
@@ -628,6 +636,7 @@
         "question": "Do you mind if I smoke? – Well, I'd rather you _____ (not do) actually.",
         "correct": [
           "didn't",
+          "didn’t",
           "did not"
         ]
       },
@@ -635,6 +644,7 @@
         "question": "I'd rather you _____ (not tell) them. It has caused a lot of confusion.",
         "correct": [
           "hadn't told",
+          "hadn’t told",
           "had not told"
         ]
       },
@@ -642,7 +652,8 @@
         "question": "This car is falling apart. I'd rather we _____ (never buy) it.",
         "correct": [
           "had never bought",
-          "'d never bought"
+          "'d never bought",
+          "’d never bought"
         ]
       },
       {
@@ -751,7 +762,8 @@
       {
         "question": "dos and _____",
         "correct": [
-          "don'ts"
+          "don'ts",
+          "don’ts"
         ]
       },
       {
