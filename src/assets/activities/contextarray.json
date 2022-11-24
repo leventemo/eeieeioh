@@ -1253,5 +1253,196 @@
         ]
       }
     ]
+  },
+  {
+    "id": "5",
+    "level": "B2",
+    "skill": "",
+    "title": "Binomials",
+    "language": "fixed phrases",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2022, 11, 24",
+    "cards": [
+      {
+        "prompts": [
+          "Five days later, the missing children were found _____."
+        ],
+        "options": [
+          "safe and sound",
+          "up-and-coming"
+        ]
+      },
+      {
+        "prompts": [
+          "My great-grandmother is still _____."
+        ],
+        "options": [
+          "alive and kicking",
+          "chalk and cheese"
+        ]
+      },
+      {
+        "prompts": [
+          "The new pizza place is kind of _____. Not very expensive and the food is OK."
+        ],
+        "options": [
+          "cheap and cheerful",
+          "the ins and outs"
+        ]
+      },
+      {
+        "prompts": [
+          "The festival is a great opportunity for _____ performers to showcase their work."
+        ],
+        "options": [
+          "up-and-coming",
+          "cut and dried"
+        ]
+      },
+      {
+        "prompts": [
+          "The two brothers are as different as _____."
+        ],
+        "options": [
+          "chalk and cheese",
+          "the Stars and Stripes"
+        ]
+      },
+      {
+        "prompts": [
+          "I don't really know the _____ of setting up a Discord server."
+        ],
+        "options": [
+          "ins and outs",
+          "pins and needles"
+        ]
+      },
+      {
+        "prompts": [
+          "His autobiography reveals the _____ of an actor’s life."
+        ],
+        "options": [
+          "highs and lows",
+          "rain or shine"
+        ]
+      },
+      {
+        "prompts": [
+          "Well, it’s not my dream job but I can earn _____."
+        ],
+        "options": [
+          "my bread and butter",
+          "alive and kicking"
+        ]
+      },
+      {
+        "prompts": [
+          "He didn’t keep much in his drawer - just a few _____."
+        ],
+        "options": [
+          "odds and ends",
+          "bread and butter"
+        ]
+      },
+      {
+        "prompts": [
+          "I don’t think the plan is as _____ as most of us think."
+        ],
+        "options": [
+          "cut and dried",
+          "pros and cons"
+        ]
+      },
+      {
+        "prompts": [
+          "The booklet lists the _____ of caring for dogs."
+        ],
+        "options": [
+          "dos and don'ts",
+          "give or take"
+        ]
+      },
+      {
+        "prompts": [
+          "We discussed the _____ of starting a new business."
+        ],
+        "options": [
+          "pros and cons",
+          "touch-and-go"
+        ]
+      },
+      {
+        "prompts": [
+          "I need to stand up and move; I’m starting to get _____ in my leg."
+        ],
+        "options": [
+          "pins and needles",
+          "safe and sound"
+        ]
+      },
+      {
+        "prompts": [
+          "How many stars are there on _____?"
+        ],
+        "options": [
+          "the Stars and Stripes",
+          "the highs and lows"
+        ]
+      },
+      {
+        "prompts": [
+          "It was a bit _____ but I managed to pass the driving test eventually."
+        ],
+        "options": [
+          "touch-and-go",
+          "odds and ends"
+        ]
+      },
+      {
+        "prompts": [
+          "Costs could amount to 1,000 pounds, _____ 50 pounds or so."
+        ],
+        "options": [
+          "give or take",
+          "sink or swim"
+        ]
+      },
+      {
+        "prompts": [
+          "This could be a _____ concert for the new band."
+        ],
+        "options": [
+          "make or break",
+          "dos and don'ts"
+        ]
+      },
+      {
+        "prompts": [
+          "They don’t give you a lot of guidance - you’re just left to _____."
+        ],
+        "options": [
+          "sink or swim",
+          "cheap and cheerful"
+        ]
+      },
+      {
+        "prompts": [
+          "This is your last chance to talk to her, Johnny; it’s _____."
+        ],
+        "options": [
+          "now or never",
+          "up-and-coming"
+        ]
+      },
+      {
+        "prompts": [
+          "I’ll be there for you _____, I promise."
+        ],
+        "options": [
+          "(come) rain or shine",
+          "ins and outs"
+        ]
+      }
+    ]
   }
 ]
