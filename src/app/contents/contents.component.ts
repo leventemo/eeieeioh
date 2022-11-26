@@ -26,7 +26,7 @@ export interface Contents {
 export class ContentsComponent implements OnInit {
   isMothFlying = true;
 
-  numberOfDaysUntilNew = 60;
+  numberOfDaysUntilNew = 31;
   data: Contents[] = contentsData;
 
   dataSource = new MatTableDataSource(this.data);

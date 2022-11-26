@@ -141,6 +141,8 @@ Not Found Component
 Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
 - [ ] reconfig & style pagination so it fits into the table as the last row
+- [ ] feed number of pages dynamically, so there's no need to reset "all hits" manually when number grows
+- [ ] feed array from all diff activity-arrays and delete `contentsarray.json` (double data)
 
 Escape Room Component
 - [ ] clean CSS
