@@ -30,7 +30,7 @@ export class ContentsComponent implements OnInit {
   data: Contents[] = contentsData;
 
   dataSource = new MatTableDataSource(this.data);
-  displayedColumns: string[] = ['title', 'language', 'skill', 'level', 'activity'];
+  displayedColumns: string[] = ['title', 'language', 'level', 'activity'];
 
   @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
 

@@ -7,6 +7,7 @@
   </div>
 
   <mat-table [dataSource]="dataSource">
+
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
       <mat-cell *matCellDef="let item" class="title-cell">
@@ -19,23 +20,18 @@
     </ng-container>
 
     <ng-container matColumnDef="language">
-      <mat-header-cell *matHeaderCellDef>Language</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.language}}</mat-cell>
-    </ng-container>
-
-    <ng-container matColumnDef="skill">
-      <mat-header-cell *matHeaderCellDef>Skill</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.skill}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="column-gap">Language</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="column-gap">{{item.language}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="level">
-      <mat-header-cell *matHeaderCellDef>Level</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.level}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="center-text">Level</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="center-text">{{item.level}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="activity">
-      <mat-header-cell *matHeaderCellDef>Activity</mat-header-cell>
-      <mat-cell *matCellDef="let item">
+      <mat-header-cell *matHeaderCellDef class="column-gap">Activity</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="column-gap">
         <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
       </mat-cell>
     </ng-container>
@@ -44,7 +40,8 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
-  <mat-paginator [pageSizeOptions]="[15, 30, 50]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons [hidePageSize]="true"></mat-paginator>
+
   <lottie-player *ngIf="isMothFlying" (click)="smashMoth()" class="lottie-moth" src="/assets/img/moth.json"
     background="transparent" speed="1" loop autoplay>
   </lottie-player>

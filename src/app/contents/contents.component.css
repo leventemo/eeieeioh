@@ -8,7 +8,11 @@
 .container {
   flex-grow: 1;
   max-width: 42rem;
-  margin: 0 .5rem 0 .5rem;
+  margin: 0 0 0 .5rem;
+}
+
+.form-field-wrapper {
+  margin-top: 1rem;
 }
 
 mat-form-field {
@@ -26,7 +30,8 @@ mat-form-field {
   left: 5px;
 }
 
-mat-table {
+mat-table,
+mat-paginator {
   width: 100%;
   box-shadow: none;
 }
@@ -38,7 +43,8 @@ mat-table {
   height: 20rem;
 }
 
-mat-header-cell {
+mat-header-cell,
+mat-paginator {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-weight: bold;
   font-size: .9rem;
@@ -52,28 +58,32 @@ mat-cell {
 }
 
 .mat-column-title {
-  flex: 0 0 28%;
+  flex: 0 0 33%;
 }
 
 .mat-column-language {
-  flex: 0 0 27%;
-}
-
-.mat-column-skill {
-  flex: 0 0 10%;
+  flex: 0 0 25%;
 }
 
 .mat-column-level {
-  flex: 0 0 10%;
+  flex: 0 0 12%;
 }
 
 .mat-column-activity {
-  flex: 0 0 25%;
+  flex: 0 0 30%;
 }
 
 .mat-cell,
 .mat-header-cell {
   padding: 0 0 0 0;
+}
+
+.column-gap {
+  padding-left: .5rem;
+}
+
+.center-text {
+  justify-content: center;
 }
 
 a {
