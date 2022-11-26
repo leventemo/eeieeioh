@@ -62,10 +62,12 @@ Footer Component redo:
   - [ ] patreon
   - [ ] buy me a coffee
 
-  fave links
+  links
   - [ ] dictionaries: html done
-  - [ ] corpus: html done
+  - [ ] corpus and friends: html done
   - [ ] video
+  - [ ] audio
+  - [ ] misc
 
   copyright + logo: full-width col
 
