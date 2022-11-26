@@ -8,8 +8,8 @@
     other headers to change that. If you need a searchable
     table, use the <a [routerLink]="'/contents'">Contents page.</a></p>
 
-  <mat-table matSort matSortDisableClear matSortActive="datePublished" matSortDirection="asc" [dataSource]=" dataSource"
-    class="mat-elevation-z8">
+  <mat-table matSort matSortDisableClear matSortActive="datePublished" matSortDirection="desc"
+    [dataSource]=" dataSource" class="mat-elevation-z8">
 
     <ng-container matColumnDef="datePublished">
       <mat-header-cell mat-sort-header *matHeaderCellDef class="date-published-cell">Date</mat-header-cell>
