@@ -130,6 +130,7 @@ Timed-Cards Component
 
 Duels Component
 - [ ] review
+- [ ] better animation in options
 
 Reword Component
 - [ ] adjust FB card top margin (too high on mobile to see the Contents btn)

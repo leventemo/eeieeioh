@@ -109,8 +109,8 @@
   },
   {
     "level": "A2",
-    "title": "Covering letter",
-    "language": "GR, VOC, SPE",
+    "title": "Writing: Covering letter",
+    "language": "error correction",
     "slug": "/expandables",
     "id": "5",
     "activity": "Expandables",
@@ -118,8 +118,8 @@
   },
   {
     "level": "A2",
-    "title": "Covering letter",
-    "language": "GR, VOC, SPE",
+    "title": "Writing: Covering letter",
+    "language": "error correction",
     "slug": "/duels",
     "id": "5",
     "activity": "Duels",
@@ -151,24 +151,6 @@
     "id": "5",
     "activity": "Escape Room",
     "datePublished": "2022, 08, 28"
-  },
-  {
-    "level": "A2 up",
-    "title": "The Right Question (1)",
-    "language": "question forms",
-    "slug": "/cards",
-    "id": "3",
-    "activity": "Cards",
-    "datePublished": "2022, 09, 02"
-  },
-  {
-    "level": "A2 up",
-    "title": "The Right Question (2)",
-    "language": "question forms",
-    "slug": "/cards",
-    "id": "4",
-    "activity": "Cards",
-    "datePublished": "2022, 09, 02"
   },
   {
     "level": "B1",
@@ -271,8 +253,8 @@
   },
   {
     "level": "B1",
-    "title": "EC: Somebody I know",
-    "language": "GR, VOC, SPE",
+    "title": "Writing: Somebody I know",
+    "language": "error correction",
     "slug": "/expandables",
     "id": "2",
     "activity": "Expandables",
@@ -280,8 +262,8 @@
   },
   {
     "level": "B1",
-    "title": "EC: Somebody I know",
-    "language": "VOC, GR, SPE",
+    "title": "Writing: Somebody I know",
+    "language": "error correction",
     "slug": "/duels",
     "id": "2",
     "activity": "Duels",
@@ -295,6 +277,33 @@
     "id": "9",
     "activity": "Timed Cards",
     "datePublished": "2022, 11, 14"
+  },
+  {
+    "level": "B1 up",
+    "title": "The Right Question (1)",
+    "language": "question forms",
+    "slug": "/cards",
+    "id": "3",
+    "activity": "Cards",
+    "datePublished": "2022, 09, 02"
+  },
+  {
+    "level": "B1 up",
+    "title": "The Right Question (2)",
+    "language": "question forms",
+    "slug": "/cards",
+    "id": "4",
+    "activity": "Cards",
+    "datePublished": "2022, 09, 02"
+  },
+  {
+    "level": "B1 up",
+    "title": "Yes-No Game (1)",
+    "language": "fillers, hesitating",
+    "slug": "/timed-cards",
+    "id": "1",
+    "activity": "Timed Cards",
+    "datePublished": "2022, 08, 05"
   },
   {
     "level": "B2",
@@ -360,15 +369,6 @@
     "datePublished": "2022, 05, 09"
   },
   {
-    "level": "B2, C1",
-    "title": "Crime",
-    "language": "Vocabulary: Crime",
-    "slug": "/context",
-    "id": "4",
-    "activity": "Context",
-    "datePublished": "2022, 11, 07"
-  },
-  {
     "level": "B2",
     "title": "Hypothetical Meaning",
     "language": "unreal past",
@@ -405,18 +405,9 @@
     "datePublished": "2022, 08, 05"
   },
   {
-    "level": "B1 up",
-    "title": "Yes-No Game (1)",
-    "language": "fillers, hesitating",
-    "slug": "/timed-cards",
-    "id": "1",
-    "activity": "Timed Cards",
-    "datePublished": "2022, 08, 05"
-  },
-  {
     "level": "B2",
-    "title": "EC: My Dream House",
-    "language": "GR, VOC, SPE",
+    "title": "Writing: My Dream House",
+    "language": "error correction",
     "slug": "/expandables",
     "id": "3",
     "activity": "Expandables",
@@ -424,12 +415,21 @@
   },
   {
     "level": "B2",
-    "title": "EC: My Dream House",
-    "language": "VOC, GR, SPE",
+    "title": "Writing: My Dream House",
+    "language": "error correction",
     "slug": "/duels",
     "id": "3",
     "activity": "Duels",
     "datePublished": "2022, 07, 29"
+  },
+  {
+    "level": "C1",
+    "title": "Crime",
+    "language": "Vocabulary: Crime",
+    "slug": "/context",
+    "id": "4",
+    "activity": "Context",
+    "datePublished": "2022, 11, 07"
   },
   {
     "level": "C1",
