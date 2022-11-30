@@ -34,12 +34,22 @@ mat-card-title {
 mat-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 85%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
+  padding: 4vh 1vw 4vh 1vw;
+}
+
+.tasks {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  font-weight: 400;
 }
 
 mat-card-actions {

@@ -2,7 +2,6 @@
   {
     "id": "1",
     "level": "A2",
-    "skill": "WR",
     "title": "ERR: Email to a friend",
     "language": "GR, VOC, SPEL",
     "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
@@ -118,7 +117,6 @@
   {
     "id": "2",
     "level": "B1",
-    "skill": "WR",
     "title": "ERR: Somebody I know",
     "language": "VOC, GR, SPEL",
     "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
@@ -262,7 +260,6 @@
   {
     "id": "3",
     "level": "B2",
-    "skill": "WR",
     "title": "ERR: My Dream House",
     "language": "VOC, GR, SPEL",
     "instructions": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
@@ -414,7 +411,6 @@
   {
     "id": "4",
     "level": "B2",
-    "skill": "WR",
     "title": "Fitness Graph",
     "language": "VOC, GR, SPEL",
     "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
@@ -494,7 +490,6 @@
   {
     "id": "5",
     "level": "A2",
-    "skill": "WR",
     "title": "Cover Letter",
     "language": "VOC, GR, SPEL",
     "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",

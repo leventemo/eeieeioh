@@ -7,18 +7,28 @@
   <mat-divider inset></mat-divider>
 
   <mat-card-content>
-    <h1>{{data.cards}}</h1>
-    <ul>
-      <li *ngFor="let item of data.cards">{{ item.before }}{{ item.chunk }}{{ item.after }}</li>
+    <h1 *ngIf="view === 1" class="tasks">{{ data.tasks[0] }}</h1>
+    <h1 *ngIf="view === 2" class="tasks">{{ data.tasks[1] }}</h1>
+    <h1 *ngIf="view === 3" class="tasks">{{ data.tasks[2] }}</h1>
+    <h1 *ngIf="view === 4" class="tasks">{{ data.tasks[3] }}</h1>
+
+    <ul *ngIf="view !== 4">
+      <li *ngFor="let item of data.cards">
+        <span *ngIf="view < 3">{{ item.before }}</span>
+        <span [ngClass]="getChunkClass()">{{ item.chunk }}</span>
+        <span *ngIf="view < 3">{{ item.after }}</span>
+      </li>
     </ul>
+
+    <a *ngIf="view === 4" [href]="data.url">Read the story</a>
+
   </mat-card-content>
 
   <mat-divider inset></mat-divider>
 
   <mat-card-actions align="end">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button color="primary" mat-button (click)="next()">{{ btnValue
-      }}</button>
+    <button color="primary" mat-button (click)="next()">Next</button>
     <button color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>

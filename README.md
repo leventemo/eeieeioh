@@ -99,9 +99,6 @@ REDO
 - [ ] create components folder?
 - [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 
-Nav Component
-- [ ] rename to Nav
-
 Hotel Check-in -> turn it into a Roleplay Component with A/B players getting their matching roles
 - [x] install Faker-js: <https://fakerjs.dev/>
 - [x] create check-in component
@@ -138,7 +135,6 @@ Reword Component
 
 Contents Component
 - [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
-- [ ] feed number of pages dynamically, so there's no need to reset "all hits" manually when number grows
 - [ ] feed array from all diff activity-arrays and delete `contentsarray.json` (double data)
 
 Escape Room Component
@@ -146,7 +142,6 @@ Escape Room Component
 - [ ] unsubscribe?
 
 Context Component
-- [ ] colour bullets: <https://www.w3.org/Style/Examples/007/color-bullets.en.html>
 - [ ] try toptal HTML entity for `<>` anchor tags
 - [] use this in template, rather than the 2 hardcoded btns
   ```html
@@ -156,7 +151,5 @@ Context Component
   ```
 - adjust checking & calculation of answers/results
 - [ ] review
-
-Board Game Component
 
 

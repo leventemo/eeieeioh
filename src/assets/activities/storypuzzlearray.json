@@ -2,23 +2,26 @@
   {
     "id": "1",
     "level": "A2",
-    "skill": "SP, WR",
-    "title": "Stuck in a Stack",
+    "title": "Stack Gets Stuck",
     "language": "Storytelling",
-    "instructions": "BLABLA",
-    "datePublished": "2022, 05, 05",
-    "instructionsOne": "1) Notice some collocations, fixed phrases or idioms in these sentences.",
-    "instructionsTwo": "2) Try to work out the meaning of the phrases in bold type from the context.",
-    "instructionsThree": "3) The phrases are taken from a true story and they are not in order. Can you guess what happened? Drag and drop to reorder them.",
+    "instructions": "Work with a partner and follow the instructions.",
+    "url": "https://www.theguardian.com/us-news/2022/oct/20/us-california-woman-contact-lenses-removal-eyes?utm_source=pocket_mylist",
+    "datePublished": "2022, 11, 29",
+    "tasks": [
+      "1) Notice some useful chunks in these sentences.",
+      "2) Try to work out the meaning of the highlighted phrases from the context.",
+      "3) The phrases are from a true story, listed in a random order. Can you guess what happened? Drag and drop to reorder them. Share your story with another group or the class.",
+      "4) Click on the link and read the original story."
+    ],
     "cards": [
       {
-        "before": "She has breathing problems, ",
-        "chunk": "she is complaining of blurry vision ",
+        "before": "She has breathing problems, she is ",
+        "chunk": "complaining of blurry vision ",
         "after": "and loss of balance."
       },
       {
-        "before": "",
-        "chunk": "my Guinness Book of World Record moment",
+        "before": "I thought this was ",
+        "chunk": "my Guinness Book of World Record moment.",
         "after": ""
       },
       {

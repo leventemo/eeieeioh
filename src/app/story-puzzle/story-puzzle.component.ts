@@ -16,9 +16,8 @@ interface Data {
   title: string;
   language: string;
   instructions: string;
-  instructionsOne: string;
-  instructionsTwo: string;
-  instructionsThree: string;
+  url: string;
+  tasks: string[]
   cards: Chunks[];
 }
 
@@ -35,9 +34,8 @@ export class StoryPuzzleComponent implements OnInit {
     title: '',
     language: '',
     instructions: '',
-    instructionsOne: '',
-    instructionsTwo: '',
-    instructionsThree: '',
+    url: '',
+    tasks: [''],
     cards: []
   };
 
@@ -45,8 +43,8 @@ export class StoryPuzzleComponent implements OnInit {
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
   currentCardCounter = 0;
-  btnValue = '';
-
+  view = 1;
+  highlightChunks = false;
 
   constructor(
     public router: Router,
@@ -60,8 +58,7 @@ export class StoryPuzzleComponent implements OnInit {
 
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
-    console.log(this.data.cards)
-    /* this.currentPack = this.data.cards; */
+
   }
 
   openDialog() {
@@ -69,7 +66,15 @@ export class StoryPuzzleComponent implements OnInit {
   }
 
   next() {
-    this.btnValue = 'nextButton';
+    ++this.view;
+  }
+
+  getChunkClass() {
+    if (this.view === 2) {
+      return 'highlight';
+    } else {
+      return '';
+    }
   }
 
   redirect() {

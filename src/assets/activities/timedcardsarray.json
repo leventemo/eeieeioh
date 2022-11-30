@@ -2,7 +2,6 @@
   {
     "id": "1",
     "level": "B1 up",
-    "skill": "SP",
     "title": "Yes-No Game (1)",
     "language": "fillers, hesitating",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. You are not allowed to use the words 'yes' or 'no' and you're not allowed to give a clear positive or negative answer. You need to speak like (some) politicians do.",
@@ -34,7 +33,6 @@
   {
     "id": "2",
     "level": "B1",
-    "skill": "SP",
     "title": "Exam Questions – B1 (1)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -57,7 +55,6 @@
   {
     "id": "3",
     "level": "B2",
-    "skill": "SP",
     "title": "Exam Questions – B2 (1)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -82,7 +79,6 @@
   {
     "id": "4",
     "level": "C1",
-    "skill": "SP",
     "title": "Exam Questions – C1 (1)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -105,7 +101,6 @@
   {
     "id": "5",
     "level": "A2",
-    "skill": "SP",
     "title": "When did you last ...? (1)",
     "language": "Past Simple, Past Time Expressions",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -132,7 +127,6 @@
   {
     "id": "6",
     "level": "A2",
-    "skill": "SP",
     "title": "When did you last ...? (2)",
     "language": "Past Simple, Past Time Expressions",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -160,7 +154,6 @@
   {
     "id": "7",
     "level": "B1",
-    "skill": "SP",
     "title": "What would you do if ...?",
     "language": "2nd Conditional",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -189,7 +182,6 @@
   {
     "id": "8",
     "level": "A2",
-    "skill": "SP",
     "title": "Talking about food",
     "language": "VOC: Food",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -214,7 +206,6 @@
   {
     "id": "9",
     "level": "B1",
-    "skill": "SP",
     "title": "Shopping habits",
     "language": "Talking about shopping",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -237,7 +228,6 @@
   {
     "id": "10",
     "level": "B1",
-    "skill": "SP",
     "title": "Talking about friendship (1)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -259,7 +249,6 @@
   {
     "id": "11",
     "level": "B1",
-    "skill": "SP",
     "title": "Talking about friendship (2)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
