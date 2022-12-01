@@ -266,5 +266,26 @@
       "What qualities help you to have good relationships with others?",
       "To what extent can you be friends with your parents or children?"
     ]
+  },
+  {
+    "id": "12",
+    "level": "B1",
+    "title": "Talking about communication",
+    "language": "conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2022, 12, 01",
+    "cards": [
+      "What is the most common way people communicate? Why?",
+      "What do you think is the oldest form of communication in human history?",
+      "How has technology changed the way we communicate?",
+      "Do you think technology has destroyed interpersonal communication?",
+      "Can you name some verbal and non-verbal forms of communication?",
+      "What makes it easy or difficult to talk to someone? What qualities do you look for in a conversation partner?",
+      "What kind of conversations you enjoy? What kind of conversations you enjoy the least? Why?",
+      "Who is a good conversationalist you know? What makes him/her so good?",
+      "When talking to a stranger, what topics are considered taboos in your country?",
+      "How does technology help you communicate?"
+    ]
   }
 ]
