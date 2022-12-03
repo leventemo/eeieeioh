@@ -17,6 +17,10 @@ mat-dialog-content {
   line-height: 2rem;
 }
 
+.questions-list {
+  margin-top: 1rem;
+}
+
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
   line-height: 1.5;

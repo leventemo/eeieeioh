@@ -61,7 +61,7 @@ export class TimedCardsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, cards: this.data.cards } });
   }
 
 

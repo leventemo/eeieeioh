@@ -1,6 +1,13 @@
 <div class="dialog-wrapper">
   <h1 mat-dialog-title>{{ data.title }}</h1>
-  <mat-dialog-content>{{ data.instr }}</mat-dialog-content>
+  <mat-dialog-content>
+    {{ data.instr }}
+    <div *ngIf="data.cards" class="questions-list">The questions in this activity:
+      <ul>
+        <li *ngFor="let item of data.cards">{{ item }}</li>
+      </ul>
+    </div>
+  </mat-dialog-content>
   <mat-dialog-actions align="end">
     <button mat-button color="primary" mat-dialog-close>Close</button>
   </mat-dialog-actions>
