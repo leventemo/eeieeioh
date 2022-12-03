@@ -2,9 +2,9 @@
   <h1 mat-dialog-title>{{ data.title }}</h1>
   <mat-dialog-content>
     {{ data.instr }}
-    <div *ngIf="data.cards" class="questions-list">Preview of cards:
+    <div *ngIf="data.preview" class="questions-list">Preview:
       <ul>
-        <li *ngFor="let item of data.cards">{{ item }}</li>
+        <li *ngFor="let item of data.preview">{{ item }}</li>
       </ul>
     </div>
   </mat-dialog-content>

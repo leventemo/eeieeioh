@@ -61,7 +61,7 @@ export class TimedCardsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, cards: this.data.cards } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, preview: this.data.cards } });
   }
 
 
@@ -96,7 +96,6 @@ export class TimedCardsComponent implements OnInit {
   clickNext() {
     if (this.pack.length === 0) {
       this.isItAllDone = true;
-      console.log('all qns done');
       return;
     }
     this.timeIsUp = false;

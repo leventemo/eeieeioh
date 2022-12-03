@@ -55,7 +55,7 @@ export class CardsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, cards: this.data.cards } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, preview: this.data.cards } });
   }
 
   next() {

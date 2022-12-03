@@ -128,6 +128,7 @@ Timed-Cards Component
 Duels Component
 - [ ] review
 - [ ] better animation in options
+- [ ] merge with Expandables: first Expandable, then Duels
 
 Reword Component
 - [ ] adjust FB card top margin (too high on mobile to see the Contents btn)
@@ -152,4 +153,12 @@ Context Component
 - adjust checking & calculation of answers/results
 - [ ] review
 
+rewrite Random Questions C1 (Timed Cards)
 
+Preview in Instructions Modal
+- [x] Timed Cards
+- [x] Cards
+- [ ] Escape Room
+- [x] Board Game
+- [ ] Reword
+- [ ]
