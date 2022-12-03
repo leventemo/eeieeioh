@@ -2,7 +2,7 @@
   <h1 mat-dialog-title>{{ data.title }}</h1>
   <mat-dialog-content>
     {{ data.instr }}
-    <div *ngIf="data.cards" class="questions-list">The questions in this activity:
+    <div *ngIf="data.cards" class="questions-list">Quick list of cards:
       <ul>
         <li *ngFor="let item of data.cards">{{ item }}</li>
       </ul>
