@@ -56,9 +56,6 @@ export class RankingComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<any>) {
-    console.log(`previousIndex: ${event.previousIndex}`);
-    console.log(`currentIndex: ${event.currentIndex}`);
-
     moveItemInArray(this.currentPack, event.previousIndex, event.currentIndex);
   }
 

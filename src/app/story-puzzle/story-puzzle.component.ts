@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { Utils } from '../utils';
 
 import allCardDecksCollection from '../../assets/activities/storypuzzlearray.json';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 interface Chunks {
   before: string;
@@ -39,11 +41,10 @@ export class StoryPuzzleComponent implements OnInit {
     cards: []
   };
 
-  currentPack: string[] = [];
+  chunkArray: string[] = [];
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
-  currentCardCounter = 0;
-  view = 1;
+  stepper = 0;
   highlightChunks = false;
 
   constructor(
@@ -59,6 +60,8 @@ export class StoryPuzzleComponent implements OnInit {
     // find the deck for id we got from the route
     this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
+    this.chunkArray = Utils.shuffleStringsArray(this.data.cards.map(item => item.chunk));
+
   }
 
   openDialog() {
@@ -66,15 +69,20 @@ export class StoryPuzzleComponent implements OnInit {
   }
 
   next() {
-    ++this.view;
+    ++this.stepper;
   }
 
   getChunkClass() {
-    if (this.view === 2) {
+    if (this.stepper === 1) {
       return 'highlight';
     } else {
       return '';
     }
+  }
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.chunkArray, event.previousIndex, event.currentIndex);
+    console.log(this.chunkArray);
   }
 
   redirect() {
