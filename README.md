@@ -1,58 +1,21 @@
 # eeieeioh
 
-## todos
+## todo
 Project-level
-- [x] set up Angular
-- [x] set up Angular Material: custom theme
-- [x] create material module
-- [x] set up favicon using `logo.svg`: too small
-- [x] set up branding using `logo.svg` + size it with CSS
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>
 * <https://www.positronx.io/angular-material-8-icons-tutorial-with-real-world-examples/>
-- [x] colour palette: primary, accent, warn
 - [ ] colour palette: background, etc.
 - [ ] colour palette: more palettes? – <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
-- [x] create header & footer components
-- [x] make footer icon a link to Home
-- [x] make header icon a link to Home
 - [ ] set up nav: <https://code-maze.com/angular-material-navigation/>
-- [x] lottie: <https://stackoverflow.com/questions/56825421/install-lottie-player-to-angular>
-* <https://lottiefiles.com/>
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 - [ ] animation on active links in nav
-- [ ] try global styles with CSS variables in `styles.css`
-* primary color
-* typography: `<h1`>, `<h2`>, `<a>` etc.
-- [x] try serving illustrations locally, rather than from assets links
-Angular maintainance: <https://javascript.plainenglish.io/creating-a-new-angular-project-here-is-what-you-need-to-do-71ba08587b1d>
-- [ ] CSS resets
-- [ ] polifills
-- [ ] noscript
 - [ ] testing
 - [ ] page transition/router animations: <https://www.youtube.com/watch?v=7JA90VI9fAI>
-- [ ] check accessibility concerns for lottie files:
-<https://github.com/airbnb/lottie-web/issues/1935>
-
-test favicon on desktop browsers
-- [x] Firefox tab
-- [ ] Firefox bookmark
-- [x] Chrome tab
-- [x] Chrome bookmark
-- [x] Opera tab
-- [x] Opera bookmark
-- [ ] Edge tab
-- [ ] Edge bookmark
-
+- [ ] check accessibility concerns for lottie files: <https://github.com/airbnb/lottie-web/issues/1935>
 - [ ] repleace logo in nav & footer with cropped version of svg & resize-reposition
 
-Footer Component redo:
-  eeieeioh
-  - [x] abbreviations
-  - [x] guide to activities
-  - [x] changelog
-  - [x] roadmap
-
+Component-level
   social
   - [ ] contact
   - [ ] twitter eeieeioh
@@ -88,7 +51,7 @@ Contact page
 - [ ] get rid of duplicate h1 css in `contact.component.css` & `about.component.css`
 - [x] typography in form: set it to custom typogr.
 - [ ] redo responsive layout & styling a la Cards, which has changed
-- [ ] snackbar: your message has been sent message
+- [ ] snackbar: "your message has been sent" msg
 - [ ] lazy loading?
 - [ ] sanitazion?
 - [x] automatic scroll to top on click of "Contact" btn (important on mobile screens)
@@ -144,7 +107,7 @@ Escape Room Component
 
 Context Component
 - [ ] try toptal HTML entity for `<>` anchor tags
-- [] use this in template, rather than the 2 hardcoded btns
+- [ ] use this in template, rather than the 2 hardcoded btns
   ```html
   <button *ngFor="let option of currentCard.options" class="option" id="btn-A"
     (click)="onClick(currentCard.options[0])" [disabled]="!hasItStarted">{{option}}
