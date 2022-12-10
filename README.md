@@ -1,38 +1,46 @@
 # eeieeioh
 
-## todo
-Project-level
+## about
+
+__eeieeioh.com__ is an app for teaching English
+* it's in active development, it's a single frontend build right now, built in Angular
+* by devising a range of "mini-apps", eg. __Context__, __Escape Room__, __Timed Cards__, __etc.__, I'm trying to explore how different classroom activities can be enhanced by interactivity, immediate feedback and gamification
+* by making TEFL material available online it eliminates the teacher's need for continuous reproduction on paper
+
+## todos
+
+### project-level todos
+better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>
 * <https://www.positronx.io/angular-material-8-icons-tutorial-with-real-world-examples/>
-- [ ] colour palette: background, etc.
-- [ ] colour palette: more palettes? – <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
-- [ ] set up nav: <https://code-maze.com/angular-material-navigation/>
+- [ ] refidefine & refine colour palette: <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
 - [ ] customize typography: <https://material.angular.io/guide/typography>
+
+other:
+- [ ] fix rando fn (Math.floor?) so it doesn't give 2 more often than 1
+- [ ] set up sidenav when needed: <https://code-maze.com/angular-material-navigation/>
 - [ ] animation on active links in nav
 - [ ] testing
 - [ ] page transition/router animations: <https://www.youtube.com/watch?v=7JA90VI9fAI>
 - [ ] check accessibility concerns for lottie files: <https://github.com/airbnb/lottie-web/issues/1935>
 - [ ] repleace logo in nav & footer with cropped version of svg & resize-reposition
 
-Component-level
+### component-level todos:
   social
-  - [ ] contact
-  - [ ] twitter eeieeioh
+  - [ ] hook up contact form
+  - [x] twitter eeieeioh
   - [ ] discord: <https://discord.com/community?utm_source=discord&utm_medium=discord&utm_campaign=2022-06_co-update&utm_term=log&utm_content=--t%3Aco>
-  - [x] app development & content by @leventemo
-  - [x] logo design by József Balogh
-  - [ ] patreon
-  - [ ] buy me a coffee
+  - [x] app development & content
+  - [x] logo design
 
-  links
-  - [ ] dictionaries: html done
-  - [ ] corpus and friends: html done
-  - [ ] video
-  - [ ] audio
-  - [ ] misc
-
-  copyright + logo: full-width col
+  redo links:
+  - [ ] dictionaries: link to page: html done
+  - [ ] corpus and friends: link to  page: html done
+  - [ ] video: link to  page
+  - [ ] audio: link to  page
+  - [ ] misc: link to  page
+  * Find the Prompt
 
 Contact page
 - [x] create component
@@ -60,7 +68,6 @@ Contact page
 
 REDO
 - [ ] create components folder?
-- [ ] rename Header Component to Nav: <https://stackoverflow.com/questions/46411036/how-to-rename-a-component-in-angular-cli>
 
 Hotel Check-in -> turn it into a Roleplay Component with A/B players getting their matching roles
 - [x] install Faker-js: <https://fakerjs.dev/>
@@ -98,15 +105,15 @@ Reword Component
 - [ ] review
 
 Contents Component
-- [ ] filter doesn't pick up the inserted word "new!" as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
-- [ ] feed array from all diff activity-arrays and delete `contentsarray.json` (double data)
+- [ ] make "NEW!" label searchable: filter doesn't pick it up as it is bc `this.dataSource.filter` filters `dataSource`, not the rendered table
+- [ ] refactor: feed array from all diff activity-arrays and delete `contentsarray.json` (duplicate data!)
+- [ ] duplicate code when getting data in each component > `onInit()`: into a class
 
 Escape Room Component
 - [ ] clean CSS
 - [ ] unsubscribe?
 
 Context Component
-- [ ] try toptal HTML entity for `<>` anchor tags
 - [ ] use this in template, rather than the 2 hardcoded btns
   ```html
   <button *ngFor="let option of currentCard.options" class="option" id="btn-A"
@@ -118,7 +125,7 @@ Context Component
 
 rewrite Random Questions C1 (Timed Cards)
 
-Preview in Instructions Modal
+set up a preview in Instructions Modals
 - [x] Timed Cards
 - [x] Cards
 - [ ] Escape Room
