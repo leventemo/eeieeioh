@@ -17,6 +17,8 @@ better theming:
 - [ ] refidefine & refine colour palette: <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 
+clean up CSS: `<mat-card>` -> `class="one-third-card"`, etc. global to get rid of duplicate styles in all components
+
 other:
 - [ ] fix rando fn (Math.floor?) so it doesn't give 2 more often than 1
 - [ ] set up sidenav when needed: <https://code-maze.com/angular-material-navigation/>
@@ -38,6 +40,7 @@ other:
   - [ ] dictionaries: link to page: html done
   - [ ] corpus and friends: link to  page: html done
   - [ ] video: link to  page
+  * <https://www.angularjswiki.com/angular/how-to-embed-youtube-videos-in-angular-apps/>
   - [ ] audio: link to  page
   - [ ] misc: link to  page
   * Find the Prompt
