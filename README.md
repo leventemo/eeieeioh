@@ -37,13 +37,12 @@ other:
   - [x] logo design
 
   redo links:
-  - [ ] dictionaries: link to page: html done
-  - [ ] corpus and friends: link to  page: html done
+  - [x] dictionaries: link to page: html done
+  - [x] corpus and friends: link to  page: html done
   - [ ] video: link to  page
   * <https://www.angularjswiki.com/angular/how-to-embed-youtube-videos-in-angular-apps/>
   - [ ] audio: link to  page
-  - [ ] misc: link to  page
-  * Find the Prompt
+  - [x] misc: link to  page
 
 Contact page
 - [x] create component

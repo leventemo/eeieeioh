@@ -6,6 +6,9 @@
   || router.url === '/changelog'
   || router.url === '/roadmap'
   || router.url === '/abbreviations'
+  || router.url === '/dictionaries'
+  || router.url === '/corpora'
+  || router.url === '/misc'
   ">
   <lottie-player *ngIf="router.url === '/about' || router.url === '/contents'" class="lottie-flowers"
     src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
@@ -27,6 +30,9 @@
 
     <div class="column-item">
       <h1>eeieeioh</h1>
+      <div>
+        <a routerLink="/about" class="footer-anchor">about</a>
+      </div>
       <div>
         <a routerLink="/abbreviations" class="footer-anchor">abbreviations</a>
       </div>
@@ -60,29 +66,13 @@
     <div class="column-item">
       <h1>links</h1>
       <div>
-        <a href="https://www.oxfordlearnersdictionaries.com/" class="footer-anchor">OALD</a>
+        <a routerLink="/dictionaries" class="footer-anchor">dictionaries</a>
       </div>
       <div>
-        <a href="https://www.ldoceonline.com/" class="footer-anchor">Longman Dictionary</a>
+        <a routerLink="/corpora" class="footer-anchor">corpora & friends</a>
       </div>
       <div>
-        <a href="https://www.macmillandictionary.com/" class="footer-anchor">Macmillan Dictionary</a>
-      </div>
-      <div>
-        <a href="https://inspirassion.com/en/" class="footer-anchor">Inspirassion</a>
-      </div>
-      <div>
-        <a href="https://www.thesaurus.com/" class="footer-anchor">Thesaurus.com</a>
-      </div>
-
-      <div>
-        <a href="https://skell.sketchengine.eu/#home?lang=en" class="footer-anchor">SkELL </a>
-      </div>
-      <div>
-        <a href="https://netspeak.org/" class="footer-anchor">Netspeak </a>
-      </div>
-      <div>
-        <a href="http://monco.frazeo.com/" class="footer-anchor">Monco</a>
+        <a routerLink="/misc" class="footer-anchor">miscellaneous</a>
       </div>
     </div>
     <div class="column-item">

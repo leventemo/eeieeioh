@@ -31,6 +31,9 @@ import { BoardGameComponent } from './board-game/board-game.component';
 import { DialogBoardGameComponent } from './dialog-board-game/dialog-board-game.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
+import { DictionariesComponent } from './dictionaries/dictionaries.component';
+import { CorporaComponent } from './corpora/corpora.component';
+import { MiscComponent } from './misc/misc.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +63,9 @@ import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
     RankingComponent,
     TeachersGuideComponent,
     StoryPuzzleComponent,
+    DictionariesComponent,
+    CorporaComponent,
+    MiscComponent,
   ],
   imports: [
     BrowserModule,

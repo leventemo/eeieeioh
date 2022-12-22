@@ -20,6 +20,9 @@ import { ContextComponent } from './context/context.component';
 import { BoardGameComponent } from './board-game/board-game.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
+import { DictionariesComponent } from './dictionaries/dictionaries.component';
+import { CorporaComponent } from './corpora/corpora.component';
+import { MiscComponent } from './misc/misc.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +32,9 @@ const routes: Routes = [
   { path: 'teachers-guide', component: TeachersGuideComponent },
   { path: 'roadmap', component: RoadmapComponent },
   { path: 'abbreviations', component: AbbreviationsComponent },
+  { path: 'dictionaries', component: DictionariesComponent },
+  { path: 'corpora', component: CorporaComponent },
+  { path: 'misc', component: MiscComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },
