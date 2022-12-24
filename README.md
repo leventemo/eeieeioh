@@ -82,6 +82,9 @@ Hotel Check-in -> turn it into a Roleplay Component with A/B players getting the
 - [ ] redo responsive layout & styling a la Cards, which has changed
 - [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
+Changelog Component
+- [ ] when Changlog is open, links col in footer doesn't rerspond to click: is it the cat svg that cover it?
+
 Cards component
 - [ ] card prompts in an array so multiple lines can be rendered in template
 
