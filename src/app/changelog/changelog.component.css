@@ -67,36 +67,3 @@ mat-cell {
 .mat-header-cell {
   padding: 0 0 0 0;
 }
-
-a {
-  color: #7D1AD4;
-  font-weight: 400;
-
-  background:
-    linear-gradient(to right,
-      rgba(232, 97, 195, 0.8),
-      rgba(125, 26, 212, 1)),
-    linear-gradient(to right,
-      rgba(125, 26, 212, 1),
-      rgba(232, 97, 195, 0.8));
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  background-size: 0 2px, 100% 2px;
-}
-
-a:active {
-  text-decoration: none;
-}

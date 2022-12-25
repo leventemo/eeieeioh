@@ -21,11 +21,42 @@ body {
   display: none;
 }
 
-/* global link styling */
-/* ... */
+/* this is the global "link-in-text" styling – footer link & branding link styling stays on the component*/
+a.link-in-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
 
-/* footer link styling */
-/* ... */
+  color: #7D1AD4;
+  font-weight: 400;
+
+  background:
+    linear-gradient(to right,
+      rgba(232, 97, 195, 0.8),
+      rgba(125, 26, 212, 1)),
+    linear-gradient(to right,
+      rgba(125, 26, 212, 1),
+      rgba(232, 97, 195, 0.8));
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a.link-in-text:link {
+  text-decoration: none;
+}
+
+a.link-in-text:visited {
+  text-decoration: none;
+}
+
+a.link-in-text:hover {
+  background-size: 0 2px, 100% 2px;
+}
+
+a.link-in-text:active {
+  text-decoration: none;
+}
 
 /* static pages: about, abbreviations, teacher's guide, changelog, roadmap – also dictionaries, corpus, misc  */
 .page-wrapper {
@@ -53,8 +84,6 @@ body {
   top: 5px;
   left: 5px;
 }
-
-
 
 /* link pages opening from footer: dictionaries, corpus, misc */
 /* should be mat-card without the class-dot, should it? but this is how it works */

@@ -32,7 +32,7 @@
     <ng-container matColumnDef="activity">
       <mat-header-cell *matHeaderCellDef class="column-gap">Activity</mat-header-cell>
       <mat-cell *matCellDef="let item" class="column-gap">
-        <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
+        <a [routerLink]="[item.slug, item.id]" class="link-in-text">{{item.activity}}</a>
       </mat-cell>
     </ng-container>
 

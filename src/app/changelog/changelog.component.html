@@ -6,7 +6,7 @@
   <h2>What is this?</h2>
   <p>It's a non-technical log of additions. Sorting is done on the "Date" column but you can click on the
     other headers to change that. If you need a searchable
-    table, use the <a [routerLink]="'/contents'">Contents page.</a></p>
+    table, use the <a [routerLink]="'/contents'" class="link-in-text">Contents page.</a></p>
 
   <mat-table matSort matSortDisableClear matSortActive="datePublished" matSortDirection="desc"
     [dataSource]=" dataSource" class="mat-elevation-z8">
@@ -38,7 +38,7 @@
     <ng-container matColumnDef="activity">
       <mat-header-cell mat-sort-header *matHeaderCellDef class="activity-cell">Activity</mat-header-cell>
       <mat-cell *matCellDef="let item" class="activity-cell">
-        <a [routerLink]="[item.slug, item.id]">{{item.activity}}</a>
+        <a [routerLink]="[item.slug, item.id]" class="link-in-text">{{item.activity}}</a>
       </mat-cell>
     </ng-container>
 
