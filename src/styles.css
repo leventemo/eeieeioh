@@ -21,7 +21,23 @@ body {
   display: none;
 }
 
-/* this is the global "link-in-text" styling – footer link & branding link styling stays on the component*/
+/* typography */
+h1.header-h1,
+h2.header-h2,
+h3.header-h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+h2.header-h2 {
+  margin-top: 1.5rem;
+}
+
+h3.header-h3 {
+  margin-top: 1rem;
+}
+
+/* "link-in-text" styling – footer link & branding link styling stays on the component */
 a.link-in-text {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1rem;
@@ -71,6 +87,7 @@ a.link-in-text:active {
   display: grid;
   grid-template-columns: 1fr auto;
   border-bottom: 2px solid #454746;
+  margin-bottom: 1.5rem;
 }
 
 .icon {
