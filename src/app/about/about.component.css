@@ -7,18 +7,3 @@ li {
   font-size: 1.1rem;
   line-height: 1.5;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-dt {
-  margin: 0 5px 0 0;
-  font-weight: 400;
-}
-
-dd {
-  margin: 0;
-}
