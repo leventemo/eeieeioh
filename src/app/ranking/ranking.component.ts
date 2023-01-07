@@ -6,7 +6,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { Utils } from '../utils';
 import allCardDecksCollection from '../../assets/activities/rankingarray.json';
 
-import { CdkDragDrop } from '@angular/cdk/drag-drop/drag-events';
+import { CdkDragDrop } from '@angular/cdk/drag-drop/';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
 
 interface Data {

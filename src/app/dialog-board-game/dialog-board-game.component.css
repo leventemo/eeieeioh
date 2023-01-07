@@ -1,34 +1,7 @@
-.dialog-boardgame-wrapper {
-  width: 240px;
-  margin: auto;
-}
-
-.title-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: .5rem;
-  color: #7D1AD4;
-  height: 3rem;
-  margin-bottom: 2rem;
-}
-
 lottie-player {
   height: 3.5rem;
   width: 3.5rem;
   align-self: center;
-}
-
-mat-dialog-content {
-  min-height: 10rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-
-button {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  line-height: 1.5;
 }
 
 .red {
@@ -39,4 +12,12 @@ button {
 .violet {
   color: #7D1AD4;
   border-bottom: 3px solid #7D1AD4;
+}
+
+mat-dialog-content.dialog-content {
+  min-height: 10rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }

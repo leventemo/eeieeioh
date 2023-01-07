@@ -8,47 +8,11 @@
 .container {
   flex-grow: 1;
   max-width: 27rem;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
 }
 
-mat-card {
-  height: 98vh;
-  width: 100%;
-  /*   flex-grow: 1;
-  max-width: 27rem;
-  height: 85vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh; */
-}
-
-.activity-type,
 .card-counter,
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-.title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-mat-card-title {
-  display: flex;
-  justify-content: space-between;
-  height: 5%;
-}
-
-mat-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 85%;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.3rem;
-  line-height: 2.3rem;
 }
 
 .text,
@@ -120,11 +84,6 @@ mat-card-actions {
   padding-bottom: 5rem;
 }
 
-.scores-card {
-  height: 85vh;
-  margin: 0 0 2rem 0;
-}
-
 .winner-text {
   margin-top: 1rem;
   animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
@@ -133,10 +92,6 @@ mat-card-actions {
 .lottie-div {
   height: 20rem;
   width: 20rem;
-}
-
-.divider {
-  width: 100%;
 }
 
 .closing-dash {

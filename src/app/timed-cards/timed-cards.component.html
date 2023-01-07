@@ -1,32 +1,36 @@
-<mat-card>
-  <mat-card-title>
+<mat-card class="third-width-card">
+  <mat-card-title class="third-width-card-title">
     <span class="activity-type">Timed Cards</span><span class="title">{{ data.title }}</span>
-    <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+    <mat-icon class="icon" (click)="openDialog()">info_outline</mat-icon>
   </mat-card-title>
-  <mat-divider inset></mat-divider>
-  <mat-card-content>
+  <hr class="divider">
+  <mat-card-content class="third-width-card-content">
 
     <div *ngIf="!isItAllDone" class="timer-wrapper">
       <p class="timer" [ngClass]="{ activetimer: !timeIsUp && hasItStarted }">
         {{ timer | date:'mm:ss' }}
       </p>
     </div>
+
     <div *ngIf="timeIsUp && !isItAllDone" class="waiting-for-next-btn">
       <lottie-player class="whole-page-img" src="/assets/img/cow.json" background="transparent" speed="1" loop autoplay>
       </lottie-player>
     </div>
+
     <div *ngIf="isItAllDone">
       <lottie-player class="game-over-illustration" src="/assets/img/candies.json" background="transparent" speed="1"
         loop autoplay>
       </lottie-player>
     </div>
+
     <div *ngIf="!isItAllDone && !timeIsUp" class="card-display">{{ currentCard }}</div>
   </mat-card-content>
-  <mat-divider inset></mat-divider>
-  <mat-card-actions align="end">
+  <hr class="divider">
+  <mat-card-actions align="end" class="third-width-card-actions">
     <span class="card-counter">{{ currentCardCounter }}/{{ cardsTotal() }}</span>
-    <button *ngIf="!hasItStarted" color="primary" mat-button (click)="go()">Start</button>
-    <button *ngIf="timeIsUp && !isItAllDone" color="primary" mat-button (click)="clickNext()">{{ btnValue }}</button>
-    <button color="primary" mat-button (click)="redirect()">Contents</button>
+    <button class="card-action-btn" *ngIf="!hasItStarted" color="primary" mat-button (click)="go()">Start</button>
+    <button class="card-action-btn" *ngIf="timeIsUp && !isItAllDone" color="primary" mat-button (click)="clickNext()">{{
+      btnValue }}</button>
+    <button class="card-action-btn" color="primary" mat-button (click)="redirect()">Contents</button>
   </mat-card-actions>
 </mat-card>

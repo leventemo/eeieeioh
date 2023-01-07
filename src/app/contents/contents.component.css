@@ -1,60 +1,8 @@
-:host {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  flex-grow: 1;
-  max-width: 42rem;
-  margin: 0 0 0 .5rem;
-}
-
-.form-field-wrapper {
-  margin-top: 1rem;
-}
-
-mat-form-field {
-  width: 100%;
-  color: #7D1AD4;
-  font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 1.1rem;
-}
-
-.icon-inline {
-  color: #7D1AD4;
-  font-size: 1.4rem;
-  position: relative;
-  top: 5px;
-  left: 5px;
-}
-
-mat-table,
-mat-paginator {
-  width: 100%;
-  box-shadow: none;
-}
-
 .lottie-moth {
   position: absolute;
   bottom: 80px;
   width: 16rem;
   height: 20rem;
-}
-
-mat-header-cell,
-mat-paginator {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  font-weight: bold;
-  font-size: .9rem;
-  color: #7D1AD4;
-}
-
-mat-cell {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
 }
 
 .mat-column-title {
@@ -73,13 +21,13 @@ mat-cell {
   flex: 0 0 30%;
 }
 
-.mat-cell,
-.mat-header-cell {
+.table-cell,
+.table-header-cell {
   padding: 0 0 0 0;
 }
 
 .column-gap {
-  padding-left: .5rem;
+  padding-left: 1rem;
 }
 
 .center-text {
@@ -111,7 +59,8 @@ mat-cell {
   color: #DCC9FF;
 }
 
-mat-paginator-container {
+mat-paginator {
   flex-wrap: nowrap;
-  border: 2px solid blueviolet;
+  border-top: 2px solid #7D1AD4;
+  margin-top: -1rem;
 }

@@ -1,6 +1,6 @@
 .roadmap-list-item {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
 }
 
 .checkbox-icon {

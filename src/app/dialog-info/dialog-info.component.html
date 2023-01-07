@@ -1,8 +1,11 @@
 <div class="dialog-wrapper">
-  <h1 mat-dialog-title>{{ data.title }}</h1>
-  <mat-dialog-content>
+  <div class="dialog-info-title-wrapper">
+    <h1 class="title">{{ data.title }}</h1>
+  </div>
+  <hr class="divider">
+  <mat-dialog-content class="dialog-content">
     {{ data.instr }}
-    <div *ngIf="data.preview" class="questions-list">Preview:
+    <div *ngIf="data.preview" class="questions-list"><b>Preview:</b>
       <ul>
         <li *ngFor="let item of data.preview">{{ item }}</li>
       </ul>

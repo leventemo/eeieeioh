@@ -5,42 +5,9 @@
   align-items: center;
 }
 
-mat-card {
-  flex-grow: 1;
-  max-width: 27rem;
-  height: 98vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.activity-type,
 .card-counter,
 button {
   font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-.title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-mat-card-title {
-  display: flex;
-  justify-content: space-between;
-  height: 5%;
-}
-
-mat-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 85%;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 3rem;
 }
 
 .timer-wrapper {
@@ -49,7 +16,7 @@ mat-card-content {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30%;
+  height: 50%;
 }
 
 .timer {
@@ -69,7 +36,7 @@ mat-card-content {
 }
 
 .waiting-for-next-btn {
-  align-self: centre;
+  place-self: center normal;
   height: 80%;
   width: 55%;
 }

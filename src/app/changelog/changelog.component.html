@@ -9,36 +9,39 @@
     table, use the <a [routerLink]="'/contents'" class="link-in-text">Contents page.</a></p>
 
   <mat-table matSort matSortDisableClear matSortActive="datePublished" matSortDirection="desc"
-    [dataSource]=" dataSource" class="mat-elevation-z8">
+    [dataSource]=" dataSource" class="mat-elevation-z8 table">
 
     <ng-container matColumnDef="datePublished">
-      <mat-header-cell mat-sort-header *matHeaderCellDef class="date-published-cell">Date</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="date-published-cell">
+      <mat-header-cell mat-sort-header *matHeaderCellDef
+        class="table-header-cell date-published-cell">Date</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell date-published-cell">
         {{item.datePublished | date: 'yy/M/d'}}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="title">
-      <mat-header-cell mat-sort-header *matHeaderCellDef class="title-cell">Title</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="title-cell">
+      <mat-header-cell mat-sort-header *matHeaderCellDef class="table-header-cell title-cell">Title</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell title-cell">
         {{item.title}}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="language">
-      <mat-header-cell mat-sort-header *matHeaderCellDef class="language-cell">Language</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="language-cell">{{item.language}}</mat-cell>
+      <mat-header-cell mat-sort-header *matHeaderCellDef
+        class="table-header-cell language-cell">Language</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell language-cell">{{item.language}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="level">
-      <mat-header-cell mat-sort-header *matHeaderCellDef class="level-cell">Level</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="level-cell">{{item.level}}</mat-cell>
+      <mat-header-cell mat-sort-header *matHeaderCellDef class="table-header-cell level-cell">Level</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell level-cell">{{item.level}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="activity">
-      <mat-header-cell mat-sort-header *matHeaderCellDef class="activity-cell">Activity</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="activity-cell">
-        <a [routerLink]="[item.slug, item.id]" class="link-in-text">{{item.activity}}</a>
+      <mat-header-cell mat-sort-header *matHeaderCellDef
+        class="table-header-cell activity-cell">Activity</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell activity-cell">
+        <a [routerLink]="[item.slug, item.id]" class=" link-in-text">{{item.activity}}</a>
       </mat-cell>
     </ng-container>
 

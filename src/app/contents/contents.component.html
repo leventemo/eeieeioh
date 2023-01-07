@@ -1,16 +1,14 @@
-<div class="container">
-  <div class="form-field-wrapper">
-    <mat-form-field>
-      <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
-      <mat-icon matSuffix class="icon-inline">search</mat-icon>
-    </mat-form-field>
-  </div>
+<div class="page-wrapper">
+  <mat-form-field class="form-field" appearance="outline">
+    <input (keyup)="applyFilter($event)" matInput placeholder="Filter">
+    <mat-icon matSuffix class="icon">search</mat-icon>
+  </mat-form-field>
 
-  <mat-table [dataSource]="dataSource">
+  <mat-table [dataSource]="dataSource" class="table">
 
     <ng-container matColumnDef="title">
-      <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="title-cell">
+      <mat-header-cell *matHeaderCellDef class="table-header-cell">Title</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell title-cell">
         {{item.title}}
         <span *ngIf="checkIfNew(item.datePublished)" class="new-span">
           <span class="accentcolor-mid">n</span><span class="accentcolor-dark">e</span><span
@@ -20,18 +18,18 @@
     </ng-container>
 
     <ng-container matColumnDef="language">
-      <mat-header-cell *matHeaderCellDef class="column-gap">Language</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="column-gap">{{item.language}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="table-header-cell column-gap">Language</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell column-gap">{{item.language}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="level">
-      <mat-header-cell *matHeaderCellDef class="center-text">Level</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="center-text">{{item.level}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="table-header-cell column-gap center-text">Level</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell column-gap center-text">{{item.level}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="activity">
-      <mat-header-cell *matHeaderCellDef class="column-gap">Activity</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="column-gap">
+      <mat-header-cell *matHeaderCellDef class="table-header-cell column-gap">Activity</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell column-gap">
         <a [routerLink]="[item.slug, item.id]" class="link-in-text">{{item.activity}}</a>
       </mat-cell>
     </ng-container>
@@ -40,7 +38,7 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
-  <mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons [hidePageSize]="true"></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons [hidePageSize]="true" class="paginator"></mat-paginator>
 
   <lottie-player *ngIf="isMothFlying" (click)="smashMoth()" class="lottie-moth" src="/assets/img/moth.json"
     background="transparent" speed="1" loop autoplay>

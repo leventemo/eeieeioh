@@ -1,6 +1,7 @@
-<div class="dialog-boardgame-wrapper">
-  <div class="title-wrapper" [ngClass]="{'red': activePlayer.name === 'A', 'violet': activePlayer.name === 'B' }">
-    <h1>{{ activePlayer.name }}</h1>
+<div class="dialog-wrapper">
+  <div class="dialog-boardgame-title-wrapper"
+    [ngClass]="{'red': activePlayer.name === 'A', 'violet': activePlayer.name === 'B' }">
+    <h1 class="header-h1">{{ activePlayer.name }}</h1>
     <lottie-player *ngIf="activePlayer.name === 'A'" src="/assets/img/activePlayerA.json" background="transparent"
       speed="1" loop autoplay>
     </lottie-player>
@@ -8,11 +9,11 @@
       speed="1" loop autoplay>
     </lottie-player>
   </div>
-  <mat-dialog-content>
+  <mat-dialog-content class="dialog-content">
     {{ data.question }}
   </mat-dialog-content>
   <mat-dialog-actions align="center">
-    <button mat-button color="primary" mat-dialog-close mat-dialog-close="true">Accept</button>
-    <button mat-button color="primary" mat-dialog-close mat-dialog-close="false">Reject</button>
+    <button mat-button color="primary" mat-dialog-close mat-dialog-close="true" class="card-action-btn">Accept</button>
+    <button mat-button color="primary" mat-dialog-close mat-dialog-close="false" class="card-action-btn">Reject</button>
   </mat-dialog-actions>
 </div>

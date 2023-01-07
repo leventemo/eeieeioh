@@ -10,6 +10,8 @@ __eeieeioh.com__ is an app for teaching English
 ## todos
 
 ### project-level todos
+- [ ] migrate to v15 syling FFS <https://www.reddit.com/r/Angular2/comments/zm9w8f/angular_material_on_v15_upgrade_is_a_complete_mess/>
+
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>

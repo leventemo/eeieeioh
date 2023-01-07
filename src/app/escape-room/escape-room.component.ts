@@ -60,7 +60,7 @@ export class EscapeRoomComponent implements OnInit {
   }
 
   get question(): string {
-    return this.escapeForm.value.question;
+    return this.escapeForm.value.question || '';
   }
 
   ngOnInit(): void {

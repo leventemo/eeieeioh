@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "proto"
+  "defaultProject": "proto",
+  "cli": {
+    "analytics": false
+  }
 }
