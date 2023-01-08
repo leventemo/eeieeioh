@@ -233,10 +233,6 @@
   width: 10rem;
 }
 
-.closing-dash {
-  justify-content: end;
-}
-
 @keyframes grow-and-shrink {
   0% {
     transform: scale(1);

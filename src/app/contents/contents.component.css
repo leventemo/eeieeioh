@@ -61,6 +61,5 @@
 
 mat-paginator {
   flex-wrap: nowrap;
-  border-top: 2px solid #7D1AD4;
   margin-top: -1rem;
 }

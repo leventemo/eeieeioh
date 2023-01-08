@@ -13,38 +13,15 @@
   margin-bottom: 2vh;
 }
 
-mat-card,
-table {
-  width: 100%;
-}
-
-.activity-type,
-button {
-  font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-.title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-mat-card-title {
-  display: flex;
-  justify-content: space-between;
-  height: 5%;
-}
-
-.icon-inline {
-  color: #7D1AD4;
-  font-size: 1.4rem;
-}
-
-.mat-table {
+mat-table {
   box-shadow: none;
   width: 100%;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0 .5rem 0 0;
 }
 
 .mat-cell {
@@ -80,4 +57,12 @@ tr.element-row:not(.expanded-row):active {
 
 .element-description-attribution {
   opacity: 0.5;
+}
+
+.red {
+  color: #CE0095;
+}
+
+.green {
+  color: #34C000;
 }

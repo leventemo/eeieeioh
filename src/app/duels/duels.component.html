@@ -1,12 +1,11 @@
 <div class="container">
-  <mat-card *ngIf="!areQnsDone">
-    <mat-card-title>
+  <mat-card *ngIf="!areQnsDone" class="third-width-card">
+    <mat-card-title class="third-width-card-title">
       <span class="activity-type">Duels</span><span class="title">{{ data.title }}</span>
-      <mat-icon class="icon-inline" (click)="openDialog()">info_outline</mat-icon>
+      <mat-icon class="icon" (click)="openDialog()">info_outline</mat-icon>
     </mat-card-title>
-    <!--   <mat-icon class="icon-inline">info_outline</mat-icon> -->
-    <mat-divider inset></mat-divider>
-    <mat-card-content>
+    <hr class="divider">
+    <mat-card-content class="third-width-card-content">
       <div class="counters-wrapper">
         <div class="counter" [ngClass]="{ activecounter: currentPlayer === playerA }">
           <p>A</p>
@@ -20,36 +19,39 @@
         </div>
       </div>
       <div class="options-wrapper">
-        <button class="option" id="btn-A" (click)="onClick(currentCard[0])" [disabled]="!hasItStarted">{{ currentCard[0]
+        <button class="option card-action-btn" id="btn-A" (click)="onClick(currentCard[0])"
+          [disabled]="!hasItStarted">{{ currentCard[0]
           }}</button>
-        <button class="option" id="btn-B" (click)="onClick(currentCard[1])" [disabled]="!hasItStarted">{{ currentCard[1]
+        <button class="option card-action-btn" id="btn-B" (click)="onClick(currentCard[1])"
+          [disabled]="!hasItStarted">{{ currentCard[1]
           }}</button>
       </div>
     </mat-card-content>
-    <mat-divider inset></mat-divider>
-    <mat-card-actions align="end">
+    <hr class="divider">
+    <mat-card-actions align="end" class="third-width-card-actions">
       <span class="card-counter">{{ currentCardNumber }}/{{ cardsTotal() }}</span>
-      <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()">Start</button>
-      <button color="primary" mat-button (click)="redirect()">Contents</button>
+      <button *ngIf="!hasItStarted" color="primary" mat-button (click)="start()" class="card-action-btn">Start</button>
+      <button color="primary" mat-button (click)="redirect()" class="card-action-btn">Contents</button>
     </mat-card-actions>
   </mat-card>
 
   <mat-table *ngIf="areQnsDone" [dataSource]="dataSource" class="mat-elevation-z8 feedback">
     <ng-container matColumnDef="correct">
-      <mat-header-cell *matHeaderCellDef>Correct</mat-header-cell>
-      <mat-cell *matCellDef="let item">{{item.correctOption}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="table-header-cell">Correct</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell">{{item.correctOption}}</mat-cell>
       <mat-footer-cell *matFooterCellDef></mat-footer-cell>
     </ng-container>
 
     <ng-container matColumnDef="incorrect">
-      <mat-header-cell *matHeaderCellDef>Incorrect</mat-header-cell>
-      <mat-cell *matCellDef="let item">&lowast; {{item.incorrectOption}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef class="table-header-cell">Incorrect</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell">&lowast; {{item.incorrectOption}}</mat-cell>
       <mat-footer-cell *matFooterCellDef></mat-footer-cell>
     </ng-container>
 
     <ng-container matColumnDef="playerA">
-      <mat-header-cell *matHeaderCellDef>A</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="feedback-points" [ngClass]="{ highlight: item.pointsForThis === 0}">
+      <mat-header-cell *matHeaderCellDef class="table-header-cell">A</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell feedback-points"
+        [ngClass]="{ highlight: item.pointsForThis === 0}">
         <ng-container *ngIf="item.clickingPlayer === 'playerA'">
           {{item.pointsForThis}}
         </ng-container>
@@ -58,8 +60,9 @@
     </ng-container>
 
     <ng-container matColumnDef="playerB">
-      <mat-header-cell *matHeaderCellDef>B</mat-header-cell>
-      <mat-cell *matCellDef="let item" class="feedback-points" [ngClass]="{ highlight: item.pointsForThis === 0}">
+      <mat-header-cell *matHeaderCellDef class="table-header-cell">B</mat-header-cell>
+      <mat-cell *matCellDef="let item" class="table-cell feedback-points"
+        [ngClass]="{ highlight: item.pointsForThis === 0}">
         <ng-container *ngIf="item.clickingPlayer === 'playerB'">
           {{item.pointsForThis}}
         </ng-container>
@@ -72,19 +75,19 @@
     <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
   </mat-table>
 
-  <mat-card *ngIf="areQnsDone" class="scores-card">
-    <mat-card-content class="the-winner-is">
+  <mat-card *ngIf="areQnsDone" class="scores-card third-width-card">
+    <mat-card-content class="third-width-card-content the-winner-is">
       <div class="winner-text">
-        <h1>{{winner}}</h1>
+        <h1 class="header-h1">{{winner}}</h1>
       </div>
       <div class="lottie-div">
         <lottie-player src="/assets/img/threestars.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
       </div>
     </mat-card-content>
-    <mat-divider class="divider" inset></mat-divider>
-    <mat-card-actions class="closing-dash">
-      <button color="primary" mat-button (click)="redirect()">Contents</button>
+    <hr class="divider">
+    <mat-card-actions class="third-width-card-actions closing-dash">
+      <button color="primary" mat-button (click)="redirect()" class="card-action-btn">Contents</button>
     </mat-card-actions>
   </mat-card>
 </div>

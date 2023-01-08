@@ -10,16 +10,13 @@ __eeieeioh.com__ is an app for teaching English
 ## todos
 
 ### project-level todos
-- [ ] migrate to v15 syling FFS <https://www.reddit.com/r/Angular2/comments/zm9w8f/angular_material_on_v15_upgrade_is_a_complete_mess/>
 
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>
 * <https://www.positronx.io/angular-material-8-icons-tutorial-with-real-world-examples/>
-- [ ] refidefine & refine colour palette: <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
+- [ ] redefine & refine colour palette: <https://stackoverflow.com/questions/52373852/angular-theme-with-more-than-3-colors>
 - [ ] customize typography: <https://material.angular.io/guide/typography>
-
-clean up CSS: `<mat-card>` -> `class="one-third-card"`, etc. global to get rid of duplicate styles in all components
 
 other:
 - [ ] fix rando fn (Math.floor?) so it doesn't give 2 more often than 1
@@ -28,9 +25,10 @@ other:
 - [ ] testing
 - [ ] page transition/router animations: <https://www.youtube.com/watch?v=7JA90VI9fAI>
 - [ ] check accessibility concerns for lottie files: <https://github.com/airbnb/lottie-web/issues/1935>
-- [ ] repleace logo in nav & footer with cropped version of svg & resize-reposition
+- [ ] replace logo in nav & footer with cropped version of svg & resize-reposition
 
 ### component-level todos:
+Footer:
   social
   - [ ] hook up contact form
   - [x] twitter eeieeioh
@@ -85,7 +83,7 @@ Hotel Check-in -> turn it into a Roleplay Component with A/B players getting the
 - [ ] lazy loading to avoid a full reload when Next btn is pressed?
 
 Changelog Component
-- [ ] when Changlog is open, links col in footer doesn't rerspond to click: is it the cat svg that cover it?
+- [ ] when Changelog is open, links col in footer doesn't respond to click: is it the cat svg that covers it?
 
 Cards component
 - [ ] card prompts in an array so multiple lines can be rendered in template
@@ -103,9 +101,9 @@ Timed-Cards Component
 - [x] What's the right question?: DB > ELTGames.com > elem-pre-int CONV
 
 Duels Component
+- [ ] merge with Expandables: first Expandable, then Duels
 - [ ] review
 - [ ] better animation in options
-- [ ] merge with Expandables: first Expandable, then Duels
 
 Reword Component
 - [ ] adjust FB card top margin (too high on mobile to see the Contents btn)

@@ -5,14 +5,6 @@
   align-items: center;
 }
 
-mat-card {
-  flex-grow: 1;
-  max-width: 27rem;
-  height: 98vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
 .activity-type,
 .card-counter,
 button {
@@ -25,24 +17,6 @@ button {
   font-weight: 300;
 }
 
-mat-card-title {
-  display: flex;
-  justify-content: space-between;
-  height: 5%;
-}
-
-mat-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 85%;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding: 4vh 1vw 4vh 1vw;
-}
-
 .tasks {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.2rem;
@@ -50,19 +24,6 @@ mat-card-content {
 
 .highlight {
   font-weight: 400;
-}
-
-mat-card-actions {
-  display: flex;
-  height: 7%;
-  align-items: center;
-  justify-content: space-around;
-  color: #7D1AD4;
-}
-
-.icon-inline {
-  color: #7D1AD4;
-  font-size: 1.4rem;
 }
 
 a.link-in-text {

@@ -104,13 +104,14 @@ a.link-in-text:active {
   left: 5px;
 }
 
-/* to purge? exists on cards in activities but it's the same as .icon above*/
+/* in Teacher's Guide */
 .icon-inline {
   color: #7D1AD4;
   font-size: 1.4rem;
   position: relative;
   top: 5px;
   left: 5px;
+  margin-right: 3px;
 }
 
 /* link pages opening from footer: dictionaries, corpus, misc */
@@ -157,6 +158,10 @@ mat-card-actions.third-width-card-actions {
   justify-content: space-around;
   color: #7D1AD4;
   padding: 10px 5% 10px 5%;
+}
+
+mat-card-actions.closing-dash {
+  justify-content: end;
 }
 
 .activity-type {
