@@ -11,13 +11,6 @@ __eeieeioh.com__ is an app for teaching English
 
 ### project-level todos
 
-purge CSS in "final scores": `.the-winner-is`, etc. classes in
-- [] Context
-- [] Reword
-- [] Duels
-- [] Board Game
-- [] Escape Room?
-
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>

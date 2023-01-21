@@ -60,31 +60,3 @@ button {
 .clue {
   font-style: italic;
 }
-
-mat-card-actions {
-  display: flex;
-  height: 7%;
-  align-items: center;
-  justify-content: space-around;
-  color: #7D1AD4;
-}
-
-/* final scores */
-.the-winner-is {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*   height: 92%;
- */
-  padding-bottom: 5rem;
-}
-
-.winner-text {
-  margin-top: 1rem;
-  animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
-}
-
-.lottie-div {
-  height: 20rem;
-  width: 20rem;
-}

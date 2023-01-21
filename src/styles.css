@@ -261,3 +261,48 @@ mat-form-field.form-field {
   font-size: 1.1rem;
   margin-top: 2rem;
 }
+
+/* final scores – on competitive activities */
+.the-winner-is {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   height: 92%;
+ */
+  padding-bottom: 5rem;
+}
+
+.winner-text {
+  margin-bottom: 6rem;
+  animation: grow-and-shrink 4000ms ease-in-out infinite alternate;
+}
+
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scores-card {
+  height: 60%;
+  box-shadow: none;
+  margin: 3rem 0 2rem 0;
+}
+
+.lottie-div-threestars {
+  height: 10rem;
+  width: 10rem;
+}
+
+.lottie-div-fireworks1 {
+  height: 20rem;
+  width: 20rem;
+}
