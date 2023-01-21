@@ -6,34 +6,11 @@
 
   <hr class="divider">
 
-  <mat-card-content *ngIf="stepper === 0" class="third-width-card-content">
-    <h1 class="tasks">{{ data.tasks[0] }}</h1>
-
-    <ul>
-      <li *ngFor="let item of data.cards">
-        <span *ngIf="stepper < 2">{{ item.before }}</span>
-        <span [ngClass]="getChunkClass()">{{ item.chunk }}</span>
-        <span *ngIf="stepper < 2">{{ item.after }}</span>
-      </li>
-    </ul>
-
-  </mat-card-content>
-
-  <mat-card-content *ngIf="stepper === 1" class="third-width-card-content">
-    <h1 class="tasks">{{ data.tasks[1] }}</h1>
-
-    <ul>
-      <li *ngFor="let item of data.cards">
-        <span *ngIf="stepper < 2">{{ item.before }}</span>
-        <span [ngClass]="getChunkClass()">{{ item.chunk }}</span>
-        <span *ngIf="stepper < 2">{{ item.after }}</span>
-      </li>
-    </ul>
-  </mat-card-content>
+  <app-sentence-view [stepper]="stepper" [data]="data"></app-sentence-view>
 
   <mat-card-content *ngIf="stepper === 2" class="third-width-card-content drag-drop-list" cdkDropList
     (cdkDropListDropped)="drop($event)">
-    <h1 class="tasks margin-btm">{{ data.tasks[2] }}</h1>
+    <h1 class="tasks margin-btm">{{ data.tasks[stepper] }}</h1>
 
     <div class="list-item" *ngFor="let item of chunkArray" cdkDrag>
       <div class="drop-placeholder" *cdkDragPlaceholder></div>

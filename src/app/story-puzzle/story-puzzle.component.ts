@@ -13,7 +13,7 @@ interface Chunks {
   after: string;
 }
 
-interface Data {
+export interface Data {
   id: number;
   title: string;
   language: string;
@@ -82,7 +82,6 @@ export class StoryPuzzleComponent implements OnInit {
 
   drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.chunkArray, event.previousIndex, event.currentIndex);
-    console.log(this.chunkArray);
   }
 
   redirect() {

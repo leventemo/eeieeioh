@@ -34,6 +34,7 @@ import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
 import { DictionariesComponent } from './dictionaries/dictionaries.component';
 import { CorporaComponent } from './corpora/corpora.component';
 import { MiscComponent } from './misc/misc.component';
+import { SentenceViewComponent } from './story-puzzle/sentence-view/sentence-view.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { MiscComponent } from './misc/misc.component';
     DictionariesComponent,
     CorporaComponent,
     MiscComponent,
+    SentenceViewComponent,
   ],
   imports: [
     BrowserModule,
