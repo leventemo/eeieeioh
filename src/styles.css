@@ -48,6 +48,7 @@ h3.header-h3 {
 a.link-in-text {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1rem;
+  width: fit-content;
 
   color: #7D1AD4;
   font-weight: 400;
