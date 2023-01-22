@@ -31,6 +31,7 @@ other:
 Footer:
   social
   - [ ] hook up contact form
+  - [ ] newsletter
   - [x] twitter eeieeioh
   - [ ] discord: <https://discord.com/community?utm_source=discord&utm_medium=discord&utm_campaign=2022-06_co-update&utm_term=log&utm_content=--t%3Aco>
   - [x] app development & content
@@ -127,6 +128,9 @@ Context Component
   ```
 - adjust checking & calculation of answers/results
 - [ ] review
+
+Story Puzzle Component
+- [ ] instructions 3)... has a diff margin compared to 1 & 2? check when clicking from 2 to 3. background: 1 & 2 are embedded `<app-sentence-view>` components, 3 & 4 are AM `<mat-card-content>`
 
 rewrite Random Questions C1 (Timed Cards)
 
