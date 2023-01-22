@@ -148,7 +148,7 @@ mat-card-content.third-width-card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 84%;
+  height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.4rem;

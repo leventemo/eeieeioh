@@ -5,25 +5,26 @@
   align-items: center;
 }
 
-.third-width-card-content {
+app-sentence-view.third-width-card-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 84%;
+  height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
-  line-height: 2.3rem;
+  line-height: 2rem;
 }
 
+
 h1.header-h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .drag-drop-list {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .list-item {
@@ -70,4 +71,8 @@ h1.header-h1 {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
   margin-bottom: 15px;
+}
+
+.flexy-start {
+  justify-content: flex-start;
 }

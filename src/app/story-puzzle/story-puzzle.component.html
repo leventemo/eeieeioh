@@ -7,9 +7,9 @@
   <hr class="divider">
 
   <app-sentence-view *ngIf="stepper < 2" [stepper]="stepper" [data]="data"
-    class="third-width-card-content"></app-sentence-view>
+    class="third-width-card-content flexy-start"></app-sentence-view>
 
-  <mat-card-content *ngIf="stepper === 2" class="third-width-card-content drag-drop-list" cdkDropList
+  <mat-card-content *ngIf="stepper === 2" class="third-width-card-content flexy-start drag-drop-list" cdkDropList
     (cdkDropListDropped)="drop($event)">
     <h1 class="header-h1">{{ data.tasks[stepper] }}</h1>
 
