@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-app-sentence-view.third-width-card-content {
+.third-width-card-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,7 +13,7 @@ app-sentence-view.third-width-card-content {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
 }
 
 

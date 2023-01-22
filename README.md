@@ -130,7 +130,8 @@ Context Component
 - [ ] review
 
 Story Puzzle Component
-- [ ] instructions 3)... has a diff margin compared to 1 & 2? check when clicking from 2 to 3. background: 1 & 2 are embedded `<app-sentence-view>` components, 3 & 4 are AM `<mat-card-content>`
+- [ ] finish review
+- [ ] write Teacher's Guide entry
 
 rewrite Random Questions C1 (Timed Cards)
 
