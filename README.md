@@ -11,8 +11,6 @@ __eeieeioh.com__ is an app for teaching English
 
 ### project-level todos
 
-- [ ] include link to archive of newsletters
-
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>
