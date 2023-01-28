@@ -4,7 +4,7 @@ import { Data } from '../story-puzzle.component';
 @Component({
   selector: 'app-sentence-view',
   templateUrl: './sentence-view.component.html',
-  styleUrls: ['./sentence-view.component.css']
+  styleUrls: ['../story-puzzle.component.css']
 })
 export class SentenceViewComponent {
   @Input() stepper = 0;

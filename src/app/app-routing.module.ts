@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ContentsComponent } from './contents/contents.component';
 import { CardsComponent } from './cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { DuelsComponent } from './duels/duels.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'newsletter', component: NewsletterSignupComponent },
   { path: 'check-in', component: CheckInComponent },
   { path: 'duels/:id', component: DuelsComponent },
   { path: 'board-game/:id', component: BoardGameComponent },

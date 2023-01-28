@@ -76,3 +76,23 @@ h1.header-h1 {
 .flexy-start {
   justify-content: flex-start;
 }
+
+.highlight {
+  font-weight: 400;
+}
+
+h1.header-h1 {
+  font-size: 1.1rem;
+}
+
+ul {
+  font-size: 1.2rem;
+}
+
+mat-card-content.third-width-card-content {
+  padding-top: 0;
+}
+
+.flexy-start {
+  justify-content: flex-start;
+}

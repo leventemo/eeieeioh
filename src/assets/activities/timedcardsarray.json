@@ -33,7 +33,7 @@
   {
     "id": "2",
     "level": "B1",
-    "title": "Random Questions – B1 (1)",
+    "title": "Random Questions – B1",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
     "timeAllowed": "60000",
@@ -54,7 +54,7 @@
   {
     "id": "3",
     "level": "B2",
-    "title": "Random Questions – B2 (1)",
+    "title": "Random Questions – B2",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
     "timeAllowed": "60000",
@@ -77,7 +77,7 @@
   {
     "id": "4",
     "level": "C1",
-    "title": "Random Questions – C1 (1)",
+    "title": "Random Questions – C1",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
     "timeAllowed": "60000",
@@ -203,7 +203,7 @@
   },
   {
     "id": "9",
-    "level": "B1",
+    "level": "B1 up",
     "title": "Shopping habits",
     "language": "Talking about shopping",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -225,7 +225,7 @@
   },
   {
     "id": "10",
-    "level": "B1",
+    "level": "B1 up",
     "title": "Talking about friendship (1)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -246,7 +246,7 @@
   },
   {
     "id": "11",
-    "level": "B1",
+    "level": "B1 up",
     "title": "Talking about friendship (2)",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
@@ -267,7 +267,7 @@
   },
   {
     "id": "12",
-    "level": "B1",
+    "level": "B2 up",
     "title": "Talking about Communication",
     "language": "conversation",
     "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",

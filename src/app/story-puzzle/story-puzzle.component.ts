@@ -45,7 +45,6 @@ export class StoryPuzzleComponent implements OnInit {
   instructions = () => this.data.instructions;
   cardsTotal = () => this.data.cards.length;
   stepper = 0;
-  highlightChunks = false;
 
   constructor(
     public router: Router,
