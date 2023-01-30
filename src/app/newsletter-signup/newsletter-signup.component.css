@@ -4,3 +4,10 @@
   justify-content: center;
   height: 90vh;
 }
+
+iframe {
+  width: 480px;
+  height: 320px;
+  border-bottom: 1px solid #EEE;
+  background: #FFF;
+}

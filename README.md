@@ -19,7 +19,7 @@ better theming:
 - [ ] customize typography: <https://material.angular.io/guide/typography>
 
 other:
-- [ ] fix rando fn (Math.floor?) so it doesn't give 2 more often than 1
+- [ ] fix rando util fn so it doesn't give 2 more often than 1
 - [ ] set up sidenav when needed: <https://code-maze.com/angular-material-navigation/>
 - [ ] animation on active links in nav
 - [ ] testing
@@ -31,7 +31,7 @@ other:
 Footer:
   social
   - [ ] hook up contact form
-  - [ ] newsletter
+  - [x] newsletter
   - [x] twitter eeieeioh
   - [ ] discord: <https://discord.com/community?utm_source=discord&utm_medium=discord&utm_campaign=2022-06_co-update&utm_term=log&utm_content=--t%3Aco>
   - [x] app development & content
