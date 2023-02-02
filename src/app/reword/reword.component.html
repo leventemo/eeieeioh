@@ -37,7 +37,7 @@
       <button *ngIf="currentCardCounter !== 0 && !isAnswerDisplayed" color="primary" mat-button
         (click)="isAnswerDisplayed = true" class="card-action-btn">Answer</button>
       <button class="countercurrentplayeractive" *ngIf="isAnswerDisplayed" color="primary" mat-button
-        (click)="displayNextCard()" class="card-action-btn">Next</button>
+        (click)="displayNextCard()">Next</button>
       <button color="primary" mat-button (click)="redirect()" class="card-action-btn">Contents</button>
     </mat-card-actions>
   </mat-card>

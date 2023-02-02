@@ -47,8 +47,9 @@ button {
 
 .countercurrentplayeractive {
   border: 2px solid #CE0095;
-  color: #CE0095;
+  color: #CE0095 !important;
   animation: blinker 1.3s ease-in-out infinite alternate;
+  border-radius: var(--mdc-text-button-container-shape, var(--mdc-shape-small, 4px));
 }
 
 @keyframes blinker {
