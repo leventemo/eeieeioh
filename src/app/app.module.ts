@@ -36,6 +36,7 @@ import { CorporaComponent } from './corpora/corpora.component';
 import { MiscComponent } from './misc/misc.component';
 import { SentenceViewComponent } from './story-puzzle/sentence-view/sentence-view.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { TextComponent } from './text/text.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
     MiscComponent,
     SentenceViewComponent,
     NewsletterSignupComponent,
+    TextComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,6 +24,7 @@ import { StoryPuzzleComponent } from './story-puzzle/story-puzzle.component';
 import { DictionariesComponent } from './dictionaries/dictionaries.component';
 import { CorporaComponent } from './corpora/corpora.component';
 import { MiscComponent } from './misc/misc.component';
+import { TextComponent } from './text/text.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'dictionaries', component: DictionariesComponent },
   { path: 'corpora', component: CorporaComponent },
   { path: 'misc', component: MiscComponent },
+  { path: 'text', component: TextComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },
