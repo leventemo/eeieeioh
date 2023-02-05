@@ -5,11 +5,18 @@
   align-items: center;
 }
 
+mat-card.third-width-card {
+  padding: 1rem;
+}
+
+mat-card-title.third-width-card-title {
+  padding: 1rem 0 2rem 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 1rem;
   font-family: 'Ubuntu Condensed', sans-serif;
   height: 80%;
 }
