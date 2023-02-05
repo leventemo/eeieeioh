@@ -1,27 +1,17 @@
-mat-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 3rem auto 0 auto;
-  min-width: 320px;
-  max-width: 33%;
-}
-
-.header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  border-bottom: 2px solid #454746;
-  height: 2rem;
-  margin-bottom: 2rem;
-}
-
-.icon {
-  color: #7D1AD4;
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
   font-family: 'Ubuntu Condensed', sans-serif;
+  height: 80%;
 }
 
 h1,

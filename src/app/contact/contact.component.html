@@ -1,10 +1,10 @@
-<mat-card>
-  <div class="header">
-    <h1>Contact us</h1>
+<mat-card class="third-width-card">
+  <mat-card-title class="third-width-card-title">
+    <span class="activity-type">Contact Us</span>
     <mat-icon class="icon">drafts</mat-icon>
-  </div>
-  <form (ngSubmit)="onSubmit(); contactForm.resetForm()" #contactForm="ngForm"
-    action="https://submit-form.com/lGuqXu79">
+  </mat-card-title>
+
+  <form (ngSubmit)="onSubmit(); contactForm.resetForm()" #contactForm="ngForm" action="https://jhkjhkjh.gj">
     <mat-form-field appearance="outline">
       <mat-label>Name</mat-label>
       <input type="text" name="name" matInput placeholder="John Doe" required [(ngModel)]="name" #nameInput="ngModel">
