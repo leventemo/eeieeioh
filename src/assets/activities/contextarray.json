@@ -1342,6 +1342,124 @@
     ]
   },
   {
+    "id": "6",
+    "level": "B1",
+    "title": "At it again",
+    "language": "phrases with at",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Click on the venue that belongs to the sport the clues describe. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2023, 02, 06",
+    "cards": [
+      {
+        "prompts": [
+          "_____ everything was ready for the wedding."
+        ],
+        "options": [
+          "At last",
+          "At all"
+        ]
+      },
+      {
+        "prompts": [
+          "Plane tickets for the four of us would cost _____ 500 dollars."
+        ],
+        "options": [
+          "at least",
+          "at last"
+        ]
+      },
+      {
+        "prompts": [
+          "We're going to France _____ of August."
+        ],
+        "options": [
+          "at the beginning",
+          "at once"
+        ]
+      },
+      {
+        "prompts": [
+          "Turn right again _____ of this street."
+        ],
+        "options": [
+          "at the end",
+          "at the moment"
+        ]
+      },
+      {
+        "prompts": [
+          "Put down that box of matches _____!"
+        ],
+        "options": [
+          "at once",
+          "at all"
+        ]
+      },
+      {
+        "prompts": [
+          "Stop it. Don't all speak _____!"
+        ],
+        "options": [
+          "at once",
+          "at most"
+        ]
+      },
+      {
+        "prompts": [
+          "I'm sorry the manager is not in the office _____."
+        ],
+        "options": [
+          "at present",
+          "at first"
+        ]
+      },
+      {
+        "prompts": [
+          "The situation is very uncertain _____."
+        ],
+        "options": [
+          "at the moment",
+          "at the end"
+        ]
+      },
+      {
+        "prompts": [
+          "I didn't like the job much _____ but the pay has helped me learn to appreciate it."
+        ],
+        "options": [
+          "at first",
+          "at least"
+        ]
+      },
+      {
+        "prompts": [
+          "We need to be at the airport by 6:30 _____."
+        ],
+        "options": [
+          "at the latest",
+          "at the beginning"
+        ]
+      },
+      {
+        "prompts": [
+          "What was the film like? – I didn't enjoy it _____."
+        ],
+        "options": [
+          "at all",
+          "at present"
+        ]
+      },
+      {
+        "prompts": [
+          "The work will take a week, 10 days _____."
+        ],
+        "options": [
+          "at most",
+          "at all"
+        ]
+      }
+    ]
+  },
+  {
     "id": "CCC",
     "level": "A2",
     "title": "Vocabulary: Sports",

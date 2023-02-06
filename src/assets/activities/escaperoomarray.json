@@ -814,5 +814,88 @@
         ]
       }
     ]
+  },
+  {
+    "id": "8",
+    "level": "B1",
+    "title": "At it again",
+    "language": "phrases with at",
+    "instructions": "Write the missing words. You need to be as quick and as correct as you can. Your timer shows the average time you spend typing the correct answers. It starts as soon as you click the \"Start\" button and you're not allowed to move on to the next question until you've typed the answer with the correct spelling. There is no \"Submit\" button: after giving a correct answer you are immediately taken to the next question and your timer starts ticking again. See how many people you can beat in your group.",
+    "datePublished": "2023, 02, 06",
+    "cards": [
+      {
+        "question": "After a long-long journey, the train arrived at my hometown at _____.",
+        "correct": [
+          "last"
+        ]
+      },
+      {
+        "question": "I know I have seen that face at _____ once before.",
+        "correct": [
+          "least"
+        ]
+      },
+      {
+        "question": "Normally, we check homework at the _____ of each class, then start looking at new things.",
+        "correct": [
+          "beginning"
+        ]
+      },
+      {
+        "question": "I'm so tired I normally don't feel like doing anything at the _____ of the week.",
+        "correct": [
+          "end",
+          "beginning"
+        ]
+      },
+      {
+        "question": "Quick, we need to call an ambulance at _____.",
+        "correct": [
+          "once"
+        ]
+      },
+      {
+        "question": "I simply can't do two things at _____.",
+        "correct": [
+          "once"
+        ]
+      },
+      {
+        "question": "These items are not available at _____.",
+        "correct": [
+          "present"
+        ]
+      },
+      {
+        "question": "I'm very busy at the _____ but I'll call you back later.",
+        "correct": [
+          "moment"
+        ]
+      },
+      {
+        "question": "The mountain seemed very small at _____. Two hours later we were still nowhere near the top.",
+        "correct": [
+          "first"
+        ]
+      },
+      {
+        "question": "Your taxi should be here in 10 minutes at the _____.",
+        "correct": [
+          "latest"
+        ]
+      },
+      {
+        "question": "Just open the fridge; we have no food at _____. Let's eat out tonight. Or go shopping.",
+        "correct": [
+          "all"
+        ]
+      },
+      {
+        "question": "It should cost around $80, or maybe $100 at _____.",
+        "correct": [
+          "most"
+        ]
+      }
+    ]
   }
 ]
