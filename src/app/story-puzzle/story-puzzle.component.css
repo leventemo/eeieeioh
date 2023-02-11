@@ -96,3 +96,17 @@ mat-card-content.third-width-card-content {
 .flexy-start {
   justify-content: flex-start;
 }
+
+.passcode-form-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.form-field {
+  height: 4.2rem;
+  font-size: 1.2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+}

@@ -31,4 +31,12 @@ export class Utils {
     return array;
   }
 
+  public static getPassCode() {
+    const today = new Date();
+    const fullYear = today.getFullYear();
+    const date = today.getDate();
+
+    return fullYear * date + 12394;
+  }
+
 }

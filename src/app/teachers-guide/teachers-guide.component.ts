@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Utils } from '../utils';
+
 @Component({
   selector: 'app-teachers-guide',
   templateUrl: './teachers-guide.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeachersGuideComponent implements OnInit {
 
+  passCode!: number;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.passCode = Utils.getPassCode();
   }
 
 }

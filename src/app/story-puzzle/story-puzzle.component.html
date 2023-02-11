@@ -21,9 +21,20 @@
   </mat-card-content>
 
   <mat-card-content *ngIf="stepper === 3" class="third-width-card-content">
-    <h1 class="header-h1">{{ data.tasks[3] }}</h1>
 
-    <a *ngIf="stepper === 3" [href]="data.url" class="link-in-text">Read the story</a>
+    <div *ngIf="!accepted" class="passcode-form-wrapper">
+
+      <mat-form-field appearance="outline" class="form-field" [formGroup]="passcodeForm">
+        <mat-label for="passcode">passcode from teacher</mat-label>
+        <input type="text" name="passcode" formControlName="response" matInput>
+      </mat-form-field>
+
+    </div>
+
+    <div *ngIf="accepted">
+      <h1 class="header-h1">{{ data.tasks[3] }}</h1>
+      <a *ngIf="stepper === 3" [href]="data.url" class="link-in-text">Read the story</a>
+    </div>
 
   </mat-card-content>
 
@@ -32,6 +43,7 @@
   <mat-card-actions align="end" class="third-width-card-actions">
     <span class="card-counter">{{ stepper + 1 }}/4</span>
     <button *ngIf="stepper !== 3" color="primary" mat-button (click)="next()" class="card-action-btn">Next</button>
+    <button *ngIf="stepper === 3" color="primary" mat-button (click)="previous()">Back</button>
     <button color="primary" mat-button (click)="redirect()" class="card-action-btn">Contents</button>
   </mat-card-actions>
 </mat-card>
