@@ -1,3 +1,15 @@
+.dialog-wrapper {
+  padding: 24px;
+}
+
+mat-dialog-content.dialog-content {
+  min-height: 10rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 lottie-player {
   height: 3.5rem;
   width: 3.5rem;
@@ -12,12 +24,4 @@ lottie-player {
 .violet {
   color: #7D1AD4;
   border-bottom: 3px solid #7D1AD4;
-}
-
-mat-dialog-content.dialog-content {
-  min-height: 10rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }

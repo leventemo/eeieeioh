@@ -81,7 +81,7 @@ export class BoardGameComponent implements OnInit {
   }
 
   openDialogBoardGame(index: number) {
-    let dialogRef = this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[index], activePLayer: this.activePlayer } });
+    let dialogRef = this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[index], activePlayer: this.activePlayer } });
 
     dialogRef.afterClosed().subscribe(result => {
       this.isNextBtnDisabled = false;
