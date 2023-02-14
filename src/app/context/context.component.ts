@@ -8,7 +8,7 @@ import { Utils } from '../utils';
 import { interval, Observable, Subscription } from 'rxjs';
 import allContextDecksCollection from '../../assets/activities/contextarray.json';
 
-interface Data {
+interface ContextData {
   id: number;
   title: string;
   language: string;
@@ -42,9 +42,9 @@ interface ResultsThisTurn {
 })
 export class ContextComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
+  activityData: ContextData = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
   pack: Card[] = [];
-  cardsTotal = () => this.data.cards.length;
+  cardsTotal = () => this.activityData.cards.length;
   timeAllowed = 600;
 
   // to hide "Start" & "Contents" btns
@@ -90,15 +90,15 @@ export class ContextComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allContextDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allContextDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.pack = this.data.cards;
+    this.pack = this.activityData.cards;
   }
 
   openDialog() {
     this.dialog.open(
       DialogInfoComponent,
-      { data: { title: this.data.title, instr: this.data.instructionsForDuels } }
+      { data: { title: this.activityData.title, instr: this.activityData.instructionsForDuels } }
     );
   }
 

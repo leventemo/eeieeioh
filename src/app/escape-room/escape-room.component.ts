@@ -88,7 +88,7 @@ export class EscapeRoomComponent implements OnInit {
       correct: new FormControl(this.currentCard?.correct),
       response: new FormControl('')
     }, [
-      Validators.stringMatch('response', 'correct')
+      Validators.stringMatchInArray('response', 'correct')
     ]);
 
     this.escapeForm.statusChanges.pipe(

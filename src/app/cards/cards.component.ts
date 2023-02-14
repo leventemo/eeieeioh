@@ -6,7 +6,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { Utils } from '../utils';
 import allCardDecksCollection from '../../assets/activities/cardsarray.json';
 
-interface Data {
+interface CardsModel {
   id: number;
   title: string;
   language: string;
@@ -22,7 +22,7 @@ interface Data {
 
 export class CardsComponent implements OnInit {
 
-  data: Data = {
+  activityData: CardsModel = {
     id: 0,
     title: '',
     language: '',
@@ -31,8 +31,8 @@ export class CardsComponent implements OnInit {
   };
 
   currentPack: string[] = [];
-  instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
+  instructions = () => this.activityData.instructions;
+  cardsTotal = () => this.activityData.cards.length;
   btnValue = 'Start';
   currentCard = '';
   currentCardCounter = 0;
@@ -49,13 +49,13 @@ export class CardsComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.currentPack = this.activityData.cards;
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, preview: this.data.cards } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions, preview: this.activityData.cards } });
   }
 
   next() {

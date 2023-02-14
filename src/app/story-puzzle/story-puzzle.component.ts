@@ -8,7 +8,8 @@ import allCardDecksCollection from '../../assets/activities/storypuzzlearray.jso
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '../validators';
-import { delay, filter } from 'rxjs/operators';
+import { delay, filter, first } from 'rxjs/operators';
+import { firstValueFrom } from 'rxjs/internal/firstValueFrom';
 
 interface Chunks {
   before: string;
@@ -83,23 +84,28 @@ export class StoryPuzzleComponent implements OnInit {
     ++this.stepper;
 
     if (this.stepper === 3) {
-      this.passcodeForm = new FormGroup({
-        passcode: new FormControl(JSON.stringify(this.passCode)),
-        response: new FormControl('')
-      }, [
-        Validators.stringMatch('passcode', 'response')
-      ]);
-
-      this.passcodeForm.statusChanges.pipe(
-        filter(value => value === 'VALID'),
-        delay(500)).subscribe(() => {
-
-          this.passcodeForm.controls['response'].patchValue('');
-          this.accepted = true;
-
-        });
+      this.showPasscodeForm();
     }
   }
+
+  async showPasscodeForm() {
+    this.passcodeForm = new FormGroup({
+      passcode: new FormControl(JSON.stringify(this.passCode)),
+      response: new FormControl('')
+    }, [
+      Validators.stringMatch('passcode', 'response')
+    ]);
+
+    await firstValueFrom(
+      this.passcodeForm.statusChanges.pipe(
+        filter(value => value === 'VALID'),
+        delay(500))
+    )
+
+    this.passcodeForm.controls['response'].patchValue('');
+    this.accepted = true;
+  }
+
 
   getChunkClass() {
     if (this.stepper === 1) {
@@ -113,7 +119,7 @@ export class StoryPuzzleComponent implements OnInit {
     moveItemInArray(this.chunkArray, event.previousIndex, event.currentIndex);
   }
 
-  previous() {
+  back() {
     --this.stepper;
   }
 

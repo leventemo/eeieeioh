@@ -34,9 +34,10 @@ export class Utils {
   public static getPassCode() {
     const today = new Date();
     const fullYear = today.getFullYear();
+    const month = today.getMonth();
     const date = today.getDate();
 
-    return fullYear * date + 12394;
+    return fullYear * date * date + date * month;
   }
 
 }
