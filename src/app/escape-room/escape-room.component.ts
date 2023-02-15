@@ -15,7 +15,7 @@ interface Card {
   correct: string[];
 }
 
-interface Data {
+interface EscapeRoomModel {
   id: number;
   title: string;
   language: string;
@@ -30,7 +30,7 @@ interface Data {
 })
 export class EscapeRoomComponent implements OnInit {
 
-  data: Data = {
+  activityData: EscapeRoomModel = {
     id: 0,
     title: '',
     language: '',
@@ -44,7 +44,7 @@ export class EscapeRoomComponent implements OnInit {
   isItAllDone = false;
   currentCard: Card = { question: '', correct: [] };
   currentCardCounter = 0;
-  cardsTotal = () => this.data.cards.length;
+  cardsTotal = () => this.activityData.cards.length;
   secondsPerSolution = 0;
 
   escapeForm = new FormGroup({
@@ -69,13 +69,13 @@ export class EscapeRoomComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.currentPack = this.activityData.cards;
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions } });
   }
 
   next() {

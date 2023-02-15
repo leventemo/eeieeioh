@@ -4,7 +4,7 @@ import { MatSort } from '@angular/material/sort';
 
 import contentsData from '../../assets/activities/contentsarray.json';
 
-export interface Contents {
+export interface ContentsModel {
   level: string;
   title: string;
   skill: string;
@@ -23,8 +23,8 @@ export interface Contents {
 
 export class ChangelogComponent implements OnInit {
 
-  data: Contents[] = contentsData;
-  dataSource = new MatTableDataSource(this.data);
+  changelogData: ContentsModel[] = contentsData;
+  dataSource = new MatTableDataSource(this.changelogData);
   displayedColumns: string[] = ['datePublished', 'title', 'language', 'level', 'activity'];
   constructor() { }
 

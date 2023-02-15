@@ -11,17 +11,6 @@ __eeieeioh.com__ is an app for teaching English
 
 ### project-level todos
 
-rename: `Data` -> `<Component-name>Data`
-- [x] Cards Component
-- [ ] Board-Game Component
-- [ ] Changelog Component
-- [ ] Contents Component
-- [x] Context Component
-- [ ] Board-Game Component
-- [ ] Board-Game Component
-- [ ] Board-Game Component
-- [ ] Board-Game Component
-
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
 * <https://material.angular.io/components/icon/overview/>

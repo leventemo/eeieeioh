@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Data } from '../story-puzzle.component';
+import { StoryPuzzleModel } from '../story-puzzle.component';
 
 @Component({
   selector: 'app-sentence-view',
@@ -8,7 +8,7 @@ import { Data } from '../story-puzzle.component';
 })
 export class SentenceViewComponent {
   @Input() stepper = 0;
-  @Input() data: Data = {
+  @Input() data: StoryPuzzleModel = {
     id: 0,
     title: '',
     language: '',

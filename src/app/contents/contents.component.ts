@@ -5,7 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { DateDefinitions } from '@faker-js/faker';
 import contentsData from '../../assets/activities/contentsarray.json';
 
-export interface Contents {
+export interface ContentsModel {
   level: string;
   title: string;
   skill: string;
@@ -27,7 +27,7 @@ export class ContentsComponent implements OnInit {
   isMothFlying = true;
 
   numberOfDaysUntilNew = 31;
-  data: Contents[] = contentsData;
+  data: ContentsModel[] = contentsData;
 
   dataSource = new MatTableDataSource(this.data);
   displayedColumns: string[] = ['title', 'language', 'level', 'activity'];

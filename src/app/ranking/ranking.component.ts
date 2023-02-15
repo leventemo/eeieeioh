@@ -9,7 +9,7 @@ import allCardDecksCollection from '../../assets/activities/rankingarray.json';
 import { CdkDragDrop } from '@angular/cdk/drag-drop/';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
 
-interface Data {
+interface RankingModel {
   id: number;
   title: string;
   language: string;
@@ -24,7 +24,7 @@ interface Data {
 })
 export class RankingComponent implements OnInit {
 
-  data: Data = {
+  activityData: RankingModel = {
     id: 0,
     title: '',
     language: '',
@@ -46,13 +46,13 @@ export class RankingComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = Utils.shuffleStringsArray(this.data.cards);
+    this.currentPack = Utils.shuffleStringsArray(this.activityData.cards);
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions } });
   }
 
   drop(event: CdkDragDrop<any>) {

@@ -7,7 +7,7 @@ import { DialogBoardGameComponent } from '../dialog-board-game/dialog-board-game
 import { Utils } from '../utils';
 import allCardDecksCollection from '../../assets/activities/boardgamearray.json';
 
-interface Data {
+interface BoardGameModel {
   id: number;
   title: string;
   language: string;
@@ -28,7 +28,7 @@ interface Player {
 })
 export class BoardGameComponent implements OnInit {
 
-  data: Data = {
+  activityData: BoardGameModel = {
     id: 0,
     title: '',
     language: '',
@@ -37,7 +37,7 @@ export class BoardGameComponent implements OnInit {
   };
 
   currentPack: string[] = [];
-  instructions = () => this.data.instructions;
+  instructions = () => this.activityData.instructions;
   currentCard = '';
   isItAllDone = false;
   winner = '';
@@ -71,17 +71,17 @@ export class BoardGameComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.currentPack = this.activityData.cards;
   }
 
   openDialogInfo() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, preview: this.data.cards } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions, preview: this.activityData.cards } });
   }
 
   openDialogBoardGame(index: number) {
-    let dialogRef = this.dialog.open(DialogBoardGameComponent, { data: { question: this.data.cards[index], activePlayer: this.activePlayer } });
+    let dialogRef = this.dialog.open(DialogBoardGameComponent, { data: { question: this.activityData.cards[index], activePlayer: this.activePlayer } });
 
     dialogRef.afterClosed().subscribe(result => {
       this.isNextBtnDisabled = false;

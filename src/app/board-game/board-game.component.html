@@ -1,6 +1,6 @@
 <mat-card *ngIf="!isItAllDone" class="third-width-card">
 	<mat-card-title class="third-width-card-title">
-		<span class="activity-type">Board Game</span><span class="title">{{ data.title }}</span>
+		<span class="activity-type">Board Game</span><span class="title">{{ activityData.title }}</span>
 		<mat-icon class="icon" (click)="openDialogInfo()">info_outline</mat-icon>
 	</mat-card-title>
 
@@ -55,7 +55,7 @@
 
 <mat-card *ngIf="isItAllDone" class="third-width-card">
 	<mat-card-title class="third-width-card-title">
-		<span class="activity-type">Board Game</span><span class="title">{{ data.title }}</span>
+		<span class="activity-type">Board Game</span><span class="title">{{ activityData.title }}</span>
 		<mat-icon class="icon" (click)="openDialogInfo()">info_outline</mat-icon>
 	</mat-card-title>
 

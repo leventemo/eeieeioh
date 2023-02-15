@@ -7,7 +7,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { Utils } from '../utils';
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
 
-interface Data {
+interface ExpandablesModel {
   id: number;
   title: string;
   language: string;
@@ -35,7 +35,7 @@ interface ExpandablePair {
 
 export class ExpandablesComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructionsForExpandables: '', cards: [[]] };
+  activityData: ExpandablesModel = { id: 0, title: '', language: '', instructionsForExpandables: '', cards: [[]] };
   cards: string[][] = [[]];
   arrayOfObjects: ExpandablePair[] = [];
 
@@ -55,9 +55,9 @@ export class ExpandablesComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.cards = this.data.cards;
+    this.cards = this.activityData.cards;
 
     // convert this.cards (array of arrays) into an array of objects
     this.arrayOfObjects = Utils
@@ -70,7 +70,7 @@ export class ExpandablesComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructionsForExpandables } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructionsForExpandables } });
   }
 
   redirect() {

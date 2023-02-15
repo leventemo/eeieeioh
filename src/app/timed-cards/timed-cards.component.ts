@@ -7,7 +7,7 @@ import { Utils } from '../utils';
 import { interval, take, Subscription } from 'rxjs';
 import allCardDecksCollection from '../../assets/activities/timedcardsarray.json';
 
-interface Data {
+interface TimeCardsModel {
   id: number;
   title: string;
   language: string;
@@ -23,10 +23,10 @@ interface Data {
 })
 export class TimedCardsComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructions: '', timeAllowed: 0, cards: [] };
+  activityData: TimeCardsModel = { id: 0, title: '', language: '', instructions: '', timeAllowed: 0, cards: [] };
   pack: string[] = [];
-  cardsTotal = () => this.data.cards.length;
-  instructions = () => this.data.instructions;
+  cardsTotal = () => this.activityData.cards.length;
+  instructions = () => this.activityData.instructions;
   subscription!: Subscription;
   currentCard = '';
   currentCardCounter = 0;
@@ -54,21 +54,21 @@ export class TimedCardsComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.pack = this.data.cards;
+    this.pack = this.activityData.cards;
     this.timeIsUp = false;
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions, preview: this.data.cards } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions, preview: this.activityData.cards } });
   }
 
 
   go() {
     this.displayNextCard();
     this.subscription = interval(1000)
-      .pipe(take(this.data.timeAllowed / 1000))
+      .pipe(take(this.activityData.timeAllowed / 1000))
       .subscribe(() => {
         this.tiktok();
       })
@@ -87,7 +87,7 @@ export class TimedCardsComponent implements OnInit {
   tiktok() {
     this.timer = this.timer + 1000;
 
-    if (this.timer >= (this.data.timeAllowed)) {
+    if (this.timer >= (this.activityData.timeAllowed)) {
       this.timeIsUp = true;
       this.timer = 0;
     }

@@ -17,7 +17,7 @@ interface Chunks {
   after: string;
 }
 
-export interface Data {
+export interface StoryPuzzleModel {
   id: number;
   title: string;
   language: string;
@@ -35,7 +35,7 @@ export interface Data {
 
 export class StoryPuzzleComponent implements OnInit {
 
-  data: Data = {
+  activityData: StoryPuzzleModel = {
     id: 0,
     title: '',
     language: '',
@@ -46,8 +46,8 @@ export class StoryPuzzleComponent implements OnInit {
   };
 
   chunkArray: string[] = [];
-  instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
+  instructions = () => this.activityData.instructions;
+  cardsTotal = () => this.activityData.cards.length;
   stepper = 0;
   passCode!: number;
   accepted = false;
@@ -68,16 +68,16 @@ export class StoryPuzzleComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.chunkArray = Utils.shuffleStringsArray(this.data.cards.map(item => item.chunk));
+    this.chunkArray = Utils.shuffleStringsArray(this.activityData.cards.map(item => item.chunk));
 
     this.passCode = Utils.getPassCode();
 
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions } });
   }
 
   next() {

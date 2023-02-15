@@ -13,7 +13,7 @@ interface Card {
   answer?: string;
 }
 
-interface Data {
+interface RewordModel {
   id?: number;
   title?: string;
   language?: string;
@@ -34,15 +34,15 @@ interface Player {
 
 export class RewordComponent implements OnInit {
 
-  data: Data = { cards: [] };
+  activityData: RewordModel = { cards: [] };
   currentPack: Card[] = [];
   currentCard: Card = {};
   isClueDisplayed = false;
   isAnswerDisplayed = false;
   areQnestionsDone = false;
   currentCardCounter = 0;
-  instructions = () => this.data.instructions;
-  cardsTotal = () => this.data.cards.length;
+  instructions = () => this.activityData.instructions;
+  cardsTotal = () => this.activityData.cards.length;
 
   playerA: Player = { name: 'playerA', score: 0 };
   playerB: Player = { name: 'playerB', score: 0 };
@@ -61,13 +61,13 @@ export class RewordComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = rewordCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.currentPack = this.data.cards;
+    this.currentPack = this.activityData.cards;
   }
 
   openDialog() {
-    this.dialog.open(DialogInfoComponent, { data: { title: this.data.title, instr: this.data.instructions } });
+    this.dialog.open(DialogInfoComponent, { data: { title: this.activityData.title, instr: this.activityData.instructions } });
   }
 
   displayNextCard() {

@@ -8,7 +8,7 @@ import { Utils } from '../utils';
 import { interval, Observable, Subscription } from 'rxjs';
 import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
 
-interface Data {
+interface DuelsModel {
   id: number;
   title: string;
   language: string;
@@ -36,9 +36,9 @@ interface ResultsThisTurn {
 })
 export class DuelsComponent implements OnInit {
 
-  data: Data = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
+  activityData: DuelsModel = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
   pack: string[][] = [];
-  cardsTotal = () => this.data.cards.length;
+  cardsTotal = () => this.activityData.cards.length;
   timeAllowed = 600;
 
   // to hide "Start" & "Contents" btns
@@ -82,15 +82,15 @@ export class DuelsComponent implements OnInit {
     const cardIdFromRoute = Number(routeParams.get('id'));
 
     // find the deck for id we got from the route
-    this.data = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    this.activityData = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
 
-    this.pack = this.data.cards;
+    this.pack = this.activityData.cards;
   }
 
   openDialog() {
     this.dialog.open(
       DialogInfoComponent,
-      { data: { title: this.data.title, instr: this.data.instructionsForDuels } }
+      { data: { title: this.activityData.title, instr: this.activityData.instructionsForDuels } }
     );
   }
 
