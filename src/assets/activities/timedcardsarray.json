@@ -285,5 +285,28 @@
       "When talking to a stranger, what topics are considered taboos in your country?",
       "How does technology help you communicate?"
     ]
+  },
+  {
+    "id": "13",
+    "level": "B1 up",
+    "title": "Talking about Entertainment",
+    "language": "conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2023, 02, 16",
+    "cards": [
+      "What is you favourite form of entertainment?",
+      "When do you normally have free time?",
+      "Who do you spend you free time with?",
+      "Do you watch more TV on weekdays or at weekend? What kinds of programmes do you enjoy?",
+      "What kinds of TV programmes are most popular in you country?",
+      "Could you live without a TV? Why (not)?",
+      "What computer games have you played?",
+      "What kind of music do you like?",
+      "When or where do you listen to music?",
+      "What kind of things do you like to read?",
+      "Have you ever organized a surprise party?",
+      "Have you ever enjoyed visiting a museum? What kind of exhobition was it?"
+    ]
   }
 ]
