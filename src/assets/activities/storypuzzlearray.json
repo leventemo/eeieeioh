@@ -49,11 +49,11 @@
   {
     "id": "2",
     "level": "B1 up",
-    "title": "???",
+    "title": "Cafe Awning",
     "language": "Storytelling",
     "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
     "url": "???",
-    "datePublished": "2023, 01, 22",
+    "datePublished": "2023, 02, 16",
     "tasks": [
       "1) Notice some useful phrases in these sentences.",
       "2) Focus on the highlighted ones. What do they mean? How would you use them? Give examples.",
@@ -62,39 +62,34 @@
     ],
     "cards": [
       {
-        "before": "AAA ",
-        "chunk": "bouncing off a cafe awning",
-        "after": "AAA."
+        "before": "Instant replay showed that the ball ",
+        "chunk": "bounced off ",
+        "after": "the wall and narrowly missed a fan."
       },
       {
-        "before": "AAA ",
-        "chunk": "a stroke of luck",
-        "after": "AAA."
+        "before": "It was  ",
+        "chunk": "a stroke of luck ",
+        "after": "that we bumped into each other that morning."
       },
       {
-        "before": "AAA ",
-        "chunk": "arms of a passer-by",
-        "after": "AAA."
+        "before": "Police was looking for ",
+        "chunk": "a passer-by ",
+        "after": "who had seen the accident."
       },
       {
-        "before": "AAA ",
+        "before": "The floor was littered with ",
         "chunk": "cigarette butts",
-        "after": "AAA."
+        "after": "."
       },
       {
-        "before": "AAA ",
-        "chunk": "almost unscathed",
-        "after": "AAA."
+        "before": "He was sipping his coffee under the shade of ",
+        "chunk": "a cafe awning ",
+        "after": "when he saw her."
       },
       {
-        "before": "AAA ",
-        "chunk": "alerted his father",
-        "after": "AAA."
-      },
-      {
-        "before": "AAA ",
-        "chunk": "a seventh-floor apartment",
-        "after": "AAA."
+        "before": "They were living in  ",
+        "chunk": "a seventh-floor apartment ",
+        "after": "at the time."
       }
     ]
   },
