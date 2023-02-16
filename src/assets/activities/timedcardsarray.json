@@ -308,5 +308,30 @@
       "Have you ever organized a surprise party? How would you react if you found yourself in the middle of one on your birthday?",
       "Have you ever enjoyed visiting a museum? What kind of exhibition was it?"
     ]
+  },
+  {
+    "id": "14",
+    "level": "B2 up",
+    "title": "Talking about Shopping",
+    "language": "conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2023, 02, 16",
+    "cards": [
+      "Have you ever overspent on something? What did you buy? How did you feel afterwards?",
+      "Is shopping a pastime for you or do you try to make it as fast as possible?",
+      "What products do you buy online? What would you rather buy in person?",
+      "Do you prefer to shop on your own or with other people? What are the advantages and disadvantages of each?",
+      "Who does the weekly shopping in your household? Do you ever give a hand?",
+      "Are you a bargain hunter? Do you get excited about sales and discounts?",
+      "When are the best sales in your country?",
+      "Do you prefer buying things for yourself or for other people?",
+      "Have you ever taken anything back to a shop? What was the problem with it? Did you get a refund?",
+      "Do you prefer to buy products that are made in your own country? Why (not)?",
+      "When buying an expensive item, do you compare prices at several shops?",
+      "In which store would you like to go on a shopping spree?",
+      "Do you prefer shopping in malls, markets or streets?",
+      "Why do women enjoy shopping more than men?"
+    ]
   }
 ]

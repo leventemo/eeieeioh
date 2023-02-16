@@ -297,15 +297,6 @@
     "datePublished": "2022, 11, 14"
   },
   {
-    "level": "B2 up",
-    "title": "Talking about Communication",
-    "language": "conversation",
-    "slug": "/timed-cards",
-    "id": "12",
-    "activity": "Timed Cards",
-    "datePublished": "2022, 12, 01"
-  },
-  {
     "level": "B1 up",
     "title": "Talking about Entertainment",
     "language": "conversation",
@@ -484,6 +475,24 @@
     "id": "4",
     "activity": "Context",
     "datePublished": "2022, 11, 07"
+  },
+  {
+    "level": "B2 up",
+    "title": "Talking about Communication",
+    "language": "conversation",
+    "slug": "/timed-cards",
+    "id": "12",
+    "activity": "Timed Cards",
+    "datePublished": "2022, 12, 01"
+  },
+  {
+    "level": "B2 up",
+    "title": "Talking about Shopping",
+    "language": "conversation",
+    "slug": "/timed-cards",
+    "id": "14",
+    "activity": "Timed Cards",
+    "datePublished": "2023, 02, 16"
   },
   {
     "level": "C1",
