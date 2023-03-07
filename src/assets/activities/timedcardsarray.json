@@ -363,5 +363,31 @@
       "Are you allowed to use mobile phones in class? Do you use them for educational purposes? Do you think they should be allowed in class?",
       "How would you improve the education system in your country?"
     ]
+  },
+  {
+    "id": "16",
+    "level": "B2 up",
+    "title": "Talking about Work",
+    "language": "conversation",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. Talk about each question for a minute. While you're answering questions, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "timeAllowed": "60000",
+    "datePublished": "2023, 03, 07",
+    "cards": [
+      "Do you enjoy work? Are you a hard worker? What can motivate you to work?",
+      "Apart from your pay, what are some of the most important aspects for you in a job?",
+      "What's your dream job? Why would you enjoy it?",
+      "Are there any jobs you would be unable to do, even if it paid very well?",
+      "Where is the best place to find jobs being advertised these days?",
+      "What are the most important qualities a good boss should have?",
+      "How important is it to get along with workmates? Is it a good idea to socialize with them outside working hours?",
+      "What career goals do you have? Are you an ambitious person?",
+      "What is the retirement age in your country? Are you happy about it?",
+      "Which professions are very well-paid in your country right now? Why are those workers so highly valued?",
+      "Which professions are not very well-paid in your country? Why are those workers so undervalued?",
+      "Do you know someone who managed to change careers? Would you ever make such an effort and take such a risk?",
+      "Do you know any workaholics? What are your opinions on them? What motivates them to work so hard?",
+      "Are there any professions that men do better than women? How about the other way round?",
+      "Can you imagine setting up your own business and being your own boss?"
+    ]
   }
 ]
