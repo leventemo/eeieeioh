@@ -577,5 +577,100 @@
         "I look forward to hear from you."
       ]
     ]
+  },
+  {
+    "id": "6",
+    "level": "B2",
+    "title": "Essay",
+    "language": "VOC, GR, SPEL",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opporunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "instructionsForExpandables": "Expandables works best when projected on a big screen for the whole class, with students discussing their ideas in pairs/small groups. Of course, as a student, you may use it on your phone too. There is a connection between what you see and what you need to click on to see. This might be the connection between a word and its accompanying preposition or the connection between a common mistake and its correct form, etc. It's important for students to spend a moment trying to come up with their own idea before clicking on the icon.",
+    "datePublished": "2022, 09, 21",
+    "cards": [
+      [
+        "enough",
+        "enought"
+      ],
+      [
+        "nowadays",
+        "nowdays"
+      ],
+      [
+        "definitely",
+        "defenetly"
+      ],
+      [
+        "traditional",
+        "tradicional"
+      ],
+      [
+        "doesn't",
+        "doesent"
+      ],
+      [
+        "their settings",
+        "there settings"
+      ],
+      [
+        "my 13-year-old sister",
+        "my 13 years old sister"
+      ],
+      [
+        "every person",
+        "every people"
+      ],
+      [
+        "taught",
+        "teached"
+      ],
+      [
+        "opinion",
+        "oppinion"
+      ],
+      [
+        "another",
+        "an other"
+      ],
+      [
+        "each other",
+        "eachother"
+      ],
+      [
+        "comparison",
+        "comperason"
+      ],
+      [
+        "privileges",
+        "priviloges"
+      ],
+      [
+        "struggle",
+        "struggel"
+      ],
+      [
+        "passionate",
+        "passionat"
+      ],
+      [
+        "fabric",
+        "fabrick"
+      ],
+      [
+        "necessarily",
+        "nececerely"
+      ],
+      [
+        "before",
+        "befour"
+      ],
+      [
+        "a peaceful world",
+        "a pieceful world"
+      ],
+      [
+        "deforestation",
+        "diforestation"
+      ]
+    ]
   }
 ]
