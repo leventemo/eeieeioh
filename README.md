@@ -9,7 +9,31 @@ __eeieeioh.com__ is an app for teaching English
 
 ## todos
 
+### footer
+
+video
+* Film crew
+* whodunit
+* what else?
+
+articles
+* separate from quizzes
+
+quizzes
+* separate from articles
+
 ### project-level todos
+
+service-fed data:
+- [x] Cards
+- [ ] Timed Cards
+- [x] Context
+- [ ] Escape Room
+- [ ] Expandables – Duels
+- [ ] Ranking
+- [ ] Story Puzzle
+- [ ] Board Game
+- [ ] Reword
 
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`

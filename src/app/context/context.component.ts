@@ -4,9 +4,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
+import { FetchActivityService } from '../fetch-activity.service';
 import { Utils } from '../utils';
-import { interval, Observable, Subscription } from 'rxjs';
-import allContextDecksCollection from '../../assets/activities/contextarray.json';
+import { interval, Subscription } from 'rxjs';
 
 interface ContextModel {
   id: number;
@@ -81,18 +81,21 @@ export class ContextComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private fetchActivityService: FetchActivityService) {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allContextDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const routeSegment = this.route.snapshot.url[0].path;
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.pack = this.activityData.cards;
+    this.fetchActivityService.fetchActivity(routeSegment, activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.pack = this.activityData.cards;
+      });
+
   }
 
   openDialog() {
