@@ -24,16 +24,21 @@ quizzes
 
 ### project-level todos
 
+uninstall Faker for now
+
 service-fed data:
 - [x] Cards
-- [ ] Timed Cards
+- [x] Timed Cards
 - [x] Context
-- [ ] Escape Room
-- [ ] Expandables – Duels
-- [ ] Ranking
-- [ ] Story Puzzle
-- [ ] Board Game
+- [x] Escape Room
+- [x] Expandables
+- [x] Duels
+- [x] Ranking
+- [x] Story Puzzle
+- [x] Board Game
 - [ ] Reword
+- [ ] Changelog?
+- [ ] Contents?
 
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
@@ -161,3 +166,6 @@ set up a preview in Instructions Modals
 - [ ] Escape Room
 - [x] Board Game
 - [ ] Reword
+
+About & Teacher's Guide:
+- [ ] make it more conscise

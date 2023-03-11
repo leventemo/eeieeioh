@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
-import { FetchActivityService } from '../fetch-activity.service';
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { interval, Subscription } from 'rxjs';
 
@@ -43,7 +43,7 @@ interface ResultsThisTurn {
 export class ContextComponent implements OnInit {
 
   activityData: ContextModel = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
-  pack: Card[] = [];
+  currentPack: Card[] = [];
   cardsTotal = () => this.activityData.cards.length;
   timeAllowed = 600;
 
@@ -82,18 +82,17 @@ export class ContextComponent implements OnInit {
     public router: Router,
     private route: ActivatedRoute,
     public dialog: MatDialog,
-    private fetchActivityService: FetchActivityService) {
+    private activityService: ActivityService) {
   }
 
   ngOnInit(): void {
 
-    const routeSegment = this.route.snapshot.url[0].path;
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.fetchActivityService.fetchActivity(routeSegment, activityId)
+    this.activityService.fetchContextActivity(activityId)
       .subscribe((result) => {
         this.activityData = result;
-        this.pack = this.activityData.cards;
+        this.currentPack = this.activityData.cards;
       });
 
   }
@@ -125,7 +124,7 @@ export class ContextComponent implements OnInit {
   onClick(value: string) {
     this.calcScore(value);
 
-    if (this.pack.length === 0) {
+    if (this.currentPack.length === 0) {
       this.subscription?.unsubscribe();
       this.chooseWinner();
       this.areQnsDone = true;
@@ -154,11 +153,11 @@ export class ContextComponent implements OnInit {
   }
 
   private selectCurrentCard() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
     this.currentCorrectOption = this.currentCard.options[0];
     this.currentIncorrectOptions = this.currentCard.options.slice(1);
-    this.pack = this.pack.filter(card => card !== this.currentCard);
+    this.currentPack = this.currentPack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
 

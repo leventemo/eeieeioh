@@ -6,7 +6,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
 import { delay, filter, scan, takeUntil } from 'rxjs/operators';
 
-import allCardDecksCollection from '../../assets/activities/escaperoomarray.json';
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { Validators } from '../validators'
 
@@ -56,7 +56,8 @@ export class EscapeRoomComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activityService: ActivityService) {
   }
 
   get question(): string {
@@ -64,14 +65,15 @@ export class EscapeRoomComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.currentPack = this.activityData.cards;
+    this.activityService.fetchEscapeRoomActivity(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+      });
+
   }
 
   openDialog() {

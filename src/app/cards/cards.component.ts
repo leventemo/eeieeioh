@@ -3,10 +3,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
-import { FetchActivityService } from '../fetch-activity.service';
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 
-interface CardsModel {
+export interface CardsModel {
   id: number;
   title: string;
   language: string;
@@ -42,14 +42,21 @@ export class CardsComponent implements OnInit {
     public router: Router,
     private route: ActivatedRoute,
     public dialog: MatDialog,
-    private fetchActivityService: FetchActivityService) { }
+    private activityService: ActivityService
+  ) { }
 
   ngOnInit(): void {
 
     const routeSegment = this.route.snapshot.url[0].path;
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.fetchActivityService.fetchActivity(routeSegment, activityId)
+    /*     this.activityService.fetchActivity(routeSegment, activityId)
+          .subscribe((result) => {
+            this.activityData = result;
+            this.currentPack = this.activityData.cards;
+          }); */
+
+    this.activityService.fetchCardsActivity(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

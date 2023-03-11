@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 
-import { DateDefinitions } from '@faker-js/faker';
 import contentsData from '../../assets/activities/contentsarray.json';
 
 export interface ContentsModel {
@@ -15,8 +14,6 @@ export interface ContentsModel {
   activity: string;
   datePublished: string;
 }
-
-/*   { level: 'A1', title: 'Hotel Check-in', skill: 'SP', language: 'alphabet, numbers', slug: '/check-in', id: '', activity: 'Check-in' }, */
 
 @Component({
   selector: 'app-contents',
