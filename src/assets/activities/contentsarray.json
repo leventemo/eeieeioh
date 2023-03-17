@@ -496,6 +496,15 @@
   },
   {
     "level": "B2",
+    "title": "Letter of Application",
+    "language": "formal language",
+    "slug": "/reword",
+    "id": "4",
+    "activity": "Reword",
+    "datePublished": "2023, 03, 17"
+  },
+  {
+    "level": "B2",
     "title": "Essay",
     "language": "error correction",
     "slug": "/duels",
