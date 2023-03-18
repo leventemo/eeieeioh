@@ -7,33 +7,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { interval, Subscription } from 'rxjs';
-
-interface ContextModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForDuels: string;
-  cards: Card[];
-}
-
-interface Card {
-  prompts: string[];
-  options: string[];
-}
-
-interface Player {
-  name: string;
-  score: number;
-  timer: number;
-}
-
-interface ResultsThisTurn {
-  prompts: string[];
-  correctOption: string;
-  incorrectOptions: string[];
-  clickingPlayer: string;
-  pointsForThis: number;
-}
+import { ContextModel, Card, Player, ResultsThisTurn } from '../models/context.model';
 
 @Component({
   selector: 'app-context',
@@ -89,7 +63,7 @@ export class ContextComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchContextActivity(activityId)
+    this.activityService.getContext(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

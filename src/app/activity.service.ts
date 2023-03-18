@@ -23,53 +23,53 @@ export class ActivityService {
 
   constructor() { }
 
-  fetchCardsActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allCardDecks))
+  getCards(Id: number, decks: [] = allCardDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchTimedCardsActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allTimedCardDecks))
+  getTimedCards(Id: number, decks: [] = allTimedCardDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchContextActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allContextDecks))
+  getContext(Id: number, decks: [] = allContextDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchEscapeRoomActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allEscapeRoomDecks))
+  getEscapeRoom(Id: number, decks: [] = allEscapeRoomDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchExpandablesActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allDuelsDecks))
+  getExpandables(Id: number, decks: [] = allDuelsDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchDuelsActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allDuelsDecks))
+  getDuels(Id: number, decks: [] = allDuelsDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchRankingActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allRankingDecks))
+  getRanking(Id: number, decks: [] = allRankingDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchStoryPuzzleActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allStoryPuzzleDecks))
+  getStoryPuzzle(Id: number, decks: [] = allStoryPuzzleDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchBoardGameActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allBoardGameDecks))
+  getBoardGame(Id: number, decks: [] = allBoardGameDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 
-  fetchRewordActivity(Id: number): Observable<any> {
-    return of(Utils.selectActivity(Id, allRewordDecks))
+  getReword(Id: number, decks: [] = allRewordDecks): Observable<any> {
+    return of(Utils.selectActivity(Id, decks))
       .pipe(delay(this.delayTime));
   }
 

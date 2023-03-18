@@ -5,14 +5,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-
-export interface CardsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
+import { CardsModel } from '../models/cards.model';
 
 @Component({
   selector: 'app-cards',
@@ -47,16 +40,9 @@ export class CardsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const routeSegment = this.route.snapshot.url[0].path;
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    /*     this.activityService.fetchActivity(routeSegment, activityId)
-          .subscribe((result) => {
-            this.activityData = result;
-            this.currentPack = this.activityData.cards;
-          }); */
-
-    this.activityService.fetchCardsActivity(activityId)
+    this.activityService.getCards(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

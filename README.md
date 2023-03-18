@@ -36,7 +36,7 @@ service-fed data:
 - [x] Ranking
 - [x] Story Puzzle
 - [x] Board Game
-- [ ] Reword
+- [x] Reword
 - [ ] Changelog?
 - [ ] Contents?
 

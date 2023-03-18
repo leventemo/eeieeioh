@@ -6,19 +6,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 import { Utils } from '../utils';
 import { ActivityService } from '../activity.service';
-
-interface ExpandablesModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForExpandables: string;
-  cards: string[][];
-}
-
-interface ExpandablePair {
-  visible: string;
-  expandable: string;
-}
+import { ExpandablesModel, ExpandablePair } from '../models/expandables.model';
 
 @Component({
   selector: 'app-expandables',
@@ -54,7 +42,7 @@ export class ExpandablesComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchExpandablesActivity(activityId)
+    this.activityService.getExpandables(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

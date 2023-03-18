@@ -9,14 +9,7 @@ import { Utils } from '../utils';
 
 import { CdkDragDrop } from '@angular/cdk/drag-drop/';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
-
-interface RankingModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
+import { RankingModel } from '../models/ranking.model';
 
 @Component({
   selector: 'app-ranking',
@@ -46,7 +39,7 @@ export class RankingComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchRankingActivity(activityId)
+    this.activityService.getRanking(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = Utils.shuffleStringsArray(this.activityData.cards);

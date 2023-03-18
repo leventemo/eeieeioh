@@ -6,20 +6,7 @@ import { DialogBoardGameComponent } from '../dialog-board-game/dialog-board-game
 
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-
-interface BoardGameModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
-
-interface Player {
-  name: string;
-  position: number;
-  takingOn: number;
-}
+import { BoardGameModel, Player } from '../models/board-game.model';
 
 @Component({
   selector: 'app-board-game',
@@ -70,7 +57,7 @@ export class BoardGameComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchBoardGameActivity(activityId)
+    this.activityService.getBoardGame(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

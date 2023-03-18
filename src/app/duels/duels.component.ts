@@ -7,27 +7,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Utils } from '../utils';
 import { interval, Observable, Subscription } from 'rxjs';
 import { ActivityService } from '../activity.service';
-
-interface DuelsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForDuels: string;
-  cards: string[][];
-}
-
-interface Player {
-  name: string;
-  score: number;
-  timer: number;
-}
-
-interface ResultsThisTurn {
-  correctOption: string;
-  incorrectOption: string;
-  clickingPlayer: string;
-  pointsForThis: number;
-}
+import { DuelsModel, Player, ResultsThisTurn } from '../models/duels.model';
 
 @Component({
   selector: 'app-duels',
@@ -81,7 +61,7 @@ export class DuelsComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchDuelsActivity(activityId)
+    this.activityService.getDuels(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

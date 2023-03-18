@@ -6,15 +6,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { interval, take, Subscription } from 'rxjs';
-
-interface TimeCardsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  timeAllowed: number;
-  cards: string[];
-}
+import { TimeCardsModel } from '../models/timed-cards.model';
 
 @Component({
   selector: 'app-timed-cards',
@@ -53,7 +45,7 @@ export class TimedCardsComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchTimedCardsActivity(activityId)
+    this.activityService.getTimedCards(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

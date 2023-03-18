@@ -9,19 +9,7 @@ import { delay, filter, scan, takeUntil } from 'rxjs/operators';
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { Validators } from '../validators'
-
-interface Card {
-  question: string;
-  correct: string[];
-}
-
-interface EscapeRoomModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: Card[];
-}
+import { EscapeRoomModel, Card } from '../models/escape-room.model';
 
 @Component({
   selector: 'app-escape-room',
@@ -68,7 +56,7 @@ export class EscapeRoomComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchEscapeRoomActivity(activityId)
+    this.activityService.getEscapeRoom(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;

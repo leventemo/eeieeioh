@@ -11,12 +11,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '../validators';
 import { delay, filter, first } from 'rxjs/operators';
 import { firstValueFrom } from 'rxjs/internal/firstValueFrom';
-
-interface Chunks {
-  before: string;
-  chunk: string;
-  after: string;
-}
+import { Chunks } from '../models/story-puzzle.model';
 
 export interface StoryPuzzleModel {
   id: number;
@@ -68,7 +63,7 @@ export class StoryPuzzleComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchStoryPuzzleActivity(activityId)
+    this.activityService.getStoryPuzzle(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.chunkArray = Utils.shuffleStringsArray(this.activityData.cards.map(item => item.chunk));

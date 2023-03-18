@@ -5,27 +5,7 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
 import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-import rewordCollection from '../../assets/activities/rewordarray.json';
-
-interface Card {
-  sentence?: string;
-  keyword?: string;
-  targetLanguage?: string;
-  answer?: string;
-}
-
-interface RewordModel {
-  id?: number;
-  title?: string;
-  language?: string;
-  instructions?: string;
-  cards: Card[];
-}
-
-interface Player {
-  name: string;
-  score: number;
-}
+import { Card, RewordModel, Player } from '../models/reword.model';
 
 @Component({
   selector: 'app-reword',
@@ -62,7 +42,7 @@ export class RewordComponent implements OnInit {
 
     const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.activityService.fetchRewordActivity(activityId)
+    this.activityService.getReword(activityId)
       .subscribe((result) => {
         this.activityData = result;
         this.currentPack = this.activityData.cards;
