@@ -236,8 +236,8 @@
     "datePublished": "2023, 03, 17",
     "cards": [
       {
-        "sentence": "I'm writing to apply for the teaching job, the one you're advertising on your LinkedIn page.",
-        "keyword": "AS",
+        "sentence": "I'm applying for the teaching job, the one you're advertising on your LinkedIn page.",
+        "keyword": "WRITING; AS",
         "targetLanguage": "as advertised",
         "answer": "I am writing to apply for the teaching job as advertised on your LinkedIn page."
       },
@@ -248,10 +248,10 @@
         "answer": "I am writing to apply for the position of shift manager."
       },
       {
-        "sentence": "Please have a look at my application.",
-        "keyword": "CONSIDER",
-        "targetLanguage": "to consider something",
-        "answer": "I hope you will consider my application."
+        "sentence": "Thanks for checking out my application.",
+        "keyword": "THANK; CONSIDER",
+        "targetLanguage": "thank you for something; to consider something",
+        "answer": "Thank you for considering my application."
       },
       {
         "sentence": "I'm available for an interview whenever you like.",
@@ -260,10 +260,10 @@
         "answer": "I am available for an interview at your convenience."
       },
       {
-        "sentence": "I can't wait to hear from you.",
+        "sentence": "I can't wait to hear back from you.",
         "keyword": "FORWARD",
         "targetLanguage": "to look forward to something",
-        "answer": "I look forward to your response."
+        "answer": "I look forward to hearing from you soon."
       },
       {
         "sentence": "I reckon I'm the right person for this job.",
@@ -275,7 +275,7 @@
         "sentence": "I'm working for TelePizza right now.",
         "keyword": "PRESENT",
         "targetLanguage": "at present",
-        "answer": "At present I am working for TelePizza."
+        "answer": "At present, I am working for TelePizza."
       },
       {
         "sentence": "I'm writing because I saw your advertisement in The Guardian.",
@@ -302,10 +302,10 @@
         "answer": "Please contact me if you have any questions regarding my CV."
       },
       {
-        "sentence": "In my previous job I picked up valuable skills like digital skills and giving presentations.",
+        "sentence": "In my previous job, I picked up valuable skills like digital skills and giving presentations.",
         "keyword": "ACQUIRE; SUCH",
         "targetLanguage": "to acquire something; such as",
-        "answer": "In my previous employment I acquired valuable skills, such as digital skills and giving presentations."
+        "answer": "In my previous employment, I acquired valuable skills, such as digital skills and giving presentations."
       },
       {
         "sentence": "I know how to maintain closed networks of computers.",
@@ -314,16 +314,52 @@
         "answer": "I am familiar with maintaining closed networks of computers."
       },
       {
-        "sentence": "I have learned how to deal with customer complaints.",
-        "keyword": "PREVIOUS EXPERIENCE",
-        "targetLanguage": "to have previous experience in something",
-        "answer": "I have previous experience in dealing with customer complaints."
+        "sentence": "In my last job, I learned how to deal with customer complaints.",
+        "keyword": "ROLE; EXPERIENCE",
+        "targetLanguage": "my previous role; to gain valuable experience in something",
+        "answer": "In my previous role, I gained valuable experience in dealing with customer complaints."
       },
       {
         "sentence": "I think I can do what's necessary for the job.",
         "keyword": "ABLE; MEET",
         "targetLanguage": "to be able to do something; to meet the demands of something",
         "answer": "I believe that I am able to successfully meet the demands of the position."
+      },
+      {
+        "sentence": "I'm really interested in the project manager role at Google.",
+        "keyword": "WRITING; INTEREST",
+        "targetLanguage": "to express my interest",
+        "answer": "I am writing to express my interest in the project manager role at Google."
+      },
+      {
+        "sentence": "I know I can bring a lot to your team and make things better.",
+        "keyword": "CONFIDENT; CONTRIBUTION",
+        "targetLanguage": "to be confident; to make a contribution to something",
+        "answer": "I am confident that I can make a positive contribution to your team."
+      },
+      {
+        "sentence": "I'm confident that, due to my skills and experience, I'd be great at this job.",
+        "keyword": "CANDIDATE; ROLE",
+        "targetLanguage": "to make someone a strong candidate for something; this role",
+        "answer": "I am confident that my skills and experience make me a strong candidate for this role."
+      },
+      {
+        "sentence": "Just let me know if you have any questions or want to set up an interview!",
+        "keyword": "HESITATE; SCHEDULE",
+        "targetLanguage": "do not hesitate to do something; to schedule something",
+        "answer": "Please do not hesitate to contact me if you have any questions or if you would like to schedule an interview."
+      },
+      {
+        "sentence": "I've been working in graphic design for 5 years, as you can see from my resume.",
+        "keyword": "EXPERIENCE",
+        "targetLanguage": "to have 5 years of experience",
+        "answer": "As you can see from my resume, I have 5 years of experience in graphic design."
+      },
+      {
+        "sentence": "I'm really into space research and would love to work for NASA.",
+        "keyword": "PASSIONATE; OPPORTUNITY",
+        "targetLanguage": "to be passionate about something; an opportunity to do something",
+        "answer": "I am passionate about space research and would love the opportunity to work for NASA."
       }
     ]
   }
