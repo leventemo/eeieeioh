@@ -226,5 +226,105 @@
         "answer": "Just when dad was about to start asking questions about Saturday night, he got a call from his boss. I was saved by the bell."
       }
     ]
+  },
+  {
+    "id": "4",
+    "level": "B2",
+    "title": "Letter of Application",
+    "language": "formal language",
+    "instructions": "Work in pairs using one phone between you. Both of you can see the cards all the time. The left-hand counter belongs to player A, the right-hand counter belongs to player B. Take turns to rephrase the sentence at the top using the key word(s) in capital letters. Click on \"Answer\" to see a correct solution and activate the scoring buttons. Then work together and make a decision: if a solution deserves points, click on the active counter, otherwise click on \"Next\" to see another card. Before checking the answer you can also choose to click on \"Clue\" to get a hint: the phrase with the key word that your're expected to use in your solution. However, if you have used that, clicking on the counter will give you 1 point only. The counter buttons are only active when the answer is displayed. In short: 1) the active player comes up with a solution (using the \"Clue\" button if necessary), 2) players check a possible correct answer together, 3) they asses the active player's solution",
+    "datePublished": "2023, 03, 17",
+    "cards": [
+      {
+        "sentence": "I'm writing to apply for the teaching job, the one you're advertising on your LinkedIn page.",
+        "keyword": "AS",
+        "targetLanguage": "as advertised",
+        "answer": "I am writing to apply for the teaching job as advertised on your LinkedIn page."
+      },
+      {
+        "sentence": "I'm writing because I want the position of shift manager.",
+        "keyword": "FOR",
+        "targetLanguage": "to apply for a position",
+        "answer": "I am writing to apply for the position of shift manager."
+      },
+      {
+        "sentence": "Please have a look at my application.",
+        "keyword": "CONSIDER",
+        "targetLanguage": "to consider something",
+        "answer": "I hope you will consider my application."
+      },
+      {
+        "sentence": "I'm available for an interview whenever you like.",
+        "keyword": "CONVENIENCE",
+        "targetLanguage": "at someone's convenience",
+        "answer": "I am available for an interview at your convenience."
+      },
+      {
+        "sentence": "I can't wait to hear from you.",
+        "keyword": "FORWARD",
+        "targetLanguage": "to look forward to something",
+        "answer": "I look forward to your response."
+      },
+      {
+        "sentence": "I reckon I'm the right person for this job.",
+        "keyword": "SUITABLE",
+        "targetLanguage": "suitable for something",
+        "answer": "I believe that I am suitable for this position."
+      },
+      {
+        "sentence": "I'm working for TelePizza right now.",
+        "keyword": "PRESENT",
+        "targetLanguage": "at present",
+        "answer": "At present I am working for TelePizza."
+      },
+      {
+        "sentence": "I'm writing because I saw your advertisement in The Guardian.",
+        "keyword": "REGARD",
+        "targetLanguage": "with regard to something",
+        "answer": "I am writing with regard to your advertisement in The Guardian."
+      },
+      {
+        "sentence": "I think I am a skilled receptionist.",
+        "keyword": "CONSIDER",
+        "targetLanguage": "to consider someone something",
+        "answer": "I consider myself to be a skilled receptionist."
+      },
+      {
+        "sentence": "I have attached my CV so you can read it and think about it.",
+        "keyword": "CONSIDERATION",
+        "targetLanguage": "for someone's consideration",
+        "answer": "I have attached my CV for your consideration."
+      },
+      {
+        "sentence": "Just give me a call if you have any questions about my CV.",
+        "keyword": "CONTACT; REGARDING",
+        "targetLanguage": "to contact someone; regarding something",
+        "answer": "Please contact me if you have any questions regarding my CV."
+      },
+      {
+        "sentence": "In my previous job I picked up valuable skills like digital skills and giving presentations.",
+        "keyword": "ACQUIRE; SUCH",
+        "targetLanguage": "to acquire something; such as",
+        "answer": "In my previous employment I acquired valuable skills, such as digital skills and giving presentations."
+      },
+      {
+        "sentence": "I know how to maintain closed networks of computers.",
+        "keyword": "FAMILIAR",
+        "targetLanguage": "to be familiar with something",
+        "answer": "I am familiar with maintaining closed networks of computers."
+      },
+      {
+        "sentence": "I have learned how to deal with customer complaints.",
+        "keyword": "PREVIOUS EXPERIENCE",
+        "targetLanguage": "to have previous experience in something",
+        "answer": "I have previous experience in dealing with customer complaints."
+      },
+      {
+        "sentence": "I think I can do what's necessary for the job.",
+        "keyword": "ABLE; MEET",
+        "targetLanguage": "to be able to do something; to meet the demands of something",
+        "answer": "I believe that I am able to successfully meet the demands of the position."
+      }
+    ]
   }
 ]
