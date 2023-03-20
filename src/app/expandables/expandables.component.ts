@@ -5,20 +5,8 @@ import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 import { Utils } from '../utils';
-import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
-
-interface ExpandablesModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForExpandables: string;
-  cards: string[][];
-}
-
-interface ExpandablePair {
-  visible: string;
-  expandable: string;
-}
+import { ActivityService } from '../activity.service';
+import { ExpandablesModel, ExpandablePair } from '../models/expandables.model';
 
 @Component({
   selector: 'app-expandables',
@@ -36,7 +24,7 @@ interface ExpandablePair {
 export class ExpandablesComponent implements OnInit {
 
   activityData: ExpandablesModel = { id: 0, title: '', language: '', instructionsForExpandables: '', cards: [[]] };
-  cards: string[][] = [[]];
+  currentPack: string[][] = [[]];
   arrayOfObjects: ExpandablePair[] = [];
 
   columnsToDisplay = ['visible'];
@@ -46,26 +34,27 @@ export class ExpandablesComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activityService: ActivityService) {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.cards = this.activityData.cards;
+    this.activityService.getExpandables(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
 
-    // convert this.cards (array of arrays) into an array of objects
-    this.arrayOfObjects = Utils
-      .shuffle(this.cards)
-      .map(x => ({
-        visible: x[1],
-        expandable: x[0]
-      }));
+        // convert this.currentPack (array of arrays) into an array of objects
+        this.arrayOfObjects = Utils
+          .shuffle(this.currentPack)
+          .map(x => ({
+            visible: x[1],
+            expandable: x[0]
+          }));
+      });
 
   }
 

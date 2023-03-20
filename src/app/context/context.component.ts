@@ -4,36 +4,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-import { interval, Observable, Subscription } from 'rxjs';
-import allContextDecksCollection from '../../assets/activities/contextarray.json';
-
-interface ContextModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForDuels: string;
-  cards: Card[];
-}
-
-interface Card {
-  prompts: string[];
-  options: string[];
-}
-
-interface Player {
-  name: string;
-  score: number;
-  timer: number;
-}
-
-interface ResultsThisTurn {
-  prompts: string[];
-  correctOption: string;
-  incorrectOptions: string[];
-  clickingPlayer: string;
-  pointsForThis: number;
-}
+import { interval, Subscription } from 'rxjs';
+import { ContextModel, Card, Player, ResultsThisTurn } from '../models/context.model';
 
 @Component({
   selector: 'app-context',
@@ -43,7 +17,7 @@ interface ResultsThisTurn {
 export class ContextComponent implements OnInit {
 
   activityData: ContextModel = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
-  pack: Card[] = [];
+  currentPack: Card[] = [];
   cardsTotal = () => this.activityData.cards.length;
   timeAllowed = 600;
 
@@ -81,18 +55,20 @@ export class ContextComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activityService: ActivityService) {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allContextDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.pack = this.activityData.cards;
+    this.activityService.getContext(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+      });
+
   }
 
   openDialog() {
@@ -122,7 +98,7 @@ export class ContextComponent implements OnInit {
   onClick(value: string) {
     this.calcScore(value);
 
-    if (this.pack.length === 0) {
+    if (this.currentPack.length === 0) {
       this.subscription?.unsubscribe();
       this.chooseWinner();
       this.areQnsDone = true;
@@ -151,11 +127,11 @@ export class ContextComponent implements OnInit {
   }
 
   private selectCurrentCard() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
     this.currentCorrectOption = this.currentCard.options[0];
     this.currentIncorrectOptions = this.currentCard.options.slice(1);
-    this.pack = this.pack.filter(card => card !== this.currentCard);
+    this.currentPack = this.currentPack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
 

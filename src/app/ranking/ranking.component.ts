@@ -3,19 +3,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/rankingarray.json';
+
 
 import { CdkDragDrop } from '@angular/cdk/drag-drop/';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
-
-interface RankingModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
+import { RankingModel } from '../models/ranking.model';
 
 @Component({
   selector: 'app-ranking',
@@ -38,17 +32,18 @@ export class RankingComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog,
+    private activityService: ActivityService) { }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.currentPack = Utils.shuffleStringsArray(this.activityData.cards);
+    this.activityService.getRanking(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = Utils.shuffleStringsArray(this.activityData.cards);
+      });
   }
 
   openDialog() {

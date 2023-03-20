@@ -6,28 +6,8 @@ import { MatTableDataSource } from '@angular/material/table';
 
 import { Utils } from '../utils';
 import { interval, Observable, Subscription } from 'rxjs';
-import allDuelsDecksCollection from '../../assets/activities/duelsarray.json';
-
-interface DuelsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructionsForDuels: string;
-  cards: string[][];
-}
-
-interface Player {
-  name: string;
-  score: number;
-  timer: number;
-}
-
-interface ResultsThisTurn {
-  correctOption: string;
-  incorrectOption: string;
-  clickingPlayer: string;
-  pointsForThis: number;
-}
+import { ActivityService } from '../activity.service';
+import { DuelsModel, Player, ResultsThisTurn } from '../models/duels.model';
 
 @Component({
   selector: 'app-duels',
@@ -37,7 +17,7 @@ interface ResultsThisTurn {
 export class DuelsComponent implements OnInit {
 
   activityData: DuelsModel = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [[]] };
-  pack: string[][] = [];
+  currentPack: string[][] = [];
   cardsTotal = () => this.activityData.cards.length;
   timeAllowed = 600;
 
@@ -73,18 +53,20 @@ export class DuelsComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activityService: ActivityService) {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allDuelsDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.pack = this.activityData.cards;
+    this.activityService.getDuels(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+      });
+
   }
 
   openDialog() {
@@ -112,7 +94,7 @@ export class DuelsComponent implements OnInit {
   }
 
   onClick(val: string) {
-    if (this.pack.length === 0) {
+    if (this.currentPack.length === 0) {
       this.subscription?.unsubscribe();
       this.areQnsDone = true;
       this.calcScore(val);
@@ -146,11 +128,11 @@ export class DuelsComponent implements OnInit {
   }
 
   private selectCurrentCard() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
     this.currentCorrectCard = this.currentCard[0];
     this.currentIncorrectCard = this.currentCard[1];
-    this.pack = this.pack.filter(card => card !== this.currentCard);
+    this.currentPack = this.currentPack.filter(card => card !== this.currentCard);
     this.currentCardNumber++;
   };
 

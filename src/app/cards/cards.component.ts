@@ -3,16 +3,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/cardsarray.json';
-
-interface CardsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
+import { CardsModel } from '../models/cards.model';
 
 @Component({
   selector: 'app-cards',
@@ -41,17 +34,20 @@ export class CardsComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog,
+    private activityService: ActivityService
+  ) { }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.currentPack = this.activityData.cards;
+    this.activityService.getCards(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+      });
+
   }
 
   openDialog() {

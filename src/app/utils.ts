@@ -40,4 +40,8 @@ export class Utils {
     return fullYear * date * date + date * month;
   }
 
+  public static selectActivity(Id: number, arrayOfObjects: []) {
+    return arrayOfObjects.find((array: { id: number; }) => Number(array.id) === Id);
+  }
+
 }

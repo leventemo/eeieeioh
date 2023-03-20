@@ -4,22 +4,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { DialogBoardGameComponent } from '../dialog-board-game/dialog-board-game.component';
 
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
-import allCardDecksCollection from '../../assets/activities/boardgamearray.json';
-
-interface BoardGameModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  cards: string[];
-}
-
-interface Player {
-  name: string;
-  position: number;
-  takingOn: number;
-}
+import { BoardGameModel, Player } from '../models/board-game.model';
 
 @Component({
   selector: 'app-board-game',
@@ -62,18 +49,20 @@ export class BoardGameComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private activityService: ActivityService
   ) { }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.currentPack = this.activityData.cards;
+    this.activityService.getBoardGame(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+      });
+
   }
 
   openDialogInfo() {

@@ -9,7 +9,36 @@ __eeieeioh.com__ is an app for teaching English
 
 ## todos
 
+### footer
+
+video
+* Film crew
+* whodunit
+* what else?
+
+articles
+* separate from quizzes
+
+quizzes
+* separate from articles
+
 ### project-level todos
+
+uninstall Faker for now
+
+service-fed data:
+- [x] Cards
+- [x] Timed Cards
+- [x] Context
+- [x] Escape Room
+- [x] Expandables
+- [x] Duels
+- [x] Ranking
+- [x] Story Puzzle
+- [x] Board Game
+- [x] Reword
+- [ ] Changelog?
+- [ ] Contents?
 
 better theming:
 - [ ] register `logo.svg` as `<mat-icon>`
@@ -137,3 +166,6 @@ set up a preview in Instructions Modals
 - [ ] Escape Room
 - [x] Board Game
 - [ ] Reword
+
+About & Teacher's Guide:
+- [ ] make it more conscise

@@ -2,20 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
-import { Utils } from '../utils';
 
-import allCardDecksCollection from '../../assets/activities/storypuzzlearray.json';
+import { Utils } from '../utils';
+import { ActivityService } from '../activity.service';
+
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '../validators';
 import { delay, filter, first } from 'rxjs/operators';
 import { firstValueFrom } from 'rxjs/internal/firstValueFrom';
-
-interface Chunks {
-  before: string;
-  chunk: string;
-  after: string;
-}
+import { Chunks } from '../models/story-puzzle.model';
 
 export interface StoryPuzzleModel {
   id: number;
@@ -60,19 +56,19 @@ export class StoryPuzzleComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog,
+    private activityService: ActivityService) { }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.chunkArray = Utils.shuffleStringsArray(this.activityData.cards.map(item => item.chunk));
-
-    this.passCode = Utils.getPassCode();
+    this.activityService.getStoryPuzzle(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.chunkArray = Utils.shuffleStringsArray(this.activityData.cards.map(item => item.chunk));
+        this.passCode = Utils.getPassCode();
+      });
 
   }
 

@@ -3,18 +3,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 
+import { ActivityService } from '../activity.service';
 import { Utils } from '../utils';
 import { interval, take, Subscription } from 'rxjs';
-import allCardDecksCollection from '../../assets/activities/timedcardsarray.json';
-
-interface TimeCardsModel {
-  id: number;
-  title: string;
-  language: string;
-  instructions: string;
-  timeAllowed: number;
-  cards: string[];
-}
+import { TimeCardsModel } from '../models/timed-cards.model';
 
 @Component({
   selector: 'app-timed-cards',
@@ -24,7 +16,7 @@ interface TimeCardsModel {
 export class TimedCardsComponent implements OnInit {
 
   activityData: TimeCardsModel = { id: 0, title: '', language: '', instructions: '', timeAllowed: 0, cards: [] };
-  pack: string[] = [];
+  currentPack: string[] = [];
   cardsTotal = () => this.activityData.cards.length;
   instructions = () => this.activityData.instructions;
   subscription!: Subscription;
@@ -45,19 +37,21 @@ export class TimedCardsComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private activityService: ActivityService) {
   }
 
   ngOnInit(): void {
-    // get the id from the current route
-    const routeParams = this.route.snapshot.paramMap;
-    const cardIdFromRoute = Number(routeParams.get('id'));
 
-    // find the deck for id we got from the route
-    this.activityData = allCardDecksCollection.find((array: { id: number; }) => Number(array.id) === cardIdFromRoute);
+    const activityId = Number(this.route.snapshot.url[1].path);
 
-    this.pack = this.activityData.cards;
-    this.timeIsUp = false;
+    this.activityService.getTimedCards(activityId)
+      .subscribe((result) => {
+        this.activityData = result;
+        this.currentPack = this.activityData.cards;
+        this.timeIsUp = false;
+      });
+
   }
 
   openDialog() {
@@ -77,11 +71,11 @@ export class TimedCardsComponent implements OnInit {
   }
 
   displayNextCard() {
-    const rando = Utils.getRandom(this.pack.length - 1);
-    this.currentCard = this.pack[rando];
-    this.pack = this.pack.filter((card: string) => card !== this.currentCard);
+    const rando = Utils.getRandom(this.currentPack.length - 1);
+    this.currentCard = this.currentPack[rando];
+    this.currentPack = this.currentPack.filter((card: string) => card !== this.currentCard);
     this.currentCardCounter++;
-    this.btnValue = this.pack.length === 0 ? 'Done' : 'Next';
+    this.btnValue = this.currentPack.length === 0 ? 'Done' : 'Next';
   }
 
   tiktok() {
@@ -94,7 +88,7 @@ export class TimedCardsComponent implements OnInit {
   }
 
   clickNext() {
-    if (this.pack.length === 0) {
+    if (this.currentPack.length === 0) {
       this.isItAllDone = true;
       return;
     }
