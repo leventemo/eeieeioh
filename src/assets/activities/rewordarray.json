@@ -238,7 +238,7 @@
       {
         "sentence": "I'm applying for the teaching job, the one you're advertising on your LinkedIn page.",
         "keyword": "WRITING; AS",
-        "targetLanguage": "as advertised",
+        "targetLanguage": "I am writing to do something; as advertised",
         "answer": "I am writing to apply for the teaching job as advertised on your LinkedIn page."
       },
       {
@@ -249,7 +249,7 @@
       },
       {
         "sentence": "Thanks for checking out my application.",
-        "keyword": "THANK; CONSIDER",
+        "keyword": "THANK; CONSIDERING",
         "targetLanguage": "thank you for something; to consider something",
         "answer": "Thank you for considering my application."
       },
@@ -267,8 +267,8 @@
       },
       {
         "sentence": "I reckon I'm the right person for this job.",
-        "keyword": "SUITABLE",
-        "targetLanguage": "suitable for something",
+        "keyword": "BELIEVE; SUITABLE",
+        "targetLanguage": "to believe that ...; suitable for something",
         "answer": "I believe that I am suitable for this position."
       },
       {
@@ -287,7 +287,7 @@
         "sentence": "I think I am a skilled receptionist.",
         "keyword": "CONSIDER",
         "targetLanguage": "to consider someone something",
-        "answer": "I consider myself to be a skilled receptionist."
+        "answer": "I consider myself (to be) a skilled receptionist."
       },
       {
         "sentence": "I have attached my CV so you can read it and think about it.",
@@ -303,7 +303,7 @@
       },
       {
         "sentence": "In my previous job, I picked up valuable skills like digital skills and giving presentations.",
-        "keyword": "ACQUIRE; SUCH",
+        "keyword": "ACQUIRED; SUCH",
         "targetLanguage": "to acquire something; such as",
         "answer": "In my previous employment, I acquired valuable skills, such as digital skills and giving presentations."
       },
@@ -328,13 +328,13 @@
       {
         "sentence": "I'm really interested in the project manager role at Google.",
         "keyword": "WRITING; INTEREST",
-        "targetLanguage": "to express my interest",
+        "targetLanguage": "I am writing to do something; to express my interest in something",
         "answer": "I am writing to express my interest in the project manager role at Google."
       },
       {
         "sentence": "I know I can bring a lot to your team and make things better.",
         "keyword": "CONFIDENT; CONTRIBUTION",
-        "targetLanguage": "to be confident; to make a contribution to something",
+        "targetLanguage": "to be confident; to make a positive contribution to something",
         "answer": "I am confident that I can make a positive contribution to your team."
       },
       {
