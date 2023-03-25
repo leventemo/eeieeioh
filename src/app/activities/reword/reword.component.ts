@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 
-import { ActivityService } from '../activity.service';
-import { Utils } from '../utils';
-import { Card, RewordModel, Player } from '../models/reword.model';
+import { ActivityService } from '../../activity.service';
+import { Utils } from '../../utils';
+import { Card, RewordModel, Player } from '../../models/reword.model';
 
 @Component({
   selector: 'app-reword',

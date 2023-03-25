@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 
-import { Utils } from '../utils';
-import { ActivityService } from '../activity.service';
+import { Utils } from '../../utils';
+import { ActivityService } from '../../activity.service';
 
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Validators } from '../validators';
+import { Validators } from '../../validators';
 import { delay, filter, first } from 'rxjs/operators';
 import { firstValueFrom } from 'rxjs/internal/firstValueFrom';
-import { Chunks } from '../models/story-puzzle.model';
+import { Chunks } from '../../models/story-puzzle.model';
 
 export interface StoryPuzzleModel {
   id: number;

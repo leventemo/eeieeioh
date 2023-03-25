@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
-import { Utils } from '../utils';
+import { Utils } from '../../utils';
 import { interval, Observable, Subscription } from 'rxjs';
-import { ActivityService } from '../activity.service';
-import { DuelsModel, Player, ResultsThisTurn } from '../models/duels.model';
+import { ActivityService } from '../../activity.service';
+import { DuelsModel, Player, ResultsThisTurn } from '../../models/duels.model';
 
 @Component({
   selector: 'app-duels',

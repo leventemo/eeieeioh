@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 
-import { ActivityService } from '../activity.service';
-import { Utils } from '../utils';
+import { ActivityService } from '../../activity.service';
+import { Utils } from '../../utils';
 
 
 import { CdkDragDrop } from '@angular/cdk/drag-drop/';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
-import { RankingModel } from '../models/ranking.model';
+import { RankingModel } from '../../models/ranking.model';
 
 @Component({
   selector: 'app-ranking',

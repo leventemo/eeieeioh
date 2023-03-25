@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 
 import { FormGroup, FormControl, AbstractControl } from '@angular/forms';
 import { delay, filter, scan, takeUntil } from 'rxjs/operators';
 
-import { ActivityService } from '../activity.service';
-import { Utils } from '../utils';
-import { Validators } from '../validators'
-import { EscapeRoomModel, Card } from '../models/escape-room.model';
+import { ActivityService } from '../../activity.service';
+import { Utils } from '../../utils';
+import { Validators } from '../../validators'
+import { EscapeRoomModel, Card } from '../../models/escape-room.model';
 
 @Component({
   selector: 'app-escape-room',

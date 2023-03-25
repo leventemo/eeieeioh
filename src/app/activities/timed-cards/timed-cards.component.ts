@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
 
-import { ActivityService } from '../activity.service';
-import { Utils } from '../utils';
+import { ActivityService } from '../../activity.service';
+import { Utils } from '../../utils';
 import { interval, take, Subscription } from 'rxjs';
-import { TimeCardsModel } from '../models/timed-cards.model';
+import { TimeCardsModel } from '../../models/timed-cards.model';
 
 @Component({
   selector: 'app-timed-cards',
