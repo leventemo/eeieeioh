@@ -37,6 +37,7 @@ import { MiscComponent } from './misc/misc.component';
 import { SentenceViewComponent } from './activities/story-puzzle/sentence-view/sentence-view.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { TextComponent } from './text/text.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { TextComponent } from './text/text.component';
     SentenceViewComponent,
     NewsletterSignupComponent,
     TextComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,
