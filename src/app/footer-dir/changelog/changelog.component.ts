@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 
-import contentsData from '../../assets/activities/contentsarray.json';
+import contentsData from '../../../assets/activities/contentsarray.json';
 
 export interface ContentsModel {
   level: string;

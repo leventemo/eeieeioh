@@ -1,31 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { ChangelogComponent } from './changelog/changelog.component';
+import { AboutComponent } from './footer-dir/about/about.component';
+import { ChangelogComponent } from './footer-dir/changelog/changelog.component';
 import { HomeComponent } from './home/home.component';
 import { ContentsComponent } from './contents/contents.component';
 import { CardsComponent } from './activities/cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
-import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { NewsletterSignupComponent } from './footer-dir/newsletter-signup/newsletter-signup.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { DuelsComponent } from './activities/duels/duels.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './activities/reword/reword.component';
 import { ExpandablesComponent } from './activities/expandables/expandables.component';
 import { TimedCardsComponent } from './activities/timed-cards/timed-cards.component';
-import { TeachersGuideComponent } from './teachers-guide/teachers-guide.component';
-import { RoadmapComponent } from './roadmap/roadmap.component';
-import { AbbreviationsComponent } from './abbreviations/abbreviations.component';
+import { TeachersGuideComponent } from './footer-dir/teachers-guide/teachers-guide.component';
+import { RoadmapComponent } from './footer-dir/roadmap/roadmap.component';
+import { AbbreviationsComponent } from './footer-dir/abbreviations/abbreviations.component';
 import { EscapeRoomComponent } from './activities/escape-room/escape-room.component';
 import { ContextComponent } from './activities/context/context.component';
 import { BoardGameComponent } from './activities/board-game/board-game.component';
 import { RankingComponent } from './activities/ranking/ranking.component';
 import { StoryPuzzleComponent } from './activities/story-puzzle/story-puzzle.component';
-import { DictionariesComponent } from './dictionaries/dictionaries.component';
-import { CorporaComponent } from './corpora/corpora.component';
-import { MiscComponent } from './misc/misc.component';
-import { TextComponent } from './text/text.component';
-import { VideoComponent } from './video/video.component';
+import { DictionariesComponent } from './footer-dir/dictionaries/dictionaries.component';
+import { CorporaComponent } from './footer-dir/corpora/corpora.component';
+import { MiscComponent } from './footer-dir/misc/misc.component';
+import { TextComponent } from './footer-dir/text/text.component';
+import { VideoComponent } from './footer-dir/video/video.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
