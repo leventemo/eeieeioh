@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
 import { MatTableDataSource } from '@angular/material/table';
 
 import { Utils } from '../../utils';

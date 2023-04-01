@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogInfoComponent } from '../../dialog-info/dialog-info.component';
-import { DialogBoardGameComponent } from '../../dialog-board-game/dialog-board-game.component';
+import { DialogInfoComponent } from '../dialog-info/dialog-info.component';
+import { DialogBoardGameComponent } from '../dialog-board-game/dialog-board-game.component';
 
 import { ActivityService } from '../../activity.service';
 import { Utils } from '../../utils';

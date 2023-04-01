@@ -16,7 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CheckInComponent } from './check-in/check-in.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RewordComponent } from './activities/reword/reword.component';
-import { DialogInfoComponent } from './dialog-info/dialog-info.component';
+import { DialogInfoComponent } from './activities/dialog-info/dialog-info.component';
 import { ExpandablesComponent } from './activities/expandables/expandables.component';
 import { DuelsComponent } from './activities/duels/duels.component';
 import { ConvertTimePipe } from './convert-time.pipe';
@@ -28,7 +28,7 @@ import { AbbreviationsComponent } from './abbreviations/abbreviations.component'
 import { EscapeRoomComponent } from './activities/escape-room/escape-room.component';
 import { ContextComponent } from './activities/context/context.component';
 import { BoardGameComponent } from './activities/board-game/board-game.component';
-import { DialogBoardGameComponent } from './dialog-board-game/dialog-board-game.component';
+import { DialogBoardGameComponent } from './activities/dialog-board-game/dialog-board-game.component';
 import { RankingComponent } from './activities/ranking/ranking.component';
 import { StoryPuzzleComponent } from './activities/story-puzzle/story-puzzle.component';
 import { DictionariesComponent } from './dictionaries/dictionaries.component';
