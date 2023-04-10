@@ -2080,6 +2080,982 @@
     ]
   },
   {
+    "id": "9",
+    "level": "A1",
+    "title": "do vs make",
+    "language": "collocations",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opportunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2023, 04, 10",
+    "cards": [
+      {
+        "prompts": [
+          "Please ________ the dishes when you finished your meal."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "We ________ a vocabulary test at school every month."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "I enjoy ________ the cooking on Saturdays and Sundays."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "I hate the music they play in supermarkets. I just listen to my own music while I'm ________ the shopping."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "Leave me alone! I'm ________ my math homework."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "It's great to ________ business with you."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "Are you interested in ________ a project on superhero movies?"
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "He is so nervous; he's never ________ a job interview before."
+        ],
+        "options": [
+          "done",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "How often do you have time to ________ sport?"
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "I hate ________ exercise. It's so boring!"
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "Now I want you to work in pairs and ________ the next exercise in the book."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "Do you usually ________ your hair yourself or go to a hairdresser's?"
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "My mum likes learning new things. She's ________ an online course now."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "Don't worry, we all ________ mistakes."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "It's a good idea to ________ plans when starting a new project."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "Let me ________ a quick phone call before we leave."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "I think she ________ some interesting points yesterday. I like what she said."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "I ________ a list of things to do before we leave."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "Come in, take off your coat and I'll ________ you some tea."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "My wife doesn't often ________ dinner."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "level": "A2",
+    "title": "do vs make",
+    "language": "collocations",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opportunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2023, 04, 10",
+    "cards": [
+      {
+        "prompts": [
+          "My aunt ________ yoga twice a week."
+        ],
+        "options": [
+          "does",
+          "makes"
+        ]
+      },
+      {
+        "prompts": [
+          "I'll ________ my best and see what happens."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "They found Hermione ________ research in the school library."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "We ________ a survey about it last year and I can give you some details."
+        ],
+        "options": [
+          "did",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "We spent all Saturday ________ housework."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "You can't ________ a review without giving your opinion!"
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "Try ________ the memory test with your eyes closed. I'll read it out to you."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "They say we should stop ________ experiments on animals."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "I really hate ________ exams."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "I can't go out today. I have some washing to ________."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "If you do the washing, I'll ________ the washing-up."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "He ________ badly in his Chemistry test."
+        ],
+        "options": [
+          "did",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "One day, Mum ________ a suggestion and two days later we had a dog living with us."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "I believe I've ________ the right decision."
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "Try not to ________ promises that you can't keep."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "They ________ a request for more information."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "He was busy ________ arrangements for the surprise party."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "He was planning to ________ copies of all the documents he found in the office."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "Their boss was trying to ________ a joke of it but nobody laughed."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "I am not sure I've ________ the right choice."
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "Scientists have ________ some important new discoveries recently."
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "When you leave, ________ sure you lock the door, OK?"
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "Normally, I try not to ________ a noise when I get up early."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "level": "B1",
+    "title": "do vs make",
+    "language": "collocations",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opportunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2023, 04, 10",
+    "cards": [
+      {
+        "prompts": [
+          "I find ________ crosswords a bit boring."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "________ yourself a favour and stop talking rubbish, will you?"
+        ],
+        "options": [
+          "Do",
+          "Make"
+        ]
+      },
+      {
+        "prompts": [
+          "She started ________ volunteer work with a local charity."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "Do you wear rubber gloves to ________ the cleaning?"
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "By ________ an analysis of the costs, you'll be able to decide which is the best option for you."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "I clean the bathroom and my husband ________ the gardening."
+        ],
+        "options": [
+          "does",
+          "makes"
+        ]
+      },
+      {
+        "prompts": [
+          "The floods didn't ________ much damage to the house."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "Mum likes to watch TV while she's ________ the ironing."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "He needs to ________ an effort if he wants to complete the course."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "His experience at project management really ________ a difference."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "I recommend calling them and ________ an appointment."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "At that moment, Eva cleared her throat and ________ an announcement."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "A credit card is required to ________ a reservation."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "The report ________ a number of recommendations for improving the quality of service."
+        ],
+        "options": [
+          "makes",
+          "does"
+        ]
+      },
+      {
+        "prompts": [
+          "________ a complaint is usually free of charge."
+        ],
+        "options": [
+          "Making",
+          "Doing"
+        ]
+      },
+      {
+        "prompts": [
+          "The burglar ________ his escape through the bathroom window."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "It's difficult to ________ predictions but I think they will win."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "He certainly ________ a big impact on a large number of his followers."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "The poet is ________ a comparison between living as a mosquito and living as a human being."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "Sooner or later, you'll need to find a way to ________ a living."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "You'll need to do better than that if you want to ________ an impression."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "The comedian then ________ an impression of Michael Jackson performing his moonwalk."
+        ],
+        "options": [
+          "did",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "Look at the mess the dog has ________ in here!"
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "Some kids ________ friends easily when they start school. Others don't."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "I think we're ________ good progress here."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "I want to buy these boots, but I haven't ________ up my mind about the colour yet. Yellow or pink?"
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "I have no idea, I can only ________ a guess!"
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "level": "B2",
+    "title": "do vs make",
+    "language": "collocations",
+    "instructionsForDuels": "Work in pairs of \"player A\" and \"player B\" and use a shared phone. Look at whose scoreboard is active and take turns to read the prompts in the middle and click on the correct word as quick as you can. You have 6 seconds to do so. If you don't click while your scoreboard is active, you'll miss the opportunity and your question will be given to your partner to answer. You get extra points for speed if your answer is correct. No points whatsoever for incorrect answers. You can see some feedback on your answers at the end of the game.",
+    "datePublished": "2023, 04, 10",
+    "cards": [
+      {
+        "prompts": [
+          "Whenever you went past their door, you saw the girls ________ dance routines in the classroom."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "The screening was postponed because the director insisted on ________ some last-minute edits."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "We are ________ a comparative analysis of fifteen European urban areas."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "At the beginning of the course, all students will ________ a needs assessment in order to get an understanding of the areas where we need to grow."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "If we want to dress up for the occasion, we have two options left right now: winning the lottery or ________ the laundry."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "He has never volunteered for ________ community service before."
+        ],
+        "options": [
+          "doing",
+          "making"
+        ]
+      },
+      {
+        "prompts": [
+          "Apart from that, we also ________ a two-hour training session every Wednesday morning."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "We ________ a case study on urban development last year, focusing on public transport."
+        ],
+        "options": [
+          "did",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "I've never tried Zumba. I ________ aerobics twice a week though."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "60% of those who volunteer have parents who have ________ voluntary work."
+        ],
+        "options": [
+          "done",
+          "made"
+        ]
+      },
+      {
+        "prompts": [
+          "Hey Tom, your car could ________ with a good clean."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "You've been doing nothing but studying for the last two weeks; it would ________ you good to go out more in the evenings."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "A bit of exercise certainly wouldn't ________ me any harm but I'm just too lazy."
+        ],
+        "options": [
+          "do",
+          "make"
+        ]
+      },
+      {
+        "prompts": [
+          "You will need this number to ________ a claim on your car insurance."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "Could I just ________ a personal observation here?"
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "He had ________ a valuable investment and now he wanted a quick return."
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "Please consider ________ a generous donation to help homeless house elves."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "I could have ________ a valid excuse for not being there but, to be honest, I really wanted to go."
+        ],
+        "options": [
+          "made",
+          "done"
+        ]
+      },
+      {
+        "prompts": [
+          "It is impossible to say precisely how much it is going to cost, but we can ________ a rough estimate."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "If that happens, we'll be forced to ________ an alternative proposal."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "You're ________ false assumptions without looking at the big picture."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "There are certain inferences we can ________ from the data we have available."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "We will ________ a thorough postseason evaluation of the issue when the Championship is over."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "He ________ some minor revisions to the essay before printing it out."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "He ________ a significant contribution to the success of the project."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "First of all, we should ______ a detailed assessment of how much damage was done."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "Don't trust him, Lia. I don't think he's ready to ________ a long-term commitment."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "You weren't really asking a question; you were ________ a rather controversial statement."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "After two failed attempts, the athlete ________ a desperate one to break the record – and succeeded."
+        ],
+        "options": [
+          "made",
+          "did"
+        ]
+      },
+      {
+        "prompts": [
+          "Of course, she didn't reply! She didn't like you ________ fun of her, I guess."
+        ],
+        "options": [
+          "making",
+          "doing"
+        ]
+      },
+      {
+        "prompts": [
+          "I'd be really nervous if I had to ________ a speech in public."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "We're only here for a day and a half so let's ________ the most of it."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      },
+      {
+        "prompts": [
+          "If you want a keeper, it ________ sense to buy the most up-to-date version."
+        ],
+        "options": [
+          "makes",
+          "does"
+        ]
+      },
+      {
+        "prompts": [
+          "It would be hard to ________ a convincing arument for your decision. You're making a huge mistake."
+        ],
+        "options": [
+          "make",
+          "do"
+        ]
+      }
+    ]
+  },
+  {
     "id": "CCC",
     "level": "A2",
     "title": "Vocabulary: Sports",

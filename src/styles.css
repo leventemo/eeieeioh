@@ -127,6 +127,10 @@ mat-card.card-for-link {
   padding: 1rem;
 }
 
+mat-card.card-for-link:last-of-type {
+  margin-bottom: 2rem;
+}
+
 /* ACTIVITIES */
 
 /* cards */
