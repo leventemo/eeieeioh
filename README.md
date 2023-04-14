@@ -19,9 +19,6 @@ video
 articles
 * separate from quizzes
 
-quizzes
-* separate from articles
-
 ### project-level todos
 
 uninstall Faker for now

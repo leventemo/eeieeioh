@@ -2,7 +2,8 @@ export interface ContextModel {
   id: number;
   title: string;
   language: string;
-  instructionsForDuels: string;
+  instructions: string;
+  timeAllowed: number;
   cards: Card[];
 }
 

@@ -201,9 +201,7 @@
 }
 
 .totalScore {
-  /* font-family: 'Inconsolata', monospace; */
   font-family: 'Barlow Condensed', sans-serif;
-  /* font-weight: bold; */
   color: #7D1AD4;
   font-size: .9rem;
 }

@@ -16,10 +16,9 @@ import { ContextModel, Card, Player, ResultsThisTurn } from '../../models/contex
 })
 export class ContextComponent implements OnInit {
 
-  activityData: ContextModel = { id: 0, title: '', language: '', instructionsForDuels: '', cards: [{ prompts: [], options: [] }] };
+  activityData: ContextModel = { id: 0, title: '', language: '', instructions: '', timeAllowed: 0, cards: [{ prompts: [], options: [] }] };
   currentPack: Card[] = [];
   cardsTotal = () => this.activityData.cards.length;
-  timeAllowed = 600;
 
   // to hide "Start" & "Contents" btns
   hasItStarted = false;
@@ -74,7 +73,7 @@ export class ContextComponent implements OnInit {
   openDialog() {
     this.dialog.open(
       DialogInfoComponent,
-      { data: { title: this.activityData.title, instr: this.activityData.instructionsForDuels } }
+      { data: { title: this.activityData.title, instr: this.activityData.instructions } }
     );
   }
 
@@ -90,7 +89,7 @@ export class ContextComponent implements OnInit {
   tiktok() {
     ++this.currentPlayer.timer;
 
-    if (this.currentPlayer.timer >= this.timeAllowed) {
+    if (this.currentPlayer.timer >= this.activityData.timeAllowed) {
       this.switchPlayers();
     }
   }
