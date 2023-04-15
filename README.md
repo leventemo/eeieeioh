@@ -11,11 +11,6 @@ __eeieeioh.com__ is an app for teaching English
 
 ### footer
 
-video
-* Film crew
-* whodunit
-* what else?
-
 articles
 * separate from quizzes
 
