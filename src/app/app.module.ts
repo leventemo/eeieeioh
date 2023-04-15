@@ -38,6 +38,7 @@ import { SentenceViewComponent } from './activities/story-puzzle/sentence-view/s
 import { NewsletterSignupComponent } from './footer-dir/newsletter-signup/newsletter-signup.component';
 import { TextComponent } from './footer-dir/text/text.component';
 import { VideoComponent } from './footer-dir/video/video.component';
+import { PodcastsComponent } from './footer-dir/podcasts/podcasts.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { VideoComponent } from './footer-dir/video/video.component';
     NewsletterSignupComponent,
     TextComponent,
     VideoComponent,
+    PodcastsComponent,
   ],
   imports: [
     BrowserModule,

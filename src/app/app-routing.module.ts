@@ -26,6 +26,7 @@ import { CorporaComponent } from './footer-dir/corpora/corpora.component';
 import { MiscComponent } from './footer-dir/misc/misc.component';
 import { TextComponent } from './footer-dir/text/text.component';
 import { VideoComponent } from './footer-dir/video/video.component';
+import { PodcastsComponent } from './footer-dir/podcasts/podcasts.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'misc', component: MiscComponent },
   { path: 'text', component: TextComponent },
   { path: 'video', component: VideoComponent },
+  { path: 'podcasts', component: PodcastsComponent },
   { path: 'contents', component: ContentsComponent },
   { path: 'cards/:id', component: CardsComponent },
   { path: 'reword/:id', component: RewordComponent },

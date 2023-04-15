@@ -63,7 +63,7 @@ Footer:
   - [x] corpus and friends: link to  page: html done
   - [ ] video: link to  page
   * <https://www.angularjswiki.com/angular/how-to-embed-youtube-videos-in-angular-apps/>
-  - [ ] audio: link to  page
+  - [x] audio: link to  page
   - [x] misc: link to  page
 
 Contact page

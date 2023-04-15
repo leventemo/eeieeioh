@@ -12,6 +12,7 @@
   || router.url === '/misc'
   || router.url === '/text'
   || router.url === '/video'
+  || router.url === '/podcasts'
   ">
   <lottie-player *ngIf="router.url === '/about' || router.url === '/contents'" class="lottie-flowers"
     src="/assets/img/flowers.json" background="transparent" speed="1" loop autoplay>
@@ -82,6 +83,9 @@
       </div>
       <div>
         <a routerLink="/video" class="footer-anchor">video</a>
+      </div>
+      <div>
+        <a routerLink="/podcasts" class="footer-anchor">podcasts</a>
       </div>
       <div>
         <a routerLink="/misc" class="footer-anchor">miscellaneous</a>
