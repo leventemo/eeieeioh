@@ -240,5 +240,29 @@
       "... chocolate do you eat a week?",
       "... fruit do you eat a day?"
     ]
+  },
+  {
+    "id": "11",
+    "level": "A2",
+    "title": "What did we use to do ...?",
+    "language": "used to",
+    "instructions": "Work in pairs using one phone between you. Take turns to ask and answer the questions. When it's your turn to answer a question, try to only listen to your parner without looking at the phone. When you're asking your partner, don't accept a short answer.",
+    "datePublished": "2022, 05, 05",
+    "cards": [
+      "before the invention of the light bulb?",
+      "before the invention of the washing machine?",
+      "before the invention of the TV?",
+      "before the invention of the remote control?",
+      "before the invention of the clock?",
+      "before the invention of the mirror?",
+      "before the invention of photography?",
+      "before the invention of banknotes?",
+      "before the invention of the GPS?",
+      "before the invention of matches?",
+      "before the invention of swimming pools?",
+      "before the invention of the airplane?",
+      "before the invention of the flush toilet?",
+      "before the invention of the electric traffic light?"
+    ]
   }
 ]
