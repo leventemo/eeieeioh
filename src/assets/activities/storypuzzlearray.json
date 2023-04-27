@@ -115,7 +115,7 @@
       },
       {
         "before": "I thought this was ",
-        "chunk": "my Guinness Book of World Record moment.",
+        "chunk": "my Guinness Book of World Record moment",
         "after": ""
       },
       {
@@ -137,6 +137,58 @@
         "before": "If you want to serve a large ",
         "chunk": "stack of pancakes",
         "after": ", wrap the stack in a tea towel to keep them warm."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "level": "B1 up",
+    "title": "Naked sunbathing",
+    "language": "Storytelling",
+    "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
+    "url": "https://www.theguardian.com/world/2023/apr/26/nude-landlord-sunbathing-germany-frankfurt-rent-withheld-court-rules",
+    "datePublished": "2023, 01, 21",
+    "tasks": [
+      "1) Notice some useful phrases in these sentences.",
+      "2) Focus on the highlighted ones. What do they mean? How would you use them? Give examples.",
+      "3) The phrases are from a true story, listed in random order. Drag and drop to reorder them as you like. Can you guess what happened? When you're done, share your story.",
+      "4) Click on the link and read the original story."
+    ],
+    "cards": [
+      {
+        "before": "There are reciprocal duties between ",
+        "chunk": "landlords ",
+        "after": "and tenants. "
+      },
+      {
+        "before": "We need to try ",
+        "chunk": "to reduce rental payments ",
+        "after": "or find somewhere else to rent."
+      },
+      {
+        "before": "He grew up in ",
+        "chunk": "an upmarket residential district",
+        "after": "."
+      },
+      {
+        "before": "The property had ",
+        "chunk": "an office floor rented by a HR company",
+        "after": "."
+      },
+      {
+        "before": "This ",
+        "chunk": "noisy construction work ",
+        "after": "is driving me mad."
+      },
+      {
+        "before": "He was ",
+        "chunk": "leaning far out of the window ",
+        "after": "trying to get a glimpse of her."
+      },
+      {
+        "before": "I like to relax  wearing ",
+        "chunk": "a bathrobe, ",
+        "after": "with my headphones on, and my feet in a foot spa."
       }
     ]
   }
