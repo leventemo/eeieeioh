@@ -157,8 +157,8 @@
     "cards": [
       {
         "before": "There are reciprocal duties between ",
-        "chunk": "landlords ",
-        "after": "and tenants. "
+        "chunk": "a landlord ",
+        "after": "and a tenant. "
       },
       {
         "before": "We need to try ",
@@ -187,8 +187,8 @@
       },
       {
         "before": "I like to relax  wearing ",
-        "chunk": "a bathrobe, ",
-        "after": "with my headphones on, and my feet in a foot spa."
+        "chunk": "a bathrobe",
+        "after": ", with my headphones on, and my feet in a foot spa."
       }
     ]
   }
