@@ -176,11 +176,6 @@
         "after": "."
       },
       {
-        "before": "This ",
-        "chunk": "noisy construction work ",
-        "after": "is driving me mad."
-      },
-      {
         "before": "He was ",
         "chunk": "leaning far out of the window ",
         "after": "trying to get a glimpse of her."

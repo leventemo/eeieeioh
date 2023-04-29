@@ -43,7 +43,7 @@
   <mat-card-actions align="end" class="third-width-card-actions">
     <span class="card-counter">{{ stepper + 1 }}/4</span>
     <button *ngIf="stepper !== 3" color="primary" mat-button (click)="next()" class="card-action-btn">Next</button>
-    <button *ngIf="stepper === 3" color="primary" mat-button (click)="back()">Back</button>
+    <button *ngIf="stepper === 3" color="primary" mat-button (click)="back()" class="card-action-btn">Back</button>
     <button color="primary" mat-button (click)="redirect()" class="card-action-btn">Contents</button>
   </mat-card-actions>
 </mat-card>
