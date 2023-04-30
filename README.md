@@ -9,6 +9,8 @@ __eeieeioh.com__ is an app for teaching English
 
 ## todos
 
+change The Right Qn from Cards to Timed Cards (instructions too!)
+
 ### footer
 
 articles

@@ -96,6 +96,100 @@
   {
     "id": "3",
     "level": "B1 up",
+    "title": "Naked Sunbathing",
+    "language": "Storytelling",
+    "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
+    "url": "https://www.theguardian.com/world/2023/apr/26/nude-landlord-sunbathing-germany-frankfurt-rent-withheld-court-rules",
+    "datePublished": "2023, 04, 27",
+    "tasks": [
+      "1) Notice some useful phrases in these sentences.",
+      "2) Focus on the highlighted ones. What do they mean? How would you use them? Give examples.",
+      "3) The phrases are from a true story, listed in random order. Drag and drop to reorder them as you like. Can you guess what happened? When you're done, share your story.",
+      "4) Click on the link and read the original story."
+    ],
+    "cards": [
+      {
+        "before": "There are reciprocal duties between ",
+        "chunk": "a landlord ",
+        "after": "and a tenant. "
+      },
+      {
+        "before": "We need to try ",
+        "chunk": "to reduce rental payments ",
+        "after": "or find somewhere else to rent."
+      },
+      {
+        "before": "He grew up in ",
+        "chunk": "an upmarket residential district",
+        "after": "."
+      },
+      {
+        "before": "The property had ",
+        "chunk": "an office floor rented by a HR company",
+        "after": "."
+      },
+      {
+        "before": "He was ",
+        "chunk": "leaning far out of the window ",
+        "after": "trying to get a glimpse of her."
+      },
+      {
+        "before": "I like to relax  wearing ",
+        "chunk": "a bathrobe",
+        "after": ", with my headphones on, and my feet in a foot spa."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "level": "B1 up",
+    "title": "School Bus",
+    "language": "Storytelling",
+    "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
+    "url": "https://www.theguardian.com/us-news/2023/apr/29/michigan-seventh-grade-boy-dillon-reeves-bus-crash",
+    "datePublished": "2023, 04, 30",
+    "tasks": [
+      "1) Notice some useful phrases in these sentences.",
+      "2) Focus on the highlighted ones. What do they mean? How would you use them? Give examples.",
+      "3) The phrases are from a true story, listed in random order. Drag and drop to reorder them as you like. Can you guess what happened? When you're done, share your story.",
+      "4) Click on the link and read the original story."
+    ],
+    "cards": [
+      {
+        "before": "I suddenly ",
+        "chunk": "began to feel dizzy and passed out",
+        "after": ". When I came round, I was in a hospital bed."
+      },
+      {
+        "before": "The company is ",
+        "chunk": "on the verge of ",
+        "after": "bankruptcy."
+      },
+      {
+        "before": "He tripped over his own feet, fell and ",
+        "chunk": "told his schoolmates to call for help",
+        "after": "."
+      },
+      {
+        "before": "After ",
+        "chunk": "striking at least one car and a house ",
+        "after": "in half a minute you enter the next level. Otherwise you lose a life."
+      },
+      {
+        "before": "Before reopening the lane, ",
+        "chunk": "first responders treated ",
+        "after": "all the injured at the scene."
+      },
+      {
+        "before": "I don't think ",
+        "chunk": "pedestrians or bicyclists ",
+        "after": "should be second-class citizens on the roads."
+      }
+    ]
+  },
+  {
+    "id": "CCC",
+    "level": "B1 up",
     "title": "Stack Gets Stuck",
     "language": "Storytelling",
     "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
@@ -137,53 +231,6 @@
         "before": "If you want to serve a large ",
         "chunk": "stack of pancakes",
         "after": ", wrap the stack in a tea towel to keep them warm."
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "level": "B1 up",
-    "title": "Naked sunbathing",
-    "language": "Storytelling",
-    "instructions": "In step 1 and step 2 of this activity, you'll be looking at some sentences to identify useful chunks and discuss their meaning and use with the whole class. Then, in step 3, you'll be using some of those phrases to try to guess and recreate a true story. Feel free to get your creative juices going. In step 4, you'll be shown the story where the phrases come from. Just follow the instructions of each step.",
-    "url": "https://www.theguardian.com/world/2023/apr/26/nude-landlord-sunbathing-germany-frankfurt-rent-withheld-court-rules",
-    "datePublished": "2023, 01, 21",
-    "tasks": [
-      "1) Notice some useful phrases in these sentences.",
-      "2) Focus on the highlighted ones. What do they mean? How would you use them? Give examples.",
-      "3) The phrases are from a true story, listed in random order. Drag and drop to reorder them as you like. Can you guess what happened? When you're done, share your story.",
-      "4) Click on the link and read the original story."
-    ],
-    "cards": [
-      {
-        "before": "There are reciprocal duties between ",
-        "chunk": "a landlord ",
-        "after": "and a tenant. "
-      },
-      {
-        "before": "We need to try ",
-        "chunk": "to reduce rental payments ",
-        "after": "or find somewhere else to rent."
-      },
-      {
-        "before": "He grew up in ",
-        "chunk": "an upmarket residential district",
-        "after": "."
-      },
-      {
-        "before": "The property had ",
-        "chunk": "an office floor rented by a HR company",
-        "after": "."
-      },
-      {
-        "before": "He was ",
-        "chunk": "leaning far out of the window ",
-        "after": "trying to get a glimpse of her."
-      },
-      {
-        "before": "I like to relax  wearing ",
-        "chunk": "a bathrobe",
-        "after": ", with my headphones on, and my feet in a foot spa."
       }
     ]
   }
