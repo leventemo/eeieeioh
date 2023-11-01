@@ -105,7 +105,6 @@
       }
     }
   },
-  "defaultProject": "proto",
   "cli": {
     "analytics": false
   }
